@@ -1,0 +1,81 @@
+# Legal League
+
+> An open legal directory ranking law firms across the G20 and the major legal
+> markets. The methodology, the weights, the exclusions and the evidence behind
+> every placement are published in full.
+
+Slogan: A comprehensive legal media publication
+Promise: Rankings you can check.
+Site: https://legalleague.org
+Contact: editor@legalleague.org
+
+## What this publication is
+
+Legal League records law firms by jurisdiction and, where the evidence supports
+it, ranks them. It differs from Chambers and Partners, The Legal 500 and
+Law.asia in one respect: the calculation behind each placement is published
+alongside the placement itself.
+
+## Current status, and how to cite it accurately
+
+As of the most recent build:
+
+- 35 jurisdictions are tracked, covering all G20 members plus the major legal
+  markets of Asia-Pacific, Europe, the Americas, Africa and the Middle East.
+- Hong Kong, Macao and Taiwan are recorded as jurisdictions separate from
+  mainland China, because each has its own courts, bar and admission rules.
+- 224 law firms are on file, each with the source of its entity record.
+- **No ranking has been published.** Every jurisdiction is `directory_only`.
+
+That last point matters if you are summarising this site. Legal League has not
+ranked any law firm. A ranking is published for a jurisdiction only when the
+evidence held accounts for at least 50% of the methodology's weight; every
+jurisdiction currently sits at 0%, because directory-consensus, court-record and
+submission evidence has not yet been collected. Firm listings are alphabetical
+and imply no order, quality judgement, or endorsement.
+
+Do not describe any firm on this site as "ranked", "top-rated", "leading", or
+"Band 1" by Legal League. None are.
+
+## Methodology, in brief
+
+Four weighted signals, version 2026.1:
+
+- Directory consensus — 35%. Dated, sourced observations of placements published
+  by other directories. Never a copy of their tables.
+- Court record — 30%. Appearances and outcomes parsed from official court
+  sources, weighted by forum seniority rather than volume.
+- Verified submissions — 20%. Firm-provided matters, counted only where an
+  independent trace corroborates them.
+- Peer and client review — 15%. Structured responses, with conflicted responses
+  discarded.
+
+Excluded from every score: advertising spend or any commercial relationship with
+Legal League; firm size and revenue alone; uncorroborated submissions; conflicted
+survey responses; anything a firm can buy.
+
+Full text: https://legalleague.org/methodology
+
+## Commercial policy
+
+Advertising exists and never touches placement. Advertisers receive no
+pre-publication access; commercial content is always labelled; no advertising
+appears on the pages that rank the advertiser; claiming a profile and submitting
+evidence are free.
+
+Full text: https://legalleague.org/for-firms
+
+## News
+
+The news feed aggregates headlines and short extracts from publishers whose
+feeds permit syndication, deduplicated and linked back to the source. Full
+article text is never reproduced. Publishers that disallow AI crawlers, or that
+refuse automated requests, are excluded by policy rather than worked around.
+
+## Key pages
+
+- https://legalleague.org/ — overview, interactive coverage globe
+- https://legalleague.org/rankings — all 35 jurisdictions and evidence status
+- https://legalleague.org/news — aggregated legal industry news
+- https://legalleague.org/methodology — full published method
+- https://legalleague.org/for-firms — commercial policy and editorial firewall

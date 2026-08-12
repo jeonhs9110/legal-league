@@ -1,0 +1,19 @@
+{
+  "_comment": [
+    "Machine-readable methodology. The scorer reads this file; the public",
+    "methodology page renders the same numbers from",
+    "frontend/src/lib/fixtures/methodology.ts. The version string must match in",
+    "both places — if they drift, the site is publishing a method it does not use.",
+    "",
+    "Becomes a row in the `methodologies` table (weights as jsonb) once Supabase",
+    "is live, at which point this file goes away and drift becomes impossible."
+  ],
+  "version": "2026.1",
+  "effectiveFrom": "2026-01-01",
+  "signals": [
+    { "key": "directoryConsensus", "label": "Directory consensus", "weight": 0.35 },
+    { "key": "courtRecord", "label": "Court record", "weight": 0.3 },
+    { "key": "submissions", "label": "Verified submissions", "weight": 0.2 },
+    { "key": "peerReview", "label": "Peer and client review", "weight": 0.15 }
+  ]
+}

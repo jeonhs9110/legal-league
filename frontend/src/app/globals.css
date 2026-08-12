@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Strict grayscale palette — no hue, no saturation, anywhere. */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+    --border: 0 0% 20%;
+
+    --radius: 1rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-display antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 500;
+  }
+
+  /* Serif is reserved for emphasis inside headings. */
+  h1 em,
+  h1 i,
+  h1 .italic,
+  h2 em,
+  h2 i,
+  h2 .italic,
+  h3 em,
+  h3 i,
+  h3 .italic {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-style: italic;
+  }
+}
+
+@layer components {
+  /* ---------------------------------------------------------------------
+     Editorial layer. Serif for reading, sans reserved for chrome and data.
+     --------------------------------------------------------------------- */
+
+  .editorial {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+  }
+
+  /* Uppercase micro-labels: column heads, kickers, rail items. */
+  .label {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    font-size: 0.6875rem;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* Figures that must align in a column. */
+  .figure {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* Long-form measure: ~68 characters, the readable maximum for serif body. */
+  .measure {
+    max-width: 34em;
+  }
+
+  /* Editorial link: underline appears on the baseline, not through descenders. */
+  .link-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: theme("colors.rule.strong");
+    transition: text-decoration-color 150ms ease;
+  }
+  .link-underline:hover {
+    text-decoration-color: theme("colors.oxblood.DEFAULT");
+  }
+
+  /* Small-caps drop marker used for rank positions in ranked tables. */
+  .rank-figure {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: "lnum" 1, "tnum" 1;
+  }
+
+  /* Generated backdrop — stands in for the original stock video. */
+  .backdrop-drift {
+    background:
+      radial-gradient(38% 44% at 22% 28%, rgba(255, 255, 255, 0.16), transparent 70%),
+      radial-gradient(32% 38% at 78% 22%, rgba(255, 255, 255, 0.1), transparent 72%),
+      radial-gradient(46% 50% at 62% 78%, rgba(255, 255, 255, 0.07), transparent 74%),
+      radial-gradient(60% 60% at 50% 50%, rgba(255, 255, 255, 0.04), transparent 80%);
+    filter: blur(40px);
+    animation: backdrop-drift 42s ease-in-out infinite alternate;
+  }
+
+  .backdrop-grain {
+    /* Inline feTurbulence — self-generated, no asset to license. */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    opacity: 0.14;
+    mix-blend-mode: overlay;
+  }
+
+  @keyframes backdrop-drift {
+    0% {
+      transform: translate3d(-3%, -2%, 0) scale(1.05);
+    }
+    50% {
+      transform: translate3d(4%, 3%, 0) scale(1.15);
+    }
+    100% {
+      transform: translate3d(-2%, 4%, 0) scale(1.08);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .backdrop-drift {
+      animation: none;
+    }
+  }
+
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liquid-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.15) 20%,
+      transparent 40%,
+      transparent 60%,
+      rgba(255, 255, 255, 0.15) 80%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .liquid-glass-strong {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border: none;
+    box-shadow:
+      4px 4px 4px rgba(0, 0, 0, 0.05),
+      inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liquid-glass-strong::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.2) 20%,
+      transparent 40%,
+      transparent 60%,
+      rgba(255, 255, 255, 0.2) 80%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}

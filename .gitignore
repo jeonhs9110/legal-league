@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.vercel
+.env*
+!.env.example
+
+# Local pipeline output — heavy, regenerable, and not for the deployed site.
+backend/data/raw/*
+backend/data/processed/*
+!backend/data/**/.gitkeep
+__pycache__/
+.venv/
+.gstack/

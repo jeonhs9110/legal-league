@@ -1,0 +1,47 @@
+{
+  "above-the-law": {
+    "etag": null,
+    "last_modified": "Wed, 12 Aug 2026 13:16:53 GMT",
+    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+  },
+  "jurist": {
+    "etag": null,
+    "last_modified": "Wed, 12 Aug 2026 09:19:34 GMT",
+    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+  },
+  "legal-cheek": {
+    "etag": "\"07d12697312c836a154b525f19e395f7\"",
+    "last_modified": "Wed, 12 Aug 2026 11:39:58 GMT",
+    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+  },
+  "artificial-lawyer": {
+    "etag": "\"b0f02fdb527d4a0c76cc90ecf1ea0ba2\"",
+    "last_modified": "Wed, 12 Aug 2026 11:02:54 GMT",
+    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+  },
+  "lawnext": {
+    "etag": null,
+    "last_modified": null,
+    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+  },
+  "legal-times-kr": {
+    "etag": "\"c040-658d65691cf52\"",
+    "last_modified": "Wed, 12 Aug 2026 09:37:38 GMT",
+    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+  },
+  "lec-kr": {
+    "etag": "\"cb4a-658d7001ae330\"",
+    "last_modified": "Wed, 12 Aug 2026 10:25:03 GMT",
+    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+  },
+  "bar-and-bench": {
+    "etag": null,
+    "last_modified": null,
+    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+  },
+  "legal-futures": {
+    "etag": "\"86fb2b51a288a16967eeb6593d30c53d\"",
+    "last_modified": "Tue, 11 Aug 2026 23:07:11 GMT",
+    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+  }
+}

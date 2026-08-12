@@ -1,0 +1,184 @@
+{
+  "_comment": [
+    "Source registry. permitted_use is set by a human after reading robots.txt",
+    "and the publisher's terms; the collector refuses to fetch anything that is",
+    "not 'feed'. This mirrors the `sources` table in 0001_directory.sql.",
+    "Reviewed 2026-08-12 by fetching each robots.txt directly."
+  ],
+  "sources": [
+    {
+      "slug": "above-the-law",
+      "name": "Above the Law",
+      "homepage": "https://abovethelaw.com",
+      "feed_url": "https://abovethelaw.com/feed/",
+      "jurisdiction_iso": "840",
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "User-agent: * disallows only /wp-admin/ and /wp-login.php. Feed permitted."
+    },
+    {
+      "slug": "jurist",
+      "name": "JURIST",
+      "homepage": "https://www.jurist.org",
+      "feed_url": "https://www.jurist.org/news/feed/",
+      "jurisdiction_iso": null,
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 60,
+      "enabled": true,
+      "robots_note": "User-agent: * Crawl-delay: 60, disallows /cgi-bin/ only. Delay honoured."
+    },
+    {
+      "slug": "legal-cheek",
+      "name": "Legal Cheek",
+      "homepage": "https://www.legalcheek.com",
+      "feed_url": "https://www.legalcheek.com/feed/",
+      "jurisdiction_iso": "826",
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "User-agent: * with empty Disallow — all paths permitted."
+    },
+    {
+      "slug": "artificial-lawyer",
+      "name": "Artificial Lawyer",
+      "homepage": "https://www.artificiallawyer.com",
+      "feed_url": "https://www.artificiallawyer.com/feed/",
+      "jurisdiction_iso": null,
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "User-agent: * disallows /wp-admin/ only. Feed permitted."
+    },
+    {
+      "slug": "lawnext",
+      "name": "LawNext",
+      "homepage": "https://www.lawnext.com",
+      "feed_url": "https://www.lawnext.com/feed",
+      "jurisdiction_iso": "840",
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "User-agent: * disallows /wp-admin/ only. Feed permitted."
+    },
+    {
+      "slug": "legal-times-kr",
+      "name": "Legal Times",
+      "homepage": "https://www.legaltimes.co.kr",
+      "feed_url": "https://www.legaltimes.co.kr/rss/allArticle.xml",
+      "jurisdiction_iso": "410",
+      "language": "ko",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "User-agent: * disallows /admin/ only. Feed permitted."
+    },
+    {
+      "slug": "lec-kr",
+      "name": "Law & Education Council",
+      "homepage": "https://www.lec.co.kr",
+      "feed_url": "https://www.lec.co.kr/rss/allArticle.xml",
+      "jurisdiction_iso": "410",
+      "language": "ko",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "User-agent: * disallows /admin/ only. Feed permitted."
+    },
+    {
+      "slug": "bar-and-bench",
+      "name": "Bar & Bench",
+      "homepage": "https://www.barandbench.com",
+      "feed_url": "https://www.barandbench.com/feed",
+      "sitemap_url": "https://www.barandbench.com/sitemap.xml",
+      "jurisdiction_iso": "356",
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "sitemap.xml serves 200; no AI-crawler restrictions. Verified 2026-08-12."
+    },
+    {
+      "slug": "livelaw",
+      "name": "LiveLaw",
+      "homepage": "https://www.livelaw.in",
+      "feed_url": "https://www.livelaw.in/rss/top-stories",
+      "sitemap_url": "https://www.livelaw.in/news-sitemap-daily.xml",
+      "jurisdiction_iso": "356",
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "Sitemap declared in robots.txt; no AI-crawler restrictions. Verified 2026-08-12."
+    },
+    {
+      "slug": "legal-futures",
+      "name": "Legal Futures",
+      "homepage": "https://www.legalfutures.co.uk",
+      "feed_url": "https://www.legalfutures.co.uk/feed",
+      "sitemap_url": "https://www.legalfutures.co.uk/sitemap.xml",
+      "jurisdiction_iso": "826",
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "sitemap.xml serves 200; no AI-crawler restrictions. Verified 2026-08-12."
+    },
+    {
+      "slug": "law-gazette",
+      "name": "Law Society Gazette",
+      "homepage": "https://www.lawgazette.co.uk",
+      "feed_url": null,
+      "sitemap_url": "https://www.lawgazette.co.uk/GoogleSiteMapIndex.aspx",
+      "jurisdiction_iso": "826",
+      "language": "en",
+      "permitted_use": "feed",
+      "crawl_delay_seconds": 5,
+      "enabled": true,
+      "robots_note": "RSS 404s; sitemap index declared in robots.txt. Archive-only source. Verified 2026-08-12."
+    }
+  ],
+  "excluded": [
+    {
+      "name": "SCOTUSblog",
+      "feed_url": "https://www.scotusblog.com/feed/",
+      "permitted_use": "scrape_prohibited",
+      "reason": "robots.txt explicitly disallows ClaudeBot, CCBot, Google-Extended, Bytespider and other AI crawlers. The feed responds, but the publisher has signalled it does not consent to AI collection. Excluded."
+    },
+    {
+      "name": "Korean Lawyers Association Times (lawtimes.co.kr)",
+      "feed_url": "https://www.lawtimes.co.kr/rss",
+      "permitted_use": "unknown",
+      "reason": "Returns HTTP 403 to identified bot traffic. Treated as refusal; approach the publisher for a licence rather than working around the block."
+    },
+    {
+      "name": "Law Society Gazette",
+      "feed_url": "https://www.lawgazette.co.uk/rss",
+      "permitted_use": "unknown",
+      "reason": "Feed URL returns 404. A valid feed may exist elsewhere on the site; not yet located."
+    },
+    {
+      "name": "Law.asia",
+      "feed_url": "https://law.asia/sitemap_index.xml",
+      "permitted_use": "scrape_prohibited",
+      "reason": "Direct competitor. Technically open — sitemap serves, no AI-crawler rules — and deliberately excluded anyway. Systematically ingesting a rival directory's archive is the exact 'selection and arrangement' that compilation and database-right claims protect, and the accusation alone would destroy the source-transparency this publication is built on. Licence, do not crawl."
+    },
+    {
+      "name": "Asian Legal Business (legalbusinessonline.com)",
+      "feed_url": "https://www.legalbusinessonline.com/sitemap.xml",
+      "permitted_use": "unknown",
+      "reason": "Returns HTTP 403 to identified bot traffic. Treated as refusal, same posture as lawtimes.co.kr."
+    },
+    {
+      "name": "Global Legal Post",
+      "feed_url": "https://www.globallegalpost.com/sitemap.xml",
+      "permitted_use": "unknown",
+      "reason": "robots.txt carries 5 AI-crawler directives; not yet read line by line. Held pending review rather than admitted on a passing check."
+    }
+  ]
+}

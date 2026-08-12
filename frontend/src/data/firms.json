@@ -1,0 +1,2378 @@
+{
+  "generatedAt": "2026-08-11T15:29:29.871663Z",
+  "attribution": {
+    "source": "Wikipedia (English)",
+    "license": "CC BY-SA 4.0",
+    "note": "Firm names, jurisdictions and founding years are facts drawn from Wikipedia articles. No Wikipedia prose is reproduced."
+  },
+  "jurisdictions": [
+    {
+      "isoNumeric": "840",
+      "isoAlpha2": "US",
+      "slug": "united-states",
+      "name": "United States",
+      "region": "Americas",
+      "g20": true,
+      "firmCount": 13,
+      "sourceCategory": "Law firms of the United States"
+    },
+    {
+      "isoNumeric": "826",
+      "isoAlpha2": "GB",
+      "slug": "united-kingdom",
+      "name": "United Kingdom",
+      "region": "Europe",
+      "g20": true,
+      "firmCount": 70,
+      "sourceCategory": "Law firms of the United Kingdom"
+    },
+    {
+      "isoNumeric": "156",
+      "isoAlpha2": "CN",
+      "slug": "china",
+      "name": "China",
+      "region": "Asia-Pacific",
+      "g20": true,
+      "firmCount": 13,
+      "sourceCategory": "Law firms of China"
+    },
+    {
+      "isoNumeric": "344",
+      "isoAlpha2": "HK",
+      "slug": "hong-kong",
+      "name": "Hong Kong",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 2,
+      "sourceCategory": "Law firms of Hong Kong"
+    },
+    {
+      "isoNumeric": "158",
+      "isoAlpha2": "TW",
+      "slug": "taiwan",
+      "name": "Taiwan",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 1,
+      "sourceCategory": "Law firms of Taiwan"
+    },
+    {
+      "isoNumeric": "446",
+      "isoAlpha2": "MO",
+      "slug": "macao",
+      "name": "Macao",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "392",
+      "isoAlpha2": "JP",
+      "slug": "japan",
+      "name": "Japan",
+      "region": "Asia-Pacific",
+      "g20": true,
+      "firmCount": 11,
+      "sourceCategory": "Law firms of Japan"
+    },
+    {
+      "isoNumeric": "410",
+      "isoAlpha2": "KR",
+      "slug": "south-korea",
+      "name": "South Korea",
+      "region": "Asia-Pacific",
+      "g20": true,
+      "firmCount": 3,
+      "sourceCategory": "Law firms of South Korea"
+    },
+    {
+      "isoNumeric": "356",
+      "isoAlpha2": "IN",
+      "slug": "india",
+      "name": "India",
+      "region": "Asia-Pacific",
+      "g20": true,
+      "firmCount": 9,
+      "sourceCategory": "Law firms of India"
+    },
+    {
+      "isoNumeric": "702",
+      "isoAlpha2": "SG",
+      "slug": "singapore",
+      "name": "Singapore",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 10,
+      "sourceCategory": "Law firms of Singapore"
+    },
+    {
+      "isoNumeric": "036",
+      "isoAlpha2": "AU",
+      "slug": "australia",
+      "name": "Australia",
+      "region": "Asia-Pacific",
+      "g20": true,
+      "firmCount": 23,
+      "sourceCategory": "Law firms of Australia"
+    },
+    {
+      "isoNumeric": "360",
+      "isoAlpha2": "ID",
+      "slug": "indonesia",
+      "name": "Indonesia",
+      "region": "Asia-Pacific",
+      "g20": true,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "458",
+      "isoAlpha2": "MY",
+      "slug": "malaysia",
+      "name": "Malaysia",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "764",
+      "isoAlpha2": "TH",
+      "slug": "thailand",
+      "name": "Thailand",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 2,
+      "sourceCategory": "Law firms of Thailand"
+    },
+    {
+      "isoNumeric": "608",
+      "isoAlpha2": "PH",
+      "slug": "philippines",
+      "name": "Philippines",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "704",
+      "isoAlpha2": "VN",
+      "slug": "vietnam",
+      "name": "Vietnam",
+      "region": "Asia-Pacific",
+      "g20": false,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "276",
+      "isoAlpha2": "DE",
+      "slug": "germany",
+      "name": "Germany",
+      "region": "Europe",
+      "g20": true,
+      "firmCount": 6,
+      "sourceCategory": "Law firms of Germany"
+    },
+    {
+      "isoNumeric": "250",
+      "isoAlpha2": "FR",
+      "slug": "france",
+      "name": "France",
+      "region": "Europe",
+      "g20": true,
+      "firmCount": 3,
+      "sourceCategory": "Law firms of France"
+    },
+    {
+      "isoNumeric": "380",
+      "isoAlpha2": "IT",
+      "slug": "italy",
+      "name": "Italy",
+      "region": "Europe",
+      "g20": true,
+      "firmCount": 1,
+      "sourceCategory": "Law firms of Italy"
+    },
+    {
+      "isoNumeric": "724",
+      "isoAlpha2": "ES",
+      "slug": "spain",
+      "name": "Spain",
+      "region": "Europe",
+      "g20": false,
+      "firmCount": 3,
+      "sourceCategory": "Law firms of Spain"
+    },
+    {
+      "isoNumeric": "528",
+      "isoAlpha2": "NL",
+      "slug": "netherlands",
+      "name": "Netherlands",
+      "region": "Europe",
+      "g20": false,
+      "firmCount": 6,
+      "sourceCategory": "Law firms of the Netherlands"
+    },
+    {
+      "isoNumeric": "756",
+      "isoAlpha2": "CH",
+      "slug": "switzerland",
+      "name": "Switzerland",
+      "region": "Europe",
+      "g20": false,
+      "firmCount": 0,
+      "sourceCategory": "Law firms of Switzerland"
+    },
+    {
+      "isoNumeric": "752",
+      "isoAlpha2": "SE",
+      "slug": "sweden",
+      "name": "Sweden",
+      "region": "Europe",
+      "g20": false,
+      "firmCount": 2,
+      "sourceCategory": "Law firms of Sweden"
+    },
+    {
+      "isoNumeric": "372",
+      "isoAlpha2": "IE",
+      "slug": "ireland",
+      "name": "Ireland",
+      "region": "Europe",
+      "g20": false,
+      "firmCount": 2,
+      "sourceCategory": "Law firms of Ireland"
+    },
+    {
+      "isoNumeric": "643",
+      "isoAlpha2": "RU",
+      "slug": "russia",
+      "name": "Russia",
+      "region": "Europe",
+      "g20": true,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "792",
+      "isoAlpha2": "TR",
+      "slug": "turkey",
+      "name": "Türkiye",
+      "region": "Europe",
+      "g20": true,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "124",
+      "isoAlpha2": "CA",
+      "slug": "canada",
+      "name": "Canada",
+      "region": "Americas",
+      "g20": true,
+      "firmCount": 19,
+      "sourceCategory": "Law firms of Canada"
+    },
+    {
+      "isoNumeric": "484",
+      "isoAlpha2": "MX",
+      "slug": "mexico",
+      "name": "Mexico",
+      "region": "Americas",
+      "g20": true,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "076",
+      "isoAlpha2": "BR",
+      "slug": "brazil",
+      "name": "Brazil",
+      "region": "Americas",
+      "g20": true,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "032",
+      "isoAlpha2": "AR",
+      "slug": "argentina",
+      "name": "Argentina",
+      "region": "Americas",
+      "g20": true,
+      "firmCount": 1,
+      "sourceCategory": "Law firms of Argentina"
+    },
+    {
+      "isoNumeric": "710",
+      "isoAlpha2": "ZA",
+      "slug": "south-africa",
+      "name": "South Africa",
+      "region": "Africa & Middle East",
+      "g20": true,
+      "firmCount": 11,
+      "sourceCategory": "Law firms of South Africa"
+    },
+    {
+      "isoNumeric": "566",
+      "isoAlpha2": "NG",
+      "slug": "nigeria",
+      "name": "Nigeria",
+      "region": "Africa & Middle East",
+      "g20": false,
+      "firmCount": 1,
+      "sourceCategory": "Law firms of Nigeria"
+    },
+    {
+      "isoNumeric": "682",
+      "isoAlpha2": "SA",
+      "slug": "saudi-arabia",
+      "name": "Saudi Arabia",
+      "region": "Africa & Middle East",
+      "g20": true,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "784",
+      "isoAlpha2": "AE",
+      "slug": "united-arab-emirates",
+      "name": "United Arab Emirates",
+      "region": "Africa & Middle East",
+      "g20": false,
+      "firmCount": 0,
+      "sourceCategory": null
+    },
+    {
+      "isoNumeric": "376",
+      "isoAlpha2": "IL",
+      "slug": "israel",
+      "name": "Israel",
+      "region": "Africa & Middle East",
+      "g20": false,
+      "firmCount": 12,
+      "sourceCategory": "Law firms of Israel"
+    }
+  ],
+  "firms": [
+    {
+      "slug": "brown-rudnick",
+      "name": "Brown Rudnick",
+      "jurisdictionIso": "840",
+      "foundedYear": 1948,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brown_Rudnick",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dla-piper",
+      "name": "DLA Piper",
+      "jurisdictionIso": "840",
+      "foundedYear": 2005,
+      "sourceUrl": "https://en.wikipedia.org/wiki/DLA_Piper",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dentons",
+      "name": "Dentons",
+      "jurisdictionIso": "840",
+      "foundedYear": 1788,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dentons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "faegre-drinker",
+      "name": "Faegre Drinker",
+      "jurisdictionIso": "840",
+      "foundedYear": 2020,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Faegre_Drinker",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gunster-yoakley-and-stewart",
+      "name": "Gunster, Yoakley & Stewart",
+      "jurisdictionIso": "840",
+      "foundedYear": 1925,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gunster%2C_Yoakley_%26_Stewart",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mcallister-olivarius",
+      "name": "McAllister Olivarius",
+      "jurisdictionIso": "840",
+      "foundedYear": 1996,
+      "sourceUrl": "https://en.wikipedia.org/wiki/McAllister_Olivarius",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "reitler-kailas-and-rosenblatt",
+      "name": "Reitler Kailas & Rosenblatt",
+      "jurisdictionIso": "840",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Reitler_Kailas_%26_Rosenblatt",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "sher-edling",
+      "name": "Sher Edling",
+      "jurisdictionIso": "840",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sher_Edling",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "susman-godfrey-llp",
+      "name": "Susman Godfrey LLP",
+      "jurisdictionIso": "840",
+      "foundedYear": 1980,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Susman_Godfrey_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "troutman-pepper",
+      "name": "Troutman Pepper",
+      "jurisdictionIso": "840",
+      "foundedYear": 2021,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Troutman_Pepper",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "troutman-pepper-locke",
+      "name": "Troutman Pepper Locke",
+      "jurisdictionIso": "840",
+      "foundedYear": 2025,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Troutman_Pepper_Locke",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "white-shoe-firm",
+      "name": "White-shoe firm",
+      "jurisdictionIso": "840",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/White-shoe_firm",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "womble-bond-dickinson-us-llp",
+      "name": "Womble Bond Dickinson (US) LLP",
+      "jurisdictionIso": "840",
+      "foundedYear": 1876,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Womble_Bond_Dickinson_%28US%29_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "a-and-o-shearman",
+      "name": "A&O Shearman",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/A%26O_Shearman",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "acslaw",
+      "name": "ACS:Law",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/ACS%3ALaw",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "allen-and-overy",
+      "name": "Allen & Overy",
+      "jurisdictionIso": "826",
+      "foundedYear": 2023,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Allen_%26_Overy",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "asons",
+      "name": "Asons",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "blm",
+      "name": "BLM",
+      "jurisdictionIso": "826",
+      "foundedYear": 2014,
+      "sourceUrl": "https://en.wikipedia.org/wiki/BLM_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bates-wells-braithwaite",
+      "name": "Bates Wells Braithwaite",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bates_Wells_Braithwaite",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bird-and-bird",
+      "name": "Bird & Bird",
+      "jurisdictionIso": "826",
+      "foundedYear": 1846,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bird_%26_Bird",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "birketts",
+      "name": "Birketts",
+      "jurisdictionIso": "826",
+      "foundedYear": 1863,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Birketts",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "blake-lapthorn",
+      "name": "Blake Lapthorn",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Blake_Lapthorn",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "blake-morgan-llp",
+      "name": "Blake Morgan LLP",
+      "jurisdictionIso": "826",
+      "foundedYear": 2014,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Blake_Morgan_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "boult-wade-tennant",
+      "name": "Boult Wade Tennant",
+      "jurisdictionIso": "826",
+      "foundedYear": 1894,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Boult_Wade_Tennant",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "brethertons",
+      "name": "Brethertons",
+      "jurisdictionIso": "826",
+      "foundedYear": 1810,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brethertons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bristows",
+      "name": "Bristows",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bristows",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "browne-jacobson",
+      "name": "Browne Jacobson",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Browne_Jacobson",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "burges-salmon",
+      "name": "Burges Salmon",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Burges_Salmon",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "carter-ruck",
+      "name": "Carter-Ruck",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carter-Ruck",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "clifford-chance",
+      "name": "Clifford Chance",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Clifford_Chance",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "co-op-legal-services",
+      "name": "Co-op Legal Services",
+      "jurisdictionIso": "826",
+      "foundedYear": 2006,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Co-op_Legal_Services",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dwf-group",
+      "name": "DWF Group",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/DWF_Group",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "davenport-lyons",
+      "name": "Davenport Lyons",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Davenport_Lyons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dehns",
+      "name": "Dehns",
+      "jurisdictionIso": "826",
+      "foundedYear": 1920,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dehns",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dundas-and-wilson",
+      "name": "Dundas & Wilson",
+      "jurisdictionIso": "826",
+      "foundedYear": 2012,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dundas_%26_Wilson",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "family-law-in-partnership",
+      "name": "Family Law in Partnership",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Family_Law_in_Partnership",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "farrer-and-co",
+      "name": "Farrer & Co",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Farrer_%26_Co",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "fieldfisher",
+      "name": "Fieldfisher",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fieldfisher",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gaby-hardwicke-solicitors",
+      "name": "Gaby Hardwicke Solicitors",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gaby_Hardwicke_Solicitors",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gowling-wlg",
+      "name": "Gowling WLG",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gowling_WLG",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "herbert-smith-freehills-kramer",
+      "name": "Herbert Smith Freehills Kramer",
+      "jurisdictionIso": "826",
+      "foundedYear": 1882,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Herbert_Smith_Freehills_Kramer",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "hogan-lovells",
+      "name": "Hogan Lovells",
+      "jurisdictionIso": "826",
+      "foundedYear": 2010,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hogan_Lovells",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "hogan-lovells-cadwalader",
+      "name": "Hogan Lovells Cadwalader",
+      "jurisdictionIso": "826",
+      "foundedYear": 2026,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hogan_Lovells_Cadwalader",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "howe-and-co",
+      "name": "Howe & Co",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Howe_%26_Co",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "ince-and-co",
+      "name": "Ince & Co",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ince_%26_Co",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "irwin-mitchell",
+      "name": "Irwin Mitchell",
+      "jurisdictionIso": "826",
+      "foundedYear": 1912,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Irwin_Mitchell",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "kemp-little",
+      "name": "Kemp Little",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kemp_Little",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "king-and-wood-mallesons",
+      "name": "King & Wood Mallesons",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/King_%26_Wood_Mallesons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "kingsley-napley",
+      "name": "Kingsley Napley",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kingsley_Napley",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "lawrence-graham",
+      "name": "Lawrence Graham",
+      "jurisdictionIso": "826",
+      "foundedYear": 2014,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lawrence_Graham",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "lawyers-on-demand",
+      "name": "Lawyers on Demand",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lawyers_on_Demand",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "macfarlanes",
+      "name": "Macfarlanes",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Macfarlanes",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "magic-circle",
+      "name": "Magic Circle (law firms)",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Magic_Circle_%28law_firms%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "marks-and-clerk",
+      "name": "Marks & Clerk",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Marks_%26_Clerk",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "medicolegal-investigations",
+      "name": "MedicoLegal Investigations",
+      "jurisdictionIso": "826",
+      "foundedYear": 1996,
+      "sourceUrl": "https://en.wikipedia.org/wiki/MedicoLegal_Investigations",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mewburn-ellis",
+      "name": "Mewburn Ellis",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mewburn_Ellis",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mills-and-reeve",
+      "name": "Mills & Reeve",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mills_%26_Reeve",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mishcon-de-reya",
+      "name": "Mishcon de Reya",
+      "jurisdictionIso": "826",
+      "foundedYear": 1988,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mishcon_de_Reya",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "nabarro-llp",
+      "name": "Nabarro LLP",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nabarro_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "olswang",
+      "name": "Olswang",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Olswang",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "osborne-clarke",
+      "name": "Osborne Clarke",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Osborne_Clarke",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "pritchard-englefield",
+      "name": "Pritchard Englefield",
+      "jurisdictionIso": "826",
+      "foundedYear": 2013,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pritchard_Englefield",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "qualitysolicitors",
+      "name": "QualitySolicitors",
+      "jurisdictionIso": "826",
+      "foundedYear": 2009,
+      "sourceUrl": "https://en.wikipedia.org/wiki/QualitySolicitors",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "reed-smith-richards-butler",
+      "name": "Reed Smith Richards Butler",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Reed_Smith_Richards_Butler",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "release",
+      "name": "Release (agency)",
+      "jurisdictionIso": "826",
+      "foundedYear": 1967,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Release_%28agency%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "russell-cooke-solicitors",
+      "name": "Russell-Cooke Solicitors",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Russell-Cooke_Solicitors",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "sj-berwin",
+      "name": "SJ Berwin",
+      "jurisdictionIso": "826",
+      "foundedYear": 2013,
+      "sourceUrl": "https://en.wikipedia.org/wiki/SJ_Berwin",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "snr-denton",
+      "name": "SNR Denton",
+      "jurisdictionIso": "826",
+      "foundedYear": 2011,
+      "sourceUrl": "https://en.wikipedia.org/wiki/SNR_Denton",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "salans",
+      "name": "Salans",
+      "jurisdictionIso": "826",
+      "foundedYear": 1978,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salans_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "silver-circle",
+      "name": "Silver Circle (law firms)",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Silver_Circle_%28law_firms%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "simmons-and-simmons",
+      "name": "Simmons & Simmons",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Simmons_%26_Simmons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "slater-and-gordon",
+      "name": "Slater & Gordon",
+      "jurisdictionIso": "826",
+      "foundedYear": 1935,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Slater_%26_Gordon",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "slaughter-and-may",
+      "name": "Slaughter and May",
+      "jurisdictionIso": "826",
+      "foundedYear": 1889,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Slaughter_and_May",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "stephenson-harwood",
+      "name": "Stephenson Harwood",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stephenson_Harwood",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "tlb",
+      "name": "TLB (legal consultancy)",
+      "jurisdictionIso": "826",
+      "foundedYear": 2015,
+      "sourceUrl": "https://en.wikipedia.org/wiki/TLB_%28legal_consultancy%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "taylor-wessing",
+      "name": "Taylor Wessing",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Taylor_Wessing",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "thompsons-solicitors",
+      "name": "Thompsons Solicitors",
+      "jurisdictionIso": "826",
+      "foundedYear": 1921,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Thompsons_Solicitors",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "travers-smith",
+      "name": "Travers Smith",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Travers_Smith",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "watson-farley-and-williams",
+      "name": "Watson Farley & Williams",
+      "jurisdictionIso": "826",
+      "foundedYear": 1982,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Watson_Farley_%26_Williams",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "weightmans",
+      "name": "Weightmans",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Weightmans",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "withers-llp",
+      "name": "Withers LLP",
+      "jurisdictionIso": "826",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Withers_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "womble-bond-dickinson-uk-llp",
+      "name": "Womble Bond Dickinson (UK) LLP",
+      "jurisdictionIso": "826",
+      "foundedYear": 2016,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Womble_Bond_Dickinson_%28UK%29_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "wragge-and-co",
+      "name": "Wragge & Co",
+      "jurisdictionIso": "826",
+      "foundedYear": 2011,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Wragge_%26_Co",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "allbright-law-offices",
+      "name": "AllBright Law Offices",
+      "jurisdictionIso": "156",
+      "foundedYear": 1999,
+      "sourceUrl": "https://en.wikipedia.org/wiki/AllBright_Law_Offices",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "broad-and-bright",
+      "name": "Broad & Bright",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Broad_%26_Bright",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dacheng-law-offices",
+      "name": "Dacheng Law Offices",
+      "jurisdictionIso": "156",
+      "foundedYear": 2012,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacheng_Law_Offices",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "deheng-law-offices",
+      "name": "DeHeng Law Offices",
+      "jurisdictionIso": "156",
+      "foundedYear": 1993,
+      "sourceUrl": "https://en.wikipedia.org/wiki/DeHeng_Law_Offices",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "fangda",
+      "name": "Fangda",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fangda",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "haiwen-and-partners",
+      "name": "Haiwen & Partners",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Haiwen_%26_Partners",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "han-kun-law-offices",
+      "name": "Han Kun Law Offices",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Han_Kun_Law_Offices",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "junhe",
+      "name": "JunHe",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/JunHe",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "king-and-wood",
+      "name": "King & Wood",
+      "jurisdictionIso": "156",
+      "foundedYear": 1993,
+      "sourceUrl": "https://en.wikipedia.org/wiki/King_%26_Wood",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "red-circle",
+      "name": "Red Circle (law firms)",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Red_Circle_%28law_firms%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "talkfangda",
+      "name": "Talk:Fangda",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Talk%3AFangda",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "yingke",
+      "name": "Yingke",
+      "jurisdictionIso": "156",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yingke",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "zhong-lun",
+      "name": "Zhong Lun",
+      "jurisdictionIso": "156",
+      "foundedYear": 1993,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zhong_Lun",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "deacons",
+      "name": "Deacons",
+      "jurisdictionIso": "344",
+      "foundedYear": 1851,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Deacons_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "johnson-stokes-and-master",
+      "name": "Johnson Stokes & Master",
+      "jurisdictionIso": "344",
+      "foundedYear": 1863,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Johnson_Stokes_%26_Master",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "lee-and-li",
+      "name": "Lee and Li",
+      "jurisdictionIso": "158",
+      "foundedYear": 1965,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lee_and_Li",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "adire-legal-professional-corporation",
+      "name": "Adire Legal Professional Corporation",
+      "jurisdictionIso": "392",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Adire_Legal_Professional_Corporation",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "anderson-mōri-and-tomotsune",
+      "name": "Anderson Mōri & Tomotsune",
+      "jurisdictionIso": "392",
+      "foundedYear": 1952,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Anderson_M%C5%8Dri_%26_Tomotsune",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "atsumi-and-sakai",
+      "name": "Atsumi & Sakai",
+      "jurisdictionIso": "392",
+      "foundedYear": 1994,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Atsumi_%26_Sakai",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "big-four",
+      "name": "Big Four (law firms)",
+      "jurisdictionIso": "392",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Big_Four_%28law_firms%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "city-yuwa-partners",
+      "name": "City-Yuwa Partners",
+      "jurisdictionIso": "392",
+      "foundedYear": 2003,
+      "sourceUrl": "https://en.wikipedia.org/wiki/City-Yuwa_Partners",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mori-hamada-and-matsumoto",
+      "name": "Mori Hamada & Matsumoto",
+      "jurisdictionIso": "392",
+      "foundedYear": 1949,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mori_Hamada_%26_Matsumoto",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "nagashima-ohno-and-tsunematsu",
+      "name": "Nagashima Ohno & Tsunematsu",
+      "jurisdictionIso": "392",
+      "foundedYear": 1961,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nagashima_Ohno_%26_Tsunematsu",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "nishimura-and-asahi",
+      "name": "Nishimura & Asahi",
+      "jurisdictionIso": "392",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nishimura_%26_Asahi",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "oh-ebashi-lpc-and-partners",
+      "name": "Oh-Ebashi LPC & Partners",
+      "jurisdictionIso": "392",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oh-Ebashi_LPC_%26_Partners",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "sugimura-and-partners",
+      "name": "Sugimura & Partners",
+      "jurisdictionIso": "392",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sugimura_%26_Partners",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "tmi-associates",
+      "name": "TMI Associates",
+      "jurisdictionIso": "392",
+      "foundedYear": 1990,
+      "sourceUrl": "https://en.wikipedia.org/wiki/TMI_Associates",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dr-and-aju",
+      "name": "DR & AJU",
+      "jurisdictionIso": "410",
+      "foundedYear": 2009,
+      "sourceUrl": "https://en.wikipedia.org/wiki/DR_%26_AJU",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "kim-and-chang",
+      "name": "Kim & Chang",
+      "jurisdictionIso": "410",
+      "foundedYear": 1973,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kim_%26_Chang",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "yulchon",
+      "name": "Yulchon",
+      "jurisdictionIso": "410",
+      "foundedYear": 1997,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yulchon",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "azb-and-partners",
+      "name": "AZB & Partners",
+      "jurisdictionIso": "356",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/AZB_%26_Partners",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "amarchand-and-mangaldas-and-suresh-a-shroff-and-co",
+      "name": "Amarchand & Mangaldas & Suresh A Shroff & Co",
+      "jurisdictionIso": "356",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Amarchand_%26_Mangaldas_%26_Suresh_A_Shroff_%26_Co",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "cyril-amarchand-mangaldas",
+      "name": "Cyril Amarchand Mangaldas",
+      "jurisdictionIso": "356",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cyril_Amarchand_Mangaldas",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "khaitan-and-co",
+      "name": "Khaitan & Co",
+      "jurisdictionIso": "356",
+      "foundedYear": 1911,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Khaitan_%26_Co",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "lakshmikumaran-and-sridharan",
+      "name": "LakshmiKumaran & Sridharan",
+      "jurisdictionIso": "356",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/LakshmiKumaran_%26_Sridharan",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "shardul-amarchand-mangaldas-and-co",
+      "name": "Shardul Amarchand Mangaldas & Co",
+      "jurisdictionIso": "356",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shardul_Amarchand_Mangaldas_%26_Co",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "touchstone-partners",
+      "name": "Touchstone Partners",
+      "jurisdictionIso": "356",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Touchstone_Partners",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "trilegal",
+      "name": "Trilegal",
+      "jurisdictionIso": "356",
+      "foundedYear": 2000,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trilegal",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "wadia-ghandy-and-company",
+      "name": "Wadia Ghandy & Company",
+      "jurisdictionIso": "356",
+      "foundedYear": 1883,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Wadia_Ghandy_%26_Company",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "allen-and-gledhill",
+      "name": "Allen & Gledhill",
+      "jurisdictionIso": "702",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Allen_%26_Gledhill",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "dentons-rodyk-and-davidson",
+      "name": "Dentons Rodyk & Davidson",
+      "jurisdictionIso": "702",
+      "foundedYear": 1861,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dentons_Rodyk_%26_Davidson",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "donaldson-and-burkinshaw",
+      "name": "Donaldson & Burkinshaw",
+      "jurisdictionIso": "702",
+      "foundedYear": 1874,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Donaldson_%26_Burkinshaw",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "drew-and-napier",
+      "name": "Drew & Napier",
+      "jurisdictionIso": "702",
+      "foundedYear": 1889,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Drew_%26_Napier",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "hill-dickinson",
+      "name": "Hill Dickinson",
+      "jurisdictionIso": "702",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hill_Dickinson",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "lee-and-lee",
+      "name": "Lee & Lee",
+      "jurisdictionIso": "702",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lee_%26_Lee",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "rajah-and-tann",
+      "name": "Rajah & Tann",
+      "jurisdictionIso": "702",
+      "foundedYear": 1976,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rajah_%26_Tann",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "shook-lin-and-bok",
+      "name": "Shook Lin & Bok",
+      "jurisdictionIso": "702",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shook_Lin_%26_Bok",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "tsmp-law-corporation",
+      "name": "TSMP Law Corporation",
+      "jurisdictionIso": "702",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/TSMP_Law_Corporation",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "wongpartnership",
+      "name": "WongPartnership",
+      "jurisdictionIso": "702",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/WongPartnership",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "allens",
+      "name": "Allens",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Allens_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "arnold-bloch-leibler",
+      "name": "Arnold Bloch Leibler",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arnold_Bloch_Leibler",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "ashurst-australia",
+      "name": "Ashurst Australia",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ashurst_Australia",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "big-six",
+      "name": "Big Six (law firms)",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Big_Six_%28law_firms%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "clayton-utz",
+      "name": "Clayton Utz",
+      "jurisdictionIso": "036",
+      "foundedYear": 1833,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Clayton_Utz",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "cobbetts",
+      "name": "Cobbetts",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cobbetts",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "corrs-chambers-westgarth",
+      "name": "Corrs Chambers Westgarth",
+      "jurisdictionIso": "036",
+      "foundedYear": 1841,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Corrs_Chambers_Westgarth",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "finlaysons",
+      "name": "Finlaysons",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Finlaysons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "freehills",
+      "name": "Freehills",
+      "jurisdictionIso": "036",
+      "foundedYear": 2012,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Freehills",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gadens",
+      "name": "Gadens",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gadens",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gilbert-tobin",
+      "name": "Gilbert + Tobin",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gilbert_%2B_Tobin",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "hwl-ebsworth",
+      "name": "HWL Ebsworth",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/HWL_Ebsworth",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "herbert-geer",
+      "name": "Herbert Geer",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Herbert_Geer",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mallesons",
+      "name": "Mallesons",
+      "jurisdictionIso": "036",
+      "foundedYear": 1832,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mallesons",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "maurice-blackburn",
+      "name": "Maurice Blackburn",
+      "jurisdictionIso": "036",
+      "foundedYear": 1919,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Maurice_Blackburn_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mccoy-grove-and-atkinson",
+      "name": "McCoy, Grove & Atkinson",
+      "jurisdictionIso": "036",
+      "foundedYear": 1887,
+      "sourceUrl": "https://en.wikipedia.org/wiki/McCoy%2C_Grove_%26_Atkinson",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mills-oakley",
+      "name": "Mills Oakley",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mills_Oakley",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "minterellison",
+      "name": "MinterEllison",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/MinterEllison",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "norton-rose-fulbright",
+      "name": "Norton Rose Fulbright",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Norton_Rose_Fulbright",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "shine-lawyers",
+      "name": "Shine Lawyers",
+      "jurisdictionIso": "036",
+      "foundedYear": 1976,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shine_Lawyers",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "slonim-velik-and-emanuel",
+      "name": "Slonim, Velik & Emanuel",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Slonim%2C_Velik_%26_Emanuel",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "sparke-helmore-lawyers",
+      "name": "Sparke Helmore Lawyers",
+      "jurisdictionIso": "036",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sparke_Helmore_Lawyers",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "thomson-geer",
+      "name": "Thomson Geer",
+      "jurisdictionIso": "036",
+      "foundedYear": 1885,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Thomson_Geer",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "price-sanond",
+      "name": "Price Sanond",
+      "jurisdictionIso": "764",
+      "foundedYear": 1962,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Price_Sanond",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "tilleke-and-gibbins",
+      "name": "Tilleke & Gibbins",
+      "jurisdictionIso": "764",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tilleke_%26_Gibbins",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "cms",
+      "name": "CMS",
+      "jurisdictionIso": "276",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/CMS_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gleiss-lutz",
+      "name": "Gleiss Lutz",
+      "jurisdictionIso": "276",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gleiss_Lutz",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "hengeler-mueller",
+      "name": "Hengeler Mueller",
+      "jurisdictionIso": "276",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hengeler_Mueller",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "maverickeye",
+      "name": "Maverickeye",
+      "jurisdictionIso": "276",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Maverickeye",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "noerr",
+      "name": "Noerr",
+      "jurisdictionIso": "276",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Noerr",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "oppenhoff-and-partner",
+      "name": "Oppenhoff & Partner",
+      "jurisdictionIso": "276",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oppenhoff_%26_Partner",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bougartchev-moyne-associés",
+      "name": "Bougartchev Moyne Associés",
+      "jurisdictionIso": "250",
+      "foundedYear": 2017,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bougartchev_Moyne_Associ%C3%A9s",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bredin-prat",
+      "name": "Bredin Prat",
+      "jurisdictionIso": "250",
+      "foundedYear": 1966,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bredin_Prat",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "fidal",
+      "name": "Fidal",
+      "jurisdictionIso": "250",
+      "foundedYear": 2014,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fidal",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bonellierede",
+      "name": "BonelliErede",
+      "jurisdictionIso": "380",
+      "foundedYear": 1999,
+      "sourceUrl": "https://en.wikipedia.org/wiki/BonelliErede",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "cremades-and-calvo-sotelo",
+      "name": "Cremades & Calvo-Sotelo",
+      "jurisdictionIso": "724",
+      "foundedYear": 1995,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cremades_%26_Calvo-Sotelo",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "garrigues",
+      "name": "Garrigues",
+      "jurisdictionIso": "724",
+      "foundedYear": 1941,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Garrigues_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "pérez-llorca",
+      "name": "Pérez-Llorca",
+      "jurisdictionIso": "724",
+      "foundedYear": 2024,
+      "sourceUrl": "https://en.wikipedia.org/wiki/P%C3%A9rez-Llorca",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "de-brauw-blackstone-westbroek",
+      "name": "De Brauw Blackstone Westbroek",
+      "jurisdictionIso": "528",
+      "foundedYear": 1871,
+      "sourceUrl": "https://en.wikipedia.org/wiki/De_Brauw_Blackstone_Westbroek",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "houthoff",
+      "name": "Houthoff",
+      "jurisdictionIso": "528",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Houthoff",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "law-firms-of-the-netherlands",
+      "name": "Law firms of the Netherlands",
+      "jurisdictionIso": "528",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Law_firms_of_the_Netherlands",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "loyens-and-loeff",
+      "name": "Loyens & Loeff",
+      "jurisdictionIso": "528",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Loyens_%26_Loeff",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "nautadutilh",
+      "name": "NautaDutilh",
+      "jurisdictionIso": "528",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/NautaDutilh",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "stibbe",
+      "name": "Stibbe",
+      "jurisdictionIso": "528",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stibbe_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "advokatfirman-vinge",
+      "name": "Advokatfirman Vinge",
+      "jurisdictionIso": "752",
+      "foundedYear": 1983,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Advokatfirman_Vinge",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "roschier",
+      "name": "Roschier",
+      "jurisdictionIso": "752",
+      "foundedYear": 1936,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Roschier",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "arthur-cox",
+      "name": "Arthur Cox",
+      "jurisdictionIso": "372",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arthur_Cox_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "matheson",
+      "name": "Matheson",
+      "jurisdictionIso": "372",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Matheson_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bellissimo-law-group-pc",
+      "name": "Bellissimo Law Group PC",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bellissimo_Law_Group_PC",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bennett-jones",
+      "name": "Bennett Jones",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bennett_Jones",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "blake-cassels-and-graydon",
+      "name": "Blake, Cassels & Graydon",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Blake%2C_Cassels_%26_Graydon",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "borden-ladner-gervais",
+      "name": "Borden Ladner Gervais",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Borden_Ladner_Gervais",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "davies-ward-phillips-and-vineberg",
+      "name": "Davies Ward Phillips & Vineberg",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Davies_Ward_Phillips_%26_Vineberg",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "fasken",
+      "name": "Fasken",
+      "jurisdictionIso": "124",
+      "foundedYear": 1863,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fasken",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "goodmans",
+      "name": "Goodmans",
+      "jurisdictionIso": "124",
+      "foundedYear": 1917,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Goodmans",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mccarthy-tétrault",
+      "name": "McCarthy Tétrault",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/McCarthy_T%C3%A9trault",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mcinnes-cooper",
+      "name": "McInnes Cooper",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/McInnes_Cooper",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mcmillan-llp",
+      "name": "McMillan LLP",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/McMillan_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "osler-hoskin-and-harcourt",
+      "name": "Osler, Hoskin & Harcourt",
+      "jurisdictionIso": "124",
+      "foundedYear": 1862,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Osler%2C_Hoskin_%26_Harcourt",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "seven-sisters",
+      "name": "Seven Sisters (law firms)",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Seven_Sisters_%28law_firms%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "smart-and-biggar",
+      "name": "Smart & Biggar",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Smart_%26_Biggar",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "stewart-mckelvey",
+      "name": "Stewart McKelvey",
+      "jurisdictionIso": "124",
+      "foundedYear": 1990,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stewart_McKelvey",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "stikeman-elliott",
+      "name": "Stikeman Elliott",
+      "jurisdictionIso": "124",
+      "foundedYear": 1952,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stikeman_Elliott",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "thompson-dorfman-sweatman",
+      "name": "Thompson Dorfman Sweatman",
+      "jurisdictionIso": "124",
+      "foundedYear": 2010,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Thompson_Dorfman_Sweatman",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "torys",
+      "name": "Torys",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Torys",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "weirfoulds-llp",
+      "name": "WeirFoulds LLP",
+      "jurisdictionIso": "124",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/WeirFoulds_LLP",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "wildeboer-dellelce",
+      "name": "Wildeboer Dellelce",
+      "jurisdictionIso": "124",
+      "foundedYear": 1993,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Wildeboer_Dellelce",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "allende-and-brea",
+      "name": "Allende & Brea",
+      "jurisdictionIso": "032",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Allende_%26_Brea",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bell-dewar",
+      "name": "Bell Dewar",
+      "jurisdictionIso": "710",
+      "foundedYear": 2013,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bell_Dewar",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "big-five-law-firms-in-south-africa",
+      "name": "Big Five (law firms) in South Africa",
+      "jurisdictionIso": "710",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Big_Five_%28law_firms%29_in_South_Africa",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "bowmans",
+      "name": "Bowmans",
+      "jurisdictionIso": "710",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bowmans_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "cliffe-dekker-hofmeyr",
+      "name": "Cliffe Dekker Hofmeyr",
+      "jurisdictionIso": "710",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cliffe_Dekker_Hofmeyr",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "deneys-reitz-inc",
+      "name": "Deneys Reitz Inc",
+      "jurisdictionIso": "710",
+      "foundedYear": 2011,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Deneys_Reitz_Inc",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "ensafrica",
+      "name": "ENSafrica",
+      "jurisdictionIso": "710",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/ENSafrica",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "fairbridges-attorneys",
+      "name": "Fairbridges Attorneys",
+      "jurisdictionIso": "710",
+      "foundedYear": 1812,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fairbridges_Attorneys",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "legal-resources-centre",
+      "name": "Legal Resources Centre",
+      "jurisdictionIso": "710",
+      "foundedYear": 1979,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Legal_Resources_Centre",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "mandela-and-tambo",
+      "name": "Mandela and Tambo",
+      "jurisdictionIso": "710",
+      "foundedYear": 1952,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mandela_and_Tambo",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "webber-wentzel",
+      "name": "Webber Wentzel",
+      "jurisdictionIso": "710",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Webber_Wentzel",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "werksmans",
+      "name": "Werksmans",
+      "jurisdictionIso": "710",
+      "foundedYear": 1917,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Werksmans",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "kenna",
+      "name": "KENNA",
+      "jurisdictionIso": "566",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/KENNA",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "amit-pollak-matalon-and-co",
+      "name": "Amit, Pollak, Matalon & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": 1956,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Amit%2C_Pollak%2C_Matalon_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "balter-guth-aloni-and-co",
+      "name": "Balter, Guth, Aloni & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Balter%2C_Guth%2C_Aloni_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "fischer-behar-chen-well-orion-and-co",
+      "name": "Fischer, Behar, Chen, Well, Orion & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fischer%2C_Behar%2C_Chen%2C_Well%2C_Orion_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "goldfarb-gross-seligman",
+      "name": "Goldfarb Gross Seligman",
+      "jurisdictionIso": "376",
+      "foundedYear": 2011,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Goldfarb_Gross_Seligman",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gornitzky-and-co",
+      "name": "Gornitzky & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": 1938,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gornitzky_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "gross-kleinhendler-hodak-halevy-greenberg-and-co",
+      "name": "Gross, Kleinhendler, Hodak, Halevy, Greenberg & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gross%2C_Kleinhendler%2C_Hodak%2C_Halevy%2C_Greenberg_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "haim-zadok-and-co",
+      "name": "Haim Zadok & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Haim_Zadok_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "herzog-fox-and-neeman",
+      "name": "Herzog, Fox & Ne'eman",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Herzog%2C_Fox_%26_Ne%27eman",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "meitar",
+      "name": "Meitar",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Meitar_%28law_firm%29",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "s-horowitz-and-co",
+      "name": "S. Horowitz & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/S._Horowitz_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "shibolet-and-co",
+      "name": "Shibolet & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shibolet_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    },
+    {
+      "slug": "yigal-arnon-and-co",
+      "name": "Yigal Arnon & Co.",
+      "jurisdictionIso": "376",
+      "foundedYear": 2022,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yigal_Arnon_%26_Co.",
+      "sourceName": "Wikipedia",
+      "retrievedAt": "2026-08-11T15:29:29.871663Z"
+    }
+  ]
+}
