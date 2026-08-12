@@ -1,0 +1,675 @@
+{
+  "_readme": [
+    "Candidate firms per jurisdiction, each with the firm's OWN domain.",
+    "",
+    "This file is a list of candidates, not a ranking and not evidence. Nothing",
+    "here reaches the site until fetch_firm_details.py has fetched the domain",
+    "and confirmed the page identifies itself as that firm. A candidate whose",
+    "site does not resolve, or whose site does not name the firm, is dropped and",
+    "recorded in the run's `rejected` list rather than published on trust.",
+    "",
+    "Sourcing rule, per project constraint: firm homepages and their own press",
+    "releases. Rankings and award tables published by Chambers, Legal 500,",
+    "asialaw, IFLR1000, Benchmark and Law.asia are NOT used to build this list.",
+    "Those are compilations; reproducing their selection or ordering is the same",
+    "database-right problem that keeps Law.asia off the news source registry.",
+    "",
+    "Ordering on the site comes from headcount verified on the firm's own site,",
+    "which is a fact the firm publishes about itself. Where a firm does not",
+    "publish it, the firm is listed without a figure rather than estimated.",
+    "",
+    "International firms' local offices are deliberately excluded: a Baker",
+    "McKenzie or Dentons office is covered under its home jurisdiction, and",
+    "listing it again locally double-counts the same organisation."
+  ],
+  "jurisdictions": {
+    "south-korea": [
+      {
+        "name": "Kim & Chang",
+        "domain": "kimchang.com",
+        "aliases": [
+          "김·장",
+          "김앤장"
+        ]
+      },
+      {
+        "name": "Lee & Ko",
+        "domain": "leeko.com",
+        "aliases": [
+          "광장"
+        ]
+      },
+      {
+        "name": "Bae, Kim & Lee",
+        "domain": "bkl.co.kr",
+        "aliases": [
+          "태평양"
+        ]
+      },
+      {
+        "name": "Shin & Kim",
+        "domain": "shinkim.com",
+        "aliases": [
+          "세종"
+        ]
+      },
+      {
+        "name": "Yulchon",
+        "domain": "yulchon.com",
+        "aliases": [
+          "율촌"
+        ]
+      },
+      {
+        "name": "Yoon & Yang",
+        "domain": "yoonyang.com",
+        "aliases": [
+          "화우"
+        ]
+      },
+      {
+        "name": "Jipyong",
+        "domain": "jipyong.com",
+        "aliases": [
+          "지평"
+        ]
+      },
+      {
+        "name": "Barun Law",
+        "domain": "barunlaw.com",
+        "aliases": [
+          "바른"
+        ]
+      },
+      {
+        "name": "KL Partners",
+        "domain": "klpartners.com",
+        "aliases": [
+          "케이엘파트너스"
+        ]
+      },
+      {
+        "name": "DR & AJU",
+        "domain": "draju.com",
+        "aliases": [
+          "대륙아주"
+        ]
+      }
+    ],
+    "japan": [
+      {
+        "name": "Nishimura & Asahi",
+        "domain": "nishimura.com",
+        "aliases": [
+          "西村あさひ"
+        ]
+      },
+      {
+        "name": "Mori Hamada & Matsumoto",
+        "domain": "morihamada.com",
+        "aliases": [
+          "森・濱田松本"
+        ]
+      },
+      {
+        "name": "Anderson Mori & Tomotsune",
+        "domain": "amt-law.com",
+        "aliases": [
+          "アンダーソン・毛利・友常"
+        ]
+      },
+      {
+        "name": "Nagashima Ohno & Tsunematsu",
+        "domain": "noandt.com",
+        "aliases": [
+          "長島・大野・常松"
+        ]
+      },
+      {
+        "name": "TMI Associates",
+        "domain": "tmi.gr.jp",
+        "aliases": [
+          "TMI総合法律事務所"
+        ]
+      },
+      {
+        "name": "City-Yuwa Partners",
+        "domain": "city-yuwa.com",
+        "aliases": [
+          "シティユーワ"
+        ]
+      },
+      {
+        "name": "Atsumi & Sakai",
+        "domain": "aplaw.jp",
+        "aliases": [
+          "渥美坂井"
+        ]
+      },
+      {
+        "name": "Oh-Ebashi LPC & Partners",
+        "domain": "ohebashi.com",
+        "aliases": [
+          "大江橋"
+        ]
+      },
+      {
+        "name": "Miura & Partners",
+        "domain": "miura-partners.com",
+        "aliases": [
+          "三浦法律事務所"
+        ]
+      },
+      {
+        "name": "Ushijima & Partners",
+        "domain": "ushijima-law.gr.jp",
+        "aliases": [
+          "牛島総合"
+        ]
+      },
+      {
+        "name": "Kojima Law Offices",
+        "domain": "kojimalaw.jp",
+        "aliases": [
+          "児島総合"
+        ]
+      },
+      {
+        "name": "Hibiya-Nakata",
+        "domain": "hibiya-nakata.com",
+        "aliases": [
+          "日比谷中田"
+        ]
+      }
+    ],
+    "taiwan": [
+      {
+        "name": "Lee and Li",
+        "domain": "leeandli.com",
+        "aliases": [
+          "理律"
+        ]
+      },
+      {
+        "name": "Tsar & Tsai Law Firm",
+        "domain": "tsartsai.com.tw",
+        "aliases": [
+          "常在國際"
+        ]
+      },
+      {
+        "name": "Formosa Transnational",
+        "domain": "taiwanlaw.com",
+        "aliases": [
+          "協合國際"
+        ]
+      },
+      {
+        "name": "LCS & Partners",
+        "domain": "lcs.com.tw",
+        "aliases": [
+          "理慈"
+        ]
+      },
+      {
+        "name": "Winkler Partners",
+        "domain": "winklerpartners.com",
+        "aliases": [
+          "博仲"
+        ]
+      },
+      {
+        "name": "Lee, Tsai & Partners",
+        "domain": "leetsai.com",
+        "aliases": [
+          "普華商務"
+        ]
+      },
+      {
+        "name": "Chen & Lin",
+        "domain": "chenandlin.com",
+        "aliases": [
+          "陳林"
+        ]
+      },
+      {
+        "name": "Eiger Law",
+        "domain": "eiger.law"
+      },
+      {
+        "name": "Formosan Brothers",
+        "domain": "formosan.com.tw",
+        "aliases": [
+          "寰瀛"
+        ]
+      },
+      {
+        "name": "Innovation Law",
+        "domain": "innovationlaw.com.tw"
+      }
+    ],
+    "china": [
+      {
+        "name": "King & Wood Mallesons",
+        "domain": "kwm.com",
+        "aliases": [
+          "金杜"
+        ]
+      },
+      {
+        "name": "Fangda Partners",
+        "domain": "fangdalaw.com",
+        "aliases": [
+          "方达",
+          "方達"
+        ]
+      },
+      {
+        "name": "Han Kun Law Offices",
+        "domain": "hankunlaw.com",
+        "aliases": [
+          "汉坤"
+        ]
+      },
+      {
+        "name": "Zhong Lun Law Firm",
+        "domain": "zhonglun.com",
+        "aliases": [
+          "中伦"
+        ]
+      },
+      {
+        "name": "JunHe",
+        "domain": "junhe.com",
+        "aliases": [
+          "君合"
+        ]
+      },
+      {
+        "name": "Haiwen & Partners",
+        "domain": "haiwen-law.com",
+        "aliases": [
+          "海问"
+        ]
+      },
+      {
+        "name": "Global Law Office",
+        "domain": "glo.com.cn",
+        "aliases": [
+          "环球律师事务所"
+        ]
+      },
+      {
+        "name": "Jingtian & Gongcheng",
+        "domain": "jingtian.com",
+        "aliases": [
+          "竞天公诚"
+        ]
+      },
+      {
+        "name": "Tian Yuan Law Firm",
+        "domain": "tylaw.com.cn",
+        "aliases": [
+          "天元"
+        ]
+      },
+      {
+        "name": "Commerce & Finance Law Offices",
+        "domain": "tongshang.com",
+        "aliases": [
+          "通商"
+        ]
+      },
+      {
+        "name": "Grandall Law Firm",
+        "domain": "grandall.com.cn",
+        "aliases": [
+          "国浩"
+        ]
+      },
+      {
+        "name": "AllBright Law Offices",
+        "domain": "allbrightlaw.com",
+        "aliases": [
+          "锦天城"
+        ]
+      }
+    ],
+    "hong-kong": [
+      {
+        "name": "Deacons",
+        "domain": "deacons.com"
+      },
+      {
+        "name": "ONC Lawyers",
+        "domain": "onc.hk"
+      },
+      {
+        "name": "Tanner De Witt",
+        "domain": "tannerdewitt.com"
+      },
+      {
+        "name": "Howse Williams",
+        "domain": "howsewilliams.com"
+      },
+      {
+        "name": "Gall",
+        "domain": "gallhk.com"
+      },
+      {
+        "name": "Haldanes",
+        "domain": "haldanes.com"
+      },
+      {
+        "name": "Wilkinson & Grist",
+        "domain": "wilgrist.com"
+      },
+      {
+        "name": "Vivien Chan & Co",
+        "domain": "vcclawservices.com"
+      },
+      {
+        "name": "Boase Cohen & Collins",
+        "domain": "boasecohencollins.com"
+      },
+      {
+        "name": "Stevenson, Wong & Co",
+        "domain": "sw-hk.com"
+      }
+    ],
+    "philippines": [
+      {
+        "name": "SyCip Salazar Hernandez & Gatmaitan",
+        "domain": "syciplaw.com"
+      },
+      {
+        "name": "ACCRALAW",
+        "domain": "accralaw.com"
+      },
+      {
+        "name": "Romulo Mabanta Buenaventura Sayoc & de los Angeles",
+        "domain": "romulo.com"
+      },
+      {
+        "name": "Villaraza & Angangco",
+        "domain": "thefirmva.com"
+      },
+      {
+        "name": "Cruz Marcelo & Tenefrancia",
+        "domain": "cruzmarcelo.com"
+      },
+      {
+        "name": "Castillo Laman Tan Pantaleon & San Jose",
+        "domain": "cltpsj.com.ph"
+      },
+      {
+        "name": "Picazo Buyco Tan Fider & Santos",
+        "domain": "picazolaw.com"
+      },
+      {
+        "name": "Puyat Jacinto & Santos",
+        "domain": "pjslaw.com"
+      },
+      {
+        "name": "Gorriceta Africa Cauton & Saavedra",
+        "domain": "gorricetalaw.com"
+      },
+      {
+        "name": "Quisumbing Torres",
+        "domain": "quisumbingtorres.com"
+      }
+    ],
+    "india": [
+      {
+        "name": "Cyril Amarchand Mangaldas",
+        "domain": "cyrilshroff.com"
+      },
+      {
+        "name": "Shardul Amarchand Mangaldas & Co",
+        "domain": "amsshardul.com"
+      },
+      {
+        "name": "Khaitan & Co",
+        "domain": "khaitanco.com"
+      },
+      {
+        "name": "Trilegal",
+        "domain": "trilegal.com"
+      },
+      {
+        "name": "AZB & Partners",
+        "domain": "azbpartners.com"
+      },
+      {
+        "name": "JSA Advocates & Solicitors",
+        "domain": "jsalaw.com"
+      },
+      {
+        "name": "IndusLaw",
+        "domain": "induslaw.com"
+      },
+      {
+        "name": "S&R Associates",
+        "domain": "snrlaw.in"
+      },
+      {
+        "name": "Talwar Thakore & Associates",
+        "domain": "ttalaw.in"
+      },
+      {
+        "name": "Saraf and Partners",
+        "domain": "sarafpartners.com"
+      }
+    ],
+    "malaysia": [
+      {
+        "name": "Skrine",
+        "domain": "skrine.com"
+      },
+      {
+        "name": "Shearn Delamore & Co",
+        "domain": "shearndelamore.com"
+      },
+      {
+        "name": "Lee Hishammuddin Allen & Gledhill",
+        "domain": "lh-ag.com"
+      },
+      {
+        "name": "Rahmat Lim & Partners",
+        "domain": "rahmatlim.com"
+      },
+      {
+        "name": "Christopher & Lee Ong",
+        "domain": "christopherleeong.com"
+      },
+      {
+        "name": "Albar & Partners",
+        "domain": "albar.com.my"
+      },
+      {
+        "name": "Raja, Darryl & Loh",
+        "domain": "rdl.com.my"
+      },
+      {
+        "name": "Adnan Sundra & Low",
+        "domain": "asl.com.my"
+      },
+      {
+        "name": "Zul Rafique & Partners",
+        "domain": "zulrafique.com.my"
+      },
+      {
+        "name": "Zaid Ibrahim & Co",
+        "domain": "zicolaw.com"
+      }
+    ],
+    "indonesia": [
+      {
+        "name": "Assegaf Hamzah & Partners",
+        "domain": "ahp.co.id"
+      },
+      {
+        "name": "Ali Budiardjo, Nugroho, Reksodiputro",
+        "domain": "abnrlaw.com"
+      },
+      {
+        "name": "SSEK Law Firm",
+        "domain": "ssek.com"
+      },
+      {
+        "name": "Makarim & Taira S",
+        "domain": "makarim.com"
+      },
+      {
+        "name": "Lubis Ganie Surowidjojo",
+        "domain": "lgslaw.co.id"
+      },
+      {
+        "name": "Soemadipradja & Taher",
+        "domain": "soemath.com"
+      },
+      {
+        "name": "Hiswara Bunjamin & Tandjung",
+        "domain": "hbtlaw.com"
+      },
+      {
+        "name": "Widyawan & Partners",
+        "domain": "widyawanpartners.com"
+      },
+      {
+        "name": "Hadiputranto, Hadinoto & Partners",
+        "domain": "hhp.co.id"
+      },
+      {
+        "name": "Walalangi & Partners",
+        "domain": "wplaws.com"
+      }
+    ],
+    "vietnam": [
+      {
+        "name": "YKVN",
+        "domain": "ykvn-law.com"
+      },
+      {
+        "name": "VILAF",
+        "domain": "vilaf.com.vn"
+      },
+      {
+        "name": "LNT & Partners",
+        "domain": "lntpartners.com"
+      },
+      {
+        "name": "Rajah & Tann LCT Lawyers",
+        "domain": "rajahtannlct.com"
+      },
+      {
+        "name": "Frasers Law Company",
+        "domain": "frasersvn.com"
+      },
+      {
+        "name": "Vision & Associates",
+        "domain": "vision-associates.com"
+      },
+      {
+        "name": "Indochine Counsel",
+        "domain": "indochinecounsel.com"
+      },
+      {
+        "name": "ASL Law",
+        "domain": "aslgate.com"
+      },
+      {
+        "name": "Bizconsult",
+        "domain": "bizconsult.vn"
+      },
+      {
+        "name": "Vilasia",
+        "domain": "vilasia.com"
+      }
+    ],
+    "thailand": [
+      {
+        "name": "Tilleke & Gibbins",
+        "domain": "tilleke.com"
+      },
+      {
+        "name": "Weerawong, Chinnavat & Partners",
+        "domain": "weerawongcp.com"
+      },
+      {
+        "name": "Chandler MHM",
+        "domain": "chandlermhm.com"
+      },
+      {
+        "name": "Kudun and Partners",
+        "domain": "kap.co.th"
+      },
+      {
+        "name": "The Capital Law Office",
+        "domain": "thecapitallaw.com"
+      },
+      {
+        "name": "Siam Premier International Law Office",
+        "domain": "siamlaw.co.th"
+      },
+      {
+        "name": "Blumenthal Richter & Sumet",
+        "domain": "brslawyers.com"
+      },
+      {
+        "name": "Pisut & Partners",
+        "domain": "pisutandpartners.com"
+      },
+      {
+        "name": "Dherakupt International Law Office",
+        "domain": "dherakupt.co.th"
+      },
+      {
+        "name": "ILCT",
+        "domain": "ilct.co.th"
+      }
+    ],
+    "singapore": [
+      {
+        "name": "Allen & Gledhill",
+        "domain": "allenandgledhill.com"
+      },
+      {
+        "name": "Rajah & Tann Singapore",
+        "domain": "rajahtannasia.com"
+      },
+      {
+        "name": "WongPartnership",
+        "domain": "wongpartnership.com"
+      },
+      {
+        "name": "Drew & Napier",
+        "domain": "drewnapier.com"
+      },
+      {
+        "name": "Shook Lin & Bok",
+        "domain": "shooklin.com"
+      },
+      {
+        "name": "Dentons Rodyk",
+        "domain": "dentons.rodyk.com"
+      },
+      {
+        "name": "Harry Elias Partnership",
+        "domain": "harryelias.com"
+      },
+      {
+        "name": "TSMP Law Corporation",
+        "domain": "tsmplaw.com"
+      },
+      {
+        "name": "Withers KhattarWong",
+        "domain": "witherskhattarwong.com"
+      },
+      {
+        "name": "Bih Li & Lee",
+        "domain": "bihlilee.com.sg"
+      }
+    ]
+  }
+}

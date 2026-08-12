@@ -1,0 +1,299 @@
+{
+  "_readme": [
+    "Official court and justice-ministry sources, one block per jurisdiction.",
+    "",
+    "These are primary sources: a judgment handed down by a court and a notice",
+    "published by a ministry are public acts, and in most of these jurisdictions",
+    "they are expressly outside copyright or released under an open licence.",
+    "That is the whole reason this pillar exists — it is the one body of legal",
+    "information a directory can build on without depending on Chambers, Legal",
+    "500 or Law.asia, none of whom own a word of it.",
+    "",
+    "`status` starts as 'unverified' for every entry. fetch_court_records.py",
+    "probes each one, records what actually came back, and rewrites the status.",
+    "Nothing here is treated as working because it looks plausible — the first",
+    "firm crawl taught that lesson expensively.",
+    "",
+    "`licence` is recorded per source because it varies enormously and governs",
+    "what we may republish. UK Find Case Law is Open Justice Licence. Korean and",
+    "Japanese government works are free of copyright by statute. Some judgment",
+    "databases permit reading but not bulk redistribution, and those are marked",
+    "'headline-and-link' — we publish the citation and link out, nothing more.",
+    "",
+    "Judgment full text is NEVER republished. The site shows case name, court,",
+    "date, citation and a link to the official record. That is a fact set, it is",
+    "what a reader needs, and it keeps us clear of every database right."
+  ],
+  "sources": [
+    {
+      "jurisdiction": "south-korea",
+      "name": "Supreme Court of Korea — recent decisions",
+      "organisation": "대법원",
+      "url": "https://www.scourt.go.kr/portal/news/NewsListAction.work?gubun=702",
+      "kind": "html-index",
+      "language": "ko",
+      "licence": "Korean government works: free use under the Copyright Act art. 24-2",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "south-korea",
+      "name": "Ministry of Justice — press releases",
+      "organisation": "법무부",
+      "url": "https://www.moj.go.kr/bbs/moj/182/artclList.do",
+      "kind": "html-index",
+      "language": "ko",
+      "licence": "Korean government works: free use under the Copyright Act art. 24-2",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "south-korea",
+      "name": "Korea Law Information Centre",
+      "organisation": "국가법령정보센터",
+      "url": "https://www.law.go.kr/LSW/main.html",
+      "kind": "html-index",
+      "language": "ko",
+      "licence": "Korean government works: free use",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "japan",
+      "name": "Courts in Japan — judgments",
+      "organisation": "裁判所",
+      "url": "https://www.courts.go.jp/app/hanrei_jp/search1",
+      "kind": "html-index",
+      "language": "ja",
+      "licence": "Japanese government works: art. 13 excludes official texts from copyright",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "japan",
+      "name": "Ministry of Justice — announcements",
+      "organisation": "法務省",
+      "url": "https://www.moj.go.jp/press.html",
+      "kind": "html-index",
+      "language": "ja",
+      "licence": "Japanese government works: art. 13",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "united-kingdom",
+      "name": "Find Case Law — National Archives",
+      "organisation": "The National Archives",
+      "url": "https://caselaw.nationalarchives.gov.uk/atom.xml",
+      "kind": "atom",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "united-kingdom",
+      "name": "Courts and Tribunals Judiciary — judgments",
+      "organisation": "Judiciary of England and Wales",
+      "url": "https://www.judiciary.uk/feed/",
+      "kind": "rss",
+      "language": "en",
+      "licence": "Open Government Licence v3.0",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "united-states",
+      "name": "CourtListener — opinions",
+      "organisation": "Free Law Project",
+      "url": "https://www.courtlistener.com/api/rest/v4/opinions/?order_by=-date_created",
+      "kind": "json-api",
+      "language": "en",
+      "licence": "US federal judicial opinions are public domain; API is open",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "united-states",
+      "name": "Supreme Court of the United States — opinions",
+      "organisation": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/opinions/slipopinion/25",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "US government work — public domain",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "india",
+      "name": "Supreme Court of India — judgments",
+      "organisation": "Supreme Court of India",
+      "url": "https://www.sci.gov.in/judgements-judgement-date/",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "Indian government work; s.52(1)(q) permits reproduction of judgments",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "hong-kong",
+      "name": "Judiciary — legal reference system",
+      "organisation": "Judiciary of the HKSAR",
+      "url": "https://legalref.judiciary.hk/lrs/common/ju/judgment.jsp",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "headline-and-link",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "singapore",
+      "name": "Supreme Court — judgments",
+      "organisation": "Supreme Court of Singapore",
+      "url": "https://www.judiciary.gov.sg/judgments/judgments-case-summaries",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "headline-and-link",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "taiwan",
+      "name": "Judicial Yuan — law and regulations retrieving system",
+      "organisation": "司法院",
+      "url": "https://judgment.judicial.gov.tw/FJUD/default.aspx",
+      "kind": "html-index",
+      "language": "zh",
+      "licence": "Taiwanese government work — open government data terms",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "philippines",
+      "name": "Supreme Court — decisions",
+      "organisation": "Supreme Court of the Philippines",
+      "url": "https://sc.judiciary.gov.ph/jurisprudence/",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "Philippine government work — no copyright (IP Code s.176)",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "australia",
+      "name": "High Court of Australia — judgments",
+      "organisation": "High Court of Australia",
+      "url": "https://www.hcourt.gov.au/cases/judgments",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "CC BY 4.0 for most Commonwealth court material",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "canada",
+      "name": "Supreme Court of Canada — judgments",
+      "organisation": "Supreme Court of Canada",
+      "url": "https://decisions.scc-csc.ca/scc-csc/scc-csc/en/nav.do",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "Reproduction of federal court decisions permitted without permission",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "new-zealand",
+      "name": "Courts of New Zealand — judgments",
+      "organisation": "Courts of New Zealand",
+      "url": "https://www.courtsofnz.govt.nz/the-courts/supreme-court/case-summaries/",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "CC BY 4.0",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "ireland",
+      "name": "Courts Service — judgments",
+      "organisation": "Courts Service of Ireland",
+      "url": "https://www.courts.ie/judgments",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "headline-and-link",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "south-africa",
+      "name": "SAFLII — Constitutional Court",
+      "organisation": "Southern African Legal Information Institute",
+      "url": "https://www.saflii.org/za/cases/ZACC/",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "headline-and-link",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "european-union",
+      "name": "Court of Justice of the European Union — recent case law",
+      "organisation": "CJEU",
+      "url": "https://curia.europa.eu/jcms/jcms/Jo2_7052/en/",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "EU reuse decision 2011/833/EU — reuse permitted with attribution",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "germany",
+      "name": "Bundesgerichtshof — decisions",
+      "organisation": "Bundesgerichtshof",
+      "url": "https://www.bundesgerichtshof.de/DE/Entscheidungen/entscheidungen_node.html",
+      "kind": "html-index",
+      "language": "de",
+      "licence": "German official works: §5 UrhG places them outside copyright",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "france",
+      "name": "Cour de cassation — decisions",
+      "organisation": "Cour de cassation",
+      "url": "https://www.courdecassation.fr/recherche-judilibre",
+      "kind": "html-index",
+      "language": "fr",
+      "licence": "Open licence (Etalab) via Judilibre",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "malaysia",
+      "name": "Judiciary — judgments",
+      "organisation": "Kehakiman Malaysia",
+      "url": "https://www.kehakiman.gov.my/en/judgments",
+      "kind": "html-index",
+      "language": "en",
+      "licence": "headline-and-link",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "indonesia",
+      "name": "Supreme Court — decision directory",
+      "organisation": "Mahkamah Agung",
+      "url": "https://putusan3.mahkamahagung.go.id/direktori.html",
+      "kind": "html-index",
+      "language": "id",
+      "licence": "Indonesian government work",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "vietnam",
+      "name": "Supreme People's Court — published judgments",
+      "organisation": "Toà án nhân dân tối cao",
+      "url": "https://congbobanan.toaan.gov.vn/",
+      "kind": "html-index",
+      "language": "vi",
+      "licence": "Vietnamese government work",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "thailand",
+      "name": "Courts of Justice — announcements",
+      "organisation": "สำนักงานศาลยุติธรรม",
+      "url": "https://www.coj.go.th/th/content/category/index/id/8",
+      "kind": "html-index",
+      "language": "th",
+      "licence": "Thai government work",
+      "status": "unverified"
+    },
+    {
+      "jurisdiction": "china",
+      "name": "Supreme People's Court — announcements",
+      "organisation": "最高人民法院",
+      "url": "https://www.court.gov.cn/",
+      "kind": "html-index",
+      "language": "zh",
+      "licence": "headline-and-link",
+      "status": "unverified"
+    }
+  ]
+}

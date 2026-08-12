@@ -189,3 +189,45 @@ export async function getBriefsMeta() {
     total: BRIEFS_SNAPSHOT.briefs.length,
   };
 }
+
+import firmDetailsSnapshot from "@/data/firm_details.json";
+import type { FirmDetails } from "@/lib/types";
+
+const FIRM_DETAILS = firmDetailsSnapshot as { generatedAt: string; firms: FirmDetails[] };
+
+function detailKey(value: string): string {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+const DETAILS_BY_KEY = new Map<string, FirmDetails>(
+  FIRM_DETAILS.firms.flatMap((firm) => [
+    [detailKey(firm.slug), firm] as const,
+    [detailKey(firm.name), firm] as const,
+  ]),
+);
+
+/**
+ * Detail records are keyed by the crawler's own slug, which is derived from the
+ * firm's name and does not always match the directory slug the site routes on
+ * ("bae-kim-lee" against "bae-kim-and-lee"). Matching on a punctuation-stripped
+ * key covers both without maintaining a mapping table by hand.
+ */
+export async function getFirmDetails(
+  slug: string,
+  name?: string,
+): Promise<FirmDetails | null> {
+  return (
+    DETAILS_BY_KEY.get(detailKey(slug)) ??
+    (name ? DETAILS_BY_KEY.get(detailKey(name)) : undefined) ??
+    null
+  );
+}
+
+export async function getFirmDetailsMeta() {
+  return {
+    generatedAt: FIRM_DETAILS.generatedAt,
+    total: FIRM_DETAILS.firms.length,
+    withPhone: FIRM_DETAILS.firms.filter((f) => f.phones.length > 0).length,
+    withHeadcount: FIRM_DETAILS.firms.filter((f) => f.headcount !== null).length,
+  };
+}

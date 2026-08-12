@@ -5,6 +5,7 @@ import { ExternalLink } from "lucide-react";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
 import {
   getFirmBySlug,
+  getFirmDetails,
   getFirmPeers,
   getJurisdictionBySlug,
   listFirms,
@@ -37,9 +38,10 @@ export default async function FirmPage({ params }: Props) {
 
   if (!firm) notFound();
 
-  const [peers, entry] = await Promise.all([
+  const [peers, entry, details] = await Promise.all([
     getFirmPeers(firm),
     getJurisdictionBySlug(firm.jurisdiction.slug),
+    getFirmDetails(firm.slug, firm.name),
   ]);
 
   return (
@@ -84,6 +86,130 @@ export default async function FirmPage({ params }: Props) {
     >
       <div className="grid gap-16 py-14 lg:grid-cols-[1fr_320px] lg:gap-16">
         <div>
+          {details ? (
+            <section className="mb-14">
+              <h2 className="label border-b-2 border-ink pb-2 text-ink">
+                Firm information
+              </h2>
+
+              <p className="editorial measure mt-4 text-sm leading-relaxed text-ink-muted">
+                Read from {firm.name}&rsquo;s own website on{" "}
+                {new Date(details.checkedAt).toLocaleDateString("en-GB", {
+                  day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
+                })}
+                . Each value links to the page it was taken from. Fields the firm
+                does not publish are left blank rather than estimated.
+              </p>
+
+              <dl className="mt-6 divide-y divide-rule/70 border-y border-rule/70">
+                {details.headcount !== null ? (
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                    <dt className="label text-ink-faint">Professionals</dt>
+                    <dd>
+                      <span className="rank-figure text-xl text-ink">
+                        {details.headcount.toLocaleString("en-GB")}
+                      </span>
+                      {details.headcountQuote ? (
+                        <p className="editorial mt-1.5 text-xs italic leading-relaxed text-ink-faint">
+                          &ldquo;…{details.headcountQuote}…&rdquo;
+                        </p>
+                      ) : null}
+                    </dd>
+                  </div>
+                ) : null}
+
+                {details.phones.length > 0 ? (
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                    <dt className="label text-ink-faint">Telephone</dt>
+                    <dd className="figure text-base text-ink">
+                      {details.phones.map((phone) => (
+                        <a
+                          key={phone}
+                          href={`tel:${phone}`}
+                          className="mr-4 link-underline"
+                        >
+                          {phone}
+                        </a>
+                      ))}
+                    </dd>
+                  </div>
+                ) : null}
+
+                {details.emails.length > 0 ? (
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                    <dt className="label text-ink-faint">Email</dt>
+                    <dd className="editorial text-base text-ink">
+                      {details.emails.map((email) => (
+                        <a
+                          key={email}
+                          href={`mailto:${email}`}
+                          className="mr-4 link-underline"
+                        >
+                          {email}
+                        </a>
+                      ))}
+                    </dd>
+                  </div>
+                ) : null}
+
+                <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                  <dt className="label text-ink-faint">Website</dt>
+                  <dd>
+                    <a
+                      href={details.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="editorial inline-flex items-center gap-1.5 text-base text-ink link-underline"
+                    >
+                      {details.website.replace(/^https?:\/\//, "")}
+                      <ExternalLink className="h-3.5 w-3.5 text-ink-faint" />
+                    </a>
+                  </dd>
+                </div>
+
+                {details.practiceAreas.length > 0 ? (
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                    <dt className="label text-ink-faint">Practice areas</dt>
+                    <dd className="editorial text-base leading-relaxed text-ink">
+                      {details.practiceAreas.join(" · ")}
+                      <p className="label mt-2 text-ink-faint">
+                        Named on the firm&rsquo;s own site; not a ranking
+                      </p>
+                    </dd>
+                  </div>
+                ) : null}
+              </dl>
+
+              {Object.keys(details.sources).length > 0 ? (
+                <p className="label mt-4 text-ink-faint">
+                  Sources:{" "}
+                  {Object.entries(details.sources).map(([field, url], index) => (
+                    <span key={field}>
+                      {index > 0 ? " · " : ""}
+                      <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-underline"
+                      >
+                        {field}
+                      </a>
+                    </span>
+                  ))}
+                </p>
+              ) : null}
+
+              <div className="measure mt-6 border-l-2 border-rule-strong pl-5">
+                <p className="editorial text-sm leading-relaxed text-ink-muted">
+                  Revenue and awards are not shown. Most firms outside the United
+                  Kingdom publish no revenue figure, and award tables belong to the
+                  directories that compiled them — only a firm&rsquo;s own
+                  announcement would be usable here.
+                </p>
+              </div>
+            </section>
+          ) : null}
+
           <section>
             <h2 className="label border-b-2 border-ink pb-2 text-ink">
               Record

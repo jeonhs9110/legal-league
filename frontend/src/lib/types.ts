@@ -136,3 +136,23 @@ export type BriefsSnapshot = {
   currentModel: string;
   briefs: Brief[];
 };
+
+/**
+ * Fields read from a firm's own website by the directory crawler. Every one is
+ * optional: a firm that does not publish its headcount is listed without one,
+ * and `sources` records the page each value came from so a disputed figure can
+ * be traced without asking us.
+ */
+export type FirmDetails = {
+  slug: string;
+  name: string;
+  jurisdiction: string;
+  website: string;
+  emails: string[];
+  phones: string[];
+  practiceAreas: string[];
+  headcount: number | null;
+  headcountQuote: string | null;
+  sources: Partial<Record<"emails" | "phones" | "headcount" | "practiceAreas", string>>;
+  checkedAt: string;
+};
