@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T14:11:09.113059Z",
+  "generatedAt": "2026-08-12T15:29:02.034389Z",
   "similarityThreshold": 0.24,
   "minArticles": 2,
   "minSources": 2,
@@ -31,40 +31,6 @@
           "sourceSlug": "legal-futures",
           "canonicalUrl": "https://www.legalfutures.co.uk/associate-news/cyber-insurance-addressing-common-misconceptions",
           "publishedAt": "2026-08-11T08:00:54Z"
-        }
-      ]
-    },
-    {
-      "id": "c7cd1e14512d",
-      "sharedTerms": [
-        "off",
-        "struck"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "48676cb1e291d657",
-          "title": "Junior solicitor struck off after asking colleague to hide file",
-          "sourceName": "Legal Cheek",
-          "sourceSlug": "legal-cheek",
-          "canonicalUrl": "https://www.legalcheek.com/2026/08/junior-solicitor-struck-off-after-asking-colleague-to-hide-file",
-          "publishedAt": "2026-08-10T06:56:15Z"
-        },
-        {
-          "id": "9152984e82540ca6",
-          "title": "Junior solicitor struck off for misleading probate clients",
-          "sourceName": "Legal Futures",
-          "sourceSlug": "legal-futures",
-          "canonicalUrl": "https://www.legalfutures.co.uk/latest-news/junior-solicitor-struck-off-for-misleading-probate-clients",
-          "publishedAt": "2025-01-06T00:03:02Z"
-        },
-        {
-          "id": "41e6db6cd9cb2c2e",
-          "title": "Partners struck off for misleading HM Land Registry",
-          "sourceName": "Legal Futures",
-          "sourceSlug": "legal-futures",
-          "canonicalUrl": "https://www.legalfutures.co.uk/compliance-and-regulation/partners-struck-off-for-misleading-hm-land-registry",
-          "publishedAt": "2025-01-02T00:05:24Z"
         }
       ]
     }
