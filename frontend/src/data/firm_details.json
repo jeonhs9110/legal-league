@@ -1,7 +1,2071 @@
 {
-  "generatedAt": "1970-01-01T00:00:00Z",
-  "method": "placeholder; overwritten by the first completed crawl",
-  "firmCount": 0,
-  "rejected": [],
-  "firms": []
+  "generatedAt": "2026-08-12T17:01:37.871521Z",
+  "method": "Fields read from each firm's own website; every field records the page it came from. Firms are ordered by the professional headcount they publish, and firms that publish none are listed without a figure. No ranking is implied.",
+  "firmCount": 59,
+  "rejected": [
+    {
+      "name": "Lee & Ko",
+      "domain": "leeko.com",
+      "jurisdiction": "south-korea",
+      "reason": "site renders only in a browser and did not render here"
+    },
+    {
+      "name": "Shin & Kim",
+      "domain": "shinkim.com",
+      "jurisdiction": "south-korea",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Yulchon",
+      "domain": "yulchon.com",
+      "jurisdiction": "south-korea",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "KL Partners",
+      "domain": "klpartners.com",
+      "jurisdiction": "south-korea",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Nishimura & Asahi",
+      "domain": "nishimura.com",
+      "jurisdiction": "japan",
+      "reason": "HTTP 403"
+    },
+    {
+      "name": "Mori Hamada & Matsumoto",
+      "domain": "morihamada.com",
+      "jurisdiction": "japan",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "Atsumi & Sakai",
+      "domain": "aplaw.jp",
+      "jurisdiction": "japan",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "Ushijima & Partners",
+      "domain": "ushijima-law.gr.jp",
+      "jurisdiction": "japan",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Tsar & Tsai Law Firm",
+      "domain": "tsartsai.com.tw",
+      "jurisdiction": "taiwan",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Winkler Partners",
+      "domain": "winklerpartners.com",
+      "jurisdiction": "taiwan",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Eiger Law",
+      "domain": "eiger.law",
+      "jurisdiction": "taiwan",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Formosan Brothers",
+      "domain": "formosan.com.tw",
+      "jurisdiction": "taiwan",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "Innovation Law",
+      "domain": "innovationlaw.com.tw",
+      "jurisdiction": "taiwan",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "King & Wood Mallesons",
+      "domain": "kwm.com",
+      "jurisdiction": "china",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Zhong Lun Law Firm",
+      "domain": "zhonglun.com",
+      "jurisdiction": "china",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "Haiwen & Partners",
+      "domain": "haiwen-law.com",
+      "jurisdiction": "china",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "Jingtian & Gongcheng",
+      "domain": "jingtian.com",
+      "jurisdiction": "china",
+      "reason": "site renders only in a browser and did not render here"
+    },
+    {
+      "name": "Deacons",
+      "domain": "deacons.com",
+      "jurisdiction": "hong-kong",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "ONC Lawyers",
+      "domain": "onc.hk",
+      "jurisdiction": "hong-kong",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Tanner De Witt",
+      "domain": "tannerdewitt.com",
+      "jurisdiction": "hong-kong",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Howse Williams",
+      "domain": "howsewilliams.com",
+      "jurisdiction": "hong-kong",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Haldanes",
+      "domain": "haldanes.com",
+      "jurisdiction": "hong-kong",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Wilkinson & Grist",
+      "domain": "wilgrist.com",
+      "jurisdiction": "hong-kong",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Boase Cohen & Collins",
+      "domain": "boasecohencollins.com",
+      "jurisdiction": "hong-kong",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Stevenson, Wong & Co",
+      "domain": "sw-hk.com",
+      "jurisdiction": "hong-kong",
+      "reason": "HTTP 307"
+    },
+    {
+      "name": "SyCip Salazar Hernandez & Gatmaitan",
+      "domain": "syciplaw.com",
+      "jurisdiction": "philippines",
+      "reason": "HTTP 403"
+    },
+    {
+      "name": "ACCRALAW",
+      "domain": "accralaw.com",
+      "jurisdiction": "philippines",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Cruz Marcelo & Tenefrancia",
+      "domain": "cruzmarcelo.com",
+      "jurisdiction": "philippines",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Puyat Jacinto & Santos",
+      "domain": "pjslaw.com",
+      "jurisdiction": "philippines",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Quisumbing Torres",
+      "domain": "quisumbingtorres.com",
+      "jurisdiction": "philippines",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "JSA Advocates & Solicitors",
+      "domain": "jsalaw.com",
+      "jurisdiction": "india",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "S&R Associates",
+      "domain": "snrlaw.in",
+      "jurisdiction": "india",
+      "reason": "page does not identify itself as this firm"
+    },
+    {
+      "name": "Talwar Thakore & Associates",
+      "domain": "ttalaw.in",
+      "jurisdiction": "india",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "Saraf and Partners",
+      "domain": "sarafpartners.com",
+      "jurisdiction": "india",
+      "reason": "page does not identify itself as this firm"
+    },
+    {
+      "name": "Lee Hishammuddin Allen & Gledhill",
+      "domain": "lh-ag.com",
+      "jurisdiction": "malaysia",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Christopher & Lee Ong",
+      "domain": "christopherleeong.com",
+      "jurisdiction": "malaysia",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Raja, Darryl & Loh",
+      "domain": "rdl.com.my",
+      "jurisdiction": "malaysia",
+      "reason": "connection failed ([WinError 10060] 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어)"
+    },
+    {
+      "name": "Adnan Sundra & Low",
+      "domain": "asl.com.my",
+      "jurisdiction": "malaysia",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Zul Rafique & Partners",
+      "domain": "zulrafique.com.my",
+      "jurisdiction": "malaysia",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Zaid Ibrahim & Co",
+      "domain": "zicolaw.com",
+      "jurisdiction": "malaysia",
+      "reason": "page does not identify itself as this firm"
+    },
+    {
+      "name": "Assegaf Hamzah & Partners",
+      "domain": "ahp.co.id",
+      "jurisdiction": "indonesia",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "SSEK Law Firm",
+      "domain": "ssek.com",
+      "jurisdiction": "indonesia",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Makarim & Taira S",
+      "domain": "makarim.com",
+      "jurisdiction": "indonesia",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Lubis Ganie Surowidjojo",
+      "domain": "lgslaw.co.id",
+      "jurisdiction": "indonesia",
+      "reason": "domain does not exist in DNS"
+    },
+    {
+      "name": "Soemadipradja & Taher",
+      "domain": "soemath.com",
+      "jurisdiction": "indonesia",
+      "reason": "connection failed ([SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error)"
+    },
+    {
+      "name": "Hiswara Bunjamin & Tandjung",
+      "domain": "hbtlaw.com",
+      "jurisdiction": "indonesia",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Hadiputranto, Hadinoto & Partners",
+      "domain": "hhp.co.id",
+      "jurisdiction": "indonesia",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "VILAF",
+      "domain": "vilaf.com.vn",
+      "jurisdiction": "vietnam",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Rajah & Tann LCT Lawyers",
+      "domain": "rajahtannlct.com",
+      "jurisdiction": "vietnam",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Frasers Law Company",
+      "domain": "frasersvn.com",
+      "jurisdiction": "vietnam",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Indochine Counsel",
+      "domain": "indochinecounsel.com",
+      "jurisdiction": "vietnam",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "ASL Law",
+      "domain": "aslgate.com",
+      "jurisdiction": "vietnam",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Bizconsult",
+      "domain": "bizconsult.vn",
+      "jurisdiction": "vietnam",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Tilleke & Gibbins",
+      "domain": "tilleke.com",
+      "jurisdiction": "thailand",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Weerawong, Chinnavat & Partners",
+      "domain": "weerawongcp.com",
+      "jurisdiction": "thailand",
+      "reason": "page does not identify itself as this firm"
+    },
+    {
+      "name": "Chandler MHM",
+      "domain": "chandlermhm.com",
+      "jurisdiction": "thailand",
+      "reason": "connection failed ([WinError 10060] 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어)"
+    },
+    {
+      "name": "Siam Premier International Law Office",
+      "domain": "siamlaw.co.th",
+      "jurisdiction": "thailand",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Blumenthal Richter & Sumet",
+      "domain": "brslawyers.com",
+      "jurisdiction": "thailand",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Pisut & Partners",
+      "domain": "pisutandpartners.com",
+      "jurisdiction": "thailand",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Dherakupt International Law Office",
+      "domain": "dherakupt.co.th",
+      "jurisdiction": "thailand",
+      "reason": "TLS certificate did not match this hostname"
+    },
+    {
+      "name": "Rajah & Tann Singapore",
+      "domain": "rajahtannasia.com",
+      "jurisdiction": "singapore",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Dentons Rodyk",
+      "domain": "dentons.rodyk.com",
+      "jurisdiction": "singapore",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Harry Elias Partnership",
+      "domain": "harryelias.com",
+      "jurisdiction": "singapore",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "Withers KhattarWong",
+      "domain": "witherskhattarwong.com",
+      "jurisdiction": "singapore",
+      "reason": "page does not identify itself as this firm"
+    },
+    {
+      "name": "Bih Li & Lee",
+      "domain": "bihlilee.com.sg",
+      "jurisdiction": "singapore",
+      "reason": "connection failed ([WinError 10060] 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어)"
+    }
+  ],
+  "firms": [
+    {
+      "slug": "trilegal",
+      "name": "Trilegal",
+      "jurisdiction": "india",
+      "website": "https://trilegal.com",
+      "emails": [
+        "aayush.kumar@trilegal.com",
+        "abhinav.maker@trilegal.com",
+        "abhishek.dubey@trilegal.com"
+      ],
+      "phones": [
+        "+912240790998",
+        "+912249108000",
+        "+919930981190"
+      ],
+      "practiceAreas": [
+        "Banking",
+        "Compliance",
+        "Data Protection",
+        "Finance",
+        "Insurance",
+        "Intellectual Property",
+        "Tax",
+        "Telecommunications"
+      ],
+      "headcount": 1300,
+      "headcountQuote": "der a distinctive lockstep model, Trilegal is the largest equity partnership in the country. The firm retains over 1,300 professionals across its Mumbai, Delhi, Gurugram, Bengaluru, Chennai, Pune, and GIFT City offices. &nbsp;Trilegal has consi",
+      "sources": {
+        "practiceAreas": "https://trilegal.com",
+        "headcount": "https://trilegal.com/about-the-firm/",
+        "emails": "https://trilegal.com/our-people/",
+        "phones": "https://trilegal.com/our-people/"
+      },
+      "checkedAt": "2026-08-12T17:36:51.991638Z"
+    },
+    {
+      "slug": "cyril-amarchand-mangaldas",
+      "name": "Cyril Amarchand Mangaldas",
+      "jurisdiction": "india",
+      "website": "https://cyrilshroff.com",
+      "emails": [
+        "cam.mumbai@cyrilshroff.com",
+        "cam.delhi@cyrilshroff.com",
+        "cam.bengaluru@cyrilshroff.com"
+      ],
+      "phones": [
+        "+912266604455",
+        "+911206699000",
+        "+918067922000"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Banking",
+        "Bankruptcy",
+        "Capital Markets",
+        "Corporate",
+        "Employment",
+        "Energy",
+        "Finance",
+        "Fintech",
+        "Healthcare"
+      ],
+      "headcount": 1000,
+      "headcountQuote": "yril Amarchand Mangaldas (cam), foresight, expertise and innovation are at the core of everything we do. With 1000+ lawyers, six pan-India locations, an office in IFSC (Gift City), Singapore and Abu Dhabi, we are India’s leading full",
+      "sources": {
+        "practiceAreas": "https://cyrilshroff.com",
+        "emails": "https://cyrilshroff.com/contact-us/",
+        "phones": "https://cyrilshroff.com/contact-us/",
+        "headcount": "https://cyrilshroff.com/insight/our-firm/"
+      },
+      "checkedAt": "2026-08-12T17:33:53.220891Z"
+    },
+    {
+      "slug": "shardul-amarchand-mangaldas-co",
+      "name": "Shardul Amarchand Mangaldas & Co",
+      "jurisdiction": "india",
+      "website": "https://amsshardul.com",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [
+        "Capital Markets",
+        "Intellectual Property",
+        "Litigation",
+        "Regulatory"
+      ],
+      "headcount": 1000,
+      "headcountQuote": "legal and business-critical advice. &nbsp; Committed to investing in the brightest legal talent, the Firm has over 1000 lawyers who with 193 partners, offer solutions across diverse practice areas for industries, the central government a",
+      "sources": {
+        "practiceAreas": "https://amsshardul.com",
+        "headcount": "https://amsshardul.com/about"
+      },
+      "checkedAt": "2026-08-12T17:34:46.569325Z"
+    },
+    {
+      "slug": "allen-gledhill",
+      "name": "Allen & Gledhill",
+      "jurisdiction": "singapore",
+      "website": "https://allenandgledhill.com",
+      "emails": [
+        "sg.enquiries@agasia.law",
+        "enquiries@rahmatlim.com",
+        "mm.enquiries@agasia.law"
+      ],
+      "phones": [
+        "+6568907188",
+        "+6563273800",
+        "+60322993888"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Arbitration",
+        "Aviation",
+        "Banking",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Employment",
+        "Energy",
+        "Finance"
+      ],
+      "headcount": 650,
+      "headcountQuote": "ose interest rest beyond Singapore borders. The Allen &amp; Gledhill network, known as A&amp;G Asia, includes over 650 lawyers regularly working on cross-border transactions in the cities of Asia and the world. We have extensive experie",
+      "sources": {
+        "emails": "https://allenandgledhill.com",
+        "phones": "https://allenandgledhill.com",
+        "practiceAreas": "https://allenandgledhill.com",
+        "headcount": "https://allenandgledhill.com/about-us/"
+      },
+      "checkedAt": "2026-08-12T17:57:53.300716Z"
+    },
+    {
+      "slug": "wongpartnership",
+      "name": "WongPartnership",
+      "jurisdiction": "singapore",
+      "website": "https://wongpartnership.com",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [
+        "Arbitration",
+        "Banking",
+        "Corporate",
+        "Dispute Resolution",
+        "Finance",
+        "Intellectual Property",
+        "Litigation",
+        "Regulatory",
+        "Tax",
+        "Technology"
+      ],
+      "headcount": 400,
+      "headcountQuote": "ber firms in Abu Dhabi, Dubai, Indonesia, Malaysia and the Philippines. Together, WPG offers the expertise of over 400 professionals to meet the needs of our clients throughout the region. Read More Find Your Lawyer Advanced Search Practice A",
+      "sources": {
+        "headcount": "https://wongpartnership.com",
+        "practiceAreas": "https://wongpartnership.com"
+      },
+      "checkedAt": "2026-08-12T17:58:52.642535Z"
+    },
+    {
+      "slug": "shook-lin-bok",
+      "name": "Shook Lin & Bok",
+      "jurisdiction": "singapore",
+      "website": "https://shooklin.com",
+      "emails": [
+        "slb@shooklin.com"
+      ],
+      "phones": [
+        "+6565351944"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Banking",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Employment",
+        "Energy"
+      ],
+      "headcount": 150,
+      "headcountQuote": "eamless coordination and international perspective. Explore Our Reach  107 Years of History 21 Key Practices 150 + Fee Earners Client Centric Full-Service Expertise As a leading full-service law firm in Singapore, we deliver tailored, t",
+      "sources": {
+        "headcount": "https://shooklin.com",
+        "practiceAreas": "https://shooklin.com",
+        "emails": "https://shooklin.com/contact-us/",
+        "phones": "https://shooklin.com/contact-us/"
+      },
+      "checkedAt": "2026-08-12T18:02:17.428369Z"
+    },
+    {
+      "slug": "lnt-partners",
+      "name": "LNT & Partners",
+      "jurisdiction": "vietnam",
+      "website": "https://lntpartners.com",
+      "emails": [
+        "info@lntpartners.com"
+      ],
+      "phones": [
+        "+842838212357",
+        "+842438248522"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Banking",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Employment",
+        "Energy",
+        "Environment",
+        "Finance",
+        "Healthcare"
+      ],
+      "headcount": 100,
+      "headcountQuote": "ve Legal Solutions Create values for clients with innovative solutions About us Principled Connected Positive 100+ Professionals 13 Partners 2 Offices in Vietnam 14+ Industries served Expertise Whatever sector your business operates in, w",
+      "sources": {
+        "headcount": "https://lntpartners.com",
+        "practiceAreas": "https://lntpartners.com",
+        "emails": "https://lntpartners.com/contact",
+        "phones": "https://lntpartners.com/contact"
+      },
+      "checkedAt": "2026-08-12T17:49:00.404502Z"
+    },
+    {
+      "slug": "miura-partners",
+      "name": "Miura & Partners",
+      "jurisdiction": "japan",
+      "website": "https://miura-partners.com",
+      "emails": [],
+      "phones": [
+        "+81362703500",
+        "+81362680820",
+        "+81355774951"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Corporate",
+        "Employment",
+        "Finance",
+        "Fintech",
+        "Healthcare",
+        "Intellectual Property",
+        "International Trade",
+        "Litigation",
+        "Regulatory",
+        "Tax"
+      ],
+      "headcount": 100,
+      "headcountQuote": "ill take charge of the matter by assembling professionals from various practice areas. As a new law firm with around 100 professionals, we work together and know each other well. The small size enables us to build the effective teams. Miura & P",
+      "sources": {
+        "headcount": "https://miura-partners.com/en/about/",
+        "practiceAreas": "https://miura-partners.com/en/about/",
+        "phones": "https://miura-partners.com/en/access/"
+      },
+      "checkedAt": "2026-08-12T17:11:27.334343Z"
+    },
+    {
+      "slug": "rahmat-lim-partners",
+      "name": "Rahmat Lim & Partners",
+      "jurisdiction": "malaysia",
+      "website": "https://rahmatlim.com",
+      "emails": [
+        "sg.enquiries@agasia.law",
+        "enquiries@rahmatlim.com",
+        "mm.enquiries@agasia.law"
+      ],
+      "phones": [
+        "+6568907188",
+        "+6563273800",
+        "+60322993888"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Aviation",
+        "Banking",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Employment",
+        "Energy"
+      ],
+      "headcount": 100,
+      "headcountQuote": "rs, Rahmat Lim &amp; Partners has grown to become one of the largest full-service law firms in Malaysia. With over 100 lawyers in Kuala Lumpur, and as part of the Allen &amp; Gledhill network , known as A&amp;G Asia, we handle a wide ra",
+      "sources": {
+        "emails": "https://rahmatlim.com",
+        "phones": "https://rahmatlim.com",
+        "practiceAreas": "https://rahmatlim.com",
+        "headcount": "https://rahmatlim.com/about-us/"
+      },
+      "checkedAt": "2026-08-12T17:40:37.733606Z"
+    },
+    {
+      "slug": "shearn-delamore-co",
+      "name": "Shearn Delamore & Co",
+      "jurisdiction": "malaysia",
+      "website": "https://shearndelamore.com",
+      "emails": [
+        "info@shearndelamore.com"
+      ],
+      "phones": [
+        "+60320272727",
+        "+6072211282"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Aviation",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Employment",
+        "Energy"
+      ],
+      "headcount": 100,
+      "headcountQuote": "ning full-service law firms in the country with over 100 lawyers and 300 support staff. 100+ Years in History 100+ Lawyers 30+ Practice Areas 300+ Accolades & Recognition a look into Our Practice Areas Corporate & Commercial Corpora",
+      "sources": {
+        "emails": "https://shearndelamore.com",
+        "phones": "https://shearndelamore.com",
+        "headcount": "https://shearndelamore.com",
+        "practiceAreas": "https://shearndelamore.com"
+      },
+      "checkedAt": "2026-08-12T17:40:22.294271Z"
+    },
+    {
+      "slug": "vision-associates",
+      "name": "Vision & Associates",
+      "jurisdiction": "vietnam",
+      "website": "https://vision-associates.com",
+      "emails": [
+        "vision@vision-associates.com",
+        "hcmvision@vision-associates.com"
+      ],
+      "phones": [],
+      "practiceAreas": [
+        "Construction",
+        "Corporate",
+        "Employment",
+        "Intellectual Property",
+        "Litigation",
+        "Technology"
+      ],
+      "headcount": 90,
+      "headcountQuote": "tes and staff have varied legal, financial and technical backgrounds. Vision &amp; Associates is staffed with over 90 lawyers, patent &amp; trademark attorneys and consultants. The Firm is structured into three practice groups, namely",
+      "sources": {
+        "emails": "https://vision-associates.com",
+        "headcount": "https://vision-associates.com",
+        "practiceAreas": "https://vision-associates.com"
+      },
+      "checkedAt": "2026-08-12T17:50:04.498330Z"
+    },
+    {
+      "slug": "tsmp-law-corporation",
+      "name": "TSMP Law Corporation",
+      "jurisdiction": "singapore",
+      "website": "https://tsmplaw.com",
+      "emails": [
+        "tsmp@tsmplaw.com"
+      ],
+      "phones": [
+        "+6565344877"
+      ],
+      "practiceAreas": [
+        "Arbitration",
+        "Banking",
+        "Capital Markets",
+        "Construction",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Finance",
+        "Insolvency",
+        "Labour",
+        "Litigation",
+        "Mergers and Acquisitions"
+      ],
+      "headcount": 60,
+      "headcountQuote": "and Ms Tan Bee Lian, both iconic law figures who honed their craft at Singapore’s largest firms. Today, we’re over 60 lawyers strong, with a pre-eminent reputation locally, as well as an enviable international clientele. 2 Foreign Desk",
+      "sources": {
+        "emails": "https://tsmplaw.com",
+        "phones": "https://tsmplaw.com",
+        "practiceAreas": "https://tsmplaw.com",
+        "headcount": "https://tsmplaw.com/about/"
+      },
+      "checkedAt": "2026-08-12T18:02:39.709610Z"
+    },
+    {
+      "slug": "azb-partners",
+      "name": "AZB & Partners",
+      "jurisdiction": "india",
+      "website": "https://www.azbpartners.com",
+      "emails": [
+        "mumbai@azbpartners.com",
+        "delhi@azbpartners.com",
+        "bangalore@azbpartners.com"
+      ],
+      "phones": [
+        "+912240729999",
+        "+912240729888",
+        "+912240729793"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Aviation",
+        "Banking",
+        "Capital Markets",
+        "Compliance",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Finance"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://www.azbpartners.com",
+        "emails": "https://www.azbpartners.com/contact/",
+        "phones": "https://www.azbpartners.com/contact/"
+      },
+      "checkedAt": "2026-08-12T17:37:15.244251Z"
+    },
+    {
+      "slug": "albar-partners",
+      "name": "Albar & Partners",
+      "jurisdiction": "malaysia",
+      "website": "https://albar.com.my",
+      "emails": [],
+      "phones": [
+        "+60378903288",
+        "+60378903266"
+      ],
+      "practiceAreas": [
+        "Banking",
+        "Capital Markets",
+        "Corporate",
+        "Finance",
+        "Litigation"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://albar.com.my",
+        "phones": "https://albar.com.my/contact-us"
+      },
+      "checkedAt": "2026-08-12T17:41:31.754041Z"
+    },
+    {
+      "slug": "ali-budiardjo-nugroho-reksodiputro",
+      "name": "Ali Budiardjo, Nugroho, Reksodiputro",
+      "jurisdiction": "indonesia",
+      "website": "https://abnrlaw.com",
+      "emails": [
+        "info@abnrlaw.com"
+      ],
+      "phones": [
+        "+62212505125",
+        "+62212505001"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://abnrlaw.com",
+        "phones": "https://abnrlaw.com"
+      },
+      "checkedAt": "2026-08-12T17:44:12.872068Z"
+    },
+    {
+      "slug": "allbright-law-offices",
+      "name": "AllBright Law Offices",
+      "jurisdiction": "china",
+      "website": "https://www.allbrightlaw.com",
+      "emails": [
+        "legal@allbrightlaw.com",
+        "shanghai@allbrightlaw.com"
+      ],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.allbrightlaw.com"
+      },
+      "checkedAt": "2026-08-12T17:24:38.785366Z"
+    },
+    {
+      "slug": "anderson-mori-tomotsune",
+      "name": "Anderson Mori & Tomotsune",
+      "jurisdiction": "japan",
+      "website": "https://amt-law.com",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [
+        "Capital Markets",
+        "Corporate",
+        "Energy",
+        "Finance",
+        "Fintech",
+        "International Trade"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://amt-law.com"
+      },
+      "checkedAt": "2026-08-12T17:07:05.552939Z"
+    },
+    {
+      "slug": "bae-kim-lee",
+      "name": "Bae, Kim & Lee",
+      "jurisdiction": "south-korea",
+      "website": "https://bkl.co.kr",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Bankruptcy",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Employment",
+        "Energy",
+        "Environment"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://bkl.co.kr"
+      },
+      "checkedAt": "2026-08-12T17:02:57.514139Z"
+    },
+    {
+      "slug": "barun-law",
+      "name": "Barun Law",
+      "jurisdiction": "south-korea",
+      "website": "https://barunlaw.com",
+      "emails": [
+        "contact@barunlaw.com"
+      ],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://barunlaw.com"
+      },
+      "checkedAt": "2026-08-12T17:05:16.540367Z"
+    },
+    {
+      "slug": "castillo-laman-tan-pantaleon-san-jose",
+      "name": "Castillo Laman Tan Pantaleon & San Jose",
+      "jurisdiction": "philippines",
+      "website": "https://cltpsj.com.ph",
+      "emails": [
+        "counsel@cltpsj.com.ph",
+        "tmp@cltpsj.com.ph",
+        "acctg@cltpsj.com.ph"
+      ],
+      "phones": [
+        "+63288176791",
+        "+63288192724",
+        "+63288175938"
+      ],
+      "practiceAreas": [
+        "Compliance",
+        "Corporate",
+        "Dispute Resolution",
+        "Finance",
+        "Immigration",
+        "Intellectual Property",
+        "Litigation",
+        "Project Finance",
+        "Securities"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://cltpsj.com.ph",
+        "phones": "https://cltpsj.com.ph",
+        "practiceAreas": "https://cltpsj.com.ph"
+      },
+      "checkedAt": "2026-08-12T17:30:17.269325Z"
+    },
+    {
+      "slug": "chen-lin",
+      "name": "Chen & Lin",
+      "jurisdiction": "taiwan",
+      "website": "https://chenandlin.com",
+      "emails": [],
+      "phones": [
+        "+886227150270",
+        "+88673119928"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Compliance",
+        "Data Protection",
+        "Investigations",
+        "Litigation",
+        "Technology"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://chenandlin.com",
+        "practiceAreas": "https://chenandlin.com"
+      },
+      "checkedAt": "2026-08-12T17:18:21.608034Z"
+    },
+    {
+      "slug": "city-yuwa-partners",
+      "name": "City-Yuwa Partners",
+      "jurisdiction": "japan",
+      "website": "https://city-yuwa.com",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {},
+      "checkedAt": "2026-08-12T17:09:47.176438Z"
+    },
+    {
+      "slug": "commerce-finance-law-offices",
+      "name": "Commerce & Finance Law Offices",
+      "jurisdiction": "china",
+      "website": "https://www.tongshang.com",
+      "emails": [
+        "beijing@tongshang.com"
+      ],
+      "phones": [
+        "+861065637181",
+        "+861065693838"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.tongshang.com",
+        "phones": "https://www.tongshang.com"
+      },
+      "checkedAt": "2026-08-12T17:23:48.631398Z"
+    },
+    {
+      "slug": "dr-aju",
+      "name": "DR & AJU",
+      "jurisdiction": "south-korea",
+      "website": "https://draju.com",
+      "emails": [
+        "draju@draju.com"
+      ],
+      "phones": [
+        "+8225630298"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://draju.com",
+        "phones": "https://draju.com"
+      },
+      "checkedAt": "2026-08-12T17:06:12.201990Z"
+    },
+    {
+      "slug": "drew-napier",
+      "name": "Drew & Napier",
+      "jurisdiction": "singapore",
+      "website": "https://www.drewnapier.com",
+      "emails": [
+        "hrrecruit@drewnapier.com",
+        "mail@drewnapier.com"
+      ],
+      "phones": [],
+      "practiceAreas": [
+        "Competition",
+        "Arbitration",
+        "Aviation",
+        "Banking",
+        "Capital Markets",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Family"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.drewnapier.com",
+        "practiceAreas": "https://www.drewnapier.com"
+      },
+      "checkedAt": "2026-08-12T18:01:25.761578Z"
+    },
+    {
+      "slug": "fangda-partners",
+      "name": "Fangda Partners",
+      "jurisdiction": "china",
+      "website": "https://fangdalaw.com",
+      "emails": [
+        "email@fangdalaw.com"
+      ],
+      "phones": [
+        "+861057695600",
+        "+862032253888",
+        "+8685239768888"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://fangdalaw.com",
+        "phones": "https://fangdalaw.com/about/office.html"
+      },
+      "checkedAt": "2026-08-12T17:19:22.101299Z"
+    },
+    {
+      "slug": "formosa-transnational",
+      "name": "Formosa Transnational",
+      "jurisdiction": "taiwan",
+      "website": "https://www.taiwanlaw.com",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {},
+      "checkedAt": "2026-08-12T17:15:46.055938Z"
+    },
+    {
+      "slug": "gall",
+      "name": "Gall",
+      "jurisdiction": "hong-kong",
+      "website": "https://gallhk.com",
+      "emails": [
+        "info@gallhk.com"
+      ],
+      "phones": [
+        "+85234057688"
+      ],
+      "practiceAreas": [
+        "Arbitration",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Insolvency",
+        "Investigations",
+        "Litigation",
+        "Regulatory"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://gallhk.com",
+        "practiceAreas": "https://gallhk.com",
+        "emails": "https://gallhk.com/contact-us/"
+      },
+      "checkedAt": "2026-08-12T17:25:42.794633Z"
+    },
+    {
+      "slug": "global-law-office",
+      "name": "Global Law Office",
+      "jurisdiction": "china",
+      "website": "https://www.glo.com.cn",
+      "emails": [
+        "global@glo.com.cn",
+        "shanghai@glo.com.cn",
+        "shenzhen@glo.com.cn"
+      ],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.glo.com.cn/contacts"
+      },
+      "checkedAt": "2026-08-12T17:21:50.511069Z"
+    },
+    {
+      "slug": "gorriceta-africa-cauton-saavedra",
+      "name": "Gorriceta Africa Cauton & Saavedra",
+      "jurisdiction": "philippines",
+      "website": "https://gorricetalaw.com",
+      "emails": [
+        "counselors@gorricetalaw.com"
+      ],
+      "phones": [
+        "+63286960687",
+        "+63286960988",
+        "+63286583472"
+      ],
+      "practiceAreas": [
+        "Banking",
+        "Capital Markets",
+        "Compliance",
+        "Corporate",
+        "Environment",
+        "Finance",
+        "Fintech",
+        "Insurance",
+        "Litigation",
+        "Mergers and Acquisitions",
+        "Real Estate",
+        "Regulatory"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://gorricetalaw.com",
+        "practiceAreas": "https://gorricetalaw.com",
+        "emails": "https://gorricetalaw.com/contact-us"
+      },
+      "checkedAt": "2026-08-12T17:32:17.696784Z"
+    },
+    {
+      "slug": "grandall-law-firm",
+      "name": "Grandall Law Firm",
+      "jurisdiction": "china",
+      "website": "https://www.grandall.com.cn",
+      "emails": [],
+      "phones": [
+        "+861066216823",
+        "+861065890699",
+        "+862152341668"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://www.grandall.com.cn"
+      },
+      "checkedAt": "2026-08-12T17:24:33.993126Z"
+    },
+    {
+      "slug": "han-kun-law-offices",
+      "name": "Han Kun Law Offices",
+      "jurisdiction": "china",
+      "website": "https://hankunlaw.com",
+      "emails": [
+        "beijing@hankunlaw.com",
+        "shanghai@hankunlaw.com",
+        "shenzhen@hankunlaw.com"
+      ],
+      "phones": [
+        "+861085255500",
+        "+861085255511",
+        "+862160800909"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://hankunlaw.com",
+        "phones": "https://hankunlaw.com"
+      },
+      "checkedAt": "2026-08-12T17:20:09.990185Z"
+    },
+    {
+      "slug": "hibiya-nakata",
+      "name": "Hibiya-Nakata",
+      "jurisdiction": "japan",
+      "website": "https://hibiya-nakata.com",
+      "emails": [],
+      "phones": [
+        "+81355323100"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Corporate",
+        "Dispute Resolution",
+        "Finance",
+        "Mergers and Acquisitions",
+        "Tax"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://hibiya-nakata.com",
+        "practiceAreas": "https://hibiya-nakata.com/profile/"
+      },
+      "checkedAt": "2026-08-12T17:13:02.234587Z"
+    },
+    {
+      "slug": "ilct",
+      "name": "ILCT",
+      "jurisdiction": "thailand",
+      "website": "https://ilct.co.th",
+      "emails": [
+        "jayavadhb@ilct.co.th",
+        "sutharmv@ilct.co.th",
+        "mallikam@ilct.co.th"
+      ],
+      "phones": [
+        "+66026796005"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Arbitration",
+        "Banking",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Energy",
+        "Finance",
+        "Fintech",
+        "Insurance",
+        "Intellectual Property",
+        "International Trade"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://ilct.co.th",
+        "phones": "https://ilct.co.th",
+        "practiceAreas": "https://ilct.co.th"
+      },
+      "checkedAt": "2026-08-12T17:56:26.012517Z"
+    },
+    {
+      "slug": "induslaw",
+      "name": "IndusLaw",
+      "jurisdiction": "india",
+      "website": "https://induslaw.com",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Aviation",
+        "Banking",
+        "Capital Markets",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Finance",
+        "Healthcare"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://induslaw.com"
+      },
+      "checkedAt": "2026-08-12T17:38:17.776960Z"
+    },
+    {
+      "slug": "jipyong",
+      "name": "Jipyong",
+      "jurisdiction": "south-korea",
+      "website": "https://jipyong.com",
+      "emails": [
+        "cjeong@jipyong.com",
+        "jgs@jipyong.com"
+      ],
+      "phones": [
+        "+82262001600"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://jipyong.com",
+        "emails": "https://jipyong.com/kr/main/contact.php"
+      },
+      "checkedAt": "2026-08-12T17:04:34.999688Z"
+    },
+    {
+      "slug": "junhe",
+      "name": "JunHe",
+      "jurisdiction": "china",
+      "website": "https://junhe.com",
+      "emails": [
+        "junhebj@junhe.com"
+      ],
+      "phones": [
+        "+861085191300",
+        "+862152985488",
+        "+8689836333401"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Arbitration",
+        "Banking",
+        "Bankruptcy",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Environment"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://junhe.com",
+        "practiceAreas": "https://junhe.com",
+        "emails": "https://junhe.com/about/offices"
+      },
+      "checkedAt": "2026-08-12T17:21:03.041350Z"
+    },
+    {
+      "slug": "khaitan-co",
+      "name": "Khaitan & Co",
+      "jurisdiction": "india",
+      "website": "https://khaitanco.com",
+      "emails": [
+        "singapore@khaitanco.com",
+        "pune@khaitanco.com",
+        "ahmedabad@khaitanco.com"
+      ],
+      "phones": [
+        "+912266365000",
+        "+912266365050",
+        "+911141515454"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Banking",
+        "Capital Markets",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Employment",
+        "Environment",
+        "Finance",
+        "Insolvency",
+        "Insurance"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://khaitanco.com/contact-us",
+        "phones": "https://khaitanco.com/contact-us",
+        "practiceAreas": "https://khaitanco.com/contact-us"
+      },
+      "checkedAt": "2026-08-12T17:35:56.958491Z"
+    },
+    {
+      "slug": "kim-chang",
+      "name": "Kim & Chang",
+      "jurisdiction": "south-korea",
+      "website": "https://www.kimchang.com",
+      "emails": [
+        "lawkim@kimchang.com"
+      ],
+      "phones": [
+        "+82237031114",
+        "+82221223900",
+        "+820237031114"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Capital Markets",
+        "Compliance",
+        "Corporate",
+        "Employment",
+        "Environment",
+        "Family",
+        "Intellectual Property",
+        "Investigations",
+        "Litigation",
+        "Regulatory"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.kimchang.com",
+        "practiceAreas": "https://www.kimchang.com",
+        "phones": "https://www.kimchang.com/en/location/seoul.kc"
+      },
+      "checkedAt": "2026-08-12T17:01:42.151517Z"
+    },
+    {
+      "slug": "kojima-law-offices",
+      "name": "Kojima Law Offices",
+      "jurisdiction": "japan",
+      "website": "https://www.kojimalaw.jp",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {},
+      "checkedAt": "2026-08-12T17:12:14.372600Z"
+    },
+    {
+      "slug": "kudun-and-partners",
+      "name": "Kudun and Partners",
+      "jurisdiction": "thailand",
+      "website": "https://kap.co.th",
+      "emails": [],
+      "phones": [
+        "+6628381750"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Banking",
+        "Bankruptcy",
+        "Capital Markets",
+        "Construction",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Family"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://kap.co.th",
+        "practiceAreas": "https://kap.co.th"
+      },
+      "checkedAt": "2026-08-12T17:53:00.417876Z"
+    },
+    {
+      "slug": "lcs-partners",
+      "name": "LCS & Partners",
+      "jurisdiction": "taiwan",
+      "website": "https://www.lcs.com.tw",
+      "emails": [
+        "inquiry@lcs.com.tw"
+      ],
+      "phones": [
+        "+886227298000"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.lcs.com.tw",
+        "phones": "https://www.lcs.com.tw"
+      },
+      "checkedAt": "2026-08-12T17:17:22.713682Z"
+    },
+    {
+      "slug": "lee-and-li",
+      "name": "Lee and Li",
+      "jurisdiction": "taiwan",
+      "website": "https://www.leeandli.com",
+      "emails": [],
+      "phones": [
+        "+886227638000"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://www.leeandli.com"
+      },
+      "checkedAt": "2026-08-12T17:13:56.376187Z"
+    },
+    {
+      "slug": "lee-tsai-partners",
+      "name": "Lee, Tsai & Partners",
+      "jurisdiction": "taiwan",
+      "website": "https://www.leetsai.com",
+      "emails": [
+        "lawtec@leetsai.com"
+      ],
+      "phones": [
+        "+886223785780",
+        "+886223785781",
+        "+886861083065860"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Arbitration",
+        "Capital Markets",
+        "Compliance",
+        "Corporate",
+        "Dispute Resolution",
+        "Finance",
+        "Fintech",
+        "Intellectual Property",
+        "Litigation",
+        "Mergers and Acquisitions",
+        "Regulatory"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.leetsai.com",
+        "phones": "https://www.leetsai.com",
+        "practiceAreas": "https://www.leetsai.com"
+      },
+      "checkedAt": "2026-08-12T17:18:15.874453Z"
+    },
+    {
+      "slug": "nagashima-ohno-tsunematsu",
+      "name": "Nagashima Ohno & Tsunematsu",
+      "jurisdiction": "japan",
+      "website": "https://www.noandt.com",
+      "emails": [],
+      "phones": [
+        "+81368897000",
+        "+81368898000"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Aviation",
+        "Banking",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Environment"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://www.noandt.com/en/contact",
+        "practiceAreas": "https://www.noandt.com/en/contact"
+      },
+      "checkedAt": "2026-08-12T17:08:08.387623Z"
+    },
+    {
+      "slug": "oh-ebashi-lpc-partners",
+      "name": "Oh-Ebashi LPC & Partners",
+      "jurisdiction": "japan",
+      "website": "https://ohebashi.com",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {},
+      "checkedAt": "2026-08-12T17:10:43.055315Z"
+    },
+    {
+      "slug": "picazo-buyco-tan-fider-santos",
+      "name": "Picazo Buyco Tan Fider & Santos",
+      "jurisdiction": "philippines",
+      "website": "https://picazolaw.com",
+      "emails": [
+        "nbsppicazolaw@picazolaw.com",
+        "nbsppicazolaw@picazolaw.com.ph"
+      ],
+      "phones": [
+        "+63288880999"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Arbitration",
+        "Banking",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Environment",
+        "Family"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://picazolaw.com",
+        "practiceAreas": "https://picazolaw.com",
+        "emails": "https://picazolaw.com/contact.html"
+      },
+      "checkedAt": "2026-08-12T17:31:23.300494Z"
+    },
+    {
+      "slug": "romulo-mabanta-buenaventura-sayoc-de-los-angeles",
+      "name": "Romulo Mabanta Buenaventura Sayoc & de los Angeles",
+      "jurisdiction": "philippines",
+      "website": "https://romulo.com",
+      "emails": [
+        "romulo@romulo.com"
+      ],
+      "phones": [
+        "+63285559555",
+        "+63322665930"
+      ],
+      "practiceAreas": [
+        "Arbitration",
+        "Banking",
+        "Corporate",
+        "Finance",
+        "Immigration",
+        "Intellectual Property",
+        "Litigation",
+        "Real Estate",
+        "Securities",
+        "Technology"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://romulo.com",
+        "practiceAreas": "https://romulo.com",
+        "emails": "https://romulo.com/contact"
+      },
+      "checkedAt": "2026-08-12T17:27:55.614424Z"
+    },
+    {
+      "slug": "skrine",
+      "name": "Skrine",
+      "jurisdiction": "malaysia",
+      "website": "https://skrine.com",
+      "emails": [
+        "skrine@skrine.com"
+      ],
+      "phones": [],
+      "practiceAreas": [
+        "Arbitration",
+        "Aviation",
+        "Banking",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Employment",
+        "Energy",
+        "Finance",
+        "Healthcare",
+        "Insolvency"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://skrine.com",
+        "practiceAreas": "https://skrine.com/people"
+      },
+      "checkedAt": "2026-08-12T17:39:37.387896Z"
+    },
+    {
+      "slug": "tmi-associates",
+      "name": "TMI Associates",
+      "jurisdiction": "japan",
+      "website": "https://www.tmi.gr.jp",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [
+        "Arbitration",
+        "Aviation",
+        "Corporate",
+        "Employment",
+        "Finance",
+        "Fintech",
+        "Healthcare",
+        "Intellectual Property",
+        "International Trade",
+        "Litigation",
+        "Tax"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://www.tmi.gr.jp/eyes/"
+      },
+      "checkedAt": "2026-08-12T17:09:03.290613Z"
+    },
+    {
+      "slug": "the-capital-law-office",
+      "name": "The Capital Law Office",
+      "jurisdiction": "thailand",
+      "website": "https://thecapitallaw.com",
+      "emails": [
+        "contactus@thecapitallaw.com"
+      ],
+      "phones": [
+        "+6626339088"
+      ],
+      "practiceAreas": [
+        "Arbitration",
+        "Capital Markets",
+        "Compliance",
+        "Corporate",
+        "Dispute Resolution",
+        "Environment",
+        "Litigation",
+        "Regulatory",
+        "Securities",
+        "Tax"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://thecapitallaw.com",
+        "phones": "https://thecapitallaw.com",
+        "practiceAreas": "https://thecapitallaw.com"
+      },
+      "checkedAt": "2026-08-12T17:55:01.140748Z"
+    },
+    {
+      "slug": "tian-yuan-law-firm",
+      "name": "Tian Yuan Law Firm",
+      "jurisdiction": "china",
+      "website": "https://www.tylaw.com.cn",
+      "emails": [
+        "bjhr@tylaw.com.cn"
+      ],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.tylaw.com.cn/about/zyfz.html"
+      },
+      "checkedAt": "2026-08-12T17:22:48.795107Z"
+    },
+    {
+      "slug": "vilasia",
+      "name": "Vilasia",
+      "jurisdiction": "vietnam",
+      "website": "https://vilasia.com",
+      "emails": [
+        "info@vil.asia"
+      ],
+      "phones": [
+        "+842862708696"
+      ],
+      "practiceAreas": [
+        "Competition",
+        "Energy",
+        "Finance",
+        "Project Finance",
+        "Real Estate",
+        "Venture Capital"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://vilasia.com",
+        "phones": "https://vilasia.com",
+        "practiceAreas": "https://vilasia.com"
+      },
+      "checkedAt": "2026-08-12T17:51:10.053162Z"
+    },
+    {
+      "slug": "villaraza-angangco",
+      "name": "Villaraza & Angangco",
+      "jurisdiction": "philippines",
+      "website": "https://thefirmva.com",
+      "emails": [
+        "info@thefirmva.com"
+      ],
+      "phones": [
+        "+63289886088"
+      ],
+      "practiceAreas": [
+        "Capital Markets",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Finance",
+        "Immigration",
+        "Intellectual Property",
+        "Labour",
+        "Litigation",
+        "Mergers and Acquisitions",
+        "Regulatory"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://thefirmva.com",
+        "practiceAreas": "https://thefirmva.com",
+        "phones": "https://thefirmva.com/contact-us/"
+      },
+      "checkedAt": "2026-08-12T17:29:06.506181Z"
+    },
+    {
+      "slug": "vivien-chan-co",
+      "name": "Vivien Chan & Co",
+      "jurisdiction": "hong-kong",
+      "website": "https://vcclawservices.com",
+      "emails": [
+        "vivchan@vcclawservices.com",
+        "beijing@vcclawservices.com"
+      ],
+      "phones": [],
+      "practiceAreas": [
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Family",
+        "Insolvency",
+        "Intellectual Property",
+        "Investigations",
+        "Litigation",
+        "Mergers and Acquisitions",
+        "Private Client"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://vcclawservices.com",
+        "practiceAreas": "https://vcclawservices.com"
+      },
+      "checkedAt": "2026-08-12T17:26:43.255358Z"
+    },
+    {
+      "slug": "walalangi-partners",
+      "name": "Walalangi & Partners",
+      "jurisdiction": "indonesia",
+      "website": "https://wplaws.com",
+      "emails": [],
+      "phones": [
+        "+622150808600",
+        "+622150808601"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Banking",
+        "Bankruptcy",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Employment",
+        "Energy",
+        "Finance"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://wplaws.com",
+        "practiceAreas": "https://wplaws.com"
+      },
+      "checkedAt": "2026-08-12T17:46:56.680434Z"
+    },
+    {
+      "slug": "widyawan-partners",
+      "name": "Widyawan & Partners",
+      "jurisdiction": "indonesia",
+      "website": "https://widyawanpartners.com",
+      "emails": [
+        "wplaw@widyawanpartners.com"
+      ],
+      "phones": [
+        "+622129951500",
+        "+622129951501",
+        "+6566925700"
+      ],
+      "practiceAreas": [
+        "Banking",
+        "Capital Markets",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Energy",
+        "Insolvency",
+        "Insurance",
+        "Private Equity",
+        "Regulatory",
+        "Restructuring",
+        "Technology"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://widyawanpartners.com",
+        "emails": "https://widyawanpartners.com/contact",
+        "phones": "https://widyawanpartners.com/contact"
+      },
+      "checkedAt": "2026-08-12T17:45:28.077260Z"
+    },
+    {
+      "slug": "ykvn",
+      "name": "YKVN",
+      "jurisdiction": "vietnam",
+      "website": "https://ykvn-law.com",
+      "emails": [
+        "nam.diep@ykvn-law.com",
+        "quang.truong@ykvn-law.com",
+        "minh.dang@ykvn-law.com"
+      ],
+      "phones": [
+        "+842439345410"
+      ],
+      "practiceAreas": [
+        "Arbitration",
+        "Aviation",
+        "Banking",
+        "Capital Markets",
+        "Construction",
+        "Corporate",
+        "Dispute Resolution",
+        "Energy",
+        "Finance",
+        "Insurance",
+        "Litigation",
+        "Real Estate"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://ykvn-law.com",
+        "emails": "https://ykvn-law.com/contact/",
+        "phones": "https://ykvn-law.com/offices/ha-noi/"
+      },
+      "checkedAt": "2026-08-12T17:48:05.766415Z"
+    },
+    {
+      "slug": "yoon-yang",
+      "name": "Yoon & Yang",
+      "jurisdiction": "south-korea",
+      "website": "https://www.yoonyang.com",
+      "emails": [
+        "yoonyang@yoonyang.com"
+      ],
+      "phones": [
+        "+82260037000",
+        "+82260037800"
+      ],
+      "practiceAreas": [
+        "Arbitration",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Employment",
+        "Environment",
+        "Family",
+        "Finance",
+        "Fintech",
+        "Insurance",
+        "Investigations"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.yoonyang.com",
+        "practiceAreas": "https://www.yoonyang.com",
+        "phones": "https://www.yoonyang.com/eng/firm/domestic"
+      },
+      "checkedAt": "2026-08-12T17:03:45.498814Z"
+    }
+  ]
 }
