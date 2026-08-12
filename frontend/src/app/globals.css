@@ -15,7 +15,10 @@
   }
 
   body {
-    @apply bg-background text-foreground font-display antialiased;
+    /* Paper is the site default. The dark palette is kept in the tokens for
+       brand surfaces, but no page renders on it any more — a dark hero in
+       front of light editorial pages read as two different products. */
+    @apply bg-paper text-ink font-display antialiased;
   }
 
   h1,

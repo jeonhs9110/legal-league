@@ -142,12 +142,12 @@ export function Globe({ selectedId, onSelect, rankedIds }: Props) {
       // Ocean.
       ctx.beginPath();
       path({ type: "Sphere" });
-      ctx.fillStyle = "rgba(255,255,255,0.03)";
+      ctx.fillStyle = "rgba(20,22,26,0.03)";
       ctx.fill();
 
       ctx.beginPath();
       path(graticule);
-      ctx.strokeStyle = "rgba(255,255,255,0.07)";
+      ctx.strokeStyle = "rgba(20,22,26,0.10)";
       ctx.lineWidth = 0.5;
       ctx.stroke();
 
@@ -160,16 +160,16 @@ export function Globe({ selectedId, onSelect, rankedIds }: Props) {
           ctx.beginPath();
           path(country);
           ctx.fillStyle = isSelected
-            ? "rgba(255,255,255,0.85)"
+            ? "rgba(122,34,48,0.90)"
             : isHovered
-              ? "rgba(255,255,255,0.3)"
+              ? "rgba(20,22,26,0.32)"
               : hasData
-                ? "rgba(255,255,255,0.18)"
-                : "rgba(255,255,255,0.08)";
+                ? "rgba(20,22,26,0.20)"
+                : "rgba(20,22,26,0.07)";
           ctx.fill();
           ctx.strokeStyle = isSelected
-            ? "rgba(255,255,255,0.9)"
-            : "rgba(255,255,255,0.2)";
+            ? "rgba(122,34,48,0.95)"
+            : "rgba(20,22,26,0.22)";
           ctx.lineWidth = isSelected ? 1 : 0.4;
           ctx.stroke();
         }
@@ -183,11 +183,11 @@ export function Globe({ selectedId, onSelect, rankedIds }: Props) {
           path({ type: "Point", coordinates: geoCentroid(country) });
           if (isSelected) {
             // Ring, so a small jurisdiction still reads as the chosen one.
-            ctx.strokeStyle = "rgba(255,255,255,0.75)";
+            ctx.strokeStyle = "rgba(122,34,48,0.80)";
             ctx.lineWidth = 1.2;
             ctx.stroke();
           } else {
-            ctx.fillStyle = "rgba(255,255,255,0.55)";
+            ctx.fillStyle = "rgba(122,34,48,0.55)";
             ctx.fill();
           }
         }
@@ -197,7 +197,7 @@ export function Globe({ selectedId, onSelect, rankedIds }: Props) {
       // Limb.
       ctx.beginPath();
       path({ type: "Sphere" });
-      ctx.strokeStyle = "rgba(255,255,255,0.28)";
+      ctx.strokeStyle = "rgba(20,22,26,0.30)";
       ctx.lineWidth = 1;
       ctx.stroke();
 
@@ -294,7 +294,7 @@ export function Globe({ selectedId, onSelect, rankedIds }: Props) {
           aria-label="Interactive globe. Select a jurisdiction to see its ranked firms."
         />
       </div>
-      <span className="mt-3 text-[10px] uppercase tracking-widest text-white/40">
+      <span className="label mt-3 text-ink-faint">
         {hoveredName ?? "Drag to rotate · Select a jurisdiction"}
       </span>
     </div>

@@ -28,7 +28,7 @@ export function HeroShell({ rankings, coverage }: Props) {
   }, []);
 
   return (
-    <div className="relative z-10 flex min-h-screen flex-col lg:flex-row">
+    <div className="grid gap-12 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-16">
       <LeftPanel
         selectedId={selectedIso}
         onSelect={handleSelect}
