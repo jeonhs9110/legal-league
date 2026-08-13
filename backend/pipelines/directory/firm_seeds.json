@@ -670,6 +670,1060 @@
         "name": "Bih Li & Lee",
         "domain": "bihlilee.com.sg"
       }
+    ],
+    "united-kingdom": [
+      {
+        "name": "A&O Shearman",
+        "domain": "aoshearman.com"
+      },
+      {
+        "name": "Clifford Chance",
+        "domain": "cliffordchance.com"
+      },
+      {
+        "name": "Freshfields",
+        "domain": "freshfields.com"
+      },
+      {
+        "name": "Linklaters",
+        "domain": "linklaters.com"
+      },
+      {
+        "name": "Slaughter and May",
+        "domain": "slaughterandmay.com"
+      },
+      {
+        "name": "Herbert Smith Freehills Kramer",
+        "domain": "hsfkramer.com"
+      },
+      {
+        "name": "Ashurst",
+        "domain": "ashurst.com"
+      },
+      {
+        "name": "Macfarlanes",
+        "domain": "macfarlanes.com"
+      },
+      {
+        "name": "Travers Smith",
+        "domain": "traverssmith.com"
+      },
+      {
+        "name": "Mishcon de Reya",
+        "domain": "mishcon.com"
+      }
+    ],
+    "united-states": [
+      {
+        "name": "Cravath, Swaine & Moore",
+        "domain": "cravath.com"
+      },
+      {
+        "name": "Wachtell, Lipton, Rosen & Katz",
+        "domain": "wlrk.com"
+      },
+      {
+        "name": "Skadden",
+        "domain": "skadden.com"
+      },
+      {
+        "name": "Sullivan & Cromwell",
+        "domain": "sullcrom.com"
+      },
+      {
+        "name": "Davis Polk",
+        "domain": "davispolk.com"
+      },
+      {
+        "name": "Simpson Thacher & Bartlett",
+        "domain": "stblaw.com"
+      },
+      {
+        "name": "Latham & Watkins",
+        "domain": "lw.com"
+      },
+      {
+        "name": "Kirkland & Ellis",
+        "domain": "kirkland.com"
+      },
+      {
+        "name": "Paul, Weiss",
+        "domain": "paulweiss.com"
+      },
+      {
+        "name": "Gibson, Dunn & Crutcher",
+        "domain": "gibsondunn.com"
+      }
+    ],
+    "canada": [
+      {
+        "name": "Blake, Cassels & Graydon",
+        "domain": "blakes.com"
+      },
+      {
+        "name": "McCarthy Tetrault",
+        "domain": "mccarthy.ca",
+        "aliases": [
+          "McCarthy Tétrault"
+        ]
+      },
+      {
+        "name": "Osler, Hoskin & Harcourt",
+        "domain": "osler.com"
+      },
+      {
+        "name": "Torys",
+        "domain": "torys.com"
+      },
+      {
+        "name": "Stikeman Elliott",
+        "domain": "stikeman.com"
+      },
+      {
+        "name": "Davies Ward Phillips & Vineberg",
+        "domain": "dwpv.com"
+      },
+      {
+        "name": "Goodmans",
+        "domain": "goodmans.ca"
+      },
+      {
+        "name": "Fasken",
+        "domain": "fasken.com"
+      },
+      {
+        "name": "Bennett Jones",
+        "domain": "bennettjones.com"
+      },
+      {
+        "name": "Borden Ladner Gervais",
+        "domain": "blg.com"
+      }
+    ],
+    "australia": [
+      {
+        "name": "Allens",
+        "domain": "allens.com.au"
+      },
+      {
+        "name": "Clayton Utz",
+        "domain": "claytonutz.com"
+      },
+      {
+        "name": "Corrs Chambers Westgarth",
+        "domain": "corrs.com.au"
+      },
+      {
+        "name": "Gilbert + Tobin",
+        "domain": "gtlaw.com.au"
+      },
+      {
+        "name": "MinterEllison",
+        "domain": "minterellison.com"
+      },
+      {
+        "name": "Maddocks",
+        "domain": "maddocks.com.au"
+      },
+      {
+        "name": "Arnold Bloch Leibler",
+        "domain": "abl.com.au"
+      },
+      {
+        "name": "Johnson Winter Slattery",
+        "domain": "jws.com.au"
+      },
+      {
+        "name": "Hall & Wilcox",
+        "domain": "hallandwilcox.com.au"
+      },
+      {
+        "name": "Thomson Geer",
+        "domain": "tglaw.com.au"
+      }
+    ],
+    "germany": [
+      {
+        "name": "Hengeler Mueller",
+        "domain": "hengeler.com"
+      },
+      {
+        "name": "Gleiss Lutz",
+        "domain": "gleisslutz.com"
+      },
+      {
+        "name": "Noerr",
+        "domain": "noerr.com"
+      },
+      {
+        "name": "GORG",
+        "domain": "goerg.de",
+        "aliases": [
+          "GÖRG"
+        ]
+      },
+      {
+        "name": "Flick Gocke Schaumburg",
+        "domain": "fgs.de"
+      },
+      {
+        "name": "Heuking",
+        "domain": "heuking.de"
+      },
+      {
+        "name": "P+P Pollath + Partners",
+        "domain": "pplaw.com",
+        "aliases": [
+          "Pöllath"
+        ]
+      },
+      {
+        "name": "SZA Schilling, Zutt & Anschutz",
+        "domain": "sza.de",
+        "aliases": [
+          "Anschütz"
+        ]
+      },
+      {
+        "name": "Oppenhoff",
+        "domain": "oppenhoff.eu"
+      },
+      {
+        "name": "Raue",
+        "domain": "raue.com"
+      }
+    ],
+    "france": [
+      {
+        "name": "Gide Loyrette Nouel",
+        "domain": "gide.com"
+      },
+      {
+        "name": "Bredin Prat",
+        "domain": "bredinprat.com"
+      },
+      {
+        "name": "Darrois Villey Maillot Brochier",
+        "domain": "darroisvilley.com"
+      },
+      {
+        "name": "August Debouzy",
+        "domain": "august-debouzy.com"
+      },
+      {
+        "name": "Jeantet",
+        "domain": "jeantet.fr"
+      },
+      {
+        "name": "Fidal",
+        "domain": "fidal.com"
+      },
+      {
+        "name": "De Pardieu Brocas Maffei",
+        "domain": "de-pardieu.com"
+      },
+      {
+        "name": "Racine",
+        "domain": "racine.eu"
+      },
+      {
+        "name": "Lacourte Raquin Tatar",
+        "domain": "lacourte.com"
+      },
+      {
+        "name": "Veil Jourde",
+        "domain": "veil-jourde.com"
+      }
+    ],
+    "italy": [
+      {
+        "name": "BonelliErede",
+        "domain": "belex.com"
+      },
+      {
+        "name": "Chiomenti",
+        "domain": "chiomenti.net"
+      },
+      {
+        "name": "Gianni & Origoni",
+        "domain": "gop.it"
+      },
+      {
+        "name": "Legance",
+        "domain": "legance.it"
+      },
+      {
+        "name": "Pedersoli",
+        "domain": "pedersoli.it"
+      },
+      {
+        "name": "Gattai, Minoli, Partners",
+        "domain": "gattai.it"
+      },
+      {
+        "name": "Maisto e Associati",
+        "domain": "maisto.it"
+      },
+      {
+        "name": "Advant Nctm",
+        "domain": "advant-nctm.com",
+        "aliases": [
+          "Nctm"
+        ]
+      },
+      {
+        "name": "Grimaldi Alliance",
+        "domain": "grimaldialliance.com"
+      },
+      {
+        "name": "Molinari Agostinelli",
+        "domain": "molinarild.it"
+      }
+    ],
+    "spain": [
+      {
+        "name": "Uria Menendez",
+        "domain": "uria.com",
+        "aliases": [
+          "Uría Menéndez"
+        ]
+      },
+      {
+        "name": "Garrigues",
+        "domain": "garrigues.com"
+      },
+      {
+        "name": "Cuatrecasas",
+        "domain": "cuatrecasas.com"
+      },
+      {
+        "name": "Perez-Llorca",
+        "domain": "perezllorca.com",
+        "aliases": [
+          "Pérez-Llorca"
+        ]
+      },
+      {
+        "name": "Gomez-Acebo & Pombo",
+        "domain": "ga-p.com",
+        "aliases": [
+          "Gómez-Acebo"
+        ]
+      },
+      {
+        "name": "Ramon y Cajal Abogados",
+        "domain": "ramonycajalabogados.com",
+        "aliases": [
+          "Ramón y Cajal"
+        ]
+      },
+      {
+        "name": "Araoz & Rueda",
+        "domain": "araozyrueda.com"
+      },
+      {
+        "name": "Roca Junyent",
+        "domain": "rocajunyent.com"
+      },
+      {
+        "name": "Sagardoy Abogados",
+        "domain": "sagardoy.com"
+      },
+      {
+        "name": "Ontier",
+        "domain": "ontier.net"
+      }
+    ],
+    "netherlands": [
+      {
+        "name": "De Brauw Blackstone Westbroek",
+        "domain": "debrauw.com"
+      },
+      {
+        "name": "NautaDutilh",
+        "domain": "nautadutilh.com"
+      },
+      {
+        "name": "Stibbe",
+        "domain": "stibbe.com"
+      },
+      {
+        "name": "Loyens & Loeff",
+        "domain": "loyensloeff.com"
+      },
+      {
+        "name": "Houthoff",
+        "domain": "houthoff.com"
+      },
+      {
+        "name": "Van Doorne",
+        "domain": "vandoorne.com"
+      },
+      {
+        "name": "AKD",
+        "domain": "akd.eu"
+      },
+      {
+        "name": "BarentsKrans",
+        "domain": "barentskrans.nl"
+      },
+      {
+        "name": "Lexence",
+        "domain": "lexence.com"
+      },
+      {
+        "name": "Ploum",
+        "domain": "ploum.nl"
+      }
+    ],
+    "sweden": [
+      {
+        "name": "Mannheimer Swartling",
+        "domain": "mannheimerswartling.se"
+      },
+      {
+        "name": "Vinge",
+        "domain": "vinge.se"
+      },
+      {
+        "name": "Setterwalls",
+        "domain": "setterwalls.se"
+      },
+      {
+        "name": "Cederquist",
+        "domain": "cederquist.se"
+      },
+      {
+        "name": "Delphi",
+        "domain": "delphi.se"
+      },
+      {
+        "name": "Gernandt & Danielsson",
+        "domain": "gda.se"
+      },
+      {
+        "name": "Hannes Snellman",
+        "domain": "hannessnellman.com"
+      },
+      {
+        "name": "Lindahl",
+        "domain": "lindahl.se"
+      },
+      {
+        "name": "Wistrand",
+        "domain": "wistrand.se"
+      },
+      {
+        "name": "Roschier",
+        "domain": "roschier.com"
+      }
+    ],
+    "switzerland": [
+      {
+        "name": "Lenz & Staehelin",
+        "domain": "lenzstaehelin.com"
+      },
+      {
+        "name": "Bar & Karrer",
+        "domain": "baerkarrer.ch",
+        "aliases": [
+          "Bär & Karrer"
+        ]
+      },
+      {
+        "name": "Homburger",
+        "domain": "homburger.ch"
+      },
+      {
+        "name": "Niederer Kraft Frey",
+        "domain": "nkf.ch"
+      },
+      {
+        "name": "Walder Wyss",
+        "domain": "walderwyss.com"
+      },
+      {
+        "name": "Schellenberg Wittmer",
+        "domain": "swlegal.ch"
+      },
+      {
+        "name": "Pestalozzi",
+        "domain": "pestalozzilaw.com"
+      },
+      {
+        "name": "Vischer",
+        "domain": "vischer.com"
+      },
+      {
+        "name": "MLL Legal",
+        "domain": "mll-legal.com"
+      },
+      {
+        "name": "Wenger Vieli",
+        "domain": "wengervieli.ch"
+      }
+    ],
+    "ireland": [
+      {
+        "name": "Arthur Cox",
+        "domain": "arthurcox.com"
+      },
+      {
+        "name": "A&L Goodbody",
+        "domain": "algoodbody.com"
+      },
+      {
+        "name": "Matheson",
+        "domain": "matheson.com"
+      },
+      {
+        "name": "McCann FitzGerald",
+        "domain": "mccannfitzgerald.com"
+      },
+      {
+        "name": "William Fry",
+        "domain": "williamfry.com"
+      },
+      {
+        "name": "Mason Hayes & Curran",
+        "domain": "mhc.ie"
+      },
+      {
+        "name": "Dillon Eustace",
+        "domain": "dilloneustace.com"
+      },
+      {
+        "name": "ByrneWallace",
+        "domain": "byrnewallace.com"
+      },
+      {
+        "name": "Philip Lee",
+        "domain": "philiplee.ie"
+      },
+      {
+        "name": "LK Shields",
+        "domain": "lkshields.ie"
+      }
+    ],
+    "israel": [
+      {
+        "name": "Herzog Fox & Neeman",
+        "domain": "herzoglaw.co.il"
+      },
+      {
+        "name": "Meitar",
+        "domain": "meitar.com"
+      },
+      {
+        "name": "Goldfarb Gross Seligman",
+        "domain": "goldfarb.com"
+      },
+      {
+        "name": "Fischer FBC",
+        "domain": "fbclawyers.com",
+        "aliases": [
+          "Fischer"
+        ]
+      },
+      {
+        "name": "Gornitzky",
+        "domain": "gornitzky.com"
+      },
+      {
+        "name": "Arnon, Tadmor-Levy",
+        "domain": "arnontl.com"
+      },
+      {
+        "name": "S. Horowitz & Co",
+        "domain": "s-horowitz.com"
+      },
+      {
+        "name": "Naschitz Brandes Amir",
+        "domain": "nblaw.com"
+      },
+      {
+        "name": "Erdinast, Ben Nathan, Toledano",
+        "domain": "ebnlaw.co.il"
+      },
+      {
+        "name": "Shibolet",
+        "domain": "shibolet.com"
+      }
+    ],
+    "south-africa": [
+      {
+        "name": "Bowmans",
+        "domain": "bowmanslaw.com"
+      },
+      {
+        "name": "ENSafrica",
+        "domain": "ensafrica.com"
+      },
+      {
+        "name": "Webber Wentzel",
+        "domain": "webberwentzel.com"
+      },
+      {
+        "name": "Cliffe Dekker Hofmeyr",
+        "domain": "cliffedekkerhofmeyr.com"
+      },
+      {
+        "name": "Werksmans",
+        "domain": "werksmans.com"
+      },
+      {
+        "name": "Adams & Adams",
+        "domain": "adams.africa"
+      },
+      {
+        "name": "Knowles Husain Lindsay",
+        "domain": "khl.co.za"
+      },
+      {
+        "name": "Fluxmans",
+        "domain": "fluxmans.com"
+      },
+      {
+        "name": "Norton Rose Fulbright South Africa",
+        "domain": "nortonrosefulbright.com"
+      },
+      {
+        "name": "Bright Attorneys",
+        "domain": "brightattorneys.co.za"
+      }
+    ],
+    "brazil": [
+      {
+        "name": "Mattos Filho",
+        "domain": "mattosfilho.com.br"
+      },
+      {
+        "name": "Pinheiro Neto Advogados",
+        "domain": "pinheironeto.com.br"
+      },
+      {
+        "name": "Machado Meyer",
+        "domain": "machadomeyer.com.br"
+      },
+      {
+        "name": "Demarest",
+        "domain": "demarest.com.br"
+      },
+      {
+        "name": "TozziniFreire",
+        "domain": "tozzinifreire.com.br"
+      },
+      {
+        "name": "Lefosse",
+        "domain": "lefosse.com"
+      },
+      {
+        "name": "BMA Barbosa Mussnich Aragao",
+        "domain": "bmalaw.com.br",
+        "aliases": [
+          "Müssnich",
+          "Aragão"
+        ]
+      },
+      {
+        "name": "Veirano Advogados",
+        "domain": "veirano.com.br"
+      },
+      {
+        "name": "Cescon Barrieu",
+        "domain": "cesconbarrieu.com.br"
+      },
+      {
+        "name": "Stocche Forbes",
+        "domain": "stoccheforbes.com.br"
+      }
+    ],
+    "mexico": [
+      {
+        "name": "Creel, Garcia-Cuellar, Aiza y Enriquez",
+        "domain": "creel.mx",
+        "aliases": [
+          "García-Cuéllar",
+          "Enríquez"
+        ]
+      },
+      {
+        "name": "Mijares, Angoitia, Cortes y Fuentes",
+        "domain": "mijares.com.mx",
+        "aliases": [
+          "Cortés"
+        ]
+      },
+      {
+        "name": "Galicia Abogados",
+        "domain": "galicia.com.mx"
+      },
+      {
+        "name": "Ritch Mueller",
+        "domain": "ritch.com.mx"
+      },
+      {
+        "name": "Santamarina y Steta",
+        "domain": "s-s.mx"
+      },
+      {
+        "name": "Gonzalez Calvillo",
+        "domain": "gcsc.com.mx",
+        "aliases": [
+          "González Calvillo"
+        ]
+      },
+      {
+        "name": "Nader, Hayaux & Goebel",
+        "domain": "nhg.com.mx"
+      },
+      {
+        "name": "Basham, Ringe y Correa",
+        "domain": "basham.com.mx"
+      },
+      {
+        "name": "Von Wobeser y Sierra",
+        "domain": "vwys.com.mx"
+      },
+      {
+        "name": "SAI Derecho & Economia",
+        "domain": "sai.com.mx",
+        "aliases": [
+          "Economía"
+        ]
+      }
+    ],
+    "argentina": [
+      {
+        "name": "Marval O Farrell Mairal",
+        "domain": "marval.com",
+        "aliases": [
+          "Marval"
+        ]
+      },
+      {
+        "name": "Bruchou & Funes de Rioja",
+        "domain": "bruchou.com"
+      },
+      {
+        "name": "Estudio Beccar Varela",
+        "domain": "beccarvarela.com",
+        "aliases": [
+          "Beccar Varela"
+        ]
+      },
+      {
+        "name": "Perez Alati, Grondona, Benites & Arntsen",
+        "domain": "pagbam.com",
+        "aliases": [
+          "Pérez Alati"
+        ]
+      },
+      {
+        "name": "Allende & Brea",
+        "domain": "allendebrea.com"
+      },
+      {
+        "name": "Bomchil",
+        "domain": "bomchil.com"
+      },
+      {
+        "name": "Nicholson y Cano",
+        "domain": "nicholsonycano.com.ar"
+      },
+      {
+        "name": "Tanoira Cassagne",
+        "domain": "tcabogados.com"
+      },
+      {
+        "name": "Martinez de Hoz & Rueda",
+        "domain": "mhrlegal.com",
+        "aliases": [
+          "Martínez de Hoz"
+        ]
+      },
+      {
+        "name": "Estudio O Farrell",
+        "domain": "estudioofarrell.com.ar",
+        "aliases": [
+          "Farrell"
+        ]
+      }
+    ],
+    "turkey": [
+      {
+        "name": "Paksoy",
+        "domain": "paksoy.av.tr"
+      },
+      {
+        "name": "Esin Attorney Partnership",
+        "domain": "esin.av.tr"
+      },
+      {
+        "name": "Gen & Temizer Ozer",
+        "domain": "gentemizerozer.com",
+        "aliases": [
+          "Özer"
+        ]
+      },
+      {
+        "name": "Kolcuoglu Demirkan Kocakli",
+        "domain": "kolcuoglu.av.tr",
+        "aliases": [
+          "Kolcuoğlu"
+        ]
+      },
+      {
+        "name": "Cakmak",
+        "domain": "cakmak.av.tr",
+        "aliases": [
+          "Çakmak"
+        ]
+      },
+      {
+        "name": "ELIG Gurkaynak",
+        "domain": "elig.com",
+        "aliases": [
+          "Gürkaynak"
+        ]
+      },
+      {
+        "name": "Moroglu Arseven",
+        "domain": "morogluarseven.com",
+        "aliases": [
+          "Moroğlu"
+        ]
+      },
+      {
+        "name": "Verdi",
+        "domain": "verdi.av.tr"
+      },
+      {
+        "name": "Balcioglu Selcuk",
+        "domain": "bsel.av.tr",
+        "aliases": [
+          "Balcıoğlu"
+        ]
+      },
+      {
+        "name": "YaziciLegal",
+        "domain": "yazicilegal.com",
+        "aliases": [
+          "Yazıcı"
+        ]
+      }
+    ],
+    "united-arab-emirates": [
+      {
+        "name": "Al Tamimi & Company",
+        "domain": "tamimi.com"
+      },
+      {
+        "name": "BSA Ahmad Bin Hezeem & Associates",
+        "domain": "bsabh.com"
+      },
+      {
+        "name": "Hadef & Partners",
+        "domain": "hadefpartners.com"
+      },
+      {
+        "name": "Afridi & Angell",
+        "domain": "afridi-angell.com"
+      },
+      {
+        "name": "Galadari Advocates",
+        "domain": "galadarilaw.com"
+      },
+      {
+        "name": "Al Suwaidi & Company",
+        "domain": "alsuwaidi.ae"
+      },
+      {
+        "name": "Habib Al Mulla",
+        "domain": "habibalmulla.com"
+      },
+      {
+        "name": "Global Advocates",
+        "domain": "global-advocates.com"
+      },
+      {
+        "name": "Hamdan AlShamsi Lawyers",
+        "domain": "alshamsilegal.com"
+      },
+      {
+        "name": "Kochhar & Co Dubai",
+        "domain": "kochhar.com"
+      }
+    ],
+    "saudi-arabia": [
+      {
+        "name": "Khoshaim & Associates",
+        "domain": "khoshaim.com"
+      },
+      {
+        "name": "Abuhimed Alsheikh Alhagbani",
+        "domain": "ashlawksa.com"
+      },
+      {
+        "name": "Hammad & Al-Mehdar",
+        "domain": "hmco.com.sa"
+      },
+      {
+        "name": "Dhabaan & Partners",
+        "domain": "dhabaan.com"
+      },
+      {
+        "name": "Al Sulaim",
+        "domain": "alsulaim.com"
+      },
+      {
+        "name": "Alsabhan & Alajaji",
+        "domain": "aa-lawfirm.com"
+      },
+      {
+        "name": "Majed Garoub",
+        "domain": "garoub.com"
+      },
+      {
+        "name": "Nasser Al Hamdan",
+        "domain": "alhamdanlaw.com"
+      },
+      {
+        "name": "Al Rasheed & Al Rasheed",
+        "domain": "alrasheedlaw.com"
+      },
+      {
+        "name": "Zeyad Alsalloom",
+        "domain": "zalsalloom.com"
+      }
+    ],
+    "nigeria": [
+      {
+        "name": "Aluko & Oyebode",
+        "domain": "aluko-oyebode.com"
+      },
+      {
+        "name": "Banwo & Ighodalo",
+        "domain": "banwo-ighodalo.com"
+      },
+      {
+        "name": "Udo Udoma & Belo-Osagie",
+        "domain": "uubo.org"
+      },
+      {
+        "name": "Templars",
+        "domain": "templars-law.com"
+      },
+      {
+        "name": "Olaniwun Ajayi",
+        "domain": "olaniwunajayi.net"
+      },
+      {
+        "name": "G. Elias",
+        "domain": "gelias.com"
+      },
+      {
+        "name": "Detail Commercial Solicitors",
+        "domain": "detailsolicitors.com"
+      },
+      {
+        "name": "Aelex",
+        "domain": "aelex.com"
+      },
+      {
+        "name": "Streamsowers & Kohn",
+        "domain": "sskohn.com",
+        "aliases": [
+          "Köhn"
+        ]
+      },
+      {
+        "name": "Punuka Attorneys",
+        "domain": "punuka.com"
+      }
+    ],
+    "russia": [
+      {
+        "name": "ALRUD",
+        "domain": "alrud.com"
+      },
+      {
+        "name": "Egorov Puginsky Afanasiev & Partners",
+        "domain": "epam.ru"
+      },
+      {
+        "name": "Pepeliaev Group",
+        "domain": "pgplaw.ru"
+      },
+      {
+        "name": "Liniya Prava",
+        "domain": "lp.ru"
+      },
+      {
+        "name": "Vegas Lex",
+        "domain": "vegaslex.ru"
+      },
+      {
+        "name": "Yakovlev & Partners",
+        "domain": "yakovlev.ru"
+      },
+      {
+        "name": "Infralex",
+        "domain": "infralex.ru"
+      },
+      {
+        "name": "Lidings",
+        "domain": "lidings.com"
+      },
+      {
+        "name": "Kulkov, Kolotilov & Partners",
+        "domain": "kkplaw.ru"
+      },
+      {
+        "name": "Melling, Voitishkin & Partners",
+        "domain": "mvp.legal"
+      }
+    ],
+    "macao": [
+      {
+        "name": "Rato, Ling, Lei & Cortes",
+        "domain": "ratolei.com",
+        "aliases": [
+          "Cortés",
+          "律師事務所"
+        ]
+      },
+      {
+        "name": "MdME Lawyers",
+        "domain": "mdme.com"
+      },
+      {
+        "name": "C&C Lawyers",
+        "domain": "ccadv.com.mo"
+      },
+      {
+        "name": "Riquito Advogados",
+        "domain": "riquito.com"
+      },
+      {
+        "name": "Manuela Antonio Lawyers",
+        "domain": "manuelaantonio.com",
+        "aliases": [
+          "António"
+        ]
+      },
+      {
+        "name": "DSL Lawyers",
+        "domain": "dsl-lawyers.com"
+      },
+      {
+        "name": "Lektou",
+        "domain": "lektou.com"
+      },
+      {
+        "name": "FCLaw Lawyers",
+        "domain": "fclaw.com.mo"
+      }
     ]
   }
 }

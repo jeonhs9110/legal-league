@@ -109,6 +109,13 @@ DIALLING_CODE = {
     "south-korea": "82", "japan": "81", "taiwan": "886", "china": "86",
     "hong-kong": "852", "philippines": "63", "india": "91", "malaysia": "60",
     "indonesia": "62", "vietnam": "84", "thailand": "66", "singapore": "65",
+    "macao": "853", "united-kingdom": "44", "united-states": "1",
+    "canada": "1", "australia": "61", "new-zealand": "64", "ireland": "353",
+    "germany": "49", "france": "33", "italy": "39", "spain": "34",
+    "netherlands": "31", "sweden": "46", "switzerland": "41", "russia": "7",
+    "turkey": "90", "israel": "972", "united-arab-emirates": "971",
+    "saudi-arabia": "966", "south-africa": "27", "nigeria": "234",
+    "brazil": "55", "mexico": "52", "argentina": "54",
 }
 
 PRACTICE_VOCAB = [

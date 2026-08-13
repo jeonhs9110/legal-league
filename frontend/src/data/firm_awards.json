@@ -1,9 +1,444 @@
 {
-  "generatedAt": "1970-01-01T00:00:00Z",
-  "method": "placeholder",
-  "disclaimer": "",
-  "firmCount": 0,
-  "recognitionCount": 0,
-  "byPublisher": {},
-  "firms": []
+  "generatedAt": "2026-08-13T11:14:52.498562Z",
+  "method": "Recognitions as stated by each firm on its own website, with the firm's wording and a link to the page. Ranking tables published by Chambers, The Legal 500, Law.asia and others are not reproduced; these are citations to what a firm says about itself. Coverage reflects which firms publicise rankings, not who was ranked.",
+  "disclaimer": "These are other publishers' assessments, attributed to them. Legal League publishes no ranking of its own.",
+  "firmCount": 4,
+  "recognitionCount": 42,
+  "byPublisher": {
+    "IFLR1000": 15,
+    "Chambers": 8,
+    "Benchmark Litigation": 5,
+    "Asian Legal Business": 5,
+    "asialaw": 3,
+    "Lexology Index": 2,
+    "The Legal 500": 2,
+    "Law.asia": 2
+  },
+  "firms": [
+    {
+      "slug": "allen-gledhill",
+      "name": "Allen & Gledhill",
+      "jurisdiction": "singapore",
+      "recognitions": [
+        {
+          "publisher": "Benchmark Litigation",
+          "tier": null,
+          "practiceAreas": [
+            "Litigation"
+          ],
+          "edition": 2026,
+          "quote": "Consultant Vivian Ang and Partner Corina Song were recognised in Benchmark Litigation Asia-Pacific’s Top 100 Women in Litigation 2026 list.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Asian Legal Business",
+          "tier": null,
+          "practiceAreas": [
+            "TMT"
+          ],
+          "edition": 2026,
+          "quote": "Elsie Hakim recognised in Asian Legal Business Asia Super 50 TMT Lawyers 2026 Our Partner Elsie Hakim has been recognised in the Asia Super 50 TMT Lawyers 2026 list by Asian Legal Business .",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": "Band 1",
+          "practiceAreas": [],
+          "edition": 2026,
+          "quote": "Singapore Our Firm continues to have the highest number of Band 1 practice rankings and recognised lawyers in the country in the Chambers Asia-Pacific 2026 edition.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Lexology Index",
+          "tier": "Firm of the Year",
+          "practiceAreas": [],
+          "edition": 2025,
+          "quote": "Allen & Gledhill named Singapore Firm of the Year at the Lexology Index Awards 2025 Allen &amp; Gledhill has been named Singapore Firm of the Year at the Lexology Index Awards 2025.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Benchmark Litigation",
+          "tier": "Firm of the Year",
+          "practiceAreas": [
+            "Litigation"
+          ],
+          "edition": 2025,
+          "quote": "Allen & Gledhill named Singapore Firm of the Year at the Benchmark Litigation Asia-Pacific Awards 2025 Allen &amp; Gledhill has been named Singapore Firm of the Year at the Benchmark Litigation Asia-Pacific Awards 2025.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "top tier",
+          "practiceAreas": [],
+          "edition": 2024,
+          "quote": "Allen & Gledhill recognised as a top tier law firm by IFLR1000, with the most number of lawyers recognised across all practices Allen &amp; Gledhill has been recognised as a top tier law firm by IFLR1000 Asia-Pacific 2024.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "Tier 1",
+          "practiceAreas": [],
+          "edition": 2023,
+          "quote": "Allen & Gledhill continues to be recognised as a Tier 1 firm by IFLR1000, with the most number of lawyers recognised across all practices Allen &amp; Gledhill continues to be recognised as a Tier 1 firm by IFLR1000 Asia-Pacific 2023.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Benchmark Litigation",
+          "tier": "top tier",
+          "practiceAreas": [
+            "Litigation"
+          ],
+          "edition": 2023,
+          "quote": "Allen & Gledhill ranked top tier in Benchmark Litigation Asia-Pacific 2023 Allen &amp; Gledhill’s Litigation Department continues to receive top tier rankings in the latest edition of Benchmark Litigation Asia-Pacific 2023.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "Law Firm of the Year",
+          "practiceAreas": [],
+          "edition": 2022,
+          "quote": "Allen & Gledhill wins top awards at IFLR Asia-Pacific Awards 2022 Allen &amp; Gledhill has been named Regional Law Firm of the Year at the prestigious International Financial Law Review (IFLR) Asia-Pacific Awards.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Asian Legal Business",
+          "tier": "Tier 1",
+          "practiceAreas": [
+            "M&A"
+          ],
+          "edition": 2021,
+          "quote": "Allen & Gledhill and its network firms ranked in ALB M&A Rankings 2021 Allen &amp; Gledhill continues to be ranked Tier 1 in the Singapore Domestic category of the M&amp;A Rankings 2021 report released by Asian Legal Business .",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "Highly Regarded",
+          "practiceAreas": [],
+          "edition": null,
+          "quote": "All four of our Directors in Myanmar were recognised in IFLR1000 ’s thirtieth edition, with two of them named as ‘Highly Regarded Lawyers’.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "asialaw",
+          "tier": "Elite",
+          "practiceAreas": [],
+          "edition": null,
+          "quote": "Thirty of our lawyers have been recognised as Leading Lawyers in Asialaw Leading Lawyers , and 11 of whom have been recognised as “Elite practitioner”.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "asialaw",
+          "tier": "recommended",
+          "practiceAreas": [],
+          "edition": null,
+          "quote": "Our Myanmar office is ranked “Highly recommended” for general business law (the only practice area covered by Asialaw Profiles ), and has been ranked in four industry sectors with three of our Partners being recognised as Leading Lawyers.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "top tier",
+          "practiceAreas": [
+            "Insolvency",
+            "Restructuring"
+          ],
+          "edition": null,
+          "quote": "Allen & Gledhill maintains top tier rankings in IFLR1000’s thirtieth edition for Project Development and Restructuring and Insolvency IFLR1000 has announced the third group of national Asia-Pacific rankings for its thirtieth edition.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "top tier",
+          "practiceAreas": [
+            "Banking and Finance"
+          ],
+          "edition": 2021,
+          "quote": "Allen & Gledhill maintains top tier rankings in IFLR1000 2021 for Banking and Finance IFLR1000 has announced the first group of national Asia-Pacific rankings for its latest 2021 edition.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "Tier 1",
+          "practiceAreas": [
+            "Banking and Finance"
+          ],
+          "edition": 2021,
+          "quote": "Allen &amp; Gledhill continues to be ranked Tier 1 in Singapore for Banking and Finance by IFLR1000 2021.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "elite",
+          "practiceAreas": [],
+          "edition": 2020,
+          "quote": "Three of our Partners Margaret Chin , Lim Mei and Tan Tze Gay have been named in IFLR1000 Women Leaders 2020 – Asia-Pacific, a guide that recognises the elite cohort of leading female transactional lawyers in the world.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": null,
+          "practiceAreas": [
+            "Corporate"
+          ],
+          "edition": 2020,
+          "quote": "Earlier this year, our Firm was named Singapore Corporate &amp; Finance Domestic Law Advisers at the Chambers Asia-Pacific Awards 2020.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "The Legal 500",
+          "tier": "Tier 1",
+          "practiceAreas": [
+            "Corporate"
+          ],
+          "edition": null,
+          "quote": "Our Myanmar office continues to be ranked Tier 1 in Corporate and M&amp;A and Projects, the only two categories covered by The Legal 500 Asia Pacific for Myanmar.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": "Band 1",
+          "practiceAreas": [
+            "Corporate",
+            "Investigations"
+          ],
+          "edition": null,
+          "quote": "In addition, Chambers has created a new firm category for Corporate Investigations/Anti-Corruption in which A&amp;G has been ranked Band 1.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": "Law Firm of the Year",
+          "practiceAreas": [],
+          "edition": 2018,
+          "quote": "Earlier this year, Allen &amp; Gledhill was also named Singapore (Domestic) Law Firm of the Year 2018 by Chambers &amp; Partners at the Chambers Asia-Pacific Awards 2018.",
+          "sourceUrl": "https://allenandgledhill.com/about-us/accolades/"
+        }
+      ],
+      "checkedAt": "2026-08-13T11:14:52.498562Z"
+    },
+    {
+      "slug": "rahmat-lim-partners",
+      "name": "Rahmat Lim & Partners",
+      "jurisdiction": "malaysia",
+      "recognitions": [
+        {
+          "publisher": "IFLR1000",
+          "tier": "top tier",
+          "practiceAreas": [],
+          "edition": 2025,
+          "quote": "Rahmat Lim & Partners maintains top tier rankings in IFLR1000 Asia-Pacific 2025 Rahmat Lim &amp; Partners has maintained its Tier 1 rankings across all eligible practice areas in the IFLR1000 Asia-Pacific 2025 guide for Malaysia .",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Benchmark Litigation",
+          "tier": null,
+          "practiceAreas": [
+            "Litigation"
+          ],
+          "edition": 2025,
+          "quote": "Rahmat Lim & Partners continues to be ranked in Benchmark Litigation Asia-Pacific 2025 Rahmat Lim &amp; Partners is pleased to continue being recognised in Benchmark Litigation Asia-Pacific 2025.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Benchmark Litigation",
+          "tier": "Recommended",
+          "practiceAreas": [
+            "Antitrust",
+            "Competition",
+            "Litigation"
+          ],
+          "edition": null,
+          "quote": "In the review conducted by Benchmark Litigation , our Firm has been ranked Highly Recommended in Competition/Antitrust, and Recommended in Shipping.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": "Band 2",
+          "practiceAreas": [],
+          "edition": 2025,
+          "quote": "Additionally, our Firm continues to be ranked Band 2 in the 2025 edition of the Chambers FinTech Guide.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": "Band 1",
+          "practiceAreas": [],
+          "edition": 2025,
+          "quote": "Singapore Our associate firm in Singapore, Allen &amp; Gledhill , continues to have the highest number of Band 1 practice rankings and recognised lawyers in the country in the Chambers Asia-Pacific 2025 edition.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Asian Legal Business",
+          "tier": "Law Firm of the Year",
+          "practiceAreas": [],
+          "edition": 2024,
+          "quote": "Rahmat Lim & Partners clinches three awards at the Asian Legal Business Malaysia Law Awards 2024 Rahmat Lim &amp; Partners was recognised as the ESG-Advisory Law Firm of the Year which took place on 1 st March 2024.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": "Law Firm of the Year",
+          "practiceAreas": [],
+          "edition": null,
+          "quote": "Lim Teong Sit, Chairman and Senior Partner, said “ It is a great honour to be named Malaysia Law Firm of the Year for the first time by Chambers.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Asian Legal Business",
+          "tier": "Tier 1",
+          "practiceAreas": [
+            "M&A"
+          ],
+          "edition": 2021,
+          "quote": "Rahmat Lim & Partners maintains Tier 1 ranking in ALB M&A Rankings 2021 Rahmat Lim &amp; Partners continues to be ranked Tier 1 in the Malaysia category of the M&amp;A Rankings 2021 report released by Asian Legal Business.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "asialaw",
+          "tier": "recommended",
+          "practiceAreas": [],
+          "edition": null,
+          "quote": "Allen &amp; Gledhill’s Myanmar office is ranked “Highly recommended” for General business law, the only practice area covered by Asialaw Profiles , and has been ranked in four industry sectors.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": null,
+          "practiceAreas": [
+            "Capital Markets"
+          ],
+          "edition": 2021,
+          "quote": "Rahmat Lim & Partners maintains rankings in IFLR1000 2021 for Capital Markets IFLR1000 has announced the second group of national Asia-Pacific rankings for its latest 2021 edition.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "Tier 2",
+          "practiceAreas": [
+            "Capital Markets"
+          ],
+          "edition": 2021,
+          "quote": "Rahmat Lim &amp; Partners continues to maintain its Tier 2 ranking in Malaysia for Capital Markets by IFLR1000 2021.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "top tier",
+          "practiceAreas": [
+            "Banking and Finance"
+          ],
+          "edition": 2021,
+          "quote": "Rahmat Lim & Partners maintains top tier rankings in IFLR1000 2021 for Banking and Finance IFLR1000 has announced the first group of national Asia-Pacific rankings for its latest 2021 edition.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "Tier 1",
+          "practiceAreas": [
+            "Banking"
+          ],
+          "edition": 2021,
+          "quote": "Rahmat Lim &amp; Partners continues to be ranked Tier 1 in Malaysia for Banking &amp; Finance by IFLR1000 2021.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "Asian Legal Business",
+          "tier": null,
+          "practiceAreas": [
+            "Intellectual Property"
+          ],
+          "edition": 2020,
+          "quote": "Rahmat Lim & Partners’ Intellectual Property practice ranked by Asian Legal Business Rahmat Lim &amp; Partners has been recognised in the Intellectual Property Rankings 2020 report released by Asian Legal Business.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "The Legal 500",
+          "tier": "Tier 1",
+          "practiceAreas": [
+            "Corporate"
+          ],
+          "edition": null,
+          "quote": "Allen &amp; Gledhill (Myanmar) continues to be ranked Tier 1 in Corporate and M&amp;A and Projects, the only two categories covered by The Legal 500 Asia Pacific for Myanmar.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        },
+        {
+          "publisher": "IFLR1000",
+          "tier": "Highly Regarded",
+          "practiceAreas": [],
+          "edition": null,
+          "quote": "The Firm continues to have the highest number of Highly Regarded lawyers in Malaysia recognised by IFLR1000.",
+          "sourceUrl": "https://rahmatlim.com/about-us/accolades/"
+        }
+      ],
+      "checkedAt": "2026-08-13T11:14:52.498562Z"
+    },
+    {
+      "slug": "gall",
+      "name": "Gall",
+      "jurisdiction": "hong-kong",
+      "recognitions": [
+        {
+          "publisher": "Lexology Index",
+          "tier": null,
+          "practiceAreas": [
+            "Litigation"
+          ],
+          "edition": 2026,
+          "quote": "Most Recent Articles Gall partners recognised in Lexology Index: Commercial Litigation 2026 8th Jul.",
+          "sourceUrl": "https://gallhk.com"
+        }
+      ],
+      "checkedAt": "2026-08-13T11:14:52.498562Z"
+    },
+    {
+      "slug": "walalangi-partners",
+      "name": "Walalangi & Partners",
+      "jurisdiction": "indonesia",
+      "recognitions": [
+        {
+          "publisher": "IFLR1000",
+          "tier": null,
+          "practiceAreas": [
+            "Banking",
+            "Restructuring"
+          ],
+          "edition": null,
+          "quote": "IFLR1000 continuously ranks W&amp;P in M&amp;A, banking, capital market equity and debt, project development, and restructuring &amp; insolvency.",
+          "sourceUrl": "https://wplaws.com"
+        },
+        {
+          "publisher": "Law.asia",
+          "tier": null,
+          "practiceAreas": [
+            "Antitrust",
+            "Insolvency",
+            "Restructuring"
+          ],
+          "edition": null,
+          "quote": "W&amp;P was named Real Estate, Competition &amp; Antitrust, Structured Finance &amp; Securitization, Inbound Investment and Insolvency &amp; Restructuring Law Firm by Asia Business Law Journal.",
+          "sourceUrl": "https://wplaws.com"
+        },
+        {
+          "publisher": "Law.asia",
+          "tier": null,
+          "practiceAreas": [
+            "Real Estate"
+          ],
+          "edition": null,
+          "quote": "We were one of the Indonesian real estate law firms by Asia Business Law Journal.",
+          "sourceUrl": "https://wplaws.com"
+        },
+        {
+          "publisher": "Chambers",
+          "tier": null,
+          "practiceAreas": [
+            "TMT"
+          ],
+          "edition": null,
+          "quote": "For TMT, the firm has been ranked by Chambers Fintech for several years.",
+          "sourceUrl": "https://wplaws.com"
+        }
+      ],
+      "checkedAt": "2026-08-13T11:14:52.498562Z"
+    }
+  ]
 }
