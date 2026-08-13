@@ -103,7 +103,12 @@ PRACTICE_RE = [(p, re.compile(r"\b" + re.escape(p).replace(r"/", r"\s*/\s*") + r
 # Split only on punctuation that actually ends a sentence — one followed by
 # whitespace. A bare character class on "." cuts "Law.asia" in half, which
 # silently made our own biggest rival unciteable.
-SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|[•|]")
+SENTENCE_SPLIT_RE = re.compile(
+    r"(?<=[.!?])\s+|[•|]|"
+    r"(?:learn more|view details|view more|read more|find out more|"
+    r"click here|see all|work highlight)",
+    re.I,
+)
 
 # Without a verb of recognition, a publisher's name is just a name. "Managing IP
 # is a directory that researches and ranks firms" names a publisher, contains
@@ -115,9 +120,7 @@ RECOGNITION_VERB_RE = re.compile(
 
 # Navigation and card furniture. These chunks are stitched-together link text,
 # not prose, and any publisher inside them is part of a logo wall.
-BOILERPLATE_RE = re.compile(
-    r"(learn more|view details|view more|read more|find out more|→|&hellip;|"
-    r"\.\.\.\s*$|click here|see all)", re.I)
+BOILERPLATE_RE = re.compile(r"(→|&hellip;|\.\.\.\s*$)", re.I)
 
 # A publisher describing itself. "Managing IP is a directory that researches and
 # ranks firms" carries a publisher, a recognition verb and a practice area, and
@@ -137,20 +140,56 @@ def log(message: str) -> None:
 
 
 def find_award_pages(homepage: str, base: str, robots: Robots,
-                     renderer: Renderer, limit: int = 4) -> list[tuple[str, str]]:
-    """The firm's own awards/news pages, found through its own navigation."""
-    candidates = [
-        url for url in discover_links(homepage, base, limit=25)
-        if AWARD_LINK_RE.search(url)
-    ]
+                     renderer: Renderer, limit: int = 16) -> list[tuple[str, str]]:
+    """
+    The firm's own awards and recognition pages, breadth-first.
+
+    Breadth matters more than depth here and the ordering is not a detail. A
+    depth-first walk spends the whole page budget on the children of the first
+    index it finds, so the other sections are never opened at all — that change
+    alone took Singapore from five firms with recognitions down to one. Every
+    top-level section is therefore visited before any child is.
+    """
+    seen: set[str] = set()
     pages: list[tuple[str, str]] = []
-    for url in candidates[:limit]:
+
+    def fetch_into(url: str) -> str | None:
+        if url in seen or len(pages) >= limit:
+            return None
+        seen.add(url)
         if not robots.allows(url):
-            continue
+            return None
         time.sleep(CRAWL_DELAY)
         html = get(url, renderer)
         if html:
             pages.append((url, html))
+        return html
+
+    level_one = [url for url in discover_links(homepage, base, limit=40)
+                 if AWARD_LINK_RE.search(url)][:8]
+
+    # Pass one: every award/news section off the homepage.
+    fetched: list[tuple[str, str]] = []
+    for url in level_one:
+        html = fetch_into(url)
+        if html:
+            fetched.append((url, html))
+
+    # Pass two: individual items inside those sections, and the next page of
+    # each, with whatever budget remains.
+    for url, html in fetched:
+        if len(pages) >= limit:
+            break
+        inner = [u for u in discover_links(html, base, limit=60) if u not in seen]
+        inner.sort(key=lambda u: (
+            0 if re.search(r"award|recognition|ranking|ranked|band|tier", u, re.I) else 1,
+            len(u)))
+        for child in inner[:3]:
+            fetch_into(child)
+            if len(pages) >= limit:
+                break
+        fetch_into(f"{url.rstrip('/')}/page/2")
+
     return pages
 
 
@@ -167,7 +206,11 @@ def extract_recognitions(text: str, url: str) -> list[dict]:
 
     for chunk in SENTENCE_SPLIT_RE.split(text):
         sentence = (chunk or "").strip()
-        if not 25 <= len(sentence) <= 240 or BOILERPLATE_RE.search(sentence):
+        if not 25 <= len(sentence) <= 420:
+            continue
+        # What survives the split is prose; only an arrow or ellipsis
+        # left inside still marks a stitched-together link list.
+        if BOILERPLATE_RE.search(sentence):
             continue
 
         hits = [(name, pattern.search(sentence))
@@ -176,12 +219,12 @@ def extract_recognitions(text: str, url: str) -> list[dict]:
         if not hits:
             continue
 
-        # Three or more publishers in one sentence is a directory logo wall or a
-        # credentials list, not a claim. Attributing the sentence to each of them
-        # invented four separate Shook Lin & Bok recognitions out of one nav
-        # blob on the first run.
-        if len(hits) > 2:
-            continue
+        # No cap on how many publishers may appear. The 130-character claim
+        # window below is what prevents cross-attribution, and it does the job
+        # more precisely: a credentials list carries no tier or practice near
+        # any publisher, so every candidate falls out on its own. Capping at
+        # two instead threw away real recognitions, because firms print their
+        # citations back to back with no full stop between them.
 
         if not RECOGNITION_VERB_RE.search(sentence):
             continue
