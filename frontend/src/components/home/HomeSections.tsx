@@ -1,10 +1,25 @@
 import Link from "next/link";
 import {
   getMethodology,
-  getRankingsMeta,
+  getRegionCounts,
   listCoveredJurisdictions,
   listNews,
 } from "@/lib/data";
+
+const CONTINENT_ORDER = [
+  "Asia-Pacific",
+  "Europe",
+  "Americas",
+  "Africa & Middle East",
+];
+
+/** Directory region name -> the news region slug covering the same ground. */
+const NEWS_SLUG: Record<string, string> = {
+  "Asia-Pacific": "asia-pacific",
+  Europe: "europe",
+  Americas: "americas",
+  "Africa & Middle East": "africa-middle-east",
+};
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString("en-GB", {
@@ -16,96 +31,148 @@ function formatDate(iso: string): string {
 }
 
 /**
- * The editorial half of the home page. The dark hero establishes the brand; this
- * is where a reader who scrolls finds actual content — coverage, the latest
- * stories, and the methodology — without having to guess at the navigation.
+ * The two pillars, kept apart.
+ *
+ * This page previously ran "Where we have coverage", then a second section
+ * called "Coverage", then a mixed list of press cuttings — three blocks saying
+ * overlapping things, with the directory and the news bleeding into each other.
+ * A reader could not tell what kind of thing they were looking at.
+ *
+ * Now: the directory, grouped by continent. Then the news, grouped by the same
+ * continents. Same geography in both, so a reader who wants Asia gets the firms
+ * and the reporting under one heading rather than learning two navigations.
  */
 export async function HomeSections() {
-  const [covered, news, methodology, meta] = await Promise.all([
+  const [covered, news, methodology, regions] = await Promise.all([
     listCoveredJurisdictions(),
-    listNews(4),
+    listNews(6),
     getMethodology(),
-    getRankingsMeta(),
+    getRegionCounts(),
   ]);
 
-  const featured = [...covered]
-    .sort((a, b) => b.firmCount - a.firmCount)
-    .slice(0, 8);
+  const directory = CONTINENT_ORDER.map((continent) => ({
+    continent,
+    newsSlug: NEWS_SLUG[continent],
+    stories:
+      regions.find((r) => r.region.slug === NEWS_SLUG[continent])?.count ?? 0,
+    jurisdictions: covered
+      .filter((j) => j.region === continent)
+      .sort((a, b) => b.firmCount - a.firmCount),
+  })).filter((group) => group.jurisdictions.length > 0);
 
   return (
     <div className="relative z-10 bg-paper text-ink">
-      {/* Transition strip: carries the eye from the dark hero into the paper. */}
       <div className="h-px w-full bg-rule" />
 
+      {/* ---------------------------------------------------------- *
+       * Pillar one: the directory
+       * ---------------------------------------------------------- */}
       <section className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
         <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
-          <h2 className="editorial text-3xl text-ink lg:text-4xl">Coverage</h2>
+          <h2 className="editorial text-3xl text-ink lg:text-4xl">
+            The directory
+          </h2>
           <Link href="/rankings" className="label text-oxblood link-underline">
-            All {meta.jurisdictions} jurisdictions
+            All 35 jurisdictions
           </Link>
         </div>
 
         <p className="editorial measure mt-5 text-base leading-relaxed text-ink-muted">
-          {meta.firms} firms on file across {meta.withFirms} jurisdictions, each
-          traceable to its source. {meta.published === 0
-            ? "No ranking is published yet: the evidence a score requires has not been collected, and an unfounded number is worse than none."
-            : `${meta.published} jurisdictions have a published ranking.`}
+          Law firms by jurisdiction, grouped by continent. Every listing records
+          the source it came from. Where two independent publishers agree on a
+          firm it is ranked; otherwise the list is alphabetical and says so.
         </p>
 
-        <table className="mt-8 w-full border-collapse">
-          <thead>
-            <tr className="border-b border-rule">
-              <th className="label py-2 text-left text-ink-faint">Jurisdiction</th>
-              <th className="label hidden py-2 text-left text-ink-faint sm:table-cell">
-                Region
-              </th>
-              <th className="label py-2 text-right text-ink-faint">Firms</th>
-            </tr>
-          </thead>
-          <tbody>
-            {featured.map((entry) => (
-              <tr
-                key={entry.isoNumeric}
-                className="border-b border-rule/70 transition-colors hover:bg-paper-sunken"
-              >
-                <td className="py-4 align-baseline">
-                  <Link
-                    href={`/rankings/${entry.slug}`}
-                    className="editorial text-xl text-ink link-underline"
-                  >
-                    {entry.name}
-                  </Link>
-                </td>
-                <td className="label hidden py-4 align-baseline text-ink-faint sm:table-cell">
-                  {entry.region}
-                </td>
-                <td className="figure py-4 text-right align-baseline text-base text-ink">
-                  {entry.firmCount}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div className="mt-10 grid gap-x-14 gap-y-12 lg:grid-cols-2">
+          {directory.map((group) => (
+            <section key={group.continent}>
+              <h3 className="editorial border-b border-ink pb-2 text-2xl text-ink">
+                {group.continent}
+              </h3>
+
+              <ul className="mt-4 divide-y divide-rule/70">
+                {group.jurisdictions.slice(0, 7).map((j) => (
+                  <li key={j.slug}>
+                    <Link
+                      href={`/rankings/${j.slug}`}
+                      className="flex items-baseline justify-between gap-4 py-2.5"
+                    >
+                      <span className="editorial text-base text-ink link-underline">
+                        {j.name}
+                      </span>
+                      <span className="figure shrink-0 text-sm text-ink-faint">
+                        {j.firmCount} firms
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              {group.jurisdictions.length > 7 ? (
+                <Link
+                  href="/rankings"
+                  className="label mt-3 inline-block text-ink-faint link-underline"
+                >
+                  {group.jurisdictions.length - 7} more in {group.continent}
+                </Link>
+              ) : null}
+            </section>
+          ))}
+        </div>
       </section>
 
-      <section className="border-t border-rule bg-paper-sunken">
+      {/* ---------------------------------------------------------- *
+       * Pillar two: the news
+       * ---------------------------------------------------------- */}
+      <section className="border-y border-rule bg-paper-sunken">
         <div className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
             <h2 className="editorial text-3xl text-ink lg:text-4xl">
-              Latest from the legal press
+              The news
             </h2>
             <Link href="/news" className="label text-oxblood link-underline">
               All coverage
             </Link>
           </div>
 
-          <div className="mt-2 grid gap-x-16 lg:grid-cols-2">
+          <p className="editorial measure mt-5 text-base leading-relaxed text-ink-muted">
+            Legal industry reporting, grouped by the same continents. Collected
+            from publishers whose feeds permit it and linked back to whoever
+            wrote it.
+          </p>
+
+          <div className="mt-8 grid gap-x-10 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
+            {directory.map((group) => (
+              <Link
+                key={group.continent}
+                href={`/news/${group.newsSlug}`}
+                className="group flex items-baseline justify-between gap-3 border-b border-rule/60 pb-2"
+              >
+                <span className="editorial text-base text-ink transition-colors group-hover:text-oxblood">
+                  {group.continent}
+                </span>
+                <span className="rank-figure text-base text-ink-faint">
+                  {group.stories}
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <ul className="mt-10 grid gap-x-14 gap-y-7 lg:grid-cols-2">
             {news.map((article) => (
-              <article key={article.id} className="border-b border-rule/70 py-6">
-                <p className="label text-ink-faint">
-                  {article.sourceName} · {formatDate(article.publishedAt)}
+              <li key={article.id}>
+                <p className="flex flex-wrap items-baseline gap-x-3">
+                  <time
+                    dateTime={article.publishedAt}
+                    className="figure text-sm text-ink"
+                  >
+                    {formatDate(article.publishedAt)}
+                  </time>
+                  <span className="label text-ink-faint">
+                    {article.sourceName}
+                  </span>
                 </p>
-                <h3 className="editorial mt-2 text-xl leading-snug text-ink">
+                <h3 className="editorial mt-1.5 text-lg leading-snug text-ink">
                   <a
                     href={article.canonicalUrl}
                     target="_blank"
@@ -115,76 +182,50 @@ export async function HomeSections() {
                     {article.title}
                   </a>
                 </h3>
-                {article.summary ?? article.excerpt ? (
-                  <p className="editorial mt-2 text-sm leading-relaxed text-ink-muted">
-                    {article.summary ?? article.excerpt}
-                  </p>
-                ) : null}
-              </article>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      <section className="border-t border-rule">
-        <div className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
-          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_1fr] lg:gap-20">
-            <div>
-              <span className="label text-oxblood">
-                Methodology · version {methodology.version}
-              </span>
-              <h2 className="editorial mt-4 text-3xl leading-tight text-ink lg:text-4xl">
-                Every ranking published with the arithmetic attached
-              </h2>
-              <p className="editorial measure mt-5 text-base leading-relaxed text-ink-muted">
-                Existing directories publish a band and withhold the calculation
-                behind it. Legal League publishes both — and publishes nothing at
-                all until the evidence exists to support it.
-              </p>
-              <Link
-                href="/methodology"
-                className="label mt-6 inline-block text-oxblood link-underline"
-              >
-                Read the full methodology
-              </Link>
-            </div>
-
-            <table className="h-fit w-full border-collapse">
-              <thead>
-                <tr className="border-b-2 border-ink">
-                  <th className="label py-2 text-left text-ink">Signal</th>
-                  <th className="label py-2 text-right text-ink">Weight</th>
-                  <th className="label py-2 text-right text-ink">Held</th>
-                </tr>
-              </thead>
-              <tbody>
-                {methodology.signals.map((signal) => (
-                  <tr key={signal.key} className="border-b border-rule/70">
-                    <td className="editorial py-3.5 text-base text-ink">
-                      {signal.label}
-                    </td>
-                    <td className="figure py-3.5 text-right text-base text-ink">
-                      {Math.round(signal.weight * 100)}%
-                    </td>
-                    <td className="label py-3.5 text-right text-ink-faint">
-                      none
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-              <tfoot>
-                <tr className="border-t-2 border-ink">
-                  <td className="label py-3 text-ink">Excluded outright</td>
-                  <td
-                    className="figure py-3 text-right text-base text-ink-muted"
-                    colSpan={2}
-                  >
-                    {methodology.exclusions.length} rules
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
+      {/* ---------------------------------------------------------- *
+       * How it is put together
+       * ---------------------------------------------------------- */}
+      <section className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
+        <div className="grid gap-12 lg:grid-cols-[1fr_360px] lg:gap-20">
+          <div>
+            <span className="label text-oxblood">
+              Methodology · version {methodology.version}
+            </span>
+            <h2 className="editorial mt-4 text-3xl leading-tight text-ink lg:text-4xl">
+              Every ranking published with the arithmetic attached
+            </h2>
+            <p className="editorial measure mt-5 text-base leading-relaxed text-ink-muted">
+              Other directories publish a band and withhold the calculation
+              behind it. This publishes both — and, for each jurisdiction, what
+              the ranking does not rest on.
+            </p>
+            <Link
+              href="/methodology"
+              className="label mt-6 inline-block text-oxblood link-underline"
+            >
+              Read the full methodology
+            </Link>
           </div>
+
+          <dl className="divide-y divide-rule/70 border-y border-rule/70">
+            {methodology.signals.map((signal) => (
+              <div
+                key={signal.key}
+                className="flex items-baseline justify-between gap-4 py-3"
+              >
+                <dt className="editorial text-sm text-ink">{signal.label}</dt>
+                <dd className="figure text-sm text-ink-faint">
+                  {Math.round(signal.weight * 100)}%
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
     </div>

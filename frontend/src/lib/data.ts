@@ -150,7 +150,7 @@ export async function getNewsSnapshotMeta() {
   return {
     generatedAt: NEWS_SNAPSHOT.generatedAt,
     sourceCount: NEWS_SNAPSHOT.sourceCount,
-    total: NEWS.filter((a) => (a.language ?? "en") === "en").length,
+    total: NEWS.filter((a) => (a.language ?? "en") === "en" && isRealArticle(a)).length,
   };
 }
 
@@ -161,8 +161,77 @@ export async function getNewsSnapshotMeta() {
  * The non-English articles stay in the corpus for the clustering step, which
  * reads them, and are simply not displayed.
  */
+/**
+ * Boilerplate and section-index pages the sitemap crawler swept up alongside
+ * real articles: "Terms of Use", "Privacy Policy", "Litigation News". They were
+ * rendering as headlines on the homepage of a legal publication, which is the
+ * single most damaging thing a reader could see there.
+ *
+ * A published article has a headline slug in its URL; a section index has a
+ * label. That, plus a short title, is the pair of signals that separates them —
+ * neither is reliable alone, since real articles can have short headlines and
+ * real slugs can be short.
+ */
+/**
+ * Publishers serve headlines HTML-escaped. Stored raw and handed to React,
+ * which escapes again, "Law &amp; Policy" reaches the reader as literal
+ * "Law &amp; Policy" — on 221 of 848 articles, a quarter of the feed.
+ * Decoded once here, at the boundary, so no page has to remember to do it.
+ */
+const NAMED_ENTITIES: Record<string, string> = {
+  amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ",
+  ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’",
+  ndash: "–", mdash: "—", hellip: "…", rupee: "₹",
+};
+
+function decodeEntities(value: string): string {
+  // Twice: several publishers double-encode, so one pass turns "&amp;#x27;"
+  // into "&#x27;" and stops one step short of an apostrophe.
+  return decodeOnce(decodeOnce(value));
+}
+
+function decodeOnce(value: string): string {
+  return value.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (match, body: string) => {
+    if (body.startsWith("#")) {
+      const code = body[1] === "x" || body[1] === "X"
+        ? parseInt(body.slice(2), 16)
+        : parseInt(body.slice(1), 10);
+      return Number.isFinite(code) ? String.fromCodePoint(code) : match;
+    }
+    return NAMED_ENTITIES[body.toLowerCase()] ?? match;
+  });
+}
+
+/**
+ * A published article has a headline slug in its URL. A section index has a
+ * label: /news, /columns, /law-firms/corporate.
+ *
+ * The URL is the whole test. An earlier version also accepted any title over
+ * seventy characters, which let every section page straight back in — Bar &
+ * Bench titles its landing pages "Legal News: Live updates on Legal News from
+ * Supreme Court, High Courts and Tribunals", and those were running as
+ * headlines on the home page of a legal publication.
+ *
+ * Measured across the corpus this removes thirty of 848, every one a section
+ * or boilerplate path, and no real article.
+ */
+function isRealArticle(article: NewsArticle): boolean {
+  const path = article.canonicalUrl.split("?")[0].replace(/\/$/, "");
+  const last = path.slice(path.lastIndexOf("/") + 1);
+  return (last.match(/-/g) ?? []).length >= 3;
+}
+
 export async function listNews(limit?: number): Promise<NewsArticle[]> {
-  const sorted = NEWS.filter((a) => (a.language ?? "en") === "en").sort(
+  const sorted = NEWS.filter(
+    (a) => (a.language ?? "en") === "en" && isRealArticle(a),
+  )
+    .map((a) => ({
+      ...a,
+      title: decodeEntities(a.title),
+      excerpt: a.excerpt ? decodeEntities(a.excerpt) : a.excerpt,
+      summary: a.summary ? decodeEntities(a.summary) : a.summary,
+    }))
+    .sort(
     (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt),
   );
   return limit ? sorted.slice(0, limit) : sorted;
