@@ -27,7 +27,7 @@ export default async function MethodologyPage() {
         { label: "Exclusions", value: String(methodology.exclusions.length) },
       ]}
     >
-      <div className="grid gap-16 py-14 lg:grid-cols-[1fr_260px] lg:gap-20">
+      <div className="grid gap-16 py-14 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-20">
         <div>
           <section>
             <h2 className="editorial border-b-2 border-ink pb-3 text-3xl text-ink">

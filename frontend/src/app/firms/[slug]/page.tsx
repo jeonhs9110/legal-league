@@ -86,7 +86,7 @@ export default async function FirmPage({ params }: Props) {
         { label: "Press mentions", value: String(firm.pressMentions) },
       ]}
     >
-      <div className="grid gap-16 py-14 lg:grid-cols-[1fr_320px] lg:gap-16">
+      <div className="grid gap-16 py-14 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-16">
         <div>
           {awards && awards.recognitions.length > 0 ? (
             <section className="mb-14">
@@ -164,7 +164,7 @@ export default async function FirmPage({ params }: Props) {
 
               <dl className="mt-6 divide-y divide-rule/70 border-y border-rule/70">
                 {details.headcount !== null ? (
-                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_minmax(0,1fr)]">
                     <dt className="label text-ink-faint">Professionals</dt>
                     <dd>
                       <span className="rank-figure text-xl text-ink">
@@ -180,14 +180,14 @@ export default async function FirmPage({ params }: Props) {
                 ) : null}
 
                 {details.phones.length > 0 ? (
-                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_minmax(0,1fr)]">
                     <dt className="label text-ink-faint">Telephone</dt>
                     <dd className="figure text-base text-ink">
                       {details.phones.map((phone) => (
                         <a
                           key={phone}
                           href={`tel:${phone}`}
-                          className="mr-4 link-underline"
+                          className="mr-4 break-all link-underline"
                         >
                           {phone}
                         </a>
@@ -197,14 +197,14 @@ export default async function FirmPage({ params }: Props) {
                 ) : null}
 
                 {details.emails.length > 0 ? (
-                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_minmax(0,1fr)]">
                     <dt className="label text-ink-faint">Email</dt>
                     <dd className="editorial text-base text-ink">
                       {details.emails.map((email) => (
                         <a
                           key={email}
                           href={`mailto:${email}`}
-                          className="mr-4 link-underline"
+                          className="mr-4 break-all link-underline"
                         >
                           {email}
                         </a>
@@ -213,14 +213,14 @@ export default async function FirmPage({ params }: Props) {
                   </div>
                 ) : null}
 
-                <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                <div className="grid gap-1 py-4 sm:grid-cols-[180px_minmax(0,1fr)]">
                   <dt className="label text-ink-faint">Website</dt>
                   <dd>
                     <a
                       href={details.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="editorial inline-flex items-center gap-1.5 text-base text-ink link-underline"
+                      className="editorial inline-flex items-center gap-1.5 break-all text-base text-ink link-underline"
                     >
                       {details.website.replace(/^https?:\/\//, "")}
                       <ExternalLink className="h-3.5 w-3.5 text-ink-faint" />
@@ -229,7 +229,7 @@ export default async function FirmPage({ params }: Props) {
                 </div>
 
                 {details.practiceAreas.length > 0 ? (
-                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_1fr]">
+                  <div className="grid gap-1 py-4 sm:grid-cols-[180px_minmax(0,1fr)]">
                     <dt className="label text-ink-faint">Practice areas</dt>
                     <dd className="editorial text-base leading-relaxed text-ink">
                       {details.practiceAreas.join(" · ")}

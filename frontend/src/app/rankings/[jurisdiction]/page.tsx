@@ -91,7 +91,7 @@ export default async function JurisdictionPage({ params }: Props) {
         { label: "Press mentions", value: String(entry.pressMentions) },
       ]}
     >
-      <div className="grid gap-16 py-14 lg:grid-cols-[1fr_280px] lg:gap-20">
+      <div className="grid gap-16 py-14 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-20">
         <div>
           <div className="flex items-baseline justify-between gap-6 border-b-2 border-ink pb-2">
             <h2 className="editorial text-2xl text-ink">

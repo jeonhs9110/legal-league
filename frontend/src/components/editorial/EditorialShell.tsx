@@ -37,7 +37,7 @@ export function EditorialShell({
               <span className="label text-oxblood">{kicker}</span>
             ) : null}
 
-            <div className={illustration ? "gap-10 lg:grid lg:grid-cols-[1fr_360px] lg:items-start" : ""}>
+            <div className={illustration ? "gap-10 lg:grid lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start" : ""}>
               <div>
                 <h1 className="editorial mt-4 text-4xl leading-[1.08] tracking-[-0.015em] text-ink lg:text-6xl">
                   {headline}

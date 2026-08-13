@@ -128,7 +128,7 @@ export async function HomeSections() {
 
       <section className="border-t border-rule">
         <div className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-20">
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_1fr] lg:gap-20">
             <div>
               <span className="label text-oxblood">
                 Methodology · version {methodology.version}

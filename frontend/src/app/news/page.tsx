@@ -90,7 +90,7 @@ export default async function NewsPage() {
                   </p>
                 ) : null}
 
-                <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_260px]">
+                <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_260px]">
                   <div className="editorial measure space-y-4 text-base leading-relaxed text-ink">
                     {brief.body
                       .split(/\n{2,}/)
@@ -153,7 +153,7 @@ export default async function NewsPage() {
             </a>
           </h2>
 
-          <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_300px]">
+          <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
             <div>
               {lead.summary ? (
                 <p className="editorial text-lg leading-relaxed text-ink-muted">
