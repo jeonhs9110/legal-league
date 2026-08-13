@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ExternalLink } from "lucide-react";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
 import {
+  getFirmAwards,
   getFirmBySlug,
   getFirmDetails,
   getFirmPeers,
@@ -38,10 +39,11 @@ export default async function FirmPage({ params }: Props) {
 
   if (!firm) notFound();
 
-  const [peers, entry, details] = await Promise.all([
+  const [peers, entry, details, awards] = await Promise.all([
     getFirmPeers(firm),
     getJurisdictionBySlug(firm.jurisdiction.slug),
     getFirmDetails(firm.slug, firm.name),
+    getFirmAwards(firm.slug, firm.name),
   ]);
 
   return (
@@ -86,6 +88,65 @@ export default async function FirmPage({ params }: Props) {
     >
       <div className="grid gap-16 py-14 lg:grid-cols-[1fr_320px] lg:gap-16">
         <div>
+          {awards && awards.recognitions.length > 0 ? (
+            <section className="mb-14">
+              <h2 className="label border-b-2 border-ink pb-2 text-ink">
+                External recognition
+              </h2>
+
+              <p className="editorial measure mt-4 text-sm leading-relaxed text-ink-muted">
+                What other publishers have said, as {firm.name} states it on its
+                own site. These are their assessments, not ours — Legal League
+                publishes no ranking. Their tables are not reproduced here; each
+                entry links to the firm&rsquo;s own announcement.
+              </p>
+
+              <ul className="mt-6 space-y-5">
+                {awards.recognitions.map((recognition, index) => (
+                  <li
+                    key={`${recognition.publisher}-${index}`}
+                    className="border-l-2 border-oxblood pl-5"
+                  >
+                    <p className="flex flex-wrap items-baseline gap-x-3">
+                      <span className="editorial text-base text-ink">
+                        {recognition.publisher}
+                      </span>
+                      {recognition.tier ? (
+                        <span className="label text-oxblood">
+                          {recognition.tier}
+                        </span>
+                      ) : null}
+                      {recognition.edition ? (
+                        <span className="figure text-xs text-ink-faint">
+                          {recognition.edition}
+                        </span>
+                      ) : null}
+                    </p>
+
+                    {recognition.practiceAreas.length > 0 ? (
+                      <p className="label mt-1 text-ink-muted">
+                        {recognition.practiceAreas.join(" · ")}
+                      </p>
+                    ) : null}
+
+                    <p className="editorial mt-2 text-sm italic leading-relaxed text-ink-muted">
+                      &ldquo;{recognition.quote}&rdquo;
+                    </p>
+
+                    <a
+                      href={recognition.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="label mt-1.5 inline-block text-ink-faint link-underline"
+                    >
+                      {firm.name}&rsquo;s announcement
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
           {details ? (
             <section className="mb-14">
               <h2 className="label border-b-2 border-ink pb-2 text-ink">

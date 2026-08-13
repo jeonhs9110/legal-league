@@ -156,3 +156,25 @@ export type FirmDetails = {
   sources: Partial<Record<"emails" | "phones" | "headcount" | "practiceAreas", string>>;
   checkedAt: string;
 };
+
+/**
+ * An external publisher's assessment, as the firm itself states it. Not a
+ * Legal League ranking, and not taken from the publisher's own tables — the
+ * quote and sourceUrl point at the firm's own announcement.
+ */
+export type Recognition = {
+  publisher: string;
+  tier: string | null;
+  practiceAreas: string[];
+  edition: number | null;
+  quote: string;
+  sourceUrl: string;
+};
+
+export type FirmAwards = {
+  slug: string;
+  name: string;
+  jurisdiction: string;
+  recognitions: Recognition[];
+  checkedAt: string;
+};

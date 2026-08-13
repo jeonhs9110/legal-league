@@ -231,3 +231,40 @@ export async function getFirmDetailsMeta() {
     withHeadcount: FIRM_DETAILS.firms.filter((f) => f.headcount !== null).length,
   };
 }
+
+import firmAwardsSnapshot from "@/data/firm_awards.json";
+import type { FirmAwards } from "@/lib/types";
+
+const FIRM_AWARDS = firmAwardsSnapshot as {
+  generatedAt: string;
+  disclaimer: string;
+  byPublisher: Record<string, number>;
+  firms: FirmAwards[];
+};
+
+const AWARDS_BY_KEY = new Map<string, FirmAwards>(
+  FIRM_AWARDS.firms.flatMap((firm) => [
+    [detailKey(firm.slug), firm] as const,
+    [detailKey(firm.name), firm] as const,
+  ]),
+);
+
+export async function getFirmAwards(
+  slug: string,
+  name?: string,
+): Promise<FirmAwards | null> {
+  return (
+    AWARDS_BY_KEY.get(detailKey(slug)) ??
+    (name ? AWARDS_BY_KEY.get(detailKey(name)) : undefined) ??
+    null
+  );
+}
+
+export async function getAwardsMeta() {
+  return {
+    generatedAt: FIRM_AWARDS.generatedAt,
+    disclaimer: FIRM_AWARDS.disclaimer,
+    byPublisher: FIRM_AWARDS.byPublisher,
+    firmCount: FIRM_AWARDS.firms.length,
+  };
+}
