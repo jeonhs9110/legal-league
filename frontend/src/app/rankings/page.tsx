@@ -74,7 +74,7 @@ export default async function RankingsIndexPage() {
       illustration="/brand/rankings.webp"
       rail={[
         { label: "Jurisdictions", value: String(meta.jurisdictions) },
-        { label: "Firms listed", value: String(meta.firms) },
+        { label: "Firms Listed", value: String(meta.firms) },
         { label: "Rankings published", value: String(meta.published) },
         { label: "Built", value: formatStamp(meta.generatedAt) },
       ]}

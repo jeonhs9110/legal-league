@@ -23,7 +23,7 @@ export default async function OpengraphImage() {
 
   const stats = [
     [String(coverage.jurisdictions), "Jurisdictions"],
-    [String(coverage.firms), "Firms listed"],
+    [String(coverage.firms), "Firms Listed"],
     [String(news.total), "Articles tracked"],
   ];
 

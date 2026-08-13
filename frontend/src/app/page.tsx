@@ -66,7 +66,7 @@ export default async function Home() {
               </div>
               <div>
                 <dd className="rank-figure text-2xl text-ink">{coverage.firms}</dd>
-                <dt className="label mt-0.5 text-ink-faint">Firms listed</dt>
+                <dt className="label mt-0.5 text-ink-faint">Firms Listed</dt>
               </div>
               <div>
                 <dd className="rank-figure text-2xl text-ink">{news.total}</dd>
@@ -82,7 +82,7 @@ export default async function Home() {
         <div className="mx-auto w-full max-w-[1180px] px-6 py-14 lg:px-10">
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
             <h2 className="editorial text-3xl text-ink lg:text-4xl" data-i18n="home.coverage">
-              Where we have coverage
+              Where We Have Coverage
             </h2>
             <span className="label text-ink-faint">
               {coverage.withFirms} of {coverage.jurisdictions} with firms listed

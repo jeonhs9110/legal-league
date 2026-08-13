@@ -201,7 +201,7 @@ export default async function MethodologyPage() {
           </p>
 
           <h2 className="label mt-12 border-b-2 border-ink pb-2 text-ink">
-            See it applied
+            See It Applied
           </h2>
           <ul className="mt-4 space-y-2">
             <li>

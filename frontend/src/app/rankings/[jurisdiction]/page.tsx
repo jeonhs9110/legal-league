@@ -88,7 +88,7 @@ export default async function JurisdictionPage({ params }: Props) {
           : `${entry.firmCount} firms on file, listed alphabetically. No ranking is published for ${entry.name} yet — the evidence behind a score does not exist, and the order below implies nothing.`
       }
       rail={[
-        { label: "Firms on file", value: String(entry.firmCount) },
+        { label: "Firms on File", value: String(entry.firmCount) },
         { label: "Region", value: entry.region },
         {
           label: "Evidence coverage",
@@ -99,7 +99,7 @@ export default async function JurisdictionPage({ params }: Props) {
     >
       <section className="border-b border-rule py-10">
         <h2 className="label border-b-2 border-ink pb-2 text-ink">
-          How {entry.name} is ranked
+          How {entry.name} Is Ranked
         </h2>
 
         <p className="editorial measure mt-5 text-base leading-relaxed text-ink">
@@ -108,7 +108,7 @@ export default async function JurisdictionPage({ params }: Props) {
 
         {entry.methodology.publishers.length > 0 ? (
           <div className="mt-6">
-            <p className="label text-ink-faint">Publishers reconciled here</p>
+            <p className="label text-ink-faint">Publishers Reconciled Here</p>
             <p className="editorial mt-2 text-sm leading-relaxed text-ink-muted">
               {entry.methodology.publishers.join(" · ")}
             </p>
@@ -118,7 +118,7 @@ export default async function JurisdictionPage({ params }: Props) {
         {entry.methodology.limits.length > 0 ? (
           <div className="measure mt-6 border-l-2 border-oxblood pl-5">
             <p className="label text-oxblood">
-              What this ranking does not rest on
+              What This Ranking Does Not Rest On
             </p>
             <ul className="mt-2 space-y-1.5">
               {entry.methodology.limits.map((limit) => (
@@ -159,7 +159,7 @@ export default async function JurisdictionPage({ params }: Props) {
         <div>
           <div className="flex items-baseline justify-between gap-6 border-b-2 border-ink pb-2">
             <h2 className="editorial text-2xl text-ink">
-              {entry.methodology.reconciledFirms > 0 ? "Ranked firms" : "Firms on file"}
+              {entry.methodology.reconciledFirms > 0 ? "Ranked Firms" : "Firms on File"}
             </h2>
             <span className="label text-ink-faint">
               {entry.methodology.reconciledFirms > 0

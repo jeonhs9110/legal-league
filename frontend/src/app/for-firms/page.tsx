@@ -17,10 +17,10 @@ export default async function ForFirmsPage() {
   return (
     <EditorialShell
       kicker="For law firms"
-      headline="Work with us, without buying a placement"
+      headline="Work with Us, Without Buying a Placement"
       standfirst="Three ways for a firm to engage. Two are free and always will be. The third is advertising, and the rules below set out exactly what it can and cannot reach — because a directory that sells to the firms it ranks has one asset, and that asset is the belief that the two are separate."
       rail={[
-        { label: "Firms on file", value: String(meta.firms) },
+        { label: "Firms on File", value: String(meta.firms) },
         { label: "Jurisdictions", value: String(meta.jurisdictions) },
         { label: "Method", value: `Version ${meta.methodologyVersion}` },
         { label: "Paid ranking factors", value: "None" },

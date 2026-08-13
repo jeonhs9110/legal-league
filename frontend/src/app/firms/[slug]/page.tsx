@@ -91,7 +91,7 @@ export default async function FirmPage({ params }: Props) {
           {awards && awards.recognitions.length > 0 ? (
             <section className="mb-14">
               <h2 className="label border-b-2 border-ink pb-2 text-ink">
-                External recognition
+                External Recognition
               </h2>
 
               <p className="editorial measure mt-4 text-sm leading-relaxed text-ink-muted">
@@ -150,7 +150,7 @@ export default async function FirmPage({ params }: Props) {
           {details ? (
             <section className="mb-14">
               <h2 className="label border-b-2 border-ink pb-2 text-ink">
-                Firm information
+                Firm Information
               </h2>
 
               <p className="editorial measure mt-4 text-sm leading-relaxed text-ink-muted">
@@ -366,7 +366,7 @@ export default async function FirmPage({ params }: Props) {
 
         <aside className="lg:border-l lg:border-rule lg:pl-8">
           <h2 className="label border-b-2 border-ink pb-2 text-ink">
-            Ranking status
+            Ranking Status
           </h2>
           <p className="editorial mt-4 text-sm leading-relaxed text-ink-muted">
             {entry && entry.status === "ranked"
@@ -382,7 +382,7 @@ export default async function FirmPage({ params }: Props) {
           </Link>
 
           <h2 className="label mt-12 border-b-2 border-ink pb-2 text-ink">
-            Is this your firm?
+            Is This Your Firm?
           </h2>
           <p className="editorial mt-4 text-sm leading-relaxed text-ink-muted">
             Claim the profile to correct the record, add offices, practice areas

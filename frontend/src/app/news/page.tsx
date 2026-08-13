@@ -102,7 +102,7 @@ export default async function NewsPage() {
         <section className="border-b border-rule py-14">
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
             <h2 className="editorial text-3xl text-ink lg:text-4xl">
-              Where the coverage converges
+              Where the Coverage Converges
             </h2>
             <span className="label text-ink-faint">
               {briefsMeta.total} {briefsMeta.total === 1 ? "brief" : "briefs"}
@@ -145,7 +145,7 @@ export default async function NewsPage() {
 
                   <aside className="lg:border-l lg:border-rule lg:pl-8">
                     <h4 className="label border-b border-ink pb-2 text-ink">
-                      Reported by
+                      Reported By
                     </h4>
                     <ol className="mt-4 space-y-3">
                       {brief.sources.map((source, index) => (
@@ -221,7 +221,7 @@ export default async function NewsPage() {
             {lead.entities.length > 0 ? (
               <div className="lg:border-l lg:border-rule lg:pl-8">
                 <h3 className="label border-b border-ink pb-2 text-ink">
-                  Firms named
+                  Firms Named
                 </h3>
                 <ul className="mt-4 space-y-3">
                   {lead.entities.map((entity) => (
@@ -245,7 +245,7 @@ export default async function NewsPage() {
       ) : null}
 
       <section className="border-b border-rule py-8">
-        <h2 className="label text-ink-faint">Coverage by region</h2>
+        <h2 className="label text-ink-faint">Coverage by Region</h2>
         <div className="mt-4 grid gap-x-10 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
           {regions.map(({ region, count }) => (
             <Link
@@ -280,7 +280,7 @@ export default async function NewsPage() {
       </div>
 
       <div className="measure mt-12 border-l-2 border-rule-strong pl-5">
-        <p className="label text-ink-faint">How this feed is built</p>
+        <p className="label text-ink-faint">How This Feed Is Built</p>
         <p className="editorial mt-2 text-sm leading-relaxed text-ink-muted">
           Extracts are reproduced under short-quotation limits and capped at 320
           characters; full articles remain with the publisher. Sources are

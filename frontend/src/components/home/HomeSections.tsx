@@ -35,7 +35,7 @@ function formatDate(iso: string): string {
 /**
  * The two pillars, kept apart.
  *
- * This page previously ran "Where we have coverage", then a second section
+ * This page previously ran "Where We Have Coverage", then a second section
  * called "Coverage", then a mixed list of press cuttings — three blocks saying
  * overlapping things, with the directory and the news bleeding into each other.
  * A reader could not tell what kind of thing they were looking at.
@@ -74,7 +74,7 @@ export async function HomeSections() {
       <section className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
         <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
           <h2 data-i18n="home.directory" className="editorial text-3xl text-ink lg:text-4xl">
-            The directory
+            The Directory
           </h2>
           <Link href="/rankings" className="label text-oxblood link-underline" data-i18n="home.allJurisdictions">
             All 35 jurisdictions
@@ -132,7 +132,7 @@ export async function HomeSections() {
         <div className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
             <h2 data-i18n="home.news" className="editorial text-3xl text-ink lg:text-4xl">
-              The news
+              The News
             </h2>
             <Link href="/news" className="label text-oxblood link-underline" data-i18n="home.allCoverage">
               All coverage
@@ -208,7 +208,7 @@ export async function HomeSections() {
           </ol>
 
           <p className="measure mt-8 border-l-2 border-rule-strong pl-5">
-            <span className="label text-ink-faint">How these six are chosen</span>
+            <span className="label text-ink-faint">How These Six Are Chosen</span>
             <span className="editorial mt-2 block text-sm leading-relaxed text-ink-muted">
               Ranked by the capital at stake — every currency converted to US
               dollars — together with the seniority of the court, how far the

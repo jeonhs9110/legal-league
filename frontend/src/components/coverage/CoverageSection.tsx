@@ -88,7 +88,7 @@ export function CoverageSection({
 
             <dl className="mt-5 flex flex-wrap gap-x-10 gap-y-3 border-y border-rule py-4">
               <div>
-                <dt className="label text-ink-faint">Firms listed</dt>
+                <dt className="label text-ink-faint">Firms Listed</dt>
                 <dd className="rank-figure mt-1 text-2xl text-ink">
                   {entry.firmCount}
                 </dd>
@@ -135,7 +135,7 @@ export function CoverageSection({
             {guides.filter((g) => g.jurisdiction === entry.slug).length > 0 ? (
               <div className="mt-7 border-t border-rule pt-5">
                 <h4 className="label text-ink">
-                  Doing business in {entry.name}
+                  Doing Business in {entry.name}
                 </h4>
                 <p className="editorial mt-1.5 text-xs leading-relaxed text-ink-faint">
                   Published by firms practising here. Where several publish a
@@ -168,7 +168,7 @@ export function CoverageSection({
             {/* The method differs by jurisdiction, so it is stated here rather
                 than left to a single site-wide claim. */}
             <div className="mt-7 border-t border-rule pt-5">
-              <h4 className="label text-ink">How {entry.name} is ranked</h4>
+              <h4 className="label text-ink">How {entry.name} Is Ranked</h4>
               <p className="editorial mt-2 text-xs leading-relaxed text-ink-muted">
                 {entry.methodology.basis}
               </p>
@@ -195,7 +195,7 @@ export function CoverageSection({
         ) : (
           <div>
             <h3 className="editorial text-2xl text-ink lg:text-3xl">
-              Select a jurisdiction
+              Select a Jurisdiction
             </h3>
             <p className="editorial mt-3 text-sm leading-relaxed text-ink-muted">
               Rotate the globe and choose a marked jurisdiction, or pick one
