@@ -96,7 +96,7 @@ export default async function FirmPage({ params }: Props) {
 
               <p className="editorial measure mt-4 text-sm leading-relaxed text-ink-muted">
                 What other publishers have said, as {firm.name} states it on its
-                own site. These are their assessments, not ours — Legal League
+                own site. These are their assessments, not ours — League of Legals
                 publishes no ranking. Their tables are not reproduced here; each
                 entry links to the firm&rsquo;s own announcement.
               </p>

@@ -1,5 +1,5 @@
 """
-Legal League — the daily update.
+League of Legals — the daily update.
 
     python backend/update.py                  # everything
     python backend/update.py --news-only      # news and briefs
@@ -232,7 +232,7 @@ def main() -> int:
               if (groups == {"all"} or s.group in groups) and s.key not in skip]
 
     started = datetime.now(timezone.utc)
-    log(f"Legal League update — {started:%Y-%m-%d %H:%M} UTC")
+    log(f"League of Legals update — {started:%Y-%m-%d %H:%M} UTC")
     log(f"{len(stages)} stages" + (" (dry run)" if args.dry_run else ""))
     log()
 

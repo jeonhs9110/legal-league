@@ -1,4 +1,4 @@
-# Legal League — brand asset prompts
+# League of Legals — brand asset prompts
 
 **How to use this file.** Each asset below has one grey code box. Copy
 **everything inside that box** — from the first word to the last — and paste it
@@ -54,9 +54,9 @@ will not read as one publication.
 
 | | |
 |---|---|
-| Name | Legal League |
+| Name | League of Legals |
 | Slogan | A comprehensive legal media publication |
-| Domain | legalleague.org |
+| Domain | leagueoflegals.com |
 | Paper | `#FBFAF7` warm off-white |
 | Ink | `#14161A` near-black, slightly blue |
 | Rule | `#E4E0D6` warm grey line |
@@ -72,11 +72,11 @@ will not read as one publication.
 **▼ PROMPT STARTS — copy everything inside the box below ▼**
 
 ```text
-Design a typographic wordmark for a legal media publication called Legal League.
+Design a typographic wordmark for a legal media publication called League of Legals.
 
 CANVAS AND PLACEMENT — FOLLOW EXACTLY. Produce a square image 1200 x 1200 pixels. The wordmark must occupy only the centred region of 400 x 400 pixels, precisely centred both horizontally and vertically. Every pixel outside that centred 400 x 400 region must be flat, uniform, completely empty background in the exact colour #FBFAF7, with no texture, no shadow, no vignette, no gradient, no border and no stray marks of any kind. Treat the outer 400-pixel band on all four sides as strictly reserved empty margin. Do not extend the design into it. Do not centre the design and then scale it up to fill the frame.
 
-THE MARK ITSELF. Set the two words "Legal League" in a high-contrast transitional serif with sharp, flat, unbracketed serifs and strong thick-to-thin stroke modulation — the character of Source Serif Pro, Freight Display or Canela. Stack the two words on two lines, flush left, with tight leading so the descender of the "g" in "Legal" nearly meets the cap-height of "League". Letter-spacing slightly negative, roughly minus two percent. Colour the type #14161A. Beneath the second word place a single hairline horizontal rule, one pixel in weight, in #7A2230, running exactly the width of the word "League" and no wider.
+THE MARK ITSELF. Set the three words "League of Legals" in a high-contrast transitional serif with sharp, flat, unbracketed serifs and strong thick-to-thin stroke modulation — the character of Source Serif Pro, Freight Display or Canela. Set "LEAGUE OF" on the first line in smaller capitals and "LEGALS" on the second line much larger, flush left, with tight leading. The eye should land on LEGALS. Letter-spacing slightly negative, roughly minus two percent. Colour the type #14161A. Beneath the second word place a single hairline horizontal rule, one pixel in weight, in #7A2230, running exactly the width of the word "LEGALS" and no wider.
 
 EXPLICITLY AVOID. No icon, no emblem, no monogram, no crest, no seal, no scales of justice, no gavel, no pillar, no book, no globe, no shield, no laurel. No gradient anywhere. No drop shadow, outer glow, bevel, emboss or 3D extrusion. No outline or stroke around the letters. No background texture, paper grain or noise. No decorative flourish, swash or ligature beyond standard typography. Nothing that suggests a technology company, a law firm or a software product.
 
@@ -239,7 +239,7 @@ Design a social share card for a legal media publication.
 
 CANVAS AND PLACEMENT — FOLLOW EXACTLY. Produce an image 1800 x 945 pixels. All content must sit within a centred region of 1200 x 630 pixels. The surrounding band — 300 pixels left and right, roughly 157 pixels top and bottom — must be flat, uniform, empty #FBFAF7 with no content whatsoever.
 
-LAYOUT WITHIN THE CENTRED REGION. Warm off-white #FBFAF7 ground. In the upper left, the words "LEGAL LEAGUE" in a high-contrast transitional serif, near-black #14161A, generously letter-spaced at roughly fifteen percent, at a modest size. Below it, a single one-pixel horizontal rule in warm grey #E4E0D6 running the full width of the content area. In the lower left, the line "A comprehensive legal media publication" in the same serif, italic, in grey #6B7280. In the lower right, "legalleague.org" in small letter-spaced uppercase, oxblood #7A2230. Large areas of the card left deliberately empty.
+LAYOUT WITHIN THE CENTRED REGION. Warm off-white #FBFAF7 ground. In the upper left, the words "LEAGUE OF LEGALS" in a high-contrast transitional serif, near-black #14161A, generously letter-spaced at roughly fifteen percent, at a modest size. Below it, a single one-pixel horizontal rule in warm grey #E4E0D6 running the full width of the content area. In the lower left, the line "A comprehensive legal media publication" in the same serif, italic, in grey #6B7280. In the lower right, "leagueoflegals.com" in small letter-spaced uppercase, oxblood #7A2230. Large areas of the card left deliberately empty.
 
 EXPLICITLY AVOID. No photograph, no illustration, no icon, no emblem. No gradient, no shadow, no glow, no rounded corners, no card border, no device mockup. No stock imagery of lawyers, handshakes, skylines or courthouses.
 

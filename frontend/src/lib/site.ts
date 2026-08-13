@@ -9,7 +9,7 @@
  */
 
 export const SITE = {
-  name: "Legal League",
+  name: "League of Legals",
   slogan: "A comprehensive legal media publication",
   /**
    * The reader-facing promise, used where a claim needs backing rather than
@@ -40,7 +40,7 @@ export function absoluteUrl(path = "/"): string {
   return new URL(path, SITE.url).toString();
 }
 
-/** Page title in the form "Thing — Legal League". */
+/** Page title in the form "Thing — League of Legals". */
 export function pageTitle(title?: string): string {
   return title ? `${title} — ${SITE.name}` : `${SITE.name} — ${SITE.slogan}`;
 }

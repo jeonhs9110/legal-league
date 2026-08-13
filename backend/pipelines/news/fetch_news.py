@@ -1,5 +1,5 @@
 """
-Legal League — news collector.
+League of Legals — news collector.
 
 Fetches RSS from reviewed sources, normalizes and deduplicates the items, keeps
 the raw feed for the audit trail, and writes a JSON snapshot the frontend reads
@@ -47,7 +47,7 @@ RAW_DIR = ROOT / "data" / "raw"
 STATE_FILE = ROOT / "data" / "ingest_state.json"
 OUTPUT_FILE = REPO / "frontend" / "src" / "data" / "news.json"
 
-USER_AGENT = "LegalLeagueBot/0.1 (+https://legalleague.org/about; news aggregation)"
+USER_AGENT = "LeagueOfLegalsBot/0.1 (+https://leagueoflegals.com/about; news aggregation)"
 EXCERPT_LIMIT = 320          # matches the CHECK constraint on news_articles.excerpt
 MAX_ITEMS_PER_SOURCE = 12
 MAX_OUTPUT_ITEMS = 400
@@ -321,5 +321,5 @@ def collect() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League news collector")
+    print("League of Legals news collector")
     sys.exit(collect())

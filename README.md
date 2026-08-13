@@ -1,4 +1,4 @@
-# Legal League
+# League of Legals
 
 An open-methodology legal directory. Chambers, The Legal 500 and Law.asia publish
 rankings without showing their work. This publishes the work: where every fact came

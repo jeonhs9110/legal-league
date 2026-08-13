@@ -1,5 +1,5 @@
 """
-Legal League — Korean law firm revenue, per lawyer.
+League of Legals — Korean law firm revenue, per lawyer.
 
     python backend/pipelines/rankings/revenue_kr.py
     python backend/pipelines/rankings/revenue_kr.py --dry-run
@@ -235,5 +235,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League Korean revenue per lawyer")
+    print("League of Legals Korean revenue per lawyer")
     sys.exit(main())

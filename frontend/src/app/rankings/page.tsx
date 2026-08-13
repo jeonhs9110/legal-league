@@ -38,7 +38,7 @@ export default async function RankingsIndexPage() {
     "@context": "https://schema.org",
     "@type": "Dataset",
     "@id": absoluteUrl("/rankings#dataset"),
-    name: "Legal League law firm directory",
+    name: "League of Legals law firm directory",
     description:
       "Law firms across 35 jurisdictions, each listing recording the source it " +
       "was read from. Rankings are a reconciliation of external directory " +

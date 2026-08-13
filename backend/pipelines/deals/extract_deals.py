@@ -1,5 +1,5 @@
 """
-Legal League — deal extraction.
+League of Legals — deal extraction.
 
 Third pillar, alongside news and rankings: the significant matters and deals
 law firms advised on, bucketed by quarter across 2025 and 2026.
@@ -241,5 +241,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League deal extraction")
+    print("League of Legals deal extraction")
     sys.exit(main())

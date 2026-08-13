@@ -1,6 +1,6 @@
 {
   "_comment": [
-    "Jurisdictions covered by Legal League. iso_numeric is zero-padded ISO 3166-1",
+    "Jurisdictions covered by League of Legals. iso_numeric is zero-padded ISO 3166-1",
     "numeric and joins directly to the Natural Earth feature ids the globe renders",
     "and to jurisdictions.iso_numeric in Postgres.",
     "",

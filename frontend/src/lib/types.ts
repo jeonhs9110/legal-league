@@ -15,7 +15,7 @@ export type Jurisdiction = {
 };
 
 /**
- * Reconciliation of what other publishers say about a firm. Not Legal League's
+ * Reconciliation of what other publishers say about a firm. Not League of Legals's
  * own assessment — see backend/pipelines/rankings/reconcile.py.
  */
 export type ConsensusDetail = {
@@ -199,7 +199,7 @@ export type FirmDetails = {
 
 /**
  * An external publisher's assessment, as the firm itself states it. Not a
- * Legal League ranking, and not taken from the publisher's own tables — the
+ * League of Legals ranking, and not taken from the publisher's own tables — the
  * quote and sourceUrl point at the firm's own announcement.
  */
 export type Recognition = {

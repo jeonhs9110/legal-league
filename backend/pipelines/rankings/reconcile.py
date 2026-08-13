@@ -1,5 +1,5 @@
 """
-Legal League — reconciliation of external directory rankings.
+League of Legals — reconciliation of external directory rankings.
 
 Chambers, The Legal 500, IFLR1000, asialaw, Benchmark Litigation, Law.asia,
 Asian Legal Business, Managing IP, Lexology Index and Best Lawyers each publish
@@ -9,7 +9,7 @@ firm is regarded has to read ten tables and hold the differences in their head.
 
 This reconciles them into one figure and shows every input.
 
-WHAT IT IS NOT. This is not Legal League's own assessment of a firm. Nothing
+WHAT IT IS NOT. This is not League of Legals's own assessment of a firm. Nothing
 here is independent research into quality of work. It is a weighted count of
 what other publishers have said, taken from the firms' own announcements of
 those recognitions, with each citation kept and displayed. That distinction is

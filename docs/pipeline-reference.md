@@ -54,7 +54,7 @@ the run.
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ..."}
 ```
 
-We identify ourselves instead: `LegalLeagueBot/0.1 (+https://legalleague.org/about)`.
+We identify ourselves instead: `LeagueOfLegalsBot/0.1 (+https://leagueoflegals.com/about)`.
 
 This is a deliberate divergence, not an oversight. A directory that ranks law
 firms is judged on its own conduct, and the moment we misrepresent our client
@@ -129,7 +129,7 @@ lower-than-expected collection volume on that project.
 
 ## 6. Stack divergences
 
-| | VaccineDailyReport | Legal League |
+| | VaccineDailyReport | League of Legals |
 |---|---|---|
 | Backend | FastAPI + SQLAlchemy, SQLite or Postgres via Docker | Python scripts → JSON, Supabase Postgres planned |
 | Frontend | React (CRA), `npm start` | Next.js App Router on Vercel |

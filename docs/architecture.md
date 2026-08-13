@@ -1,4 +1,4 @@
-# Legal League — system architecture
+# League of Legals — system architecture
 
 Dual-engine platform: an authoritative legal directory, and an automated news
 aggregator that feeds it. Both sit on one Postgres database and share one entity

@@ -47,7 +47,7 @@ export default async function Home() {
           </div>
 
           <h1 className="editorial mt-8 text-[13vw] font-normal leading-[0.86] tracking-[-0.02em] text-ink sm:text-[10vw] lg:text-[124px]">
-            Legal League
+            League of Legals
           </h1>
 
           <div className="mt-7 flex flex-wrap items-baseline justify-between gap-x-10 gap-y-4 border-t border-rule pt-5">

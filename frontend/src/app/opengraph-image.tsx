@@ -66,7 +66,7 @@ export default async function OpengraphImage() {
               letterSpacing: "-0.03em",
             }}
           >
-            Legal League
+            League of Legals
           </div>
           <div
             style={{

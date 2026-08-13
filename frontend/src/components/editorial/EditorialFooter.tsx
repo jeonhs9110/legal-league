@@ -47,7 +47,7 @@ export async function EditorialFooter() {
         <div className="mt-10 flex flex-wrap items-baseline justify-between gap-6 border-t border-rule pt-6">
           <div>
             <p className="editorial text-lg tracking-[0.14em] text-ink">
-              LEGAL LEAGUE
+              LEAGUE OF LEGALS
             </p>
             <p className="label mt-1.5 text-ink-faint">leagueoflegals.com</p>
             <dl className="mt-4 space-y-1">

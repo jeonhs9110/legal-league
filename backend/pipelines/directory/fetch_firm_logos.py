@@ -1,5 +1,5 @@
 """
-Legal League — firm logos, taken from each firm's own website.
+League of Legals — firm logos, taken from each firm's own website.
 
     python backend/pipelines/directory/fetch_firm_logos.py
     python backend/pipelines/directory/fetch_firm_logos.py --jurisdiction japan
@@ -255,7 +255,7 @@ def main() -> int:
             "Each mark is reproduced from the firm's own website to identify "
             "that firm on its own directory entry — nominative use. Marks are "
             "not altered beyond scaling, never used in advertising, and removed "
-            "on request to corrections@legalleague.org."
+            "on request to corrections@leagueoflegals.com."
         ),
         "count": len(records),
         "logos": records,
@@ -268,5 +268,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League firm logo collection")
+    print("League of Legals firm logo collection")
     sys.exit(main())

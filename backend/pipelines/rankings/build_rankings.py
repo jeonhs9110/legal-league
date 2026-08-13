@@ -1,5 +1,5 @@
 """
-Legal League — ranking builder.
+League of Legals — ranking builder.
 
 Reads the firm directory and every evidence source that exists, scores each firm
 against the published methodology, and decides — per jurisdiction — whether
@@ -351,5 +351,5 @@ def build() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League ranking builder")
+    print("League of Legals ranking builder")
     sys.exit(build())

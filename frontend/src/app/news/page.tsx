@@ -110,7 +110,7 @@ export default async function NewsPage() {
           </div>
 
           <p className="editorial measure mt-5 text-base leading-relaxed text-ink-muted">
-            Written by Legal League where two or more independent outlets covered
+            Written by League of Legals where two or more independent outlets covered
             the same event. Each brief is drafted from the sources, checked
             against them for unsupported claims, then revised — every statement
             below traces to the reporting listed with it.
@@ -120,7 +120,7 @@ export default async function NewsPage() {
             {briefs.map((brief) => (
               <article key={brief.id}>
                 <p className="label text-oxblood">
-                  Legal League brief · {brief.sources.length} sources
+                  League of Legals brief · {brief.sources.length} sources
                 </p>
 
                 <h3 className="editorial mt-3 max-w-3xl text-3xl leading-[1.15] text-ink lg:text-4xl">

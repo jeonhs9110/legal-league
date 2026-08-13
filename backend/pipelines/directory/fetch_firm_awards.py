@@ -1,5 +1,5 @@
 """
-Legal League — external recognition, cited rather than copied.
+League of Legals — external recognition, cited rather than copied.
 
     python backend/pipelines/directory/fetch_firm_awards.py
     python backend/pipelines/directory/fetch_firm_awards.py --jurisdiction south-korea
@@ -29,7 +29,7 @@ Consequences, deliberately accepted:
     mentions it will show nothing here. That is honest and it is disclosed on
     the page; the alternative is scraping the tables.
 
-  * Nothing here is a Legal League ranking, and the page says so. These are
+  * Nothing here is a League of Legals ranking, and the page says so. These are
     other publishers' opinions, attributed to them, with the firm's own
     announcement as the citation. Reconciling them into a view of our own is a
     separate step that must show its working.
@@ -350,7 +350,7 @@ def main() -> int:
                   "itself. Coverage reflects which firms publicise rankings, not "
                   "who was ranked.",
         "disclaimer": "These are other publishers' assessments, attributed to "
-                      "them. Legal League publishes no ranking of its own.",
+                      "them. League of Legals publishes no ranking of its own.",
         "firmCount": len(records),
         "recognitionCount": total,
         "byPublisher": dict(sorted(by_publisher.items(), key=lambda kv: -kv[1])),
@@ -366,5 +366,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League external recognition collection")
+    print("League of Legals external recognition collection")
     sys.exit(main())

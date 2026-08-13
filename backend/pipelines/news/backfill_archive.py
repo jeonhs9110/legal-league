@@ -1,5 +1,5 @@
 """
-Legal League — archive backfill via sitemaps.
+League of Legals — archive backfill via sitemaps.
 
 RSS carries a publisher's last 10–100 items: days of history, not years. To
 reach 2025–2026 the discovery path has to change, so this walks each source's
@@ -44,7 +44,7 @@ SOURCES_FILE = Path(__file__).resolve().parent / "sources.json"
 OUTPUT_FILE = REPO / "frontend" / "src" / "data" / "news.json"
 RAW_DIR = ROOT / "data" / "raw" / "archive"
 
-USER_AGENT = "LegalLeagueBot/0.1 (+https://legalleague.org/about; archive backfill)"
+USER_AGENT = "LeagueOfLegalsBot/0.1 (+https://leagueoflegals.com/about; archive backfill)"
 EXCERPT_LIMIT = 320
 TIMEOUT = 30
 
@@ -295,5 +295,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League archive backfill")
+    print("League of Legals archive backfill")
     sys.exit(main())

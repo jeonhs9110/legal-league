@@ -8,7 +8,7 @@ import type { Methodology } from "@/lib/types";
  */
 export const METHODOLOGY: Methodology = {
   version: "2026.2",
-  title: "How Legal League ranks law firms",
+  title: "How League of Legals ranks law firms",
   effectiveFrom: "2026-01-01",
   signals: [
     {
@@ -57,7 +57,7 @@ export const METHODOLOGY: Methodology = {
     },
   ],
   exclusions: [
-    "Advertising spend, sponsorship, or any commercial relationship with Legal League.",
+    "Advertising spend, sponsorship, or any commercial relationship with League of Legals.",
     "Firm size, and revenue that has not been divided by headcount — scale is not quality.",
     "Submissions that no independent source corroborates.",
     "Survey responses from a party with an undisclosed interest in the outcome.",

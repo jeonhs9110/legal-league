@@ -1,5 +1,5 @@
 """
-Legal League — firm detail collection from firms' own websites.
+League of Legals — firm detail collection from firms' own websites.
 
     python backend/pipelines/directory/fetch_firm_details.py
     python backend/pipelines/directory/fetch_firm_details.py --jurisdiction south-korea
@@ -53,7 +53,7 @@ SEEDS_FILE = Path(__file__).resolve().parent / "firm_seeds.json"
 OUTPUT_FILE = REPO / "frontend" / "src" / "data" / "firm_details.json"
 RAW_DIR = ROOT / "data" / "raw" / "firms"
 
-USER_AGENT = "LegalLeagueBot/0.1 (+https://legalleague.org/about; directory listing)"
+USER_AGENT = "LeagueOfLegalsBot/0.1 (+https://leagueoflegals.com/about; directory listing)"
 TIMEOUT = 25
 CRAWL_DELAY = 4
 
@@ -648,5 +648,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League firm detail collection")
+    print("League of Legals firm detail collection")
     sys.exit(main())

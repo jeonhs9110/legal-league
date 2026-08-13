@@ -1,5 +1,5 @@
 """
-Legal League — issue clustering and brief synthesis.
+League of Legals — issue clustering and brief synthesis.
 
 Modelled on the VaccineDailyReport pipeline (D:\\PRE\\ibm\\VaccineDailyReport-main):
 cluster related articles, gate the clusters, then run a Writer -> Critic ->
@@ -54,7 +54,7 @@ CLUSTERS_FILE = ROOT / "data" / "clusters.json"
 FULLTEXT_DIR = ROOT / "data" / "raw" / "articles"
 BRIEFS_FILE = REPO / "frontend" / "src" / "data" / "briefs.json"
 
-USER_AGENT = "LegalLeagueBot/0.1 (+https://legalleague.org/about; news aggregation)"
+USER_AGENT = "LeagueOfLegalsBot/0.1 (+https://leagueoflegals.com/about; news aggregation)"
 
 # --- Clustering thresholds -------------------------------------------------
 # Cosine similarity above which two articles are linked. Single-link
@@ -539,5 +539,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League issue clustering")
+    print("League of Legals issue clustering")
     sys.exit(main())

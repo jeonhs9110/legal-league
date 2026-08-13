@@ -1,5 +1,5 @@
 """
-Legal League — court and justice-ministry record collection.
+League of Legals — court and justice-ministry record collection.
 
     python backend/pipelines/courts/fetch_court_records.py --probe
     python backend/pipelines/courts/fetch_court_records.py
@@ -54,7 +54,7 @@ REGISTRY = Path(__file__).resolve().parent / "court_sources.json"
 OUTPUT_FILE = REPO / "frontend" / "src" / "data" / "court_records.json"
 RAW_DIR = ROOT / "data" / "raw" / "courts"
 
-USER_AGENT = "LegalLeagueBot/0.1 (+https://legalleague.org/about; public court records)"
+USER_AGENT = "LeagueOfLegalsBot/0.1 (+https://leagueoflegals.com/about; public court records)"
 TIMEOUT = 30
 CRAWL_DELAY = 5
 MAX_PER_SOURCE = 40
@@ -377,5 +377,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League court record collection")
+    print("League of Legals court record collection")
     sys.exit(main())

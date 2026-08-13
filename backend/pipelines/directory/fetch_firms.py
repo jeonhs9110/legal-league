@@ -1,5 +1,5 @@
 """
-Legal League — firm directory collector.
+League of Legals — firm directory collector.
 
 Builds a real list of law firms per jurisdiction from Wikipedia's category graph,
 via the MediaWiki API. Firm names, the jurisdiction they belong to, and the
@@ -31,7 +31,7 @@ RAW_DIR = ROOT / "data" / "raw" / "directory"
 OUTPUT_FILE = REPO / "frontend" / "src" / "data" / "firms.json"
 
 API = "https://en.wikipedia.org/w/api.php"
-USER_AGENT = "LegalLeagueBot/0.1 (+https://legalleague.org/about; legal directory)"
+USER_AGENT = "LeagueOfLegalsBot/0.1 (+https://leagueoflegals.com/about; legal directory)"
 REQUEST_DELAY = 0.5          # courteous; the API allows far more
 TIMEOUT = 25
 
@@ -228,5 +228,5 @@ def collect() -> int:
 
 
 if __name__ == "__main__":
-    print("Legal League directory collector")
+    print("League of Legals directory collector")
     sys.exit(collect())

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { METHODOLOGY } from "@/lib/fixtures/methodology";
 import { SITE } from "@/lib/site";
 
 const NAV = [
@@ -21,9 +20,11 @@ export function Masthead() {
     <header className="border-b border-rule">
       <div className="mx-auto w-full max-w-[1180px] px-6 lg:px-10">
         <div className="flex items-center justify-between gap-4 border-b border-rule/70 py-2.5">
-          <span className="label text-ink-faint">
-            Edition {METHODOLOGY.version}
-          </span>
+          {/* The publishing year, not the methodology version. "Edition 2026.2"
+              read as a second edition of the paper; it was only ever the
+              version of the scoring weights, which belongs on the methodology
+              page and nowhere else. */}
+          <span className="label text-ink-faint">Edition 2026–27</span>
           <span className="label hidden text-ink-faint sm:block">
             Methodology published in full
           </span>

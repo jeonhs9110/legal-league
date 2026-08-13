@@ -15,7 +15,11 @@ type CountryProps = { name: string };
 type Country = Feature<Geometry, CountryProps> & { id: string };
 
 const SENSITIVITY = 0.25;
-const SPIN_PER_MS = 0.006;
+// Roughly one revolution every four minutes. The globe is a map a reader is
+// trying to click, not a screensaver: at the old rate a country crossed the
+// visible face in under a minute and small jurisdictions slid out from under
+// the pointer.
+const SPIN_PER_MS = 0.0015;
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 8;
 

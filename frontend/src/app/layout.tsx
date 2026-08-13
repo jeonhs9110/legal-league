@@ -72,7 +72,7 @@ export default function RootLayout({
               "@type": "NewsMediaOrganization",
               "@id": absoluteUrl("/#organization"),
               name: SITE.name,
-              alternateName: "Legal League Directory",
+              alternateName: "League of Legals Directory",
               url: SITE.url,
               slogan: SITE.slogan,
               description: SITE.descriptor,
