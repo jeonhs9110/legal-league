@@ -14,6 +14,20 @@ export type Jurisdiction = {
   g20: boolean;
 };
 
+/**
+ * Reconciliation of what other publishers say about a firm. Not Legal League's
+ * own assessment — see backend/pipelines/rankings/reconcile.py.
+ */
+export type ConsensusDetail = {
+  consensus: number;
+  publisherCount: number;
+  publishers: string[];
+  byPublisher: Record<string, number>;
+  practiceAreas: string[];
+  latestEdition: number | null;
+  method: string;
+};
+
 export type DirectoryFirm = {
   slug: string;
   name: string;
@@ -27,6 +41,11 @@ export type DirectoryFirm = {
   score: number | null;
   rank: number | null;
   band: string | null;
+  /** True when the record was confirmed against the firm's own website. */
+  verified?: boolean;
+  /** 0-1 reconciliation across publishers; null until two of them agree. */
+  consensus?: number | null;
+  consensusDetail?: ConsensusDetail | null;
 };
 
 /** Evidence held per methodology signal, by count of records. */

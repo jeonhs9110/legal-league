@@ -80,9 +80,19 @@ export function CoverageSection({ entries, coverage }: Props) {
                   <li key={firm.slug}>
                     <Link
                       href={`/firms/${firm.slug}`}
-                      className="editorial block py-2.5 text-base text-ink link-underline"
+                      className="flex items-baseline justify-between gap-4 py-2.5"
                     >
-                      {firm.name}
+                      <span className="editorial text-base text-ink link-underline">
+                        {firm.name}
+                      </span>
+                      {firm.consensusDetail ? (
+                        <span className="label shrink-0 text-oxblood">
+                          Band {firm.band} · {firm.consensusDetail.publisherCount}{" "}
+                          publishers
+                        </span>
+                      ) : firm.verified ? (
+                        <span className="label shrink-0 text-ink-faint">Verified</span>
+                      ) : null}
                     </Link>
                   </li>
                 ))}

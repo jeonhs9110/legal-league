@@ -32,6 +32,8 @@ from __future__ import annotations
 import json
 import re
 import sys
+
+
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -39,8 +41,13 @@ ROOT = Path(__file__).resolve().parents[2]
 REPO = ROOT.parent
 DATA_DIR = REPO / "frontend" / "src" / "data"
 FIRMS_FILE = DATA_DIR / "firms.json"
+DETAILS_FILE = DATA_DIR / "firm_details.json"
+AWARDS_FILE = DATA_DIR / "firm_awards.json"
 NEWS_FILE = DATA_DIR / "news.json"
 WEIGHTS_FILE = Path(__file__).resolve().parent / "methodology.json"
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from reconcile import band_for, reconcile_firm  # noqa: E402
 OUTPUT_FILE = DATA_DIR / "rankings.json"
 
 # Share of total methodology weight that must be backed by real evidence before
@@ -75,6 +82,77 @@ def press_mentions(firm_name: str, haystacks: list[str]) -> int:
     return sum(1 for text in haystacks if stem in text)
 
 
+def load_directory() -> tuple[dict[str, list[dict]], dict[str, int]]:
+    """
+    The directory, unioned across both firm sources.
+
+    firms.json came from Wikipedia and carries 224 names and nothing else.
+    firm_details.json came from crawling firms' own websites and carries
+    contact details, headcount and practice areas. They were never merged, so
+    the site rendered Wikipedia's three Korean firms while six had been
+    verified from their own sites — Bae Kim & Lee, Yoon & Yang, Jipyong and
+    Barun Law simply never appeared. A firm verified against its own website is
+    better evidence than a Wikipedia category, so it wins on conflict.
+    """
+    firms_data = json.loads(FIRMS_FILE.read_text("utf-8"))
+    by_iso: dict[str, list[dict]] = {}
+    counts = {"wikipedia": 0, "own-site": 0, "merged": 0}
+
+    slug_by_iso: dict[str, dict[str, dict]] = {}
+    for firm in firms_data["firms"]:
+        iso = firm["jurisdictionIso"]
+        slug_by_iso.setdefault(iso, {})[normalize(firm["name"])] = {
+            "slug": firm["slug"],
+            "name": firm["name"],
+            "foundedYear": firm.get("foundedYear"),
+            "sourceUrl": firm.get("sourceUrl"),
+            "sourceName": firm.get("sourceName"),
+            "verified": False,
+        }
+        counts["wikipedia"] += 1
+
+    iso_by_slug = {j["slug"]: j["isoNumeric"] for j in firms_data["jurisdictions"]}
+
+    if DETAILS_FILE.exists():
+        for firm in json.loads(DETAILS_FILE.read_text("utf-8")).get("firms", []):
+            iso = iso_by_slug.get(firm["jurisdiction"])
+            if not iso:
+                continue
+            key = normalize(firm["name"])
+            bucket = slug_by_iso.setdefault(iso, {})
+            if key in bucket:
+                # Same firm, better source: keep the slug the site already
+                # links to, but mark it verified against its own website.
+                bucket[key]["verified"] = True
+                bucket[key]["sourceUrl"] = firm["website"]
+                bucket[key]["sourceName"] = "The firm's own website"
+                counts["merged"] += 1
+            else:
+                bucket[key] = {
+                    "slug": firm["slug"],
+                    "name": firm["name"],
+                    "foundedYear": None,
+                    "sourceUrl": firm["website"],
+                    "sourceName": "The firm's own website",
+                    "verified": True,
+                }
+                counts["own-site"] += 1
+
+    for iso, bucket in slug_by_iso.items():
+        by_iso[iso] = list(bucket.values())
+    return by_iso, counts
+
+
+def load_recognitions() -> dict[str, list[dict]]:
+    """Reconciled external rankings, keyed by normalised firm name."""
+    if not AWARDS_FILE.exists():
+        return {}
+    out: dict[str, list[dict]] = {}
+    for firm in json.loads(AWARDS_FILE.read_text("utf-8")).get("firms", []):
+        out[normalize(firm["name"])] = firm.get("recognitions") or []
+    return out
+
+
 def build() -> int:
     firms_data = json.loads(FIRMS_FILE.read_text("utf-8"))
     weights = json.loads(WEIGHTS_FILE.read_text("utf-8"))
@@ -90,9 +168,8 @@ def build() -> int:
             for a in news.get("articles", [])
         ]
 
-    firms_by_jurisdiction: dict[str, list[dict]] = {}
-    for firm in firms_data["firms"]:
-        firms_by_jurisdiction.setdefault(firm["jurisdictionIso"], []).append(firm)
+    firms_by_jurisdiction, source_counts = load_directory()
+    recognitions_by_firm = load_recognitions()
 
     signal_weights = {s["key"]: s["weight"] for s in weights["signals"]}
     jurisdictions_out = []
@@ -104,27 +181,40 @@ def build() -> int:
         firms = firms_by_jurisdiction.get(iso, [])
 
         firm_rows = []
+        reconciled_count = 0
         for firm in firms:
             mentions = press_mentions(firm["name"], haystacks)
             total_mentions += mentions
+            reconciled = reconcile_firm(recognitions_by_firm.get(normalize(firm["name"]), []))
+            if reconciled:
+                reconciled_count += 1
             firm_rows.append(
                 {
                     "slug": firm["slug"],
                     "name": firm["name"],
-                    "foundedYear": firm["foundedYear"],
-                    "sourceUrl": firm["sourceUrl"],
-                    "sourceName": firm["sourceName"],
+                    "foundedYear": firm.get("foundedYear"),
+                    "sourceUrl": firm.get("sourceUrl"),
+                    "sourceName": firm.get("sourceName"),
+                    "verified": firm.get("verified", False),
                     "pressMentions": mentions,
-                    # No score. See the module docstring.
-                    "score": None,
+                    # Reconciliation of other publishers' rankings — not our own
+                    # assessment. None until two independent publishers agree.
+                    "consensus": reconciled["consensus"] if reconciled else None,
+                    "consensusDetail": reconciled,
+                    "score": round(reconciled["consensus"] * 100, 1) if reconciled else None,
                     "rank": None,
-                    "band": None,
+                    "band": band_for(reconciled["consensus"]) if reconciled else None,
                 }
             )
 
         # Evidence actually held for this jurisdiction, by methodology signal.
         evidence = {
-            "directoryConsensus": 0,
+            # Firms here whose standing is corroborated by two or more
+            # independent publishers. This is the only signal currently held.
+            "directoryConsensus": reconciled_count,
+            # Court records are collected but not yet attributed to firms, so
+            # they cannot support a firm-level score and are counted as zero
+            # rather than credited on the strength of existing.
             "courtRecord": 0,
             "submissions": 0,
             "peerReview": 0,
@@ -137,7 +227,12 @@ def build() -> int:
         if status == "ranked":
             published += 1
 
-        firm_rows.sort(key=lambda f: f["name"])
+        firm_rows.sort(key=lambda f: (-(f["consensus"] or -1), f["name"]))
+        rank = 0
+        for row in firm_rows:
+            if row["consensus"] is not None:
+                rank += 1
+                row["rank"] = rank
 
         jurisdictions_out.append(
             {
