@@ -14,7 +14,8 @@ the last.
 Do **not** copy the `PROMPT STARTS` / `PROMPT ENDS` marker lines. They sit
 outside the box for exactly that reason.
 
-Jump to: [1 Wordmark](#1--wordmark--logo) · [2 Monogram](#2--monogram-for-small-square-placements) · [3 Illustration](#3--editorial-section-illustration) · [4 Launch film](#4--launch-film-veo) · [5 Social card](#5--social-share-card-generated-alternative)
+**Done and shipped:** 1 wordmark · 2 monogram · 3 section illustrations.
+**To generate next:** 4 launch film (first attempt failed — read the note) · 6 deals · 7 court records · 8 for-firms · 9 not-found · 10 masthead ornament.
 
 ---
 
@@ -167,35 +168,61 @@ magick illustration.png -gravity center -crop 1600x900+0+0 +repage section.png
 
 ## 4 · Launch film (Veo)
 
-Eight seconds, silent, for the homepage or a launch post. Silent is deliberate:
-it autoplays muted, so a soundtrack nobody hears is wasted, and one that
-surprises somebody is worse.
+> **The first attempt failed, and the reason matters.** Veo rendered the prompt's
+> own specification *as artwork*: the finished frames contained dimension arrows
+> labelled "320pixel" on both sides, the string "#FBFAF7" printed twice across
+> the newspaper, and garbled lettering in the corner. It read the canvas
+> instructions as things to draw. The text sat in the middle of the frame, so no
+> crop could rescue it. Veo also ignored the 1920×1080 request and rendered
+> 1280×720, leaving no margin at all — the watermark sparkle landed inside the
+> picture at roughly 120px from the right edge.
+>
+> **So video prompts must not contain pixel dimensions or hex codes.** Describe
+> colours in words, describe the scene only, set the aspect ratio in the tool's
+> own controls rather than in the prompt, and crop the watermark afterwards.
+> That is what the rewritten prompt below does. Images tolerate the numeric
+> spec; video does not.
 
 **▼ PROMPT STARTS — copy everything inside the box below ▼**
 
 ```text
-An eight-second silent film in the visual register of a broadsheet newspaper's brand film. Static locked-off camera throughout — no pan, no zoom, no dolly, no handheld motion, no camera shake whatsoever.
+An eight-second silent film in the visual register of a broadsheet newspaper's brand film.
 
-FRAMING — FOLLOW EXACTLY. Produce the video at 1920 x 1080. All meaningful action and subject matter must remain within a centred safe area of 1280 x 720 pixels. The surrounding band — 320 pixels left and right, 180 pixels top and bottom — must remain flat, empty, uniform #FBFAF7 background for the entire duration, with nothing entering it at any point in any frame.
+CAMERA. Completely static locked-off camera for the entire duration. No pan, no tilt, no zoom, no dolly, no push-in, no handheld motion, no camera shake, no rack focus. One continuous shot from first frame to last.
 
-SHOT. Overhead view, camera pointing straight down at a flat warm off-white surface. A single sheet of newsprint lies centred. Over the eight seconds, three more sheets slide in slowly and settle over it, each overlapping the last, coming to rest still. The sheets carry printed columns rendered as fine grey horizontal rules — abstract, never legible as actual words. On the final sheet, one short rule is deep oxblood red while all others remain grey.
+SHOT. Directly overhead, camera pointing straight down at a flat warm off-white paper surface the colour of unbleached newsprint. A single broadsheet newspaper page lies centred in frame with generous empty surface visible all around it. Over the eight seconds, three more broadsheet pages slide in slowly from just outside the frame and settle over the first, each overlapping the one beneath at a slight angle, until all four come to rest in a loose fanned stack.
 
-LIGHTING AND GRADE. Flat, even, diffuse light with no visible source, no hotspot, no falloff. Very soft contact shadows under the sheets only. No dramatic lighting, no chiaroscuro, no colour grading beyond the natural warm off-white and near-black of the palette.
+THE PRINTED PAGES. The pages carry newspaper columns suggested purely as fine horizontal grey rules of varying length, in the manner of a page seen from too far away to read. Absolutely no readable words, no letterforms, no numbers, no headlines, no logos, no captions, no annotations, no measurements, no arrows, no labels of any kind anywhere in the frame. On the topmost page only, one short rule is deep burgundy red; every other rule is soft warm grey.
 
-MOTION. Slow, weighted, physical — paper settling under its own weight, not floating. Everything comes to complete rest by the seventh second and holds still for the eighth.
+PALETTE. Restricted entirely to warm off-white paper, soft warm greys, near-black, and a single deep burgundy accent. Nothing saturated, nothing bright, no other colour anywhere.
 
-EXPLICITLY AVOID. No text, no titles, no lettering, no numbers, no logos anywhere in frame. No people, no hands, no faces. No gavels, no scales, no courtrooms, no law books. No camera movement of any kind. No transitions, wipes, fades, flashes or cuts — one continuous static shot. No lens flare, no bloom, no glow, no particles, no dust motes, no light rays. Nothing that resembles a technology product launch video.
+LIGHTING. Flat, even, diffuse daylight with no visible source, no hotspot, no falloff, no vignette. Only very soft contact shadows directly beneath the edges of the paper where it lifts slightly. No dramatic lighting, no chiaroscuro, no rim light, no colour cast.
 
-Silent. No audio track.
+MOTION. Slow, weighted and physical, as real paper moves under its own weight — sliding and settling, never floating or drifting. All motion finishes by the seventh second and the final second is completely still.
+
+DO NOT INCLUDE. No text of any kind. No lettering, no typography, no numbers, no measurements, no dimension arrows, no annotations, no watermark-like marks, no logos, no captions, no subtitles. No people, no hands, no faces, no bodies. No gavels, no scales of justice, no courtrooms, no law books, no legal symbolism. No camera movement. No cuts, transitions, wipes, fades, flashes or dissolves. No lens flare, no bloom, no glow, no light rays, no particles, no dust motes, no smoke. No music, no sound effects, no audio.
+
+Photographic, quiet, restrained, editorial. The register of a printed newspaper, not a technology product launch.
 ```
 
 **▲ PROMPT ENDS ▲**
 
-Crop and strip audio — `-an` removes any track the model added regardless of
-the instruction:
+Set the aspect ratio to 16:9 in Veo's own settings — not in the prompt.
+
+Afterwards, trim the watermark by cropping ~9% off the right and bottom, then
+scale back to a clean 16:9. `-an` strips any audio track regardless of the
+instruction, which Veo added anyway last time:
 
 ```bash
-ffmpeg -i launch-raw.mp4 -vf "crop=1280:720:(iw-1280)/2:(ih-720)/2" -an -c:v libx264 -crf 18 launch.mp4
+ffmpeg -i launch-raw.mp4 \
+  -vf "crop=iw*0.91:ih*0.88:0:0,scale=1280:720" \
+  -an -c:v libx264 -crf 20 -pix_fmt yuv420p launch.mp4
+```
+
+Check the last frame before shipping — the watermark is easiest to see there:
+
+```bash
+ffmpeg -y -ss 7 -i launch.mp4 -frames:v 1 lastframe.png
 ```
 
 ---
@@ -247,3 +274,162 @@ magick input.png -gravity center -crop 33.34%x33.34%+0+0 +repage output.png
 - [ ] No gradient, glow, bevel or 3D
 - [ ] Legible at the smallest size it will actually be used at
 - [ ] Licence terms for the generating tier checked, if the use is commercial
+
+---
+
+# Further assets
+
+The five below extend the set without breaking it. Each follows the same rules:
+canvas three times the artwork, flat empty margin for the watermark, four
+colours only, and an avoid-list. Generate them in the order given — the first
+two do the most for the page.
+
+---
+
+## 6 · Deals section illustration
+
+For the quarterly deals pillar on the homepage.
+
+**▼ PROMPT STARTS — copy everything inside the box below ▼**
+
+```text
+Create an editorial illustration for a serious legal news publication, in the style of a broadsheet newspaper's commissioned artwork.
+
+CANVAS AND PLACEMENT — FOLLOW EXACTLY. Produce an image 2400 x 1350 pixels. All meaningful content must sit within a centred region of 1600 x 900 pixels. The surrounding band — 400 pixels on the left and right, 225 pixels top and bottom — must be flat, uniform, empty background in #FBFAF7, with no texture, no gradient, no vignette, no content and no partial elements bleeding into it. Do not compose the image to fill the full frame.
+
+SUBJECT. Two loose stacks of paper documents seen from directly above, sitting apart on a flat surface, with a single unbroken horizontal line running between them to connect the two. The line is deep oxblood red. The documents are rendered as plain rectangles with their text suggested only as fine grey rules. One document in the left stack is turned slightly askew.
+
+TREATMENT. Flat two-dimensional illustration with no perspective depth. Restricted palette of exactly four colours: warm off-white #FBFAF7, near-black #14161A, warm grey #E4E0D6, and deep oxblood #7A2230 used sparingly for a single point of emphasis only. Line work thin, precise and consistent in weight, as if drawn with a technical pen. Generous empty space within the composition itself. Subtle offset-print texture is acceptable but must be very faint.
+
+EXPLICITLY AVOID. No money, no coins, no banknotes, no currency symbols, no dollar signs, no upward arrows, no growth charts, no handshakes, no briefcases, no skylines, no buildings. No gavels, no scales of justice, no courthouse columns. No photorealism, no 3D rendering, no gradients, no glow. No people. No legible text, lettering, numbers or logos anywhere in the image.
+
+Reference register: a commissioned illustration in the Financial Times weekend edition.
+```
+
+**▲ PROMPT ENDS ▲**
+
+```bash
+magick deals-raw.png -gravity center -crop 1600x900+0+0 +repage deals.png
+```
+
+---
+
+## 7 · Court records illustration
+
+For the primary-sources pillar — judgments and ministry notices.
+
+**▼ PROMPT STARTS — copy everything inside the box below ▼**
+
+```text
+Create an editorial illustration for a serious legal news publication, in the style of a broadsheet newspaper's commissioned artwork.
+
+CANVAS AND PLACEMENT — FOLLOW EXACTLY. Produce an image 2400 x 1350 pixels. All meaningful content must sit within a centred region of 1600 x 900 pixels. The surrounding band — 400 pixels on the left and right, 225 pixels top and bottom — must be flat, uniform, empty background in #FBFAF7, with no texture, no gradient, no vignette, no content and no partial elements bleeding into it. Do not compose the image to fill the full frame.
+
+SUBJECT. A long horizontal row of narrow vertical document spines standing side by side, like bound volumes shelved in a row and seen straight on, each a plain rectangle of slightly different height and width. Their labels are suggested only as short grey rules. Three spines near the centre are deep oxblood red while all others are warm grey and off-white.
+
+TREATMENT. Flat two-dimensional illustration with no perspective depth. Restricted palette of exactly four colours: warm off-white #FBFAF7, near-black #14161A, warm grey #E4E0D6, and deep oxblood #7A2230 used sparingly. Line work thin, precise and consistent in weight, as if drawn with a technical pen. Generous empty space above and below the row. Subtle offset-print texture is acceptable but must be very faint.
+
+EXPLICITLY AVOID. No gavels, no scales of justice, no courthouse columns, no blindfolded figures, no wigs, no marble, no ornate bindings, no gold leaf, no leather texture. No photorealism, no 3D rendering, no perspective, no shelves, no furniture. No gradients, no glow. No people. No legible text, lettering, numbers or logos anywhere in the image.
+
+Reference register: a commissioned illustration in The Economist.
+```
+
+**▲ PROMPT ENDS ▲**
+
+```bash
+magick courts-raw.png -gravity center -crop 1600x900+0+0 +repage courts.png
+```
+
+---
+
+## 8 · For-firms illustration
+
+For the commercial page, where the firewall between advertising and editorial
+is set out.
+
+**▼ PROMPT STARTS — copy everything inside the box below ▼**
+
+```text
+Create an editorial illustration for a serious legal news publication, in the style of a broadsheet newspaper's commissioned artwork.
+
+CANVAS AND PLACEMENT — FOLLOW EXACTLY. Produce an image 2400 x 1350 pixels. All meaningful content must sit within a centred region of 1600 x 900 pixels. The surrounding band — 400 pixels on the left and right, 225 pixels top and bottom — must be flat, uniform, empty background in #FBFAF7, with no texture, no gradient, no vignette, no content and no partial elements bleeding into it. Do not compose the image to fill the full frame.
+
+SUBJECT. Two separate groups of plain rectangles arranged on either side of the composition, with a single unbroken vertical line running floor to ceiling between them, dividing the image cleanly in two. Nothing crosses the line. The line is deep oxblood red and is the only red element. The rectangles are warm grey and off-white, of varying sizes, arranged in a loose grid.
+
+TREATMENT. Flat two-dimensional illustration with no perspective depth. Restricted palette of exactly four colours: warm off-white #FBFAF7, near-black #14161A, warm grey #E4E0D6, and deep oxblood #7A2230. Line work thin, precise and consistent in weight, as if drawn with a technical pen. Generous empty space. Subtle offset-print texture is acceptable but must be very faint.
+
+EXPLICITLY AVOID. No handshakes, no people, no money, no coins, no currency symbols, no shopping carts, no price tags, no badges, no ribbons, no stars, no checkmarks, no shields, no locks. No gavels, no scales of justice. No photorealism, no 3D rendering, no gradients, no glow. No legible text, lettering, numbers or logos anywhere in the image.
+
+Reference register: a diagram in a printed annual report.
+```
+
+**▲ PROMPT ENDS ▲**
+
+```bash
+magick forfirms-raw.png -gravity center -crop 1600x900+0+0 +repage forfirms.png
+```
+
+---
+
+## 9 · Not-found page illustration
+
+For the 404. Small, quiet, not a joke.
+
+**▼ PROMPT STARTS — copy everything inside the box below ▼**
+
+```text
+Create a small editorial illustration for a serious legal news publication, in the style of a broadsheet newspaper's commissioned artwork.
+
+CANVAS AND PLACEMENT — FOLLOW EXACTLY. Produce a square image 1800 x 1800 pixels. All meaningful content must sit within a centred region of 600 x 600 pixels, precisely centred. Every pixel outside that centred 600 x 600 region must be flat, uniform, empty background in #FBFAF7 with no texture, no gradient, no vignette and no content whatsoever. The outer 600-pixel band on all four sides is strictly reserved empty margin.
+
+SUBJECT. A single sheet of paper lying flat, seen from directly above, entirely blank except for one short deep oxblood red rule near its upper left corner. One corner of the sheet is very slightly curled.
+
+TREATMENT. Flat two-dimensional illustration with no perspective depth. Restricted palette of exactly four colours: warm off-white #FBFAF7, near-black #14161A, warm grey #E4E0D6, and deep oxblood #7A2230. A single thin precise outline defines the sheet. Very soft contact shadow beneath the curled corner only. Otherwise entirely empty.
+
+EXPLICITLY AVOID. No question marks, no exclamation marks, no numbers, no "404", no error symbols, no warning triangles, no magnifying glasses, no broken links, no unplugged cables, no sad faces, no cartoon characters, no mascots. No gavels, no scales. No photorealism, no 3D, no gradients, no glow. No legible text or lettering anywhere.
+
+Quiet, restrained, almost empty.
+```
+
+**▲ PROMPT ENDS ▲**
+
+```bash
+magick notfound-raw.png -gravity center -crop 600x600+0+0 +repage notfound.png
+```
+
+---
+
+## 10 · Masthead rule ornament
+
+A narrow horizontal ornament to sit beneath the masthead on the homepage, in
+the way a printed paper sets a decorative rule under its nameplate.
+
+**▼ PROMPT STARTS — copy everything inside the box below ▼**
+
+```text
+Design a narrow horizontal typographic ornament for the masthead of a printed newspaper.
+
+CANVAS AND PLACEMENT — FOLLOW EXACTLY. Produce an image 2400 x 600 pixels. All content must sit within a centred horizontal band 1800 pixels wide and 120 pixels tall, precisely centred both horizontally and vertically. Every pixel outside that centred band must be flat, uniform, empty background in #FBFAF7, with no texture, no gradient, no vignette and no content whatsoever.
+
+THE ORNAMENT. Within the band, a symmetrical arrangement of horizontal rules: one thick rule in near-black #14161A running the full width, a thin hairline rule in warm grey #E4E0D6 parallel below it with a small gap, and at the exact centre a single small solid diamond in deep oxblood #7A2230 interrupting the thick rule, with a short break in the rule on either side of the diamond. Perfectly symmetrical about the centre.
+
+EXPLICITLY AVOID. No text, no letters, no numbers. No filigree, no scrollwork, no floral motifs, no laurel, no leaves, no acanthus, no Victorian ornament, no art nouveau curves. No gradient, no shadow, no glow, no bevel, no 3D. No stars, no fleurons, no asterisks.
+
+Flat, geometric, precise, print-quality, absolutely sharp edges. The register of a rule beneath the nameplate of The Times or Le Monde.
+```
+
+**▲ PROMPT ENDS ▲**
+
+```bash
+magick ornament-raw.png -gravity center -crop 1800x120+0+0 +repage ornament.png
+```
+
+---
+
+## When these are downloaded
+
+Say so and they will be cropped, converted and wired in the same way as the
+first five. The crop is measured per image against its own artwork bounds
+rather than applied as a fixed ratio — the first batch showed why that
+matters, since Gemini did not honour the padding instruction and a blind
+centre-third crop would have cut straight through the wordmark.
