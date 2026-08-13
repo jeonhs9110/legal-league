@@ -8,9 +8,20 @@ import type { JurisdictionEntry } from "@/lib/types";
 
 const FIRMS_SHOWN = 8;
 
+type PracticeGuide = {
+  title: string;
+  url: string;
+  year: number | null;
+  firmSlug: string;
+  firmName: string;
+  jurisdiction: string;
+};
+
 type Props = {
   entries: JurisdictionEntry[];
   coverage: { jurisdictions: number; withFirms: number; firms: number };
+  guides: PracticeGuide[];
+  guideCounts: Record<string, number>;
 };
 
 /**
@@ -23,7 +34,12 @@ type Props = {
  * This gives the globe a column of its own that grows with the viewport, and
  * puts the jurisdiction list beside it as a table rather than a card.
  */
-export function CoverageSection({ entries, coverage }: Props) {
+export function CoverageSection({
+  entries,
+  coverage,
+  guides,
+  guideCounts,
+}: Props) {
   const [selectedIso, setSelectedIso] = useState<string | null>(null);
 
   const byIso = useMemo(
@@ -114,6 +130,50 @@ export function CoverageSection({ entries, coverage }: Props) {
               </p>
             )}
 
+            {/* What a general counsel actually opens this page for: how to do
+                business here, written by a firm that practises here. */}
+            {guides.filter((g) => g.jurisdiction === entry.slug).length > 0 ? (
+              <div className="mt-7 border-t border-rule pt-5">
+                <h4 className="label text-ink">
+                  Doing business in {entry.name}
+                </h4>
+                <p className="editorial mt-1.5 text-xs leading-relaxed text-ink-faint">
+                  Published by firms practising here. Where several publish a
+                  guide, all are listed.
+                </p>
+                <ul className="mt-3 space-y-2.5">
+                  {guides
+                    .filter((g) => g.jurisdiction === entry.slug)
+                    .slice(0, 4)
+                    .map((guide) => (
+                      <li key={guide.url}>
+                        <a
+                          href={guide.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="editorial block text-sm leading-snug text-ink link-underline"
+                        >
+                          {guide.title}
+                        </a>
+                        <span className="label mt-0.5 block text-ink-faint">
+                          {guide.firmName}
+                          {guide.year ? ` · ${guide.year}` : ""}
+                        </span>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ) : null}
+
+            {/* The method differs by jurisdiction, so it is stated here rather
+                than left to a single site-wide claim. */}
+            <div className="mt-7 border-t border-rule pt-5">
+              <h4 className="label text-ink">How {entry.name} is ranked</h4>
+              <p className="editorial mt-2 text-xs leading-relaxed text-ink-muted">
+                {entry.methodology.basis}
+              </p>
+            </div>
+
             <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link
                 href={`/rankings/${entry.slug}`}
@@ -153,6 +213,7 @@ export function CoverageSection({ entries, coverage }: Props) {
                   >
                     <span className="truncate">{country.name}</span>
                     <span className="figure shrink-0 text-xs text-ink-faint">
+                      {guideCounts[country.slug] ? "· guide " : ""}
                       {country.firmCount}
                     </span>
                   </button>

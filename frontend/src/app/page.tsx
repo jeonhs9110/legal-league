@@ -4,11 +4,14 @@ import { EditorialFooter } from "@/components/editorial/EditorialFooter";
 import { Masthead } from "@/components/editorial/Masthead";
 import {
   getCoverage,
+  getGuideCounts,
+  listAllGuides,
   getNewsSnapshotMeta,
   listCoveredJurisdictions,
 } from "@/lib/data";
 
 export const revalidate = 600;
+
 
 /**
  * The dateline is taken from the last collection run, not from the clock. A
@@ -28,10 +31,12 @@ function dateline(iso: string): string {
 }
 
 export default async function Home() {
-  const [rankings, coverage, news] = await Promise.all([
+  const [rankings, coverage, news, guideCounts, guides] = await Promise.all([
     listCoveredJurisdictions(),
     getCoverage(),
     getNewsSnapshotMeta(),
+    getGuideCounts(),
+    listAllGuides(),
   ]);
 
   return (
@@ -91,7 +96,12 @@ export default async function Home() {
           </p>
 
           <div className="mt-10">
-            <CoverageSection entries={rankings} coverage={coverage} />
+            <CoverageSection
+              entries={rankings}
+              coverage={coverage}
+              guides={guides}
+              guideCounts={guideCounts}
+            />
           </div>
         </div>
       </section>

@@ -491,3 +491,56 @@ export function formatUsd(value: number): string {
   if (value >= 1e6) return `$${(value / 1e6).toFixed(value >= 1e8 ? 0 : 1)}m`;
   return `$${Math.round(value / 1e3)}k`;
 }
+
+/* ------------------------------------------------------------------ *
+ * Practice guides
+ * ------------------------------------------------------------------ */
+
+import guidesSnapshot from "@/data/practice_guides.json";
+
+export type PracticeGuide = {
+  title: string;
+  url: string;
+  year: number | null;
+  firmSlug: string;
+  firmName: string;
+  jurisdiction: string;
+};
+
+const GUIDES = guidesSnapshot as {
+  generatedAt: string;
+  method: string;
+  guides: PracticeGuide[];
+};
+
+function tidyGuideTitle(title: string): string {
+  return decodeEntities(title)
+    .replace(/^\d{4}\.\d{2}\.\d{2}\s*/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Guides for a jurisdiction, newest first. Duplicates are deliberately kept:
+ * where several firms publish a guide to the same market, that competition is
+ * itself worth showing to a general counsel choosing between them.
+ */
+export async function listGuides(jurisdiction: string): Promise<PracticeGuide[]> {
+  return GUIDES.guides
+    .filter((g) => g.jurisdiction === jurisdiction)
+    .map((g) => ({ ...g, title: tidyGuideTitle(g.title) }))
+    .sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+}
+
+export async function getGuideCounts(): Promise<Record<string, number>> {
+  const counts: Record<string, number> = {};
+  for (const g of GUIDES.guides) {
+    counts[g.jurisdiction] = (counts[g.jurisdiction] ?? 0) + 1;
+  }
+  return counts;
+}
+
+/** Every guide, for surfaces that filter client-side (the coverage panel). */
+export async function listAllGuides(): Promise<PracticeGuide[]> {
+  return GUIDES.guides.map((g) => ({ ...g, title: tidyGuideTitle(g.title) }));
+}

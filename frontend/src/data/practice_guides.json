@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T14:43:16.973522Z",
+  "generatedAt": "2026-08-13T15:05:54.767036Z",
   "method": "Standing guides to doing business in a jurisdiction, published by firms listed in that jurisdiction. Title, firm, year and a link only — the guide stays on the firm's own site. Where several firms publish a guide to the same market all are listed: that several compete to explain a jurisdiction is itself worth knowing.",
   "total": 4,
   "byJurisdiction": {
@@ -16,7 +16,7 @@
       "firmSlug": "vision-associates",
       "firmName": "Vision & Associates",
       "jurisdiction": "vietnam",
-      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+      "retrievedAt": "2026-08-13T15:05:54.767036Z"
     },
     {
       "title": "Chambers Global Practice Guides: Merger Control 2026 Singapore chapter co-authored by Competition Law & Regulatory Practice Co-Heads Lim Chong Kin and Dr Corinne Chew",
@@ -25,7 +25,7 @@
       "firmSlug": "drew-napier",
       "firmName": "Drew & Napier",
       "jurisdiction": "singapore",
-      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+      "retrievedAt": "2026-08-13T15:05:54.767036Z"
     },
     {
       "title": "2026.08.05 当事務所の弁護士が\"Doing Business In... 2026 Trends and Developments - Japan Chapter\"を共同執筆いたしました",
@@ -34,7 +34,7 @@
       "firmSlug": "oh-ebashi-lpc-partners",
       "firmName": "Oh-Ebashi LPC & Partners",
       "jurisdiction": "japan",
-      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+      "retrievedAt": "2026-08-13T15:05:54.767036Z"
     },
     {
       "title": "W&#038;P &#8211; Investing in Indonesia 2025 &#8211; Trends and Developments",
@@ -43,7 +43,7 @@
       "firmSlug": "walalangi-partners",
       "firmName": "Walalangi & Partners",
       "jurisdiction": "indonesia",
-      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+      "retrievedAt": "2026-08-13T15:05:54.767036Z"
     }
   ]
 }
