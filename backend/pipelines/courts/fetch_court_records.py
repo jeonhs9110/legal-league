@@ -162,7 +162,11 @@ def parse_feed(body: bytes, base: str) -> list[dict]:
     for entry in root.findall(".//a:entry", ns):
         title = entry.find("a:title", ns)
         link = entry.find("a:link", ns)
-        updated = entry.find("a:updated", ns) or entry.find("a:published", ns)
+        # `a or b` is wrong on Elements: one with no children is falsy, so a
+        # present <updated> would silently fall through to <published>.
+        updated = entry.find("a:updated", ns)
+        if updated is None:
+            updated = entry.find("a:published", ns)
         href = link.get("href") if link is not None else None
         if title is None or not href:
             continue

@@ -33,7 +33,10 @@
       "kind": "html-index",
       "language": "ko",
       "licence": "Korean government works: free use under the Copyright Act art. 24-2",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 44989 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "south-korea",
@@ -43,7 +46,10 @@
       "kind": "html-index",
       "language": "ko",
       "licence": "Korean government works: free use under the Copyright Act art. 24-2",
-      "status": "unverified"
+      "status": "blocked",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "robots.txt disallows this crawler",
+      "probeItems": 0
     },
     {
       "jurisdiction": "south-korea",
@@ -53,7 +59,10 @@
       "kind": "html-index",
       "language": "ko",
       "licence": "Korean government works: free use",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 121267 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "japan",
@@ -63,7 +72,10 @@
       "kind": "html-index",
       "language": "ja",
       "licence": "Japanese government works: art. 13 excludes official texts from copyright",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 410376 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "japan",
@@ -73,7 +85,10 @@
       "kind": "html-index",
       "language": "ja",
       "licence": "Japanese government works: art. 13",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "HTTP 404",
+      "probeItems": 0
     },
     {
       "jurisdiction": "united-kingdom",
@@ -83,7 +98,10 @@
       "kind": "atom",
       "language": "en",
       "licence": "Open Justice Licence — republication permitted with attribution",
-      "status": "unverified"
+      "status": "ok",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "application/xml",
+      "probeItems": 50
     },
     {
       "jurisdiction": "united-kingdom",
@@ -93,7 +111,10 @@
       "kind": "rss",
       "language": "en",
       "licence": "Open Government Licence v3.0",
-      "status": "unverified"
+      "status": "ok",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "application/atom+xml",
+      "probeItems": 10
     },
     {
       "jurisdiction": "united-states",
@@ -103,7 +124,10 @@
       "kind": "json-api",
       "language": "en",
       "licence": "US federal judicial opinions are public domain; API is open",
-      "status": "unverified"
+      "status": "blocked",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "robots.txt disallows this crawler",
+      "probeItems": 0
     },
     {
       "jurisdiction": "united-states",
@@ -113,7 +137,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "US government work — public domain",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 109198 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "india",
@@ -123,7 +150,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "Indian government work; s.52(1)(q) permits reproduction of judgments",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "HTTP 403",
+      "probeItems": 0
     },
     {
       "jurisdiction": "hong-kong",
@@ -133,7 +163,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "headline-and-link",
-      "status": "unverified"
+      "status": "blocked",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "robots.txt disallows this crawler",
+      "probeItems": 0
     },
     {
       "jurisdiction": "singapore",
@@ -143,7 +176,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "headline-and-link",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 229019 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "taiwan",
@@ -153,7 +189,10 @@
       "kind": "html-index",
       "language": "zh",
       "licence": "Taiwanese government work — open government data terms",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "TLS certificate did not match this hostname",
+      "probeItems": 0
     },
     {
       "jurisdiction": "philippines",
@@ -163,7 +202,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "Philippine government work — no copyright (IP Code s.176)",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "TLS certificate did not match this hostname",
+      "probeItems": 0
     },
     {
       "jurisdiction": "australia",
@@ -173,7 +215,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "CC BY 4.0 for most Commonwealth court material",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "domain does not exist in DNS",
+      "probeItems": 0
     },
     {
       "jurisdiction": "canada",
@@ -183,7 +228,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "Reproduction of federal court decisions permitted without permission",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "domain does not exist in DNS",
+      "probeItems": 0
     },
     {
       "jurisdiction": "new-zealand",
@@ -193,7 +241,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "CC BY 4.0",
-      "status": "unverified"
+      "status": "ok",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "text/html",
+      "probeItems": 15
     },
     {
       "jurisdiction": "ireland",
@@ -203,7 +254,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "headline-and-link",
-      "status": "unverified"
+      "status": "blocked",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "robots.txt disallows this crawler",
+      "probeItems": 0
     },
     {
       "jurisdiction": "south-africa",
@@ -213,7 +267,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "headline-and-link",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "HTTP 403",
+      "probeItems": 0
     },
     {
       "jurisdiction": "european-union",
@@ -223,7 +280,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "EU reuse decision 2011/833/EU — reuse permitted with attribution",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 712858 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "germany",
@@ -233,7 +293,10 @@
       "kind": "html-index",
       "language": "de",
       "licence": "German official works: §5 UrhG places them outside copyright",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "TLS certificate did not match this hostname",
+      "probeItems": 0
     },
     {
       "jurisdiction": "france",
@@ -243,7 +306,10 @@
       "kind": "html-index",
       "language": "fr",
       "licence": "Open licence (Etalab) via Judilibre",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 241 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "malaysia",
@@ -253,7 +319,10 @@
       "kind": "html-index",
       "language": "en",
       "licence": "headline-and-link",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "HTTP 404",
+      "probeItems": 0
     },
     {
       "jurisdiction": "indonesia",
@@ -263,7 +332,10 @@
       "kind": "html-index",
       "language": "id",
       "licence": "Indonesian government work",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "HTTP 403",
+      "probeItems": 0
     },
     {
       "jurisdiction": "vietnam",
@@ -273,7 +345,10 @@
       "kind": "html-index",
       "language": "vi",
       "licence": "Vietnamese government work",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "connection failed ([SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred i)",
+      "probeItems": 0
     },
     {
       "jurisdiction": "thailand",
@@ -283,7 +358,10 @@
       "kind": "html-index",
       "language": "th",
       "licence": "Thai government work",
-      "status": "unverified"
+      "status": "no-items",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "fetched 109579 bytes (text/html) but no records could be parsed",
+      "probeItems": 0
     },
     {
       "jurisdiction": "china",
@@ -293,7 +371,10 @@
       "kind": "html-index",
       "language": "zh",
       "licence": "headline-and-link",
-      "status": "unverified"
+      "status": "unreachable",
+      "lastProbe": "2026-08-12T17:03:53.823312Z",
+      "probeNote": "TLS certificate did not match this hostname",
+      "probeItems": 0
     }
   ]
 }
