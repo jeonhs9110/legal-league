@@ -47,6 +47,7 @@ export default async function NewsPage() {
       kicker="Industry news"
       headline="What the legal press is reporting"
       standfirst="Collected from publishers whose feeds permit syndication, deduplicated by canonical URL and content hash, and linked back to the source. Headlines and short extracts only — the full article stays with the publisher who wrote it."
+      illustration="/brand/news.webp"
       rail={[
         { label: "Items", value: String(meta.total) },
         { label: "Sources", value: String(meta.sourceCount) },

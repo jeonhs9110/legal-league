@@ -19,6 +19,7 @@ export default async function MethodologyPage() {
       kicker={`Methodology · version ${methodology.version}`}
       headline={methodology.title}
       standfirst="Directories that withhold their method ask you to trust the result. This is the whole calculation: four weighted signals, what feeds each one, what is excluded outright, and how a placement can be disputed. The scorer reads the same definition this page renders, so the two cannot drift apart."
+      illustration="/brand/method.webp"
       rail={[
         { label: "Version", value: methodology.version },
         { label: "Effective from", value: methodology.effectiveFrom },

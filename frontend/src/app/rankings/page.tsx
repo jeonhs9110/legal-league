@@ -37,6 +37,7 @@ export default async function RankingsIndexPage() {
       kicker="Coverage"
       headline="Every jurisdiction, and what we hold on it"
       standfirst="The G20 plus the major legal markets. Hong Kong, Macao and Taiwan are listed separately from mainland China: each has its own courts, bar and admission rules, and firms are ranked per legal system. Where the evidence does not yet support a ranking, this page says so rather than publishing one."
+      illustration="/brand/rankings.webp"
       rail={[
         { label: "Jurisdictions", value: String(meta.jurisdictions) },
         { label: "Firms listed", value: String(meta.firms) },

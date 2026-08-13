@@ -38,7 +38,7 @@ export function Masthead() {
         <div className="flex flex-col items-center gap-1 py-7">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo-ink.svg"
+              src="/brand/monogram.webp"
               alt=""
               width={26}
               height={26}
