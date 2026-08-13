@@ -150,12 +150,19 @@ export async function getNewsSnapshotMeta() {
   return {
     generatedAt: NEWS_SNAPSHOT.generatedAt,
     sourceCount: NEWS_SNAPSHOT.sourceCount,
-    total: NEWS.length,
+    total: NEWS.filter((a) => (a.language ?? "en") === "en").length,
   };
 }
 
+/**
+ * English only. The project standard is that everything is collected and
+ * published in English, and translation happens at export; showing a Korean
+ * headline in an otherwise English feed is not multilingual, it is broken.
+ * The non-English articles stay in the corpus for the clustering step, which
+ * reads them, and are simply not displayed.
+ */
 export async function listNews(limit?: number): Promise<NewsArticle[]> {
-  const sorted = [...NEWS].sort(
+  const sorted = NEWS.filter((a) => (a.language ?? "en") === "en").sort(
     (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt),
   );
   return limit ? sorted.slice(0, limit) : sorted;

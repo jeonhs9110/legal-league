@@ -371,7 +371,7 @@ export function Globe({ selectedId, onSelect, rankedIds }: Props) {
   }, [hoveredId, countries])();
 
   return (
-    <div className="flex w-full max-w-[380px] flex-col items-center">
+    <div className="flex w-full max-w-[620px] flex-col items-center">
       <div className="w-full" ref={wrapRef}>
         <canvas
           ref={canvasRef}

@@ -1,4 +1,4 @@
-import { HeroShell } from "@/components/hero/HeroShell";
+import { CoverageSection } from "@/components/coverage/CoverageSection";
 import { HomeSections } from "@/components/home/HomeSections";
 import { EditorialFooter } from "@/components/editorial/EditorialFooter";
 import { Masthead } from "@/components/editorial/Masthead";
@@ -91,7 +91,7 @@ export default async function Home() {
           </p>
 
           <div className="mt-10">
-            <HeroShell rankings={rankings} coverage={coverage} />
+            <CoverageSection entries={rankings} coverage={coverage} />
           </div>
         </div>
       </section>
