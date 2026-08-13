@@ -54,6 +54,8 @@ STAGES = [
           "pipelines/news/fetch_news.py", group="news"),
     Stage("briefs", "Cluster coverage and write briefs",
           "pipelines/news/synthesize.py", ["--write"], group="news"),
+    Stage("importance", "Score article importance and pick the highlights",
+          "pipelines/news/score_importance.py", group="news"),
     Stage("courts", "Collect court and ministry records",
           "pipelines/courts/fetch_court_records.py", group="courts"),
     Stage("firms", "Refresh firm details from firms' own sites",

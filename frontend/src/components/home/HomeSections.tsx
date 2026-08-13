@@ -1,9 +1,11 @@
 import Link from "next/link";
 import {
+  formatUsd,
+  getImportanceMeta,
   getMethodology,
   getRegionCounts,
   listCoveredJurisdictions,
-  listNews,
+  listHighlights,
 } from "@/lib/data";
 
 const CONTINENT_ORDER = [
@@ -43,12 +45,14 @@ function formatDate(iso: string): string {
  * and the reporting under one heading rather than learning two navigations.
  */
 export async function HomeSections() {
-  const [covered, news, methodology, regions] = await Promise.all([
-    listCoveredJurisdictions(),
-    listNews(6),
-    getMethodology(),
-    getRegionCounts(),
-  ]);
+  const [covered, highlights, methodology, regions, importance] =
+    await Promise.all([
+      listCoveredJurisdictions(),
+      listHighlights(),
+      getMethodology(),
+      getRegionCounts(),
+      getImportanceMeta(),
+    ]);
 
   const directory = CONTINENT_ORDER.map((continent) => ({
     continent,
@@ -158,33 +162,63 @@ export async function HomeSections() {
             ))}
           </div>
 
-          <ul className="mt-10 grid gap-x-14 gap-y-7 lg:grid-cols-2">
-            {news.map((article) => (
-              <li key={article.id}>
-                <p className="flex flex-wrap items-baseline gap-x-3">
-                  <time
-                    dateTime={article.publishedAt}
-                    className="figure text-sm text-ink"
-                  >
-                    {formatDate(article.publishedAt)}
-                  </time>
-                  <span className="label text-ink-faint">
-                    {article.sourceName}
-                  </span>
-                </p>
-                <h3 className="editorial mt-1.5 text-lg leading-snug text-ink">
-                  <a
-                    href={article.canonicalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="link-underline"
-                  >
-                    {article.title}
-                  </a>
-                </h3>
+          <div className="mt-10 flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-2">
+            <h3 className="editorial text-2xl text-ink">Highlights</h3>
+            <span className="label text-ink-faint">
+              Weighted by what is at stake
+            </span>
+          </div>
+
+          <ol className="mt-6 grid gap-x-14 gap-y-8 lg:grid-cols-2">
+            {highlights.map((article, index) => (
+              <li key={article.id} className="flex gap-5">
+                <span className="rank-figure shrink-0 text-2xl text-ink-faint">
+                  {index + 1}
+                </span>
+                <div>
+                  <p className="flex flex-wrap items-baseline gap-x-3">
+                    <time
+                      dateTime={article.publishedAt}
+                      className="figure text-sm text-ink"
+                    >
+                      {formatDate(article.publishedAt)}
+                    </time>
+                    <span className="label text-ink-faint">
+                      {article.sourceName}
+                    </span>
+                    {article.capitalUsd ? (
+                      <span className="label text-oxblood">
+                        {formatUsd(article.capitalUsd)} at stake
+                      </span>
+                    ) : null}
+                  </p>
+                  <h4 className="editorial mt-1.5 text-lg leading-snug text-ink">
+                    <a
+                      href={article.canonicalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="link-underline"
+                    >
+                      {article.title}
+                    </a>
+                  </h4>
+                </div>
               </li>
             ))}
-          </ul>
+          </ol>
+
+          <p className="measure mt-8 border-l-2 border-rule-strong pl-5">
+            <span className="label text-ink-faint">How these six are chosen</span>
+            <span className="editorial mt-2 block text-sm leading-relaxed text-ink-muted">
+              Ranked by the capital at stake — every currency converted to US
+              dollars — together with the seniority of the court, how far the
+              matter reaches, and whether a firm in this directory is named.
+              The six are then spread across jurisdictions, because India
+              supplies two thirds of the corpus: it is where two of our three
+              crawlable Asian sources report from, and without that spread it
+              would fill the page on volume rather than merit.
+            </span>
+          </p>
         </div>
       </section>
 

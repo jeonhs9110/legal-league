@@ -432,3 +432,62 @@ export const ALL_FIRMS: { slug: string; name: string }[] =
   RANKINGS.jurisdictions.flatMap((j) =>
     (j.firms ?? []).map((f) => ({ slug: f.slug, name: f.name })),
   );
+
+/* ------------------------------------------------------------------ *
+ * Article importance and the front-page highlights
+ * ------------------------------------------------------------------ */
+
+import importanceSnapshot from "@/data/news_importance.json";
+
+const IMPORTANCE = importanceSnapshot as {
+  generatedAt: string;
+  method: string;
+  currencyNote: string;
+  highlightIds: string[];
+  scores: Record<string, number>;
+  capitalUsd: Record<string, number>;
+};
+
+export type ScoredArticle = NewsArticle & {
+  importance: number;
+  capitalUsd: number | null;
+};
+
+function withScore(article: NewsArticle): ScoredArticle {
+  return {
+    ...article,
+    importance: IMPORTANCE.scores[article.id] ?? 0,
+    capitalUsd: IMPORTANCE.capitalUsd[article.id] ?? null,
+  };
+}
+
+/**
+ * The six stories the front page leads on, chosen by importance and then
+ * spread across jurisdictions so one well-covered market cannot fill the page.
+ * The selection is computed in the pipeline, not here, so the site renders the
+ * same six the methodology describes.
+ */
+export async function listHighlights(): Promise<ScoredArticle[]> {
+  const all = await listNews();
+  const byId = new Map(all.map((a) => [a.id, a]));
+  return IMPORTANCE.highlightIds
+    .map((id) => byId.get(id))
+    .filter((a): a is NewsArticle => Boolean(a))
+    .map(withScore);
+}
+
+export async function getImportanceMeta() {
+  return {
+    generatedAt: IMPORTANCE.generatedAt,
+    method: IMPORTANCE.method,
+    currencyNote: IMPORTANCE.currencyNote,
+    withCapital: Object.keys(IMPORTANCE.capitalUsd).length,
+  };
+}
+
+/** Compact USD, so a reader compares magnitudes rather than counting zeros. */
+export function formatUsd(value: number): string {
+  if (value >= 1e9) return `$${(value / 1e9).toFixed(value >= 1e10 ? 0 : 1)}bn`;
+  if (value >= 1e6) return `$${(value / 1e6).toFixed(value >= 1e8 ? 0 : 1)}m`;
+  return `$${Math.round(value / 1e3)}k`;
+}

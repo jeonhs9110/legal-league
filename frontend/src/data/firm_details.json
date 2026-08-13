@@ -1,19 +1,13 @@
 {
-  "generatedAt": "2026-08-13T14:12:10.742334Z",
+  "generatedAt": "2026-08-13T14:48:56.515539Z",
   "method": "Fields read from each firm's own website; every field records the page it came from. Firms are ordered by the professional headcount they publish, and firms that publish none are listed without a figure. No ranking is implied.",
-  "firmCount": 63,
+  "firmCount": 64,
   "rejected": [
     {
-      "name": "Shin & Kim",
-      "domain": "shinkim.com",
+      "name": "Lee & Ko",
+      "domain": "leeko.com",
       "jurisdiction": "south-korea",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Yulchon",
-      "domain": "yulchon.com",
-      "jurisdiction": "south-korea",
-      "reason": "robots.txt disallows this crawler"
+      "reason": "site renders only in a browser and did not render here"
     },
     {
       "name": "KL Partners",
@@ -129,6 +123,39 @@
         "headcount": "https://amsshardul.com/about"
       },
       "checkedAt": "2026-08-12T17:34:46.569325Z"
+    },
+    {
+      "slug": "shin-kim",
+      "name": "Shin & Kim",
+      "jurisdiction": "south-korea",
+      "website": "https://shinkim.com",
+      "emails": [
+        "jokim@shinkim.com",
+        "shinkim@shinkim.com"
+      ],
+      "phones": [
+        "+8223164114",
+        "+8227566226"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Banking",
+        "Corporate",
+        "Energy",
+        "Finance",
+        "Private Equity",
+        "Tax"
+      ],
+      "headcount": 800,
+      "headcountQuote": "solutions whilst preserving its core values of integrity and excellence. It has grown with our clients. With over 800 professionals comprising of domestic and foreign lawyers, accountants, patent attorneys and tax accountants, Shin &amp; Kim",
+      "sources": {
+        "practiceAreas": "https://shinkim.com",
+        "headcount": "https://shinkim.com/eng/about",
+        "emails": "https://shinkim.com/eng/contact",
+        "phones": "https://shinkim.com/eng/office/view"
+      },
+      "checkedAt": "2026-08-13T14:50:56.569650Z"
     },
     {
       "slug": "allen-gledhill",
@@ -587,7 +614,7 @@
       "sources": {
         "practiceAreas": "https://bkl.co.kr"
       },
-      "checkedAt": "2026-08-13T14:15:34.814005Z"
+      "checkedAt": "2026-08-13T14:50:15.698663Z"
     },
     {
       "slug": "barun-law",
@@ -604,7 +631,7 @@
       "sources": {
         "emails": "https://barunlaw.com"
       },
-      "checkedAt": "2026-08-13T14:17:52.540169Z"
+      "checkedAt": "2026-08-13T14:53:32.172556Z"
     },
     {
       "slug": "castillo-laman-tan-pantaleon-san-jose",
@@ -660,7 +687,7 @@
         "emails": "https://chakim.co.kr",
         "phones": "https://chakim.co.kr"
       },
-      "checkedAt": "2026-08-13T14:21:25.283657Z"
+      "checkedAt": "2026-08-13T14:57:04.885120Z"
     },
     {
       "slug": "chen-lin",
@@ -740,7 +767,7 @@
         "emails": "https://draju.com",
         "phones": "https://draju.com"
       },
-      "checkedAt": "2026-08-13T14:18:47.692938Z"
+      "checkedAt": "2026-08-13T14:54:27.586089Z"
     },
     {
       "slug": "daeryun-law",
@@ -757,7 +784,7 @@
       "sources": {
         "phones": "https://daeryunlaw.com"
       },
-      "checkedAt": "2026-08-13T14:20:11.147386Z"
+      "checkedAt": "2026-08-13T14:55:51.270240Z"
     },
     {
       "slug": "drew-napier",
@@ -945,7 +972,7 @@
       "sources": {
         "emails": "https://hmplaw.com"
       },
-      "checkedAt": "2026-08-13T14:19:29.797084Z"
+      "checkedAt": "2026-08-13T14:55:09.258842Z"
     },
     {
       "slug": "han-kun-law-offices",
@@ -1080,7 +1107,7 @@
         "phones": "https://jipyong.com",
         "emails": "https://jipyong.com/kr/main/contact.php"
       },
-      "checkedAt": "2026-08-13T14:17:11.881586Z"
+      "checkedAt": "2026-08-13T14:52:48.863772Z"
     },
     {
       "slug": "junhe",
@@ -1190,7 +1217,7 @@
         "practiceAreas": "https://www.kimchang.com",
         "phones": "https://www.kimchang.com/en/location/seoul.kc"
       },
-      "checkedAt": "2026-08-13T14:12:14.996897Z"
+      "checkedAt": "2026-08-13T14:49:00.797947Z"
     },
     {
       "slug": "kojima-law-offices",
@@ -1255,30 +1282,6 @@
         "phones": "https://www.lcs.com.tw"
       },
       "checkedAt": "2026-08-12T17:17:22.713682Z"
-    },
-    {
-      "slug": "lee-ko",
-      "name": "Lee & Ko",
-      "jurisdiction": "south-korea",
-      "website": "https://leeko.com",
-      "emails": [
-        "mail@leeko.com"
-      ],
-      "phones": [],
-      "practiceAreas": [
-        "Arbitration",
-        "Construction",
-        "Intellectual Property",
-        "Litigation",
-        "Tax"
-      ],
-      "headcount": null,
-      "headcountQuote": null,
-      "sources": {
-        "emails": "https://leeko.com",
-        "practiceAreas": "https://leeko.com"
-      },
-      "checkedAt": "2026-08-13T14:13:19.822246Z"
     },
     {
       "slug": "lee-and-li",
@@ -1784,7 +1787,41 @@
         "practiceAreas": "https://www.yoonyang.com",
         "phones": "https://www.yoonyang.com/eng/firm/domestic"
       },
-      "checkedAt": "2026-08-13T14:16:22.858743Z"
+      "checkedAt": "2026-08-13T14:51:58.951475Z"
+    },
+    {
+      "slug": "yulchon",
+      "name": "Yulchon",
+      "jurisdiction": "south-korea",
+      "website": "https://yulchon.com",
+      "emails": [
+        "mail@yulchon.com"
+      ],
+      "phones": [
+        "+842438378230"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Construction",
+        "Corporate",
+        "Dispute Resolution",
+        "Employment",
+        "Finance",
+        "Insolvency",
+        "International Trade",
+        "Real Estate",
+        "Restructuring",
+        "Tax"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://yulchon.com/en/our-firm/location.do",
+        "phones": "https://yulchon.com/en/our-firm/location.do",
+        "practiceAreas": "https://yulchon.com/en/professionals/professionals-search.do"
+      },
+      "checkedAt": "2026-08-13T14:51:17.137257Z"
     }
   ]
 }

@@ -1,7 +1,49 @@
 {
-  "generatedAt": "2026-08-13T14:40:44.363275Z",
+  "generatedAt": "2026-08-13T14:43:16.973522Z",
   "method": "Standing guides to doing business in a jurisdiction, published by firms listed in that jurisdiction. Title, firm, year and a link only — the guide stays on the firm's own site. Where several firms publish a guide to the same market all are listed: that several compete to explain a jurisdiction is itself worth knowing.",
-  "total": 0,
-  "byJurisdiction": {},
-  "guides": []
+  "total": 4,
+  "byJurisdiction": {
+    "indonesia": 1,
+    "japan": 1,
+    "singapore": 1,
+    "vietnam": 1
+  },
+  "guides": [
+    {
+      "title": "Doing Business in Vietnam",
+      "url": "https://vision-associates.com/category/client-resources/doing-business-in-vietnam/",
+      "year": null,
+      "firmSlug": "vision-associates",
+      "firmName": "Vision & Associates",
+      "jurisdiction": "vietnam",
+      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+    },
+    {
+      "title": "Chambers Global Practice Guides: Merger Control 2026 Singapore chapter co-authored by Competition Law & Regulatory Practice Co-Heads Lim Chong Kin and Dr Corinne Chew",
+      "url": "https://www.drewnapier.com/Chambers-GPG-Merger-Control-2026-Singapore",
+      "year": 2026,
+      "firmSlug": "drew-napier",
+      "firmName": "Drew & Napier",
+      "jurisdiction": "singapore",
+      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+    },
+    {
+      "title": "2026.08.05 当事務所の弁護士が\"Doing Business In... 2026 Trends and Developments - Japan Chapter\"を共同執筆いたしました",
+      "url": "https://www.ohebashi.com/jp/news/2026/20260805news-3.php",
+      "year": 2026,
+      "firmSlug": "oh-ebashi-lpc-partners",
+      "firmName": "Oh-Ebashi LPC & Partners",
+      "jurisdiction": "japan",
+      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+    },
+    {
+      "title": "W&#038;P &#8211; Investing in Indonesia 2025 &#8211; Trends and Developments",
+      "url": "https://www.wplaws.com/publication/wp-investing-in-indonesia-2025-trends-and-developments/",
+      "year": 2025,
+      "firmSlug": "walalangi-partners",
+      "firmName": "Walalangi & Partners",
+      "jurisdiction": "indonesia",
+      "retrievedAt": "2026-08-13T14:43:16.973522Z"
+    }
+  ]
 }

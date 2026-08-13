@@ -166,9 +166,22 @@ class Robots:
         host = urllib.parse.urlsplit(url).netloc
         if host not in self._cache:
             parser = urllib.robotparser.RobotFileParser()
-            parser.set_url(f"https://{host}/robots.txt")
             try:
-                parser.read()
+                # Fetch robots.txt with OUR user agent, then parse.
+                #
+                # RobotFileParser.read() fetches with Python's default agent,
+                # which Cloudflare and friends answer with 403 — and the RFC
+                # says a 403 on robots.txt means disallow everything, so the
+                # parser silently locks the whole host. That is how Shin & Kim
+                # and Yulchon came to be recorded as refusing this crawler when
+                # their robots.txt permits it, and it cost 34 firms in total.
+                request = urllib.request.Request(
+                    f"https://{host}/robots.txt",
+                    headers={"User-Agent": USER_AGENT},
+                )
+                with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+                    body = response.read(500_000).decode("utf-8", errors="replace")
+                parser.parse(body.splitlines())
                 self._cache[host] = parser
             except Exception:  # noqa: BLE001
                 # No readable robots.txt is not permission to ignore it, but it

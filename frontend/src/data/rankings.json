@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T14:35:13.096446Z",
+  "generatedAt": "2026-08-13T15:02:04.636981Z",
   "methodologyVersion": "2026.2",
   "minCoverage": 0.5,
   "newsSnapshot": "2026-08-12T16:03:51.015409Z",
@@ -2888,28 +2888,33 @@
       "region": "Asia-Pacific",
       "g20": true,
       "status": "directory_only",
-      "coverage": 0,
+      "coverage": 0.3,
       "minCoverage": 0.5,
       "evidence": {
-        "directoryConsensus": 0,
+        "directoryConsensus": 1,
         "courtRecord": 0,
         "revenuePerLawyer": 0,
         "submissions": 0,
         "peerReview": 0
       },
       "methodology": {
-        "basis": "No firm in South Korea is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "basis": "1 of 11 firms in South Korea are ranked here, ordered by a reconciliation of 3 external publishers (Benchmark Litigation, Chambers, Lexology Index). Each figure is the weighted mean of the best tier every publisher gave that firm, and no firm appears without at least two independent publishers agreeing. Firms with no reconciled figure are listed below the ranked ones, alphabetically, and are not ranked.",
         "limits": [
-          "1 of 11 entries still rest on a Wikipedia category rather than the firm's own website",
           "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
           "no firm has made a submission, because intake is not open",
           "no peer or client review has been collected"
         ],
-        "coverage": 0,
-        "publishers": [],
-        "verifiedFirms": 10,
-        "reconciledFirms": 0,
-        "signalsHeld": {},
+        "coverage": 0.3,
+        "publishers": [
+          "Benchmark Litigation",
+          "Chambers",
+          "Lexology Index"
+        ],
+        "verifiedFirms": 11,
+        "reconciledFirms": 1,
+        "signalsHeld": {
+          "directoryConsensus": 1
+        },
         "signalWeights": {
           "directoryConsensus": 0.3,
           "courtRecord": 0.25,
@@ -2921,6 +2926,38 @@
       "pressMentions": 0,
       "firmCount": 11,
       "firms": [
+        {
+          "slug": "kim-and-chang",
+          "name": "Kim & Chang",
+          "foundedYear": 1973,
+          "sourceUrl": "https://www.kimchang.com",
+          "sourceName": "The firm's own website",
+          "verified": true,
+          "pressMentions": 0,
+          "consensus": 0.8765,
+          "consensusDetail": {
+            "consensus": 0.8765,
+            "publisherCount": 3,
+            "publishers": [
+              "Benchmark Litigation",
+              "Chambers",
+              "Lexology Index"
+            ],
+            "byPublisher": {
+              "Benchmark Litigation": 1.0,
+              "Chambers": 1.0,
+              "Lexology Index": 0.55
+            },
+            "practiceAreas": [
+              "Litigation"
+            ],
+            "latestEdition": 2026,
+            "method": "Weighted mean of the best tier each of 3 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
+          },
+          "score": 87.6,
+          "rank": 1,
+          "band": "B"
+        },
         {
           "slug": "bae-kim-lee",
           "name": "Bae, Kim & Lee",
@@ -3020,24 +3057,10 @@
           "band": null
         },
         {
-          "slug": "kim-and-chang",
-          "name": "Kim & Chang",
-          "foundedYear": 1973,
-          "sourceUrl": "https://www.kimchang.com",
-          "sourceName": "The firm's own website",
-          "verified": true,
-          "pressMentions": 0,
-          "consensus": null,
-          "consensusDetail": null,
-          "score": null,
-          "rank": null,
-          "band": null
-        },
-        {
-          "slug": "lee-ko",
-          "name": "Lee & Ko",
+          "slug": "shin-kim",
+          "name": "Shin & Kim",
           "foundedYear": null,
-          "sourceUrl": "https://leeko.com",
+          "sourceUrl": "https://shinkim.com",
           "sourceName": "The firm's own website",
           "verified": true,
           "pressMentions": 0,
@@ -3065,9 +3088,9 @@
           "slug": "yulchon",
           "name": "Yulchon",
           "foundedYear": 1997,
-          "sourceUrl": "https://en.wikipedia.org/wiki/Yulchon",
-          "sourceName": "Wikipedia",
-          "verified": false,
+          "sourceUrl": "https://yulchon.com",
+          "sourceName": "The firm's own website",
+          "verified": true,
           "pressMentions": 0,
           "consensus": null,
           "consensusDetail": null,
@@ -3085,28 +3108,34 @@
       "region": "Asia-Pacific",
       "g20": true,
       "status": "directory_only",
-      "coverage": 0,
+      "coverage": 0.3,
       "minCoverage": 0.5,
       "evidence": {
-        "directoryConsensus": 0,
+        "directoryConsensus": 1,
         "courtRecord": 0,
         "revenuePerLawyer": 0,
         "submissions": 0,
         "peerReview": 0
       },
       "methodology": {
-        "basis": "No firm in India is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "basis": "1 of 10 firms in India are ranked here, ordered by a reconciliation of 3 external publishers (Benchmark Litigation, Chambers, The Legal 500). Each figure is the weighted mean of the best tier every publisher gave that firm, and no firm appears without at least two independent publishers agreeing. Firms with no reconciled figure are listed below the ranked ones, alphabetically, and are not ranked.",
         "limits": [
           "4 of 10 entries still rest on a Wikipedia category rather than the firm's own website",
           "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
           "no firm has made a submission, because intake is not open",
           "no peer or client review has been collected"
         ],
-        "coverage": 0,
-        "publishers": [],
+        "coverage": 0.3,
+        "publishers": [
+          "Benchmark Litigation",
+          "Chambers",
+          "The Legal 500"
+        ],
         "verifiedFirms": 6,
-        "reconciledFirms": 0,
-        "signalsHeld": {},
+        "reconciledFirms": 1,
+        "signalsHeld": {
+          "directoryConsensus": 1
+        },
         "signalWeights": {
           "directoryConsensus": 0.3,
           "courtRecord": 0.25,
@@ -3118,6 +3147,38 @@
       "pressMentions": 2,
       "firmCount": 10,
       "firms": [
+        {
+          "slug": "shardul-amarchand-mangaldas-and-co",
+          "name": "Shardul Amarchand Mangaldas & Co",
+          "foundedYear": null,
+          "sourceUrl": "https://amsshardul.com",
+          "sourceName": "The firm's own website",
+          "verified": true,
+          "pressMentions": 0,
+          "consensus": 0.8211,
+          "consensusDetail": {
+            "consensus": 0.8211,
+            "publisherCount": 3,
+            "publishers": [
+              "Benchmark Litigation",
+              "Chambers",
+              "The Legal 500"
+            ],
+            "byPublisher": {
+              "Benchmark Litigation": 0.4,
+              "Chambers": 1.0,
+              "The Legal 500": 1.0
+            },
+            "practiceAreas": [
+              "Litigation"
+            ],
+            "latestEdition": 2026,
+            "method": "Weighted mean of the best tier each of 3 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
+          },
+          "score": 82.1,
+          "rank": 1,
+          "band": "B"
+        },
         {
           "slug": "azb-and-partners",
           "name": "AZB & Partners",
@@ -3195,20 +3256,6 @@
           "sourceUrl": "https://en.wikipedia.org/wiki/LakshmiKumaran_%26_Sridharan",
           "sourceName": "Wikipedia",
           "verified": false,
-          "pressMentions": 0,
-          "consensus": null,
-          "consensusDetail": null,
-          "score": null,
-          "rank": null,
-          "band": null
-        },
-        {
-          "slug": "shardul-amarchand-mangaldas-and-co",
-          "name": "Shardul Amarchand Mangaldas & Co",
-          "foundedYear": null,
-          "sourceUrl": "https://amsshardul.com",
-          "sourceName": "The firm's own website",
-          "verified": true,
           "pressMentions": 0,
           "consensus": null,
           "consensusDetail": null,
@@ -4194,27 +4241,37 @@
       "region": "Asia-Pacific",
       "g20": false,
       "status": "directory_only",
-      "coverage": 0,
+      "coverage": 0.3,
       "minCoverage": 0.5,
       "evidence": {
-        "directoryConsensus": 0,
+        "directoryConsensus": 1,
         "courtRecord": 0,
         "revenuePerLawyer": 0,
         "submissions": 0,
         "peerReview": 0
       },
       "methodology": {
-        "basis": "No firm in Malaysia is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "basis": "1 of 4 firms in Malaysia are ranked here, ordered by a reconciliation of 7 external publishers (Asian Legal Business, Benchmark Litigation, Chambers, IFLR1000, Managing IP, The Legal 500, asialaw). Each figure is the weighted mean of the best tier every publisher gave that firm, and no firm appears without at least two independent publishers agreeing. Firms with no reconciled figure are listed below the ranked ones, alphabetically, and are not ranked.",
         "limits": [
           "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
           "no firm has made a submission, because intake is not open",
           "no peer or client review has been collected"
         ],
-        "coverage": 0,
-        "publishers": [],
+        "coverage": 0.3,
+        "publishers": [
+          "Asian Legal Business",
+          "Benchmark Litigation",
+          "Chambers",
+          "IFLR1000",
+          "Managing IP",
+          "The Legal 500",
+          "asialaw"
+        ],
         "verifiedFirms": 4,
-        "reconciledFirms": 0,
-        "signalsHeld": {},
+        "reconciledFirms": 1,
+        "signalsHeld": {
+          "directoryConsensus": 1
+        },
         "signalWeights": {
           "directoryConsensus": 0.3,
           "courtRecord": 0.25,
@@ -4227,24 +4284,61 @@
       "firmCount": 4,
       "firms": [
         {
-          "slug": "albar-partners",
-          "name": "Albar & Partners",
-          "foundedYear": null,
-          "sourceUrl": "https://albar.com.my",
-          "sourceName": "The firm's own website",
-          "verified": true,
-          "pressMentions": 0,
-          "consensus": null,
-          "consensusDetail": null,
-          "score": null,
-          "rank": null,
-          "band": null
-        },
-        {
           "slug": "rahmat-lim-partners",
           "name": "Rahmat Lim & Partners",
           "foundedYear": null,
           "sourceUrl": "https://rahmatlim.com",
+          "sourceName": "The firm's own website",
+          "verified": true,
+          "pressMentions": 0,
+          "consensus": 0.9714,
+          "consensusDetail": {
+            "consensus": 0.9714,
+            "publisherCount": 7,
+            "publishers": [
+              "Asian Legal Business",
+              "Benchmark Litigation",
+              "Chambers",
+              "IFLR1000",
+              "Managing IP",
+              "The Legal 500",
+              "asialaw"
+            ],
+            "byPublisher": {
+              "Asian Legal Business": 1.0,
+              "Benchmark Litigation": 0.8,
+              "Chambers": 1.0,
+              "IFLR1000": 1.0,
+              "Managing IP": 1.0,
+              "The Legal 500": 1.0,
+              "asialaw": 1.0
+            },
+            "practiceAreas": [
+              "Antitrust",
+              "Arbitration",
+              "Banking",
+              "Banking and Finance",
+              "Capital Markets",
+              "Competition",
+              "Construction",
+              "Corporate",
+              "Energy",
+              "Intellectual Property",
+              "Litigation",
+              "M&A"
+            ],
+            "latestEdition": 2026,
+            "method": "Weighted mean of the best tier each of 7 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
+          },
+          "score": 97.1,
+          "rank": 1,
+          "band": "A"
+        },
+        {
+          "slug": "albar-partners",
+          "name": "Albar & Partners",
+          "foundedYear": null,
+          "sourceUrl": "https://albar.com.my",
           "sourceName": "The firm's own website",
           "verified": true,
           "pressMentions": 0,
@@ -4475,27 +4569,36 @@
       "region": "Asia-Pacific",
       "g20": true,
       "status": "directory_only",
-      "coverage": 0,
+      "coverage": 0.3,
       "minCoverage": 0.5,
       "evidence": {
-        "directoryConsensus": 0,
+        "directoryConsensus": 1,
         "courtRecord": 0,
         "revenuePerLawyer": 0,
         "submissions": 0,
         "peerReview": 0
       },
       "methodology": {
-        "basis": "No firm in Indonesia is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "basis": "1 of 3 firms in Indonesia are ranked here, ordered by a reconciliation of 6 external publishers (Asian Legal Business, Chambers, IFLR1000, Law.asia, The Legal 500, asialaw). Each figure is the weighted mean of the best tier every publisher gave that firm, and no firm appears without at least two independent publishers agreeing. Firms with no reconciled figure are listed below the ranked ones, alphabetically, and are not ranked.",
         "limits": [
           "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
           "no firm has made a submission, because intake is not open",
           "no peer or client review has been collected"
         ],
-        "coverage": 0,
-        "publishers": [],
+        "coverage": 0.3,
+        "publishers": [
+          "Asian Legal Business",
+          "Chambers",
+          "IFLR1000",
+          "Law.asia",
+          "The Legal 500",
+          "asialaw"
+        ],
         "verifiedFirms": 3,
-        "reconciledFirms": 0,
-        "signalsHeld": {},
+        "reconciledFirms": 1,
+        "signalsHeld": {
+          "directoryConsensus": 1
+        },
         "signalWeights": {
           "directoryConsensus": 0.3,
           "courtRecord": 0.25,
@@ -4508,24 +4611,56 @@
       "firmCount": 3,
       "firms": [
         {
-          "slug": "ali-budiardjo-nugroho-reksodiputro",
-          "name": "Ali Budiardjo, Nugroho, Reksodiputro",
-          "foundedYear": null,
-          "sourceUrl": "https://abnrlaw.com",
-          "sourceName": "The firm's own website",
-          "verified": true,
-          "pressMentions": 0,
-          "consensus": null,
-          "consensusDetail": null,
-          "score": null,
-          "rank": null,
-          "band": null
-        },
-        {
           "slug": "walalangi-partners",
           "name": "Walalangi & Partners",
           "foundedYear": null,
           "sourceUrl": "https://wplaws.com",
+          "sourceName": "The firm's own website",
+          "verified": true,
+          "pressMentions": 0,
+          "consensus": 0.478,
+          "consensusDetail": {
+            "consensus": 0.478,
+            "publisherCount": 6,
+            "publishers": [
+              "Asian Legal Business",
+              "Chambers",
+              "IFLR1000",
+              "Law.asia",
+              "The Legal 500",
+              "asialaw"
+            ],
+            "byPublisher": {
+              "Asian Legal Business": 1.0,
+              "Chambers": 0.4,
+              "IFLR1000": 0.4,
+              "Law.asia": 0.4,
+              "The Legal 500": 0.4,
+              "asialaw": 0.4
+            },
+            "practiceAreas": [
+              "Antitrust",
+              "Banking",
+              "Competition",
+              "Corporate",
+              "Employment",
+              "Insolvency",
+              "Real Estate",
+              "Restructuring",
+              "TMT"
+            ],
+            "latestEdition": null,
+            "method": "Weighted mean of the best tier each of 6 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
+          },
+          "score": 47.8,
+          "rank": 1,
+          "band": "D"
+        },
+        {
+          "slug": "ali-budiardjo-nugroho-reksodiputro",
+          "name": "Ali Budiardjo, Nugroho, Reksodiputro",
+          "foundedYear": null,
+          "sourceUrl": "https://abnrlaw.com",
           "sourceName": "The firm's own website",
           "verified": true,
           "pressMentions": 0,
