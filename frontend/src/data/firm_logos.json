@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-13T12:43:51.694789Z",
+  "basis": "Each mark is reproduced from the firm's own website to identify that firm on its own directory entry — nominative use. Marks are not altered beyond scaling, never used in advertising, and removed on request to corrections@legalleague.org.",
+  "count": 2,
+  "logos": [
+    {
+      "slug": "allen-gledhill",
+      "name": "Allen & Gledhill",
+      "jurisdiction": "singapore",
+      "file": "/logos/allen-gledhill.png",
+      "width": 718,
+      "height": 57,
+      "sourceUrl": "https://allenandgledhill.com/media/1009/logo.png",
+      "sourcePage": "https://allenandgledhill.com",
+      "retrievedAt": "2026-08-13T12:43:51.694789Z",
+      "basis": "Nominative use: the firm's own mark, on the firm's own entry.",
+      "approved": true
+    },
+    {
+      "slug": "drew-napier",
+      "name": "Drew & Napier",
+      "jurisdiction": "singapore",
+      "file": "/logos/drew-napier.png",
+      "width": 96,
+      "height": 96,
+      "sourceUrl": "https://www.drewnapier.com/DrewNapier/media/DrewNapier/drew-and-napier-squarelogo-1400526574619.png?ext=.png",
+      "sourcePage": "https://www.drewnapier.com",
+      "retrievedAt": "2026-08-13T12:43:51.694789Z",
+      "basis": "Nominative use: the firm's own mark, on the firm's own entry.",
+      "approved": true
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 import { useCallback, useMemo, useState } from "react";
 import Link from "next/link";
 import { Globe } from "@/components/globe/Globe";
+import { FlatMap } from "@/components/globe/FlatMap";
 import type { JurisdictionEntry } from "@/lib/types";
 
 const FIRMS_SHOWN = 8;
@@ -47,6 +48,16 @@ export function CoverageSection({ entries, coverage }: Props) {
           onSelect={handleSelect}
           rankedIds={rankedIds}
         />
+
+        {/* The globe cannot serve Hong Kong, Singapore or Macao at any zoom.
+            This can, and both drive the same selection. */}
+        <div className="mt-8 w-full border-t border-rule pt-6">
+          <FlatMap
+            selectedId={selectedIso}
+            onSelect={handleSelect}
+            rankedIds={rankedIds}
+          />
+        </div>
       </div>
 
       <div className="lg:border-l lg:border-rule lg:pl-12">
