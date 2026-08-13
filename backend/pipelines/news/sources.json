@@ -141,6 +141,102 @@
       "crawl_delay_seconds": 5,
       "enabled": true,
       "robots_note": "RSS 404s; sitemap index declared in robots.txt. Archive-only source. Verified 2026-08-12."
+    },
+    {
+      "slug": "australasian-lawyer",
+      "name": "Australasian Lawyer",
+      "jurisdiction_iso": "036",
+      "language": "en",
+      "feed_url": "https://www.thelawyermag.com/au/rss",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": false,
+      "note": "Legal trade publication; all items are on-topic."
+    },
+    {
+      "slug": "canadian-lawyer",
+      "name": "Canadian Lawyer",
+      "jurisdiction_iso": "124",
+      "language": "en",
+      "feed_url": "https://www.canadianlawyermag.com/rss",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": false,
+      "note": "Legal trade publication; all items are on-topic."
+    },
+    {
+      "slug": "yonhap-english",
+      "name": "Yonhap News (English)",
+      "jurisdiction_iso": "410",
+      "language": "en",
+      "feed_url": "https://en.yna.co.kr/RSS/news.xml",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": true,
+      "note": "General news outlet with legal coverage; filtered to legal stories only."
+    },
+    {
+      "slug": "hankyung",
+      "name": "Hankyung",
+      "jurisdiction_iso": "410",
+      "language": "ko",
+      "feed_url": "https://www.hankyung.com/feed/society",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": true,
+      "note": "General news outlet with legal coverage; filtered to legal stories only."
+    },
+    {
+      "slug": "japan-today",
+      "name": "Japan Today",
+      "jurisdiction_iso": "392",
+      "language": "en",
+      "feed_url": "https://japantoday.com/feed",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": true,
+      "note": "General news outlet with legal coverage; filtered to legal stories only."
+    },
+    {
+      "slug": "straits-times",
+      "name": "The Straits Times",
+      "jurisdiction_iso": "702",
+      "language": "en",
+      "feed_url": "https://www.straitstimes.com/news/singapore/rss.xml",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": true,
+      "note": "General news outlet with legal coverage; filtered to legal stories only."
+    },
+    {
+      "slug": "scmp",
+      "name": "South China Morning Post",
+      "jurisdiction_iso": "344",
+      "language": "en",
+      "feed_url": "https://www.scmp.com/rss/2/feed",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": true,
+      "note": "General news outlet with legal coverage; filtered to legal stories only."
+    },
+    {
+      "slug": "taipei-times",
+      "name": "Taipei Times",
+      "jurisdiction_iso": "158",
+      "language": "en",
+      "feed_url": "https://www.taipeitimes.com/xml/index.rss",
+      "permitted_use": "feed",
+      "enabled": true,
+      "crawl_delay_seconds": 6,
+      "legal_filter": true,
+      "note": "General news outlet with legal coverage; filtered to legal stories only."
     }
   ],
   "excluded": [

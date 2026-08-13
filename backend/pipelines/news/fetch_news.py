@@ -152,6 +152,32 @@ def fetch(url: str, etag: str | None, modified: str | None) -> tuple[int, bytes,
         raise
 
 
+# Legal vocabulary in the languages our sources publish in. A general outlet
+# carries a legal desk inside a much larger newsroom; without this gate
+# Yonhap's sport and the Straits Times' property pages would swamp the feed and
+# bury the reporting a general counsel came for.
+LEGAL_TERMS = (
+    "court", "judge", "judgment", "judgement", "ruling", "lawsuit", "litigation",
+    "attorney", "lawyer", "law firm", "counsel", "prosecut", "indict", "tribunal",
+    "arbitration", "appeal", "verdict", "settlement", "injunction", "regulator",
+    "antitrust", "compliance", "sanction", "bar association", "supreme court",
+    "legislation", "statute", "legal", "solicitor", "barrister", "plaintiff",
+    "defendant", "damages", "merger", "acquisition", "securities",
+    "법원", "검찰", "소송", "변호사", "판결",
+    "로펌", "기소", "헌법", "법무법인",
+    "공정거래위", "재판", "구속", "법안",
+    "裁判", "弁護士", "訴訟", "判決", "検察",
+    "法律事務所", "最高裁",
+    "法院", "律师", "诉讼", "判决", "律所", "法律",
+)
+
+
+def is_legal(title: str, excerpt: str | None) -> bool:
+    """Does this item concern law? Applied only to general-news sources."""
+    haystack = f"{title} {excerpt or ''}".lower()
+    return any(term in haystack for term in LEGAL_TERMS)
+
+
 def collect() -> int:
     registry = json.loads(SOURCES_FILE.read_text("utf-8"))
     state = load_state()
@@ -244,6 +270,11 @@ def collect() -> int:
 
             author = strip_html(getattr(entry, "author", "")) or None
             published = to_iso(entry)
+
+            # A general outlet's legal desk is worth having; the rest of its
+            # newsroom is not.
+            if source.get("legal_filter") and not is_legal(title, excerpt):
+                continue
 
             seen_urls.add(url_hash)
             seen_content.add(content_hash)

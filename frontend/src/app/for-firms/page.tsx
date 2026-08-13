@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
-import { FIRM_OFFERS, FIREWALL } from "@/lib/fixtures/commercial";
+import { FIRM_OFFERS, FIREWALL, POSITION } from "@/lib/fixtures/commercial";
 import { getRankingsMeta } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -26,6 +26,41 @@ export default async function ForFirmsPage() {
         { label: "Paid ranking factors", value: "None" },
       ]}
     >
+            <section className="border-b border-rule py-14">
+        <h2 className="editorial max-w-3xl text-3xl leading-tight text-ink lg:text-4xl">
+          {POSITION.headline}
+        </h2>
+
+        <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_320px]">
+          <div className="measure space-y-4">
+            {POSITION.paragraphs.map((paragraph) => (
+              <p
+                key={paragraph.slice(0, 40)}
+                className="editorial text-base leading-relaxed text-ink-muted"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+
+          <aside className="lg:border-l lg:border-rule lg:pl-8">
+            <h3 className="label border-b border-ink pb-2 text-ink">
+              {POSITION.forCounsel.headline}
+            </h3>
+            <ul className="mt-4 space-y-3">
+              {POSITION.forCounsel.points.map((point) => (
+                <li
+                  key={point.slice(0, 30)}
+                  className="editorial border-l-2 border-oxblood pl-4 text-sm leading-relaxed text-ink-muted"
+                >
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </div>
+      </section>
+
       <section className="py-14">
         <h2 className="editorial border-b-2 border-ink pb-3 text-3xl text-ink">
           I. What you can do

@@ -1,47 +1,87 @@
 {
   "above-the-law": {
     "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 13:16:53 GMT",
-    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+    "last_modified": "Thu, 13 Aug 2026 14:51:52 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "jurist": {
     "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 09:19:34 GMT",
-    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+    "last_modified": "Thu, 13 Aug 2026 09:50:12 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "legal-cheek": {
-    "etag": "\"07d12697312c836a154b525f19e395f7\"",
-    "last_modified": "Wed, 12 Aug 2026 11:39:58 GMT",
-    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+    "etag": "\"49790be915d53af06a3e835dfba32767\"",
+    "last_modified": "Thu, 13 Aug 2026 15:07:39 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "artificial-lawyer": {
-    "etag": "\"b0f02fdb527d4a0c76cc90ecf1ea0ba2\"",
-    "last_modified": "Wed, 12 Aug 2026 11:02:54 GMT",
-    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+    "etag": "\"b687fd841c1da6e7edb56c02daa4dcfc\"",
+    "last_modified": "Thu, 13 Aug 2026 13:07:13 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "lawnext": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "legal-times-kr": {
-    "etag": "\"c040-658d65691cf52\"",
-    "last_modified": "Wed, 12 Aug 2026 09:37:38 GMT",
-    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+    "etag": "\"bf75-658e94f085f4e\"",
+    "last_modified": "Thu, 13 Aug 2026 08:15:36 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "lec-kr": {
-    "etag": "\"cb4a-658d7001ae330\"",
-    "last_modified": "Wed, 12 Aug 2026 10:25:03 GMT",
-    "last_fetched_at": "2026-08-12T13:07:32.206315Z"
+    "etag": "\"cb6f-658e9c19a198b\"",
+    "last_modified": "Thu, 13 Aug 2026 08:47:38 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "bar-and-bench": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   },
   "legal-futures": {
-    "etag": "\"86fb2b51a288a16967eeb6593d30c53d\"",
-    "last_modified": "Tue, 11 Aug 2026 23:07:11 GMT",
-    "last_fetched_at": "2026-08-12T13:18:09.181719Z"
+    "etag": "\"557eebf1beb565e657f14e42a7e77efa\"",
+    "last_modified": "Thu, 13 Aug 2026 13:31:29 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "australasian-lawyer": {
+    "etag": null,
+    "last_modified": null,
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "canadian-lawyer": {
+    "etag": null,
+    "last_modified": null,
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "yonhap-english": {
+    "etag": "1786635181427",
+    "last_modified": "Thu, 13 Aug 2026 15:29:28 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "hankyung": {
+    "etag": null,
+    "last_modified": null,
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "japan-today": {
+    "etag": null,
+    "last_modified": "Thu, 13 Aug 2026 15:31:44 GMT",
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "straits-times": {
+    "etag": "W/\"8905-FhVF/bnOj7ZSGOczlB/5PsscaIU\"",
+    "last_modified": null,
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "scmp": {
+    "etag": null,
+    "last_modified": null,
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+  },
+  "taipei-times": {
+    "etag": null,
+    "last_modified": null,
+    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
   }
 }
