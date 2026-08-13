@@ -214,10 +214,10 @@ export default async function MethodologyPage() {
             </li>
             <li>
               <Link
-                href="/firms/meridian-partners"
+                href="/firms/cyril-amarchand-mangaldas"
                 className="editorial text-sm text-ink link-underline"
               >
-                A worked example profile
+                A worked example profile — Cyril Amarchand Mangaldas
               </Link>
             </li>
           </ul>
