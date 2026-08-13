@@ -76,7 +76,7 @@ export async function HomeSections() {
           <h2 data-i18n="home.directory" className="editorial text-3xl text-ink lg:text-4xl">
             The directory
           </h2>
-          <Link href="/rankings" className="label text-oxblood link-underline">
+          <Link href="/rankings" className="label text-oxblood link-underline" data-i18n="home.allJurisdictions">
             All 35 jurisdictions
           </Link>
         </div>
@@ -134,7 +134,7 @@ export async function HomeSections() {
             <h2 data-i18n="home.news" className="editorial text-3xl text-ink lg:text-4xl">
               The news
             </h2>
-            <Link href="/news" className="label text-oxblood link-underline">
+            <Link href="/news" className="label text-oxblood link-underline" data-i18n="home.allCoverage">
               All coverage
             </Link>
           </div>

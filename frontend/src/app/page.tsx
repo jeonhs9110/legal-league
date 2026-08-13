@@ -81,7 +81,7 @@ export default async function Home() {
       <section className="border-b border-rule bg-paper-sunken">
         <div className="mx-auto w-full max-w-[1180px] px-6 py-14 lg:px-10">
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
-            <h2 className="editorial text-3xl text-ink lg:text-4xl">
+            <h2 className="editorial text-3xl text-ink lg:text-4xl" data-i18n="home.coverage">
               Where we have coverage
             </h2>
             <span className="label text-ink-faint">

@@ -64,6 +64,12 @@ STAGES = [
           "pipelines/directory/fetch_firm_awards.py", group="firms"),
     Stage("rankings", "Rebuild rankings from current evidence",
           "pipelines/rankings/build_rankings.py", group="firms"),
+    Stage("guides", "Collect practice guides published by firms",
+          "pipelines/directory/fetch_practice_guides.py", group="firms"),
+    # Last, and deliberately so: a run that would ship a method the page does
+    # not describe should end in a failure, not a deploy.
+    Stage("consistency", "Verify the published method matches the one that ran",
+          "tools/check_consistency.py", group="all"),
 ]
 
 

@@ -3,10 +3,10 @@ import Link from "next/link";
 import { SITE } from "@/lib/site";
 
 const NAV = [
-  { href: "/rankings", label: "Rankings" },
-  { href: "/news", label: "News" },
-  { href: "/methodology", label: "Methodology" },
-  { href: "/for-firms", label: "For firms" },
+  { href: "/rankings", label: "Rankings", i18n: "nav.rankings" },
+  { href: "/news", label: "News", i18n: "nav.news" },
+  { href: "/methodology", label: "Methodology", i18n: "nav.methodology" },
+  { href: "/for-firms", label: "For firms", i18n: "nav.forFirms" },
 ];
 
 /**
@@ -57,6 +57,7 @@ export function Masthead() {
             <Link
               key={item.href}
               href={item.href}
+              data-i18n={item.i18n}
               className="label text-ink-muted transition-colors hover:text-oxblood"
             >
               {item.label}
