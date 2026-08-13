@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Source_Serif_4 } from "next/font/google";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 import { SITE, absoluteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -114,6 +115,7 @@ export default function RootLayout({
           ]}
         />
         {children}
+              <LanguageSwitcher />
       </body>
     </html>
   );

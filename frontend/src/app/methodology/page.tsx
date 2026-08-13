@@ -6,7 +6,7 @@ import { BANDS } from "@/lib/bands";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/methodology" },
-  title: "Legal ranking methodology",
+  title: "Legal Ranking Methodology",
   description:
     "How law firms are ranked: the signals, their weights, the evidence each jurisdiction holds, and what its ranking does not rest on.",
 };

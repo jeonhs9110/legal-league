@@ -4,30 +4,6 @@
   "firmCount": 59,
   "rejected": [
     {
-      "name": "Lee & Ko",
-      "domain": "leeko.com",
-      "jurisdiction": "south-korea",
-      "reason": "site renders only in a browser and did not render here"
-    },
-    {
-      "name": "Shin & Kim",
-      "domain": "shinkim.com",
-      "jurisdiction": "south-korea",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Yulchon",
-      "domain": "yulchon.com",
-      "jurisdiction": "south-korea",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "KL Partners",
-      "domain": "klpartners.com",
-      "jurisdiction": "south-korea",
-      "reason": "TLS certificate did not match this hostname"
-    },
-    {
       "name": "Nishimura & Asahi",
       "domain": "nishimura.com",
       "jurisdiction": "japan",
@@ -922,51 +898,6 @@
       "checkedAt": "2026-08-12T17:07:05.552939Z"
     },
     {
-      "slug": "bae-kim-lee",
-      "name": "Bae, Kim & Lee",
-      "jurisdiction": "south-korea",
-      "website": "https://bkl.co.kr",
-      "emails": [],
-      "phones": [],
-      "practiceAreas": [
-        "Antitrust",
-        "Competition",
-        "Arbitration",
-        "Bankruptcy",
-        "Capital Markets",
-        "Compliance",
-        "Construction",
-        "Corporate",
-        "Data Protection",
-        "Employment",
-        "Energy",
-        "Environment"
-      ],
-      "headcount": null,
-      "headcountQuote": null,
-      "sources": {
-        "practiceAreas": "https://bkl.co.kr"
-      },
-      "checkedAt": "2026-08-12T17:02:57.514139Z"
-    },
-    {
-      "slug": "barun-law",
-      "name": "Barun Law",
-      "jurisdiction": "south-korea",
-      "website": "https://barunlaw.com",
-      "emails": [
-        "contact@barunlaw.com"
-      ],
-      "phones": [],
-      "practiceAreas": [],
-      "headcount": null,
-      "headcountQuote": null,
-      "sources": {
-        "emails": "https://barunlaw.com"
-      },
-      "checkedAt": "2026-08-12T17:05:16.540367Z"
-    },
-    {
       "slug": "castillo-laman-tan-pantaleon-san-jose",
       "name": "Castillo Laman Tan Pantaleon & San Jose",
       "jurisdiction": "philippines",
@@ -1060,26 +991,6 @@
         "phones": "https://www.tongshang.com"
       },
       "checkedAt": "2026-08-12T17:23:48.631398Z"
-    },
-    {
-      "slug": "dr-aju",
-      "name": "DR & AJU",
-      "jurisdiction": "south-korea",
-      "website": "https://draju.com",
-      "emails": [
-        "draju@draju.com"
-      ],
-      "phones": [
-        "+8225630298"
-      ],
-      "practiceAreas": [],
-      "headcount": null,
-      "headcountQuote": null,
-      "sources": {
-        "emails": "https://draju.com",
-        "phones": "https://draju.com"
-      },
-      "checkedAt": "2026-08-12T17:06:12.201990Z"
     },
     {
       "slug": "drew-napier",
@@ -1367,27 +1278,6 @@
       "checkedAt": "2026-08-12T17:38:17.776960Z"
     },
     {
-      "slug": "jipyong",
-      "name": "Jipyong",
-      "jurisdiction": "south-korea",
-      "website": "https://jipyong.com",
-      "emails": [
-        "cjeong@jipyong.com",
-        "jgs@jipyong.com"
-      ],
-      "phones": [
-        "+82262001600"
-      ],
-      "practiceAreas": [],
-      "headcount": null,
-      "headcountQuote": null,
-      "sources": {
-        "phones": "https://jipyong.com",
-        "emails": "https://jipyong.com/kr/main/contact.php"
-      },
-      "checkedAt": "2026-08-12T17:04:34.999688Z"
-    },
-    {
       "slug": "junhe",
       "name": "JunHe",
       "jurisdiction": "china",
@@ -1460,42 +1350,6 @@
         "practiceAreas": "https://khaitanco.com/contact-us"
       },
       "checkedAt": "2026-08-12T17:35:56.958491Z"
-    },
-    {
-      "slug": "kim-chang",
-      "name": "Kim & Chang",
-      "jurisdiction": "south-korea",
-      "website": "https://www.kimchang.com",
-      "emails": [
-        "lawkim@kimchang.com"
-      ],
-      "phones": [
-        "+82237031114",
-        "+82221223900",
-        "+820237031114"
-      ],
-      "practiceAreas": [
-        "Antitrust",
-        "Competition",
-        "Capital Markets",
-        "Compliance",
-        "Corporate",
-        "Employment",
-        "Environment",
-        "Family",
-        "Intellectual Property",
-        "Investigations",
-        "Litigation",
-        "Regulatory"
-      ],
-      "headcount": null,
-      "headcountQuote": null,
-      "sources": {
-        "emails": "https://www.kimchang.com",
-        "practiceAreas": "https://www.kimchang.com",
-        "phones": "https://www.kimchang.com/en/location/seoul.kc"
-      },
-      "checkedAt": "2026-08-12T17:01:42.151517Z"
     },
     {
       "slug": "kojima-law-offices",
@@ -2031,41 +1885,6 @@
         "phones": "https://ykvn-law.com/offices/ha-noi/"
       },
       "checkedAt": "2026-08-12T17:48:05.766415Z"
-    },
-    {
-      "slug": "yoon-yang",
-      "name": "Yoon & Yang",
-      "jurisdiction": "south-korea",
-      "website": "https://www.yoonyang.com",
-      "emails": [
-        "yoonyang@yoonyang.com"
-      ],
-      "phones": [
-        "+82260037000",
-        "+82260037800"
-      ],
-      "practiceAreas": [
-        "Arbitration",
-        "Capital Markets",
-        "Compliance",
-        "Construction",
-        "Corporate",
-        "Employment",
-        "Environment",
-        "Family",
-        "Finance",
-        "Fintech",
-        "Insurance",
-        "Investigations"
-      ],
-      "headcount": null,
-      "headcountQuote": null,
-      "sources": {
-        "emails": "https://www.yoonyang.com",
-        "practiceAreas": "https://www.yoonyang.com",
-        "phones": "https://www.yoonyang.com/eng/firm/domestic"
-      },
-      "checkedAt": "2026-08-12T17:03:45.498814Z"
     }
   ]
 }

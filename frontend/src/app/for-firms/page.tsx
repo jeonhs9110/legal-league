@@ -6,7 +6,7 @@ import { getRankingsMeta } from "@/lib/data";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/for-firms" },
-  title: "For law firms",
+  title: "For Law Firms",
   description:
     "For law firms: claim your listing, correct the record, and submit evidence. Advertising is kept separate from editorial by published rules.",
 };

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const articles = await listNewsByRegion(slug);
   return {
     alternates: { canonical: `/news/${slug}` },
-    title: `${region.name} legal news`,
+    title: `${region.name} Legal News`,
     description: `${articles.length} legal industry stories from ${region.name}, collected from permitted sources and linked back to the publisher that reported each one.`,
   };
 }

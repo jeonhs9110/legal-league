@@ -69,7 +69,7 @@ export async function HomeSections() {
        * ---------------------------------------------------------- */}
       <section className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
         <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
-          <h2 className="editorial text-3xl text-ink lg:text-4xl">
+          <h2 data-i18n="home.directory" className="editorial text-3xl text-ink lg:text-4xl">
             The directory
           </h2>
           <Link href="/rankings" className="label text-oxblood link-underline">
@@ -127,7 +127,7 @@ export async function HomeSections() {
       <section className="border-y border-rule bg-paper-sunken">
         <div className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:px-10 lg:py-20">
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-ink pb-3">
-            <h2 className="editorial text-3xl text-ink lg:text-4xl">
+            <h2 data-i18n="home.news" className="editorial text-3xl text-ink lg:text-4xl">
               The news
             </h2>
             <Link href="/news" className="label text-oxblood link-underline">

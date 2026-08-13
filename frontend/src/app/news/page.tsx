@@ -14,7 +14,7 @@ import {
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news" },
-  title: "Legal industry news",
+  title: "Legal Industry News",
   description:
     "Legal industry news from across the G20 and Asia, collected from permitted sources and linked back to the publisher that reported it.",
 };

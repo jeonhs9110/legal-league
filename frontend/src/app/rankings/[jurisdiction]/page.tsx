@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!entry) return { title: "Not found" };
 
   return {
-    title: `Law firms in ${entry.name}`,
+    title: `Law Firms in ${entry.name}`,
     description: `${entry.firmCount} law firms recorded in ${entry.name}, each traceable to its source. Ranking status: ${entry.status === "ranked" ? "published" : "withheld pending evidence"}.`,
   };
 }
