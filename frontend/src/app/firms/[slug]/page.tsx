@@ -25,10 +25,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const firm = await getFirmBySlug(slug);
-  if (!firm) return { title: "Not found — Legal League" };
+  if (!firm) return { title: "Not found" };
 
   return {
-    title: `${firm.name} — ${firm.jurisdiction.name} — Legal League`,
+    title: `${firm.name} — ${firm.jurisdiction.name}`,
     description: `${firm.name}, a law firm recorded in ${firm.jurisdiction.name}. Entity record with source; no ranking published.`,
   };
 }

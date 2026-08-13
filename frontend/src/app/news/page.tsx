@@ -5,7 +5,7 @@ import { getBriefsMeta, getNewsSnapshotMeta, listBriefs, listNews } from "@/lib/
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news" },
-  title: "Legal industry news — Legal League",
+  title: "Legal industry news",
   description:
     "Headlines from across the legal industry, collected from permitted sources, deduplicated, and linked back to the publisher.",
 };

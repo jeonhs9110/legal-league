@@ -5,7 +5,7 @@ import { getRankingsMeta, listJurisdictionEntries } from "@/lib/data";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/rankings" },
-  title: "Coverage by jurisdiction — Legal League",
+  title: "Coverage by jurisdiction",
   description:
     "Law firms by jurisdiction across the G20 and the major legal markets, with the evidence held for each and whether a ranking has been published.",
 };

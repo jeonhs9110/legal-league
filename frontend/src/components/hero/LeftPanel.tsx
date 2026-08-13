@@ -35,14 +35,14 @@ export function LeftPanel({ selectedId, onSelect, rankedIds, coverage }: Props) 
 
           <div className="flex items-center gap-2">
             <Link
- href="/methodology"
- className="border border-rule bg-paper-sunken hidden rounded-full px-4 py-2 text-sm text-ink transition-transform hover:scale-105 sm:block"
+            href="/methodology"
+            className="border border-rule bg-paper-sunken hidden rounded-full px-4 py-2 text-sm text-ink transition-transform hover:scale-105 sm:block"
             >
               Methodology
             </Link>
             <Link
- href="/rankings"
- className="border border-rule bg-paper-sunken flex items-center gap-2 rounded-full px-4 py-2 text-sm text-ink transition-transform hover:scale-105"
+            href="/rankings"
+            className="border border-rule bg-paper-sunken flex items-center gap-2 rounded-full px-4 py-2 text-sm text-ink transition-transform hover:scale-105"
             >
               <Menu className="h-4 w-4" />
               Menu
@@ -51,30 +51,32 @@ export function LeftPanel({ selectedId, onSelect, rankedIds, coverage }: Props) 
         </nav>
 
         <div className="flex flex-1 flex-col items-center justify-center py-10 text-center">
-          <h1 className="text-4xl tracking-[-0.05em] text-ink lg:text-5xl">
-            Ranking the world&apos;s
+          <h2 className="editorial text-4xl leading-[1.05] tracking-[-0.02em] text-ink lg:text-5xl">
+            The world&apos;s law firms,
             <br />
- law firms, <em className="font-serif text-ink-muted">in the open</em>
-          </h1>
+            <em className="font-serif text-ink-muted">on the record</em>
+          </h2>
 
-          <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-muted">
-            Every placement traces back to a public source: existing directory
- rankings, reconciled by AI, weighed against the court record.
+          <p className="editorial measure mt-4 text-sm leading-relaxed text-ink-muted">
+            A directory of firms with the source for every fact, built from
+            firms&apos; own filings and public court records. Marked
+            jurisdictions have listings; none carries a published ranking
+            yet, and listings are alphabetical rather than ordered.
           </p>
 
           <div className="mt-8 flex justify-center">
             <Globe
- selectedId={selectedId}
- onSelect={onSelect}
- rankedIds={rankedIds}
+              selectedId={selectedId}
+              onSelect={onSelect}
+              rankedIds={rankedIds}
             />
           </div>
 
           <Link
- href="/rankings"
- className="border border-rule bg-paper mt-10 flex items-center gap-3 rounded-full py-2 pl-6 pr-2 text-sm text-ink transition-transform hover:scale-105 active:scale-95"
+            href="/rankings"
+            className="border border-rule bg-paper mt-10 flex items-center gap-3 rounded-full py-2 pl-6 pr-2 text-sm text-ink transition-transform hover:scale-105 active:scale-95"
           >
-            Explore Rankings
+            Browse the directory
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-ink/10">
               <ArrowRight className="h-3.5 w-3.5" />
             </span>
@@ -84,8 +86,8 @@ export function LeftPanel({ selectedId, onSelect, rankedIds, coverage }: Props) 
             {PILLS.map((pill) => (
               <Link
  key={pill.label}
- href={pill.href}
- className="border border-rule bg-paper-sunken rounded-full px-4 py-2 text-xs text-ink-muted transition-transform hover:scale-105"
+            href={pill.href}
+            className="border border-rule bg-paper-sunken rounded-full px-4 py-2 text-xs text-ink-muted transition-transform hover:scale-105"
               >
                 {pill.label}
               </Link>

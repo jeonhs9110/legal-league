@@ -6,7 +6,7 @@ import { BANDS } from "@/lib/bands";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/methodology" },
-  title: "Methodology — Legal League",
+  title: "Methodology",
   description:
     "The weighted signals, exclusions, and evidence rules behind every Legal League placement, published in full.",
 };

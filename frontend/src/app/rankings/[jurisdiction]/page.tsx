@@ -18,10 +18,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { jurisdiction } = await params;
   const entry = await getJurisdictionBySlug(jurisdiction);
-  if (!entry) return { title: "Not found — Legal League" };
+  if (!entry) return { title: "Not found" };
 
   return {
-    title: `Law firms in ${entry.name} — Legal League`,
+    title: `Law firms in ${entry.name}`,
     description: `${entry.firmCount} law firms recorded in ${entry.name}, each traceable to its source. Ranking status: ${entry.status === "ranked" ? "published" : "withheld pending evidence"}.`,
   };
 }
