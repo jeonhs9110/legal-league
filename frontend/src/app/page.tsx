@@ -43,7 +43,7 @@ export default async function Home() {
         <div className="mx-auto w-full max-w-[1180px] px-6 pb-8 pt-14 lg:px-10 lg:pt-20">
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 border-b border-rule pb-3">
             <span className="label text-ink-faint">{dateline(news.generatedAt)}</span>
-            <span className="label text-ink-faint">legalleague.org</span>
+            <span className="label text-ink-faint">leagueoflegals.com</span>
           </div>
 
           <h1 className="editorial mt-8 text-[13vw] font-normal leading-[0.86] tracking-[-0.02em] text-ink sm:text-[10vw] lg:text-[124px]">

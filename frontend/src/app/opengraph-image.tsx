@@ -50,7 +50,7 @@ export default async function OpengraphImage() {
               textTransform: "uppercase",
             }}
           >
-            legalleague.org
+            leagueoflegals.com
           </div>
           <div style={{ fontSize: 19, letterSpacing: "0.14em", color: "#6B7280" }}>
             OPEN METHODOLOGY

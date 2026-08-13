@@ -29,11 +29,11 @@ export const SITE = {
   /** Short form for cards and structured data, under 120 characters. */
   shortDescriptor:
     "Law firm directory and legal industry coverage across 35 jurisdictions, with every source published.",
-  url: "https://legalleague.org",
+  url: "https://www.leagueoflegals.com",
   locale: "en",
   /** Localisations planned; see docs/architecture.md. */
   plannedLocales: ["en", "ko", "ja", "zh"],
-  contactEmail: "editor@legalleague.org",
+  contactEmail: "editor@leagueoflegals.com",
 } as const;
 
 export function absoluteUrl(path = "/"): string {

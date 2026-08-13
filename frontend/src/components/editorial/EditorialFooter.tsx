@@ -49,7 +49,7 @@ export async function EditorialFooter() {
             <p className="editorial text-lg tracking-[0.14em] text-ink">
               LEGAL LEAGUE
             </p>
-            <p className="label mt-1.5 text-ink-faint">legalleague.org</p>
+            <p className="label mt-1.5 text-ink-faint">leagueoflegals.com</p>
             <dl className="mt-4 space-y-1">
               <div className="flex gap-2">
                 <dt className="label text-ink-faint">News updated</dt>

@@ -390,7 +390,7 @@ export default async function FirmPage({ params }: Props) {
             it buys no advantage in any ranking.
           </p>
           <a
-            href={`mailto:${CONTACTS.claims}?subject=${encodeURIComponent(`Profile claim — ${firm.name}`)}&body=${encodeURIComponent(`Firm: ${firm.name}\nJurisdiction: ${firm.jurisdiction.name}\nProfile: https://legalleague.org/firms/${firm.slug}\n\nPlease describe your role at the firm so we can verify the claim.`)}`}
+            href={`mailto:${CONTACTS.claims}?subject=${encodeURIComponent(`Profile claim — ${firm.name}`)}&body=${encodeURIComponent(`Firm: ${firm.name}\nJurisdiction: ${firm.jurisdiction.name}\nProfile: https://www.leagueoflegals.com/firms/${firm.slug}\n\nPlease describe your role at the firm so we can verify the claim.`)}`}
             className="label mt-4 inline-block text-oxblood link-underline"
           >
             Claim this profile

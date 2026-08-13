@@ -10,10 +10,10 @@
  */
 
 export const CONTACTS = {
-  claims: "firms@legalleague.org",
-  submissions: "submissions@legalleague.org",
-  corrections: "corrections@legalleague.org",
-  advertising: "advertising@legalleague.org",
+  claims: "firms@leagueoflegals.com",
+  submissions: "submissions@leagueoflegals.com",
+  corrections: "corrections@leagueoflegals.com",
+  advertising: "advertising@leagueoflegals.com",
 };
 
 export type FirmOffer = {

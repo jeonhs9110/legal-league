@@ -354,3 +354,12 @@ export async function getRegionCounts(): Promise<
 export function getRegionBySlug(slug: string): NewsRegion | null {
   return NEWS_REGIONS.find((r) => r.slug === slug) ?? null;
 }
+
+/**
+ * Every firm in the directory, flattened. Used by the headline highlighter,
+ * which needs the whole set in one list rather than nested by jurisdiction.
+ */
+export const ALL_FIRMS: { slug: string; name: string }[] =
+  RANKINGS.jurisdictions.flatMap((j) =>
+    (j.firms ?? []).map((f) => ({ slug: f.slug, name: f.name })),
+  );
