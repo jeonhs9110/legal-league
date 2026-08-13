@@ -1,9 +1,71 @@
 {
-  "generatedAt": "2026-08-12T16:03:52.305583Z",
+  "generatedAt": "2026-08-13T15:39:50.570159Z",
   "similarityThreshold": 0.24,
   "minArticles": 2,
   "minSources": 2,
   "clusters": [
+    {
+      "id": "44d2e7039c58",
+      "sharedTerms": [
+        "agent",
+        "between",
+        "deepjudge",
+        "handoff",
+        "harvey",
+        "move",
+        "open",
+        "protocol",
+        "users"
+      ],
+      "sourceCount": 2,
+      "articles": [
+        {
+          "id": "c7e0f5e9ee64f073",
+          "title": "DeepJudge Releases an Open Protocol for Passing Users – and Their Context – Between AI Products, with Harvey and Thomson Reuters On Board",
+          "sourceName": "LawNext",
+          "sourceSlug": "lawnext",
+          "canonicalUrl": "https://www.lawnext.com/2026/08/deepjudge-releases-an-open-protocol-for-passing-users-and-their-context-between-ai-products-with-harvey-and-thomson-reuters-on-board.html",
+          "publishedAt": "2026-08-13T13:00:21Z"
+        },
+        {
+          "id": "32345a21268a40ab",
+          "title": "DeepJudge Launches Agent Handoff Protocol, Harvey + TR Adopt",
+          "sourceName": "Artificial Lawyer",
+          "sourceSlug": "artificial-lawyer",
+          "canonicalUrl": "https://www.artificiallawyer.com/2026/08/13/deepjudge-launches-agent-handoff-protocol-harvey-tr-adopt",
+          "publishedAt": "2026-08-13T13:00:12Z"
+        }
+      ]
+    },
+    {
+      "id": "fe71b0be0439",
+      "sharedTerms": [
+        "biological",
+        "calcutta",
+        "cwc",
+        "dna",
+        "parents"
+      ],
+      "sourceCount": 2,
+      "articles": [
+        {
+          "id": "8c69e7064d6273e5",
+          "title": "Calcutta HC orders adoptive parents to return baby after CWC ignored DNA match with biological mother",
+          "sourceName": "Bar & Bench",
+          "sourceSlug": "bar-and-bench",
+          "canonicalUrl": "https://www.barandbench.com/news/calcutta-hc-orders-adoptive-parents-to-return-baby-after-cwc-ignored-dna-match-with-biological-mother",
+          "publishedAt": "2026-08-13T12:35:48Z"
+        },
+        {
+          "id": "85e7c6e7981eb7eb",
+          "title": "DNA Report Confirmed Biological Parents, Yet CWC Declared Child 'Abandoned': Calcutta High Court Quashes Adoption",
+          "sourceName": "LiveLaw",
+          "sourceSlug": "livelaw",
+          "canonicalUrl": "https://www.livelaw.in/high-court/calcutta-high-court/dna-confirmed-biological-parents-yet-cwc-declared-child-abandoned-calcutta-high-court-quashes-adoption-order-545478",
+          "publishedAt": "2026-08-12T14:15:13Z"
+        }
+      ]
+    },
     {
       "id": "ae8464722795",
       "sharedTerms": [
@@ -102,40 +164,6 @@
       ]
     },
     {
-      "id": "1c370c2eb4f7",
-      "sharedTerms": [
-        "policy",
-        "supreme"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "df7424dc76a2ad90",
-          "title": "Supreme Court refuses to issue uniform policy against demolition of long-standing properties, asks States to consider",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/supreme-court-refuses-to-issue-uniform-policy-against-demolition-of-long-standing-properties-asks-states-to-consider",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "2edf20ae9bde540e",
-          "title": "Supreme Court Allows NGO To Approach Govts With Plea Seeking Balanced Demolition Policy Ensuring Shelter Rights' Protection",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/top-stories/supreme-court-allows-ngo-to-approach-govts-with-plea-seeking-balanced-demolition-policy-ensuring-shelter-rights-protection-545466",
-          "publishedAt": "2026-08-12T09:12:26Z"
-        },
-        {
-          "id": "8c991a6dd43baeab",
-          "title": "Consider Declaring Cancer As 'Notifiable Disease' : Supreme Court To States",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/top-stories/consider-declaring-cancer-as-notifiable-disease-supreme-court-to-states-545278",
-          "publishedAt": "2026-08-11T09:40:04Z"
-        }
-      ]
-    },
-    {
       "id": "35b13949c13a",
       "sharedTerms": [
         "airport",
@@ -201,40 +229,6 @@
           "sourceSlug": "livelaw",
           "canonicalUrl": "https://www.livelaw.in/top-stories/supreme-court-agrees-to-hear-plea-against-disruption-of-services-due-to-protests-545433",
           "publishedAt": "2026-08-12T06:52:22Z"
-        }
-      ]
-    },
-    {
-      "id": "fda2a8fc16f5",
-      "sharedTerms": [
-        "death",
-        "high",
-        "hospital",
-        "issued",
-        "its",
-        "karnataka",
-        "notices",
-        "police",
-        "quashed",
-        "quashes"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "a58692c73c6459d4",
-          "title": "Karnataka HC quashes notices issued by police against Cloudnine Hospital after surgery resulted in death",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/karnataka-hc-quashes-notices-issued-by-police-against-cloudnine-hospital-after-surgery-resulted-in-death",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "f857a2d420248a5c",
-          "title": "'Police Can't Conduct Roving Enquiry In Guise Of Inquest': Karnataka High Court Quashes Notices To Hospital, Staff In Unnatural Death Case",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/karnataka-high-court/karnataka-high-court-quashes-cloudnine-hospital-staff-patient-death-545224",
-          "publishedAt": "2026-08-11T05:50:06Z"
         }
       ]
     },
@@ -342,9 +336,20 @@
       ]
     },
     {
-      "id": "2a904c7cc818",
+      "id": "58cc6fa80cd4",
       "sharedTerms": [
-        "high"
+        "academic",
+        "amp",
+        "haryana",
+        "high",
+        "kishwar",
+        "madhu",
+        "modi",
+        "moves",
+        "post",
+        "punjab",
+        "purnima",
+        "quash"
       ],
       "sourceCount": 2,
       "articles": [
@@ -357,60 +362,12 @@
           "publishedAt": "2026-08-12T15:33:58.071663Z"
         },
         {
-          "id": "0fa8a820a255c70d",
-          "title": "Punjab &amp; Haryana High Court Upholds Hoshiarpur Dera Head's Conviction In 21 Yrs Old Rape Case, Awards ₹6 Lakh To Survivor",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/punjab-and-haryana-high-court/dera-head-rape-conviction-upheld-victims-sole-testimony-545494",
-          "publishedAt": "2026-08-12T10:51:26Z"
-        },
-        {
           "id": "6ddf10912c315f9e",
           "title": "Madhu Kishwar Moves Punjab &amp; Haryana High Court To Quash FIR Over Social Media Post On PM Modi",
           "sourceName": "LiveLaw",
           "sourceSlug": "livelaw",
           "canonicalUrl": "https://www.livelaw.in/high-court/punjab-and-haryana-high-court/madhu-kishwars-plea-to-quash-fir-x-post-on-pm-modi-545423",
           "publishedAt": "2026-08-12T05:54:20Z"
-        },
-        {
-          "id": "6ee5531e7473dd7b",
-          "title": "'Must Remain In Prison Till Sunset Of His Virility': P&amp;H High Court Commutes Death Penalty For Rape-Murder Of 7 Yrs Old, Directs 50 Yrs In Jail",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/punjab-and-haryana-high-court/punjab-haryana-high-court-commutes-death-penalty-for-rape-murder-of-7-yrs-old-directs-50-yrs-in-jail-545377",
-          "publishedAt": "2026-08-11T15:15:19Z"
-        },
-        {
-          "id": "4b30fbbdf5b26039",
-          "title": "UAPA | Punjab &amp; Haryana High Court Grants Bail To Man Accused Of Painting Pro-Khalistan Slogans On Govt Building",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/punjab-and-haryana-high-court/uapa-bail-accused-painted-pro-khalistan-slogans-on-govt-wall-545343",
-          "publishedAt": "2026-08-11T13:25:13Z"
-        },
-        {
-          "id": "783589effe681b98",
-          "title": "Punjab &amp; Haryana High Court Declines Ex-DIG IPS Bhullar's Second Bail Plea In CBI Trap Bribery Case",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/punjab-and-haryana-high-court/punjab-haryana-high-court-hs-bhullar-denies-bail-to-ex-dig-in-cbi-trap-bribery-case-545281",
-          "publishedAt": "2026-08-11T09:51:14Z"
-        },
-        {
-          "id": "f6d575948f1ff146",
-          "title": "'Bail Is Rule': Gujarat High Court Grants Bail To Woman Accused Of Extorting Man With Explicit Video Clip, Threatening Rape FIR",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/gujarat-high-court/gujarat-high-court-bail-woman-extortion-nude-video-clip-rape-fir-545244",
-          "publishedAt": "2026-08-11T07:40:42Z"
-        },
-        {
-          "id": "ceab457c3c0ee9f3",
-          "title": "Co-Accused's Disclosure Statements Without Recovery Prima Facie Hit By Section 23 BSA: P&amp;H High Court",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/punjab-and-haryana-high-court/co-accused-disclosure-police-custody-no-recovery-section-23-bsa-545213",
-          "publishedAt": "2026-08-11T05:40:52Z"
         }
       ]
     },
@@ -489,170 +446,6 @@
       ]
     },
     {
-      "id": "54ba1a2206bb",
-      "sharedTerms": [
-        "delhi",
-        "high"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "139c5787afaa8917",
-          "title": "Threats not made up, boost his security: Delhi HC to government on Pappu Yadav&#x27;s plea for enhanced security",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/threats-not-made-up-boost-his-security-delhi-hc-to-government-on-pappu-yadavs-plea-for-enhanced-security",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "7c0b64cdc025af8a",
-          "title": "Delhi High Court asks Centre to decide on removing inflammatory content against Shirdi Sai Baba",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/delhi-high-court-asks-centre-to-decide-on-removing-inflammatory-content-against-shirdi-sai-baba",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "9a904d966466c1d3",
-          "title": "Skit on Ram Temple donation theft: Pappu Yadav moves Delhi HC for enhanced security after attack at residence",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/skit-on-ram-temple-donation-theft-pappu-yadav-moves-delhi-hc-for-enhanced-security-after-attack-at-residence",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "afdde0625823d8b8",
-          "title": "Delhi High Court Asks Centre To Provide Additional Personal Security Officer To MP Pappu Yadav Pending Decision On Enhanced Cover",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/delhi-high-court/bihar-mp-pappu-yadav-security-threats-after-ram-mandir-trust-neet-protest-545320",
-          "publishedAt": "2026-08-11T12:10:23Z"
-        },
-        {
-          "id": "f964db61e6acca28",
-          "title": "Decide Plea To Remove Derogatory YouTube Videos Against Shirdi Sai Baba: Delhi High Court Asks Centre",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/delhi-high-court/shirdi-sai-baba-remove-derogatory-youtube-videos-545236",
-          "publishedAt": "2026-08-11T06:57:13Z"
-        }
-      ]
-    },
-    {
-      "id": "42cf20337064",
-      "sharedTerms": [
-        "consider",
-        "fighters",
-        "freedom",
-        "high",
-        "kerala",
-        "living",
-        "special",
-        "state",
-        "tuesday",
-        "welfare"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "d928b4aadf486ee6",
-          "title": "Kerala HC asks State to consider ₹50k pension, special welfare fund for living freedom fighters",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/kerala-hc-asks-centre-state-to-consider-creating-special-welfare-fund-for-living-freedom-fighters",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "b063ad45984b5a29",
-          "title": "Kerala High Court Urges Govt To Consider Special Welfare Measures For Living Freedom Fighters, Directs Creation Of Data Portal",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/kerala-high-court/kerala-high-court-special-welfare-measures-for-living-freedom-fighters-545257",
-          "publishedAt": "2026-08-11T08:20:11Z"
-        }
-      ]
-    },
-    {
-      "id": "bfc7c648f0d6",
-      "sharedTerms": [
-        "amid",
-        "asks",
-        "delhi",
-        "details",
-        "dispute",
-        "high",
-        "income",
-        "judges",
-        "pan",
-        "share",
-        "supreme",
-        "tax"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "b9b6582567db3122",
-          "title": "Delhi HC asks Supreme Court and HC judges to share PAN details amid dispute over tax on allowances",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/delhi-hc-asks-supreme-court-and-hc-judges-to-share-pan-details-amid-dispute-over-tax-on-allowances",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "9a0f25ca58a3112d",
-          "title": "Delhi High Court Asks Supreme Court, High Court Judges To Share PAN Details Amid Dispute Over Taxability Of Judicial Allowance",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/delhi-high-court/delhi-high-court-asks-supreme-court-high-court-judges-to-share-pan-details-amid-dispute-over-taxability-of-judicial-allowance-545277",
-          "publishedAt": "2026-08-11T09:36:25Z"
-        }
-      ]
-    },
-    {
-      "id": "93a9b38f0a78",
-      "sharedTerms": [
-        "abhishek",
-        "banerjee",
-        "congress",
-        "trinamool"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "27165760518a5b6a",
-          "title": "If he is so influential, how is his office being demolished? Calcutta HC on claims against Abhishek Banerjee",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/if-he-is-so-influential-how-is-his-office-being-demolished-calcutta-hc-on-claims-against-abhishek-banerjee",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "907b61c1768093c7",
-          "title": "Supreme Court permits TMC&#x27;s Abhishek Banerjee to travel abroad for eye treatment",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/supreme-court-permits-tmcs-abhishek-banerjee-to-travel-abroad-for-eye-treatment",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "79ce63e82f3b51e7",
-          "title": "&quot;Could This Have Happened Before Present Govt?&quot;: Calcutta High Court Flags Abhishek Banerjee Office Demolition Amid 'Influence' Claims",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/calcutta-high-court/could-this-have-happened-before-present-govt-calcutta-high-court-flags-abhishek-banerjees-office-demolition-amid-claims-of-influence-545258",
-          "publishedAt": "2026-08-11T08:35:56Z"
-        },
-        {
-          "id": "9b8d91e29d9875ed",
-          "title": "Calcutta High Court Reserves Order On Abhishek Banerjee's Plea Seeking Quashing Of FIRs, Extends Interim Protection",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/calcutta-high-court/calcutta-high-court-reserves-order-on-abhishek-banerjees-plea-seeking-quashing-of-firs-extends-interim-protection-545234",
-          "publishedAt": "2026-08-11T06:52:31Z"
-        }
-      ]
-    },
-    {
       "id": "a6f329fcba1a",
       "sharedTerms": [
         "advocacy",
@@ -684,80 +477,13 @@
       ]
     },
     {
-      "id": "c1a0a80a5b2b",
-      "sharedTerms": [
-        "deities",
-        "delhi",
-        "dhruv",
-        "google",
-        "high",
-        "hindu",
-        "india",
-        "tells",
-        "video",
-        "withheld"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "119eb4737bf267f7",
-          "title": "Dhruv Rathee video on Hindu deities eating meat withheld in India after Centre&#x27;s order: Google tells Delhi HC",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/dhruv-rathee-video-on-hindu-deities-eating-meat-withheld-in-india-after-centres-order-google-tells-delhi-hc",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "d4cf87bc65d3b5d0",
-          "title": "YouTuber Dhruv Rathee's Video On Hindu Deities Withheld In India, Not Globally: Google Tells Delhi High Court",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/delhi-high-court/dhruv-rathees-video-on-hindu-deities-withheld-in-india-no-global-injunction-545243",
-          "publishedAt": "2026-08-11T07:31:34Z"
-        }
-      ]
-    },
-    {
-      "id": "64a882dc13ae",
-      "sharedTerms": [
-        "activist",
-        "against",
-        "bhowmick",
-        "defamation",
-        "dismissed",
-        "dismisses",
-        "nair",
-        "nilanjana",
-        "ravi",
-        "supreme"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "35fb2289922498f4",
-          "title": "Supreme Court dismisses Ravi Nair&#x27;s appeal challenging quashing of defamation case against Nilanjana Bhowmick",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/supreme-court-dismisses-ravi-nairs-appeal-challenging-quashing-of-defamation-case-against-nilanjana-bhowmick",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "9d3a5eea4dd9b750",
-          "title": "Supreme Court Dismisses Activist Ravi Nair's Plea To Revive Defamation Case Against Nilanjana Bhowmick",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/top-stories/supreme-court-dismisses-journalist-ravi-nairs-plea-to-revive-defamation-case-against-nilanjana-bhowmick-545247",
-          "publishedAt": "2026-08-11T07:44:38Z"
-        }
-      ]
-    },
-    {
-      "id": "1aa7e979cc92",
+      "id": "970a4ed12ddb",
       "sharedTerms": [
         "content",
         "delhi",
         "high",
         "obscene",
+        "pornographic",
         "takedown"
       ],
       "sourceCount": 2,
@@ -785,14 +511,6 @@
           "sourceSlug": "livelaw",
           "canonicalUrl": "https://www.livelaw.in/high-court/delhi-high-court/khushi-kapoor-personality-rights-takedown-obscene-content-545425",
           "publishedAt": "2026-08-12T06:07:52Z"
-        },
-        {
-          "id": "6278d1b1c41da8cd",
-          "title": "Delhi High Court To Order Takedown Of Obscene Content Against Actress Janhvi Kapoor, But Questions Blanket Restraint On Fanpages",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/delhi-high-court/janhvi-kapoor-takedown-obscene-content-questions-completely-restraining-fanpages-545238",
-          "publishedAt": "2026-08-11T07:09:36Z"
         }
       ]
     },
@@ -825,107 +543,6 @@
       ]
     },
     {
-      "id": "e48a38880f7f",
-      "sharedTerms": [
-        "advocates",
-        "bureau",
-        "cbi",
-        "central",
-        "fake",
-        "investigation",
-        "issued",
-        "notice",
-        "petition",
-        "plea",
-        "probe",
-        "response"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "ade29ccdfd02a786",
-          "title": "Supreme Court seeks response from Centre on plea seeking probe into fake advocates, ‘Cockroach Janta Party’ activities",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/supreme-court-seeks-response-from-centre-on-plea-seeking-probe-into-fake-advocates-cockroach-janta-party-activities",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "c90186c81f78383c",
-          "title": "Supreme Court Seeks Union's Response On Plea For CBI Probe Against Fake Advocates",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/top-stories/supreme-court-seeks-unions-response-on-plea-for-cbi-probe-against-fake-advocates-curbs-on-monetisation-of-judges-remarks-545237",
-          "publishedAt": "2026-08-11T07:07:59Z"
-        }
-      ]
-    },
-    {
-      "id": "987d1bff7c53",
-      "sharedTerms": [
-        "activist",
-        "bail",
-        "granted",
-        "grants",
-        "jantar",
-        "kerala",
-        "mantar",
-        "right",
-        "thiruvananthapuram",
-        "wing",
-        "women"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "8a8d45c402b7fbfb",
-          "title": "Kerala court grants bail to Hindutva activist TG Mohandas booked for saying Jantar Mantar women protestors &#x27;enjoy rape&#x27;",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/kerala-court-grants-bail-to-hindutva-activist-tg-mohandas-booked-for-saying-jantar-mantar-women-protestors-enjoy-rape",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "0743463ca014092b",
-          "title": "Kerala Court Grants Bail To Right Wing Activist Arrested For Remarks Against Women Protesters At Jantar Mantar, Cites Procedural Irregularity",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/news-updates/kerala-rss-tg-mohandas-bail-jantar-mantar-545222",
-          "publishedAt": "2026-08-11T05:38:12Z"
-        }
-      ]
-    },
-    {
-      "id": "74b7f12319bc",
-      "sharedTerms": [
-        "building",
-        "high",
-        "its",
-        "jodhpur",
-        "rajasthan",
-        "structural"
-      ],
-      "sourceCount": 2,
-      "articles": [
-        {
-          "id": "ff163618c4a1dc1e",
-          "title": "May collapse any moment: Rajasthan HC initiates suo motu PIL over unsafe dome of its own building",
-          "sourceName": "Bar & Bench",
-          "sourceSlug": "bar-and-bench",
-          "canonicalUrl": "https://www.barandbench.com/news/litigation/may-collapse-any-moment-rajasthan-hc-initiates-suo-motu-pil-over-unsafe-dome-of-its-own-building",
-          "publishedAt": "2026-08-12T15:33:58.071663Z"
-        },
-        {
-          "id": "d221c423558eab34",
-          "title": "Rajasthan High Court Upholds Charge-Sheets Against Two PWD Engineers Over 'Grave Deficiencies' In Construction Of New HC Building",
-          "sourceName": "LiveLaw",
-          "sourceSlug": "livelaw",
-          "canonicalUrl": "https://www.livelaw.in/high-court/rajasthan-high-court/rajasthan-high-court-chargesheet-against-engineers-over-deficiency-in-jodhpur-high-court-building-545264",
-          "publishedAt": "2026-08-11T08:44:05Z"
-        }
-      ]
-    },
-    {
       "id": "a421ffc0ae95",
       "sharedTerms": [
         "can",
@@ -953,6 +570,36 @@
           "sourceSlug": "bar-and-bench",
           "canonicalUrl": "https://www.barandbench.com/news/can-split-in-legislature-party-reflect-in-political-party-supreme-court-asks-in-shiv-sena-symbol-case",
           "publishedAt": "2026-08-12T11:57:52Z"
+        }
+      ]
+    },
+    {
+      "id": "eb482e1bcca9",
+      "sharedTerms": [
+        "across",
+        "announced",
+        "clair",
+        "conversational",
+        "relativity",
+        "relativityone"
+      ],
+      "sourceCount": 2,
+      "articles": [
+        {
+          "id": "78b8addc6cd106c0",
+          "title": "Relativity Develops claiR Conversational AI System",
+          "sourceName": "Artificial Lawyer",
+          "sourceSlug": "artificial-lawyer",
+          "canonicalUrl": "https://www.artificiallawyer.com/2026/08/12/relativity-develops-clair-conversational-ai-system",
+          "publishedAt": "2026-08-12T14:00:41Z"
+        },
+        {
+          "id": "8f62c05dddd8075d",
+          "title": "Relativity Announces claiR, A Conversational AI for Lawyers, But You’ll Have to Wait Awhile to Chat with It",
+          "sourceName": "LawNext",
+          "sourceSlug": "lawnext",
+          "canonicalUrl": "https://www.lawnext.com/2026/08/relativity-announces-clair-a-conversational-ai-for-lawyers-but-youll-have-to-wait-awhile-to-chat-with-it.html",
+          "publishedAt": "2026-08-12T14:00:12Z"
         }
       ]
     },
@@ -1017,32 +664,38 @@
       ]
     },
     {
-      "id": "9dcd3d9f3782",
+      "id": "e6f653b3d144",
       "sharedTerms": [
-        "appeared",
-        "concern",
-        "cyber",
-        "first",
-        "insurance",
-        "post"
+        "beacon",
+        "breach",
+        "charities",
+        "charity",
+        "company",
+        "compromised",
+        "confirms",
+        "crm",
+        "data",
+        "database",
+        "hacking",
+        "health"
       ],
       "sourceCount": 2,
       "articles": [
         {
-          "id": "b2b39564158989f5",
-          "title": "Your Cyber Insurance May Not Be Ready For Autonomous AI",
-          "sourceName": "Above the Law",
-          "sourceSlug": "above-the-law",
-          "canonicalUrl": "https://abovethelaw.com/2026/08/your-cyber-insurance-may-not-be-ready-for-autonomous-ai",
-          "publishedAt": "2026-08-11T19:18:00Z"
+          "id": "065ddc6097f2eb34",
+          "title": "UK legal mental health charity LawCare confirms database was compromised in hacking incident",
+          "sourceName": "Australasian Lawyer",
+          "sourceSlug": "australasian-lawyer",
+          "canonicalUrl": "https://www.thelawyermag.com/au/news/international/uk-legal-mental-health-charity-lawcare-confirms-database-was-compromised-in-hacking-incident/585772",
+          "publishedAt": "2026-08-12T02:24:18Z"
         },
         {
-          "id": "66abdfaf695558ca",
-          "title": "Cyber insurance: Addressing common misconceptions",
-          "sourceName": "Legal Futures",
-          "sourceSlug": "legal-futures",
-          "canonicalUrl": "https://www.legalfutures.co.uk/associate-news/cyber-insurance-addressing-common-misconceptions",
-          "publishedAt": "2026-08-11T08:00:54Z"
+          "id": "96eb2f0aa086946a",
+          "title": "UK legal mental health charity LawCare confirms database was compromised in hacking incident",
+          "sourceName": "Canadian Lawyer",
+          "sourceSlug": "canadian-lawyer",
+          "canonicalUrl": "https://www.canadianlawyermag.com/news/international/uk-legal-mental-health-charity-lawcare-confirms-database-was-compromised-in-hacking-incident/394491",
+          "publishedAt": "2026-08-12T00:45:35Z"
         }
       ]
     }

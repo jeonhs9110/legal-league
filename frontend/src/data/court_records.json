@@ -1,12 +1,96 @@
 {
-  "generatedAt": "2026-08-13T11:01:42.348520Z",
+  "generatedAt": "2026-08-13T15:45:52.122852Z",
   "method": "Case name, court, date and link taken from official court and justice-ministry sources. Full judgment text is never stored or republished; every record links to the official record.",
-  "total": 65,
+  "total": 72,
   "byJurisdiction": {
     "new-zealand": 15,
-    "united-kingdom": 50
+    "united-kingdom": 57
   },
   "records": [
+    {
+      "id": "a1ffeeaebd098cab",
+      "jurisdiction": "united-kingdom",
+      "court": "The National Archives",
+      "sourceName": "Find Case Law — National Archives",
+      "title": "Roadget Business Pte Ltd & Anor v Whaleco UK Limited",
+      "decidedOn": "2026-08-13",
+      "url": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2026/2165",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "retrievedAt": "2026-08-13T15:45:52.122852Z"
+    },
+    {
+      "id": "1490cb1e74bb7a2d",
+      "jurisdiction": "united-kingdom",
+      "court": "The National Archives",
+      "sourceName": "Find Case Law — National Archives",
+      "title": "Paul Hooper v Registrar of Approved Driving Instructors",
+      "decidedOn": "2026-08-13",
+      "url": "https://caselaw.nationalarchives.gov.uk/ukftt/grc/2026/1142",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "retrievedAt": "2026-08-13T15:45:52.122852Z"
+    },
+    {
+      "id": "1e0f23a65e321be2",
+      "jurisdiction": "united-kingdom",
+      "court": "The National Archives",
+      "sourceName": "Find Case Law — National Archives",
+      "title": "Accord Healthcare Limited v Novartis AG",
+      "decidedOn": "2026-08-13",
+      "url": "https://caselaw.nationalarchives.gov.uk/ewhc/pat/2026/2127",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "retrievedAt": "2026-08-13T15:45:52.122852Z"
+    },
+    {
+      "id": "2ee540812608505a",
+      "jurisdiction": "united-kingdom",
+      "court": "The National Archives",
+      "sourceName": "Find Case Law — National Archives",
+      "title": "CX (No 2) (Domestic abuse: No contact), Re",
+      "decidedOn": "2026-08-13",
+      "url": "https://caselaw.nationalarchives.gov.uk/ewfc/2026/230",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "retrievedAt": "2026-08-13T15:45:52.122852Z"
+    },
+    {
+      "id": "fec62a0c6453ee3e",
+      "jurisdiction": "united-kingdom",
+      "court": "The National Archives",
+      "sourceName": "Find Case Law — National Archives",
+      "title": "C & Ors (Children: Placement or Special Guardianship), Re",
+      "decidedOn": "2026-08-13",
+      "url": "https://caselaw.nationalarchives.gov.uk/ewfc/b/2026/231",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "retrievedAt": "2026-08-13T15:45:52.122852Z"
+    },
+    {
+      "id": "64bd816a557c428a",
+      "jurisdiction": "united-kingdom",
+      "court": "The National Archives",
+      "sourceName": "Find Case Law — National Archives",
+      "title": "Yaa Foriwaa Appiah & Anor v Leeds and York Partnership NHS Foundation Trust",
+      "decidedOn": "2026-08-13",
+      "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2026/2135",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "retrievedAt": "2026-08-13T15:45:52.122852Z"
+    },
+    {
+      "id": "4d2f46fd9e5ab8a6",
+      "jurisdiction": "united-kingdom",
+      "court": "The National Archives",
+      "sourceName": "Find Case Law — National Archives",
+      "title": "Mohamed Attia Abdelmohaimen Attia v The Information Commissioner",
+      "decidedOn": "2026-08-13",
+      "url": "https://caselaw.nationalarchives.gov.uk/ukftt/grc/2026/1133",
+      "language": "en",
+      "licence": "Open Justice Licence — republication permitted with attribution",
+      "retrievedAt": "2026-08-13T15:45:52.122852Z"
+    },
     {
       "id": "b787db4db527e7ab",
       "jurisdiction": "united-kingdom",

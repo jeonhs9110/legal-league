@@ -22,7 +22,7 @@
   "lawnext": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "legal-times-kr": {
     "etag": "\"bf75-658e94f085f4e\"",
@@ -37,7 +37,7 @@
   "bar-and-bench": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "legal-futures": {
     "etag": "\"557eebf1beb565e657f14e42a7e77efa\"",
@@ -47,41 +47,41 @@
   "australasian-lawyer": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "canadian-lawyer": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "yonhap-english": {
-    "etag": "1786635181427",
-    "last_modified": "Thu, 13 Aug 2026 15:29:28 GMT",
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "etag": "1786635577225",
+    "last_modified": "Thu, 13 Aug 2026 15:38:28 GMT",
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "hankyung": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "japan-today": {
     "etag": null,
-    "last_modified": "Thu, 13 Aug 2026 15:31:44 GMT",
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_modified": "Thu, 13 Aug 2026 15:38:14 GMT",
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "straits-times": {
-    "etag": "W/\"8905-FhVF/bnOj7ZSGOczlB/5PsscaIU\"",
+    "etag": "W/\"8905-a+KLBX6Sm9B3XUAfVMwhqFrQcXc\"",
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "scmp": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   },
   "taipei-times": {
     "etag": null,
     "last_modified": null,
-    "last_fetched_at": "2026-08-13T15:30:42.246642Z"
+    "last_fetched_at": "2026-08-13T15:38:33.762312Z"
   }
 }

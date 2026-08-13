@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-13T15:30:42.246642Z",
+  "generatedAt": "2026-08-13T15:38:33.762312Z",
   "sourceCount": 14,
   "windowDays": 14,
-  "oldestArticle": "2026-08-11T12:20:52Z",
+  "oldestArticle": "2026-08-11T12:20:56Z",
   "articles": [
     {
       "id": "0445994f5ce4ad52",
@@ -5404,6 +5404,21 @@
       "retrievedAt": "2026-08-12T13:07:32.206315Z"
     },
     {
+      "id": "96eb2f0aa086946a",
+      "title": "UK legal mental health charity LawCare confirms database was compromised in hacking incident",
+      "excerpt": "It was one of over a thousand charities impacted by a data breach at software company Beacon CRM",
+      "summary": null,
+      "author": null,
+      "publishedAt": "2026-08-12T00:45:35Z",
+      "sourceName": "Canadian Lawyer",
+      "sourceSlug": "canadian-lawyer",
+      "canonicalUrl": "https://www.canadianlawyermag.com/news/international/uk-legal-mental-health-charity-lawcare-confirms-database-was-compromised-in-hacking-incident/394491",
+      "jurisdictionIso": "124",
+      "language": "en",
+      "entities": [],
+      "retrievedAt": "2026-08-13T15:38:33.762312Z"
+    },
+    {
       "id": "0629d026a987c2c4",
       "title": "Law graduate says viral TikTok video slamming law firm culture has gotten her fired",
       "excerpt": "Natali Curukovski criticised the “constant deadlines” and overtime",
@@ -6246,22 +6261,6 @@
       "sourceName": "LiveLaw",
       "sourceSlug": "livelaw",
       "canonicalUrl": "https://www.livelaw.in/high-court/delhi-high-court/delhi-high-court-fines-litigant-25k-for-seeking-transfer-of-case-following-judges-oral-remarks-545325",
-      "jurisdictionIso": "356",
-      "language": "en",
-      "entities": [],
-      "retrievedAt": "2026-08-12T15:49:38.368593Z",
-      "discovery": "sitemap"
-    },
-    {
-      "id": "640f507754d4d7f0",
-      "title": "SLSA Cannot Adopt 'Big Brother' Approach; Adult Victims Can Freely Spend Compensation Amount: Calcutta High Court",
-      "excerpt": "The Calcutta High Court has held that an adult victim receiving compensation under the West Bengal Victim Compensation Scheme has the right to decide how to utilise the amount and that the State...",
-      "summary": null,
-      "author": null,
-      "publishedAt": "2026-08-11T12:20:52Z",
-      "sourceName": "LiveLaw",
-      "sourceSlug": "livelaw",
-      "canonicalUrl": "https://www.livelaw.in/high-court/calcutta-high-court/slsa-cannot-adopt-big-brother-approach-to-adult-victim-compensation-lock-amount-in-fd-calcutta-high-court-545324",
       "jurisdictionIso": "356",
       "language": "en",
       "entities": [],
