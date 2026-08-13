@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T12:15:41.039120Z",
+  "generatedAt": "2026-08-13T12:30:56.120454Z",
   "methodologyVersion": "2026.1",
   "minCoverage": 0.5,
   "newsSnapshot": "2026-08-12T16:03:51.015409Z",
@@ -31,6 +31,26 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in United Kingdom is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "70 of 70 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 7,
       "firmCount": 70,
@@ -1033,6 +1053,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Australia is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "23 of 23 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 23,
       "firms": [
@@ -1376,6 +1416,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Canada is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "19 of 19 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 19,
       "firms": [
@@ -1663,6 +1723,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in China is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "9 of 17 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 8,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 17,
       "firms": [
@@ -1922,6 +2002,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Japan is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "7 of 15 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 8,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 15,
       "firms": [
@@ -2153,6 +2253,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in United States is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "13 of 13 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 13,
       "firms": [
@@ -2356,6 +2476,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Israel is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "12 of 12 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 12,
       "firms": [
@@ -2545,6 +2685,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in South Africa is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "11 of 11 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 11,
       "firms": [
@@ -2720,6 +2880,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in India is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "4 of 10 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 6,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 2,
       "firmCount": 10,
       "firms": [
@@ -2881,6 +3061,38 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "1 of 10 firms in Singapore are ranked here, ordered by a reconciliation of 9 external publishers (Asian Legal Business, Benchmark Litigation, Best Lawyers, Chambers, IFLR1000, Lexology Index, Managing IP, The Legal 500, asialaw). Each figure is the weighted mean of the best tier every publisher gave that firm, and no firm appears without at least two independent publishers agreeing. Firms with no reconciled figure are listed below the ranked ones, alphabetically, and are not ranked.",
+        "limits": [
+          "5 of 10 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0.35,
+        "publishers": [
+          "Asian Legal Business",
+          "Benchmark Litigation",
+          "Best Lawyers",
+          "Chambers",
+          "IFLR1000",
+          "Lexology Index",
+          "Managing IP",
+          "The Legal 500",
+          "asialaw"
+        ],
+        "verifiedFirms": 5,
+        "reconciledFirms": 1,
+        "signalsHeld": {
+          "directoryConsensus": 1
+        },
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 1,
       "firmCount": 10,
       "firms": [
@@ -2892,42 +3104,50 @@
           "sourceName": "The firm's own website",
           "verified": true,
           "pressMentions": 0,
-          "consensus": 0.9928,
+          "consensus": 0.958,
           "consensusDetail": {
-            "consensus": 0.9928,
-            "publisherCount": 7,
+            "consensus": 0.958,
+            "publisherCount": 9,
             "publishers": [
               "Asian Legal Business",
               "Benchmark Litigation",
+              "Best Lawyers",
               "Chambers",
               "IFLR1000",
               "Lexology Index",
+              "Managing IP",
               "The Legal 500",
               "asialaw"
             ],
             "byPublisher": {
               "Asian Legal Business": 1.0,
               "Benchmark Litigation": 1.0,
+              "Best Lawyers": 0.4,
               "Chambers": 1.0,
               "IFLR1000": 1.0,
               "Lexology Index": 1.0,
+              "Managing IP": 1.0,
               "The Legal 500": 1.0,
-              "asialaw": 0.95
+              "asialaw": 1.0
             },
             "practiceAreas": [
               "Banking and Finance",
+              "Capital Markets",
               "Corporate",
+              "Dispute Resolution",
+              "Energy",
               "Insolvency",
+              "Intellectual Property",
               "Investigations",
               "Litigation",
               "M&A",
-              "Restructuring",
-              "TMT"
+              "Regulatory",
+              "Restructuring"
             ],
             "latestEdition": 2026,
-            "method": "Weighted mean of the best tier each of 7 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
+            "method": "Weighted mean of the best tier each of 9 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
           },
-          "score": 99.3,
+          "score": 95.8,
           "rank": 1,
           "band": "A"
         },
@@ -3075,6 +3295,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in South Korea is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "1 of 7 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 6,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 7,
       "firms": [
@@ -3194,6 +3434,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Germany is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "6 of 6 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 6,
       "firms": [
@@ -3298,6 +3558,26 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Netherlands is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "6 of 6 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 6,
@@ -3404,6 +3684,25 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Philippines is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 5,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 5,
       "firms": [
@@ -3494,6 +3793,25 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Taiwan is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 5,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 5,
@@ -3586,6 +3904,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Thailand is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "2 of 5 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 3,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 5,
       "firms": [
@@ -3677,6 +4015,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Hong Kong is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "2 of 4 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 2,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 4,
       "firms": [
@@ -3746,68 +4104,55 @@
       "region": "Asia-Pacific",
       "g20": false,
       "status": "directory_only",
-      "coverage": 0.35,
+      "coverage": 0,
       "minCoverage": 0.5,
       "evidence": {
-        "directoryConsensus": 1,
+        "directoryConsensus": 0,
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Malaysia is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 4,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 4,
       "firms": [
         {
-          "slug": "rahmat-lim-partners",
-          "name": "Rahmat Lim & Partners",
-          "foundedYear": null,
-          "sourceUrl": "https://rahmatlim.com",
-          "sourceName": "The firm's own website",
-          "verified": true,
-          "pressMentions": 0,
-          "consensus": 0.8529,
-          "consensusDetail": {
-            "consensus": 0.8529,
-            "publisherCount": 6,
-            "publishers": [
-              "Asian Legal Business",
-              "Benchmark Litigation",
-              "Chambers",
-              "IFLR1000",
-              "The Legal 500",
-              "asialaw"
-            ],
-            "byPublisher": {
-              "Asian Legal Business": 1.0,
-              "Benchmark Litigation": 0.55,
-              "Chambers": 1.0,
-              "IFLR1000": 1.0,
-              "The Legal 500": 1.0,
-              "asialaw": 0.55
-            },
-            "practiceAreas": [
-              "Antitrust",
-              "Banking",
-              "Banking and Finance",
-              "Capital Markets",
-              "Competition",
-              "Corporate",
-              "Intellectual Property",
-              "Litigation",
-              "M&A"
-            ],
-            "latestEdition": 2025,
-            "method": "Weighted mean of the best tier each of 6 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
-          },
-          "score": 85.3,
-          "rank": 1,
-          "band": "B"
-        },
-        {
           "slug": "albar-partners",
           "name": "Albar & Partners",
           "foundedYear": null,
           "sourceUrl": "https://albar.com.my",
+          "sourceName": "The firm's own website",
+          "verified": true,
+          "pressMentions": 0,
+          "consensus": null,
+          "consensusDetail": null,
+          "score": null,
+          "rank": null,
+          "band": null
+        },
+        {
+          "slug": "rahmat-lim-partners",
+          "name": "Rahmat Lim & Partners",
+          "foundedYear": null,
+          "sourceUrl": "https://rahmatlim.com",
           "sourceName": "The firm's own website",
           "verified": true,
           "pressMentions": 0,
@@ -3862,6 +4207,25 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Vietnam is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 4,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 4,
@@ -3940,6 +4304,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in France is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "3 of 3 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 3,
       "firms": [
@@ -3995,59 +4379,55 @@
       "region": "Asia-Pacific",
       "g20": true,
       "status": "directory_only",
-      "coverage": 0.35,
+      "coverage": 0,
       "minCoverage": 0.5,
       "evidence": {
-        "directoryConsensus": 1,
+        "directoryConsensus": 0,
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Indonesia is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 3,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 3,
       "firms": [
         {
-          "slug": "walalangi-partners",
-          "name": "Walalangi & Partners",
-          "foundedYear": null,
-          "sourceUrl": "https://wplaws.com",
-          "sourceName": "The firm's own website",
-          "verified": true,
-          "pressMentions": 0,
-          "consensus": 0.4,
-          "consensusDetail": {
-            "consensus": 0.4,
-            "publisherCount": 3,
-            "publishers": [
-              "Chambers",
-              "IFLR1000",
-              "Law.asia"
-            ],
-            "byPublisher": {
-              "Chambers": 0.4,
-              "IFLR1000": 0.4,
-              "Law.asia": 0.4
-            },
-            "practiceAreas": [
-              "Antitrust",
-              "Banking",
-              "Insolvency",
-              "Real Estate",
-              "Restructuring",
-              "TMT"
-            ],
-            "latestEdition": null,
-            "method": "Weighted mean of the best tier each of 3 publishers gave, weighted by publisher type. Requires at least 2 independent publishers."
-          },
-          "score": 40.0,
-          "rank": 1,
-          "band": "D"
-        },
-        {
           "slug": "ali-budiardjo-nugroho-reksodiputro",
           "name": "Ali Budiardjo, Nugroho, Reksodiputro",
           "foundedYear": null,
           "sourceUrl": "https://abnrlaw.com",
+          "sourceName": "The firm's own website",
+          "verified": true,
+          "pressMentions": 0,
+          "consensus": null,
+          "consensusDetail": null,
+          "score": null,
+          "rank": null,
+          "band": null
+        },
+        {
+          "slug": "walalangi-partners",
+          "name": "Walalangi & Partners",
+          "foundedYear": null,
+          "sourceUrl": "https://wplaws.com",
           "sourceName": "The firm's own website",
           "verified": true,
           "pressMentions": 0,
@@ -4088,6 +4468,26 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Spain is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "3 of 3 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 3,
@@ -4152,6 +4552,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Ireland is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "2 of 2 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 2,
       "firms": [
@@ -4200,6 +4620,26 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Sweden is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "2 of 2 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 2,
@@ -4250,6 +4690,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Argentina is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "1 of 1 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 1,
       "firms": [
@@ -4284,6 +4744,26 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Italy is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "1 of 1 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 1,
@@ -4320,6 +4800,26 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Nigeria is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "1 of 1 entries still rest on a Wikipedia category rather than the firm's own website",
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 1,
       "firms": [
@@ -4355,6 +4855,25 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Brazil is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 0,
       "firms": []
@@ -4374,6 +4893,25 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Macao is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 0,
@@ -4395,6 +4933,25 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Mexico is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 0,
       "firms": []
@@ -4414,6 +4971,25 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Russia is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 0,
@@ -4435,6 +5011,25 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Saudi Arabia is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 0,
       "firms": []
@@ -4454,6 +5049,25 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in Switzerland is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 0,
@@ -4475,6 +5089,25 @@
         "submissions": 0,
         "peerReview": 0
       },
+      "methodology": {
+        "basis": "No firm in Türkiye is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
+      },
       "pressMentions": 0,
       "firmCount": 0,
       "firms": []
@@ -4494,6 +5127,25 @@
         "courtRecord": 0,
         "submissions": 0,
         "peerReview": 0
+      },
+      "methodology": {
+        "basis": "No firm in United Arab Emirates is ranked. Ranking requires at least two independent publishers to have recognised the same firm, taken from the firm's own announcements; that threshold is not met here yet, so the whole list is alphabetical and implies no order.",
+        "limits": [
+          "no court record feeds any firm's position — judgments are collected but not yet attributed to the firms that argued them",
+          "no firm has made a submission, because intake is not open",
+          "no peer or client review has been collected"
+        ],
+        "coverage": 0,
+        "publishers": [],
+        "verifiedFirms": 0,
+        "reconciledFirms": 0,
+        "signalsHeld": {},
+        "signalWeights": {
+          "directoryConsensus": 0.35,
+          "courtRecord": 0.3,
+          "submissions": 0.2,
+          "peerReview": 0.15
+        }
       },
       "pressMentions": 0,
       "firmCount": 0,

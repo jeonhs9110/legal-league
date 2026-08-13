@@ -153,6 +153,66 @@ def load_recognitions() -> dict[str, list[dict]]:
     return out
 
 
+def methodology_note(name: str, firm_rows: list[dict], evidence: dict,
+                     coverage: float, signal_weights: dict) -> dict:
+    """
+    The methodology as it applies to THIS jurisdiction, not in general.
+
+    A single site-wide statement cannot be honest here, because what is known
+    differs enormously by market: Singapore firms publicise directory
+    recognitions in English and can be reconciled; Korean firms largely do not,
+    and two of the largest block crawlers outright. Saying so per jurisdiction
+    is the difference between a published method and a slogan.
+    """
+    verified = sum(1 for f in firm_rows if f.get("verified"))
+    reconciled = [f for f in firm_rows if f.get("consensus") is not None]
+    publishers = sorted({
+        p for f in reconciled for p in (f.get("consensusDetail") or {}).get("publishers", [])
+    })
+
+    if reconciled:
+        basis = (
+            f"{len(reconciled)} of {len(firm_rows)} firms in {name} are ranked here, "
+            f"ordered by a reconciliation of {len(publishers)} external publishers "
+            f"({', '.join(publishers)}). Each figure is the weighted mean of the best "
+            "tier every publisher gave that firm, and no firm appears without at least "
+            "two independent publishers agreeing. Firms with no reconciled figure are "
+            "listed below the ranked ones, alphabetically, and are not ranked."
+        )
+    else:
+        basis = (
+            f"No firm in {name} is ranked. Ranking requires at least two independent "
+            "publishers to have recognised the same firm, taken from the firm's own "
+            "announcements; that threshold is not met here yet, so the whole list is "
+            "alphabetical and implies no order."
+        )
+
+    limits = []
+    if verified < len(firm_rows):
+        limits.append(
+            f"{len(firm_rows) - verified} of {len(firm_rows)} entries still rest on a "
+            "Wikipedia category rather than the firm's own website")
+    if not evidence["courtRecord"]:
+        limits.append(
+            "no court record feeds any firm's position — judgments are collected but "
+            "not yet attributed to the firms that argued them")
+    if not evidence["submissions"]:
+        limits.append("no firm has made a submission, because intake is not open")
+    if not evidence["peerReview"]:
+        limits.append("no peer or client review has been collected")
+
+    return {
+        "basis": basis,
+        "limits": limits,
+        "coverage": round(coverage, 3),
+        "publishers": publishers,
+        "verifiedFirms": verified,
+        "reconciledFirms": len(reconciled),
+        "signalsHeld": {k: v for k, v in evidence.items() if v},
+        "signalWeights": signal_weights,
+    }
+
+
 def build() -> int:
     firms_data = json.loads(FIRMS_FILE.read_text("utf-8"))
     weights = json.loads(WEIGHTS_FILE.read_text("utf-8"))
@@ -246,6 +306,8 @@ def build() -> int:
                 "coverage": round(coverage, 3),
                 "minCoverage": MIN_COVERAGE,
                 "evidence": evidence,
+                "methodology": methodology_note(
+                    jurisdiction["name"], firm_rows, evidence, coverage, signal_weights),
                 "pressMentions": sum(f["pressMentions"] for f in firm_rows),
                 "firmCount": len(firm_rows),
                 "firms": firm_rows,

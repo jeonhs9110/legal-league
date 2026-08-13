@@ -56,7 +56,19 @@ export type EvidenceCounts = {
   peerReview: number;
 };
 
+export type JurisdictionMethodology = {
+  basis: string;
+  limits: string[];
+  coverage: number;
+  publishers: string[];
+  verifiedFirms: number;
+  reconciledFirms: number;
+  signalsHeld: Record<string, number>;
+  signalWeights: Record<string, number>;
+};
+
 export type JurisdictionEntry = Jurisdiction & {
+  methodology: JurisdictionMethodology;
   /** `ranked` once evidence coverage clears the threshold; else directory only. */
   status: "ranked" | "directory_only";
   /** Share of methodology weight backed by real evidence, 0–1. */

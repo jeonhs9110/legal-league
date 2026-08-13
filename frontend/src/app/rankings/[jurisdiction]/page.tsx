@@ -91,13 +91,75 @@ export default async function JurisdictionPage({ params }: Props) {
         { label: "Press mentions", value: String(entry.pressMentions) },
       ]}
     >
+      <section className="border-b border-rule py-10">
+        <h2 className="label border-b-2 border-ink pb-2 text-ink">
+          How {entry.name} is ranked
+        </h2>
+
+        <p className="editorial measure mt-5 text-base leading-relaxed text-ink">
+          {entry.methodology.basis}
+        </p>
+
+        {entry.methodology.publishers.length > 0 ? (
+          <div className="mt-6">
+            <p className="label text-ink-faint">Publishers reconciled here</p>
+            <p className="editorial mt-2 text-sm leading-relaxed text-ink-muted">
+              {entry.methodology.publishers.join(" · ")}
+            </p>
+          </div>
+        ) : null}
+
+        {entry.methodology.limits.length > 0 ? (
+          <div className="measure mt-6 border-l-2 border-oxblood pl-5">
+            <p className="label text-oxblood">
+              What this ranking does not rest on
+            </p>
+            <ul className="mt-2 space-y-1.5">
+              {entry.methodology.limits.map((limit) => (
+                <li
+                  key={limit}
+                  className="editorial text-sm leading-relaxed text-ink-muted"
+                >
+                  {limit}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
+        <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4 border-t border-rule pt-5">
+          <div>
+            <dt className="label text-ink-faint">Firms ranked</dt>
+            <dd className="rank-figure mt-1 text-xl text-ink">
+              {entry.methodology.reconciledFirms} of {entry.firmCount}
+            </dd>
+          </div>
+          <div>
+            <dt className="label text-ink-faint">Verified against own site</dt>
+            <dd className="rank-figure mt-1 text-xl text-ink">
+              {entry.methodology.verifiedFirms} of {entry.firmCount}
+            </dd>
+          </div>
+          <div>
+            <dt className="label text-ink-faint">Evidence coverage</dt>
+            <dd className="rank-figure mt-1 text-xl text-ink">
+              {Math.round(entry.methodology.coverage * 100)}%
+            </dd>
+          </div>
+        </dl>
+      </section>
+
       <div className="grid gap-16 py-14 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-20">
         <div>
           <div className="flex items-baseline justify-between gap-6 border-b-2 border-ink pb-2">
             <h2 className="editorial text-2xl text-ink">
-              {entry.status === "ranked" ? "Ranked firms" : "Firms on file"}
+              {entry.methodology.reconciledFirms > 0 ? "Ranked firms" : "Firms on file"}
             </h2>
-            <span className="label text-ink-faint">A–Z</span>
+            <span className="label text-ink-faint">
+              {entry.methodology.reconciledFirms > 0
+                ? "By reconciled consensus, then A–Z"
+                : "A–Z · no order implied"}
+            </span>
           </div>
 
           <table className="mt-4 w-full border-collapse">
