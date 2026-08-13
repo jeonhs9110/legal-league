@@ -1,373 +1,37 @@
 {
-  "generatedAt": "2026-08-12T17:01:37.871521Z",
+  "generatedAt": "2026-08-13T14:12:10.742334Z",
   "method": "Fields read from each firm's own website; every field records the page it came from. Firms are ordered by the professional headcount they publish, and firms that publish none are listed without a figure. No ranking is implied.",
-  "firmCount": 59,
+  "firmCount": 63,
   "rejected": [
     {
-      "name": "Nishimura & Asahi",
-      "domain": "nishimura.com",
-      "jurisdiction": "japan",
-      "reason": "HTTP 403"
-    },
-    {
-      "name": "Mori Hamada & Matsumoto",
-      "domain": "morihamada.com",
-      "jurisdiction": "japan",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "Atsumi & Sakai",
-      "domain": "aplaw.jp",
-      "jurisdiction": "japan",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "Ushijima & Partners",
-      "domain": "ushijima-law.gr.jp",
-      "jurisdiction": "japan",
+      "name": "Shin & Kim",
+      "domain": "shinkim.com",
+      "jurisdiction": "south-korea",
       "reason": "robots.txt disallows this crawler"
     },
     {
-      "name": "Tsar & Tsai Law Firm",
-      "domain": "tsartsai.com.tw",
-      "jurisdiction": "taiwan",
+      "name": "Yulchon",
+      "domain": "yulchon.com",
+      "jurisdiction": "south-korea",
+      "reason": "robots.txt disallows this crawler"
+    },
+    {
+      "name": "KL Partners",
+      "domain": "klpartners.com",
+      "jurisdiction": "south-korea",
       "reason": "TLS certificate did not match this hostname"
     },
     {
-      "name": "Winkler Partners",
-      "domain": "winklerpartners.com",
-      "jurisdiction": "taiwan",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Eiger Law",
-      "domain": "eiger.law",
-      "jurisdiction": "taiwan",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Formosan Brothers",
-      "domain": "formosan.com.tw",
-      "jurisdiction": "taiwan",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "Innovation Law",
-      "domain": "innovationlaw.com.tw",
-      "jurisdiction": "taiwan",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "King & Wood Mallesons",
-      "domain": "kwm.com",
-      "jurisdiction": "china",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Zhong Lun Law Firm",
-      "domain": "zhonglun.com",
-      "jurisdiction": "china",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "Haiwen & Partners",
-      "domain": "haiwen-law.com",
-      "jurisdiction": "china",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "Jingtian & Gongcheng",
-      "domain": "jingtian.com",
-      "jurisdiction": "china",
-      "reason": "site renders only in a browser and did not render here"
-    },
-    {
-      "name": "Deacons",
-      "domain": "deacons.com",
-      "jurisdiction": "hong-kong",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "ONC Lawyers",
-      "domain": "onc.hk",
-      "jurisdiction": "hong-kong",
+      "name": "Law Firm Seowoo",
+      "domain": "seowoolaw.co.kr",
+      "jurisdiction": "south-korea",
       "reason": "TLS certificate did not match this hostname"
     },
     {
-      "name": "Tanner De Witt",
-      "domain": "tannerdewitt.com",
-      "jurisdiction": "hong-kong",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Howse Williams",
-      "domain": "howsewilliams.com",
-      "jurisdiction": "hong-kong",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Haldanes",
-      "domain": "haldanes.com",
-      "jurisdiction": "hong-kong",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Wilkinson & Grist",
-      "domain": "wilgrist.com",
-      "jurisdiction": "hong-kong",
-      "reason": "TLS certificate did not match this hostname"
-    },
-    {
-      "name": "Boase Cohen & Collins",
-      "domain": "boasecohencollins.com",
-      "jurisdiction": "hong-kong",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Stevenson, Wong & Co",
-      "domain": "sw-hk.com",
-      "jurisdiction": "hong-kong",
-      "reason": "HTTP 307"
-    },
-    {
-      "name": "SyCip Salazar Hernandez & Gatmaitan",
-      "domain": "syciplaw.com",
-      "jurisdiction": "philippines",
-      "reason": "HTTP 403"
-    },
-    {
-      "name": "ACCRALAW",
-      "domain": "accralaw.com",
-      "jurisdiction": "philippines",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Cruz Marcelo & Tenefrancia",
-      "domain": "cruzmarcelo.com",
-      "jurisdiction": "philippines",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Puyat Jacinto & Santos",
-      "domain": "pjslaw.com",
-      "jurisdiction": "philippines",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Quisumbing Torres",
-      "domain": "quisumbingtorres.com",
-      "jurisdiction": "philippines",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "JSA Advocates & Solicitors",
-      "domain": "jsalaw.com",
-      "jurisdiction": "india",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "S&R Associates",
-      "domain": "snrlaw.in",
-      "jurisdiction": "india",
+      "name": "Yoon & Partners",
+      "domain": "yoonpartners.com",
+      "jurisdiction": "south-korea",
       "reason": "page does not identify itself as this firm"
-    },
-    {
-      "name": "Talwar Thakore & Associates",
-      "domain": "ttalaw.in",
-      "jurisdiction": "india",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "Saraf and Partners",
-      "domain": "sarafpartners.com",
-      "jurisdiction": "india",
-      "reason": "page does not identify itself as this firm"
-    },
-    {
-      "name": "Lee Hishammuddin Allen & Gledhill",
-      "domain": "lh-ag.com",
-      "jurisdiction": "malaysia",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Christopher & Lee Ong",
-      "domain": "christopherleeong.com",
-      "jurisdiction": "malaysia",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Raja, Darryl & Loh",
-      "domain": "rdl.com.my",
-      "jurisdiction": "malaysia",
-      "reason": "connection failed ([WinError 10060] 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어)"
-    },
-    {
-      "name": "Adnan Sundra & Low",
-      "domain": "asl.com.my",
-      "jurisdiction": "malaysia",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Zul Rafique & Partners",
-      "domain": "zulrafique.com.my",
-      "jurisdiction": "malaysia",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Zaid Ibrahim & Co",
-      "domain": "zicolaw.com",
-      "jurisdiction": "malaysia",
-      "reason": "page does not identify itself as this firm"
-    },
-    {
-      "name": "Assegaf Hamzah & Partners",
-      "domain": "ahp.co.id",
-      "jurisdiction": "indonesia",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "SSEK Law Firm",
-      "domain": "ssek.com",
-      "jurisdiction": "indonesia",
-      "reason": "TLS certificate did not match this hostname"
-    },
-    {
-      "name": "Makarim & Taira S",
-      "domain": "makarim.com",
-      "jurisdiction": "indonesia",
-      "reason": "TLS certificate did not match this hostname"
-    },
-    {
-      "name": "Lubis Ganie Surowidjojo",
-      "domain": "lgslaw.co.id",
-      "jurisdiction": "indonesia",
-      "reason": "domain does not exist in DNS"
-    },
-    {
-      "name": "Soemadipradja & Taher",
-      "domain": "soemath.com",
-      "jurisdiction": "indonesia",
-      "reason": "connection failed ([SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error)"
-    },
-    {
-      "name": "Hiswara Bunjamin & Tandjung",
-      "domain": "hbtlaw.com",
-      "jurisdiction": "indonesia",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Hadiputranto, Hadinoto & Partners",
-      "domain": "hhp.co.id",
-      "jurisdiction": "indonesia",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "VILAF",
-      "domain": "vilaf.com.vn",
-      "jurisdiction": "vietnam",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Rajah & Tann LCT Lawyers",
-      "domain": "rajahtannlct.com",
-      "jurisdiction": "vietnam",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Frasers Law Company",
-      "domain": "frasersvn.com",
-      "jurisdiction": "vietnam",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Indochine Counsel",
-      "domain": "indochinecounsel.com",
-      "jurisdiction": "vietnam",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "ASL Law",
-      "domain": "aslgate.com",
-      "jurisdiction": "vietnam",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Bizconsult",
-      "domain": "bizconsult.vn",
-      "jurisdiction": "vietnam",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Tilleke & Gibbins",
-      "domain": "tilleke.com",
-      "jurisdiction": "thailand",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Weerawong, Chinnavat & Partners",
-      "domain": "weerawongcp.com",
-      "jurisdiction": "thailand",
-      "reason": "page does not identify itself as this firm"
-    },
-    {
-      "name": "Chandler MHM",
-      "domain": "chandlermhm.com",
-      "jurisdiction": "thailand",
-      "reason": "connection failed ([WinError 10060] 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어)"
-    },
-    {
-      "name": "Siam Premier International Law Office",
-      "domain": "siamlaw.co.th",
-      "jurisdiction": "thailand",
-      "reason": "TLS certificate did not match this hostname"
-    },
-    {
-      "name": "Blumenthal Richter & Sumet",
-      "domain": "brslawyers.com",
-      "jurisdiction": "thailand",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Pisut & Partners",
-      "domain": "pisutandpartners.com",
-      "jurisdiction": "thailand",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Dherakupt International Law Office",
-      "domain": "dherakupt.co.th",
-      "jurisdiction": "thailand",
-      "reason": "TLS certificate did not match this hostname"
-    },
-    {
-      "name": "Rajah & Tann Singapore",
-      "domain": "rajahtannasia.com",
-      "jurisdiction": "singapore",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Dentons Rodyk",
-      "domain": "dentons.rodyk.com",
-      "jurisdiction": "singapore",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Harry Elias Partnership",
-      "domain": "harryelias.com",
-      "jurisdiction": "singapore",
-      "reason": "robots.txt disallows this crawler"
-    },
-    {
-      "name": "Withers KhattarWong",
-      "domain": "witherskhattarwong.com",
-      "jurisdiction": "singapore",
-      "reason": "page does not identify itself as this firm"
-    },
-    {
-      "name": "Bih Li & Lee",
-      "domain": "bihlilee.com.sg",
-      "jurisdiction": "singapore",
-      "reason": "connection failed ([WinError 10060] 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어)"
     }
   ],
   "firms": [
@@ -898,6 +562,51 @@
       "checkedAt": "2026-08-12T17:07:05.552939Z"
     },
     {
+      "slug": "bae-kim-lee",
+      "name": "Bae, Kim & Lee",
+      "jurisdiction": "south-korea",
+      "website": "https://bkl.co.kr",
+      "emails": [],
+      "phones": [],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Arbitration",
+        "Bankruptcy",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Data Protection",
+        "Employment",
+        "Energy",
+        "Environment"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "practiceAreas": "https://bkl.co.kr"
+      },
+      "checkedAt": "2026-08-13T14:15:34.814005Z"
+    },
+    {
+      "slug": "barun-law",
+      "name": "Barun Law",
+      "jurisdiction": "south-korea",
+      "website": "https://barunlaw.com",
+      "emails": [
+        "contact@barunlaw.com"
+      ],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://barunlaw.com"
+      },
+      "checkedAt": "2026-08-13T14:17:52.540169Z"
+    },
+    {
       "slug": "castillo-laman-tan-pantaleon-san-jose",
       "name": "Castillo Laman Tan Pantaleon & San Jose",
       "jurisdiction": "philippines",
@@ -931,6 +640,27 @@
         "practiceAreas": "https://cltpsj.com.ph"
       },
       "checkedAt": "2026-08-12T17:30:17.269325Z"
+    },
+    {
+      "slug": "cha-kim",
+      "name": "Cha & Kim",
+      "jurisdiction": "south-korea",
+      "website": "https://chakim.co.kr",
+      "emails": [
+        "cnkustax@gmail.com"
+      ],
+      "phones": [
+        "+82269541066",
+        "+82269541067"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://chakim.co.kr",
+        "phones": "https://chakim.co.kr"
+      },
+      "checkedAt": "2026-08-13T14:21:25.283657Z"
     },
     {
       "slug": "chen-lin",
@@ -991,6 +721,43 @@
         "phones": "https://www.tongshang.com"
       },
       "checkedAt": "2026-08-12T17:23:48.631398Z"
+    },
+    {
+      "slug": "dr-aju",
+      "name": "DR & AJU",
+      "jurisdiction": "south-korea",
+      "website": "https://draju.com",
+      "emails": [
+        "draju@draju.com"
+      ],
+      "phones": [
+        "+8225630298"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://draju.com",
+        "phones": "https://draju.com"
+      },
+      "checkedAt": "2026-08-13T14:18:47.692938Z"
+    },
+    {
+      "slug": "daeryun-law",
+      "name": "Daeryun Law",
+      "jurisdiction": "south-korea",
+      "website": "https://daeryunlaw.com",
+      "emails": [],
+      "phones": [
+        "+8218007905"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://daeryunlaw.com"
+      },
+      "checkedAt": "2026-08-13T14:20:11.147386Z"
     },
     {
       "slug": "drew-napier",
@@ -1164,6 +931,23 @@
       "checkedAt": "2026-08-12T17:24:33.993126Z"
     },
     {
+      "slug": "hmp-law",
+      "name": "HMP Law",
+      "jurisdiction": "south-korea",
+      "website": "https://hmplaw.com",
+      "emails": [
+        "desk@hmplaw.com"
+      ],
+      "phones": [],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://hmplaw.com"
+      },
+      "checkedAt": "2026-08-13T14:19:29.797084Z"
+    },
+    {
       "slug": "han-kun-law-offices",
       "name": "Han Kun Law Offices",
       "jurisdiction": "china",
@@ -1278,6 +1062,27 @@
       "checkedAt": "2026-08-12T17:38:17.776960Z"
     },
     {
+      "slug": "jipyong",
+      "name": "Jipyong",
+      "jurisdiction": "south-korea",
+      "website": "https://jipyong.com",
+      "emails": [
+        "cjeong@jipyong.com",
+        "jgs@jipyong.com"
+      ],
+      "phones": [
+        "+82262001600"
+      ],
+      "practiceAreas": [],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "phones": "https://jipyong.com",
+        "emails": "https://jipyong.com/kr/main/contact.php"
+      },
+      "checkedAt": "2026-08-13T14:17:11.881586Z"
+    },
+    {
       "slug": "junhe",
       "name": "JunHe",
       "jurisdiction": "china",
@@ -1352,6 +1157,42 @@
       "checkedAt": "2026-08-12T17:35:56.958491Z"
     },
     {
+      "slug": "kim-chang",
+      "name": "Kim & Chang",
+      "jurisdiction": "south-korea",
+      "website": "https://www.kimchang.com",
+      "emails": [
+        "lawkim@kimchang.com"
+      ],
+      "phones": [
+        "+82237031114",
+        "+82221223900",
+        "+820237031114"
+      ],
+      "practiceAreas": [
+        "Antitrust",
+        "Competition",
+        "Capital Markets",
+        "Compliance",
+        "Corporate",
+        "Employment",
+        "Environment",
+        "Family",
+        "Intellectual Property",
+        "Investigations",
+        "Litigation",
+        "Regulatory"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.kimchang.com",
+        "practiceAreas": "https://www.kimchang.com",
+        "phones": "https://www.kimchang.com/en/location/seoul.kc"
+      },
+      "checkedAt": "2026-08-13T14:12:14.996897Z"
+    },
+    {
       "slug": "kojima-law-offices",
       "name": "Kojima Law Offices",
       "jurisdiction": "japan",
@@ -1414,6 +1255,30 @@
         "phones": "https://www.lcs.com.tw"
       },
       "checkedAt": "2026-08-12T17:17:22.713682Z"
+    },
+    {
+      "slug": "lee-ko",
+      "name": "Lee & Ko",
+      "jurisdiction": "south-korea",
+      "website": "https://leeko.com",
+      "emails": [
+        "mail@leeko.com"
+      ],
+      "phones": [],
+      "practiceAreas": [
+        "Arbitration",
+        "Construction",
+        "Intellectual Property",
+        "Litigation",
+        "Tax"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://leeko.com",
+        "practiceAreas": "https://leeko.com"
+      },
+      "checkedAt": "2026-08-13T14:13:19.822246Z"
     },
     {
       "slug": "lee-and-li",
@@ -1885,6 +1750,41 @@
         "phones": "https://ykvn-law.com/offices/ha-noi/"
       },
       "checkedAt": "2026-08-12T17:48:05.766415Z"
+    },
+    {
+      "slug": "yoon-yang",
+      "name": "Yoon & Yang",
+      "jurisdiction": "south-korea",
+      "website": "https://www.yoonyang.com",
+      "emails": [
+        "yoonyang@yoonyang.com"
+      ],
+      "phones": [
+        "+82260037000",
+        "+82260037800"
+      ],
+      "practiceAreas": [
+        "Arbitration",
+        "Capital Markets",
+        "Compliance",
+        "Construction",
+        "Corporate",
+        "Employment",
+        "Environment",
+        "Family",
+        "Finance",
+        "Fintech",
+        "Insurance",
+        "Investigations"
+      ],
+      "headcount": null,
+      "headcountQuote": null,
+      "sources": {
+        "emails": "https://www.yoonyang.com",
+        "practiceAreas": "https://www.yoonyang.com",
+        "phones": "https://www.yoonyang.com/eng/firm/domestic"
+      },
+      "checkedAt": "2026-08-13T14:16:22.858743Z"
     }
   ]
 }

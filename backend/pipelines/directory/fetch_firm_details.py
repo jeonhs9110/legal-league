@@ -95,6 +95,18 @@ AWARD_CONTEXT_RE = re.compile(
     r"chambers|legal ?500|benchmark|lexology|iflr|asialaw|who's who|best lawyers)\b",
     re.I,
 )
+# Historical milestones. Kim & Chang's history page says it "became the first
+# in the industry to employ more than 100 attorneys" — a sentence about the
+# 1990s. Read as a current headcount it would put Korea's largest firm on the
+# page at a tenth of its size, and it would look like a fact because it is one,
+# just not the fact we asked for.
+HISTORICAL_RE = re.compile(
+    r"\b(became|was|were|by 19\d\d|by 20[01]\d|in 19\d\d|in 20[01]\d|"
+    r"first (?:in|to)|at the time|back then|founded with|grew from|history|"
+    r"milestone|anniversary|celebrated)\b",
+    re.I,
+)
+
 # Language that makes the number a claim about the firm itself.
 FIRM_CONTEXT_RE = re.compile(
     r"\b(our|we|us|the firm|firm(?:'s|s')|comprising|consists? of|made up of|"
@@ -328,7 +340,7 @@ def extract_headcount(html: str) -> tuple[int, str] | None:
             continue
         start, end = max(0, match.start() - 110), min(len(text), match.end() + 110)
         context = text[start:end].strip()
-        if AWARD_CONTEXT_RE.search(context):
+        if AWARD_CONTEXT_RE.search(context) or HISTORICAL_RE.search(context):
             continue
         if not FIRM_CONTEXT_RE.search(context):
             # Needs to read as a statement about the firm ("our 300 lawyers",
