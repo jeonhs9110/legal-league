@@ -8,12 +8,41 @@
     "Becomes a row in the `methodologies` table (weights as jsonb) once Supabase",
     "is live, at which point this file goes away and drift becomes impossible."
   ],
-  "version": "2026.1",
+  "version": "2026.2",
   "effectiveFrom": "2026-01-01",
   "signals": [
-    { "key": "directoryConsensus", "label": "Directory consensus", "weight": 0.35 },
-    { "key": "courtRecord", "label": "Court record", "weight": 0.3 },
-    { "key": "submissions", "label": "Verified submissions", "weight": 0.2 },
-    { "key": "peerReview", "label": "Peer and client review", "weight": 0.15 }
-  ]
+    {
+      "key": "directoryConsensus",
+      "label": "Directory consensus",
+      "weight": 0.3
+    },
+    {
+      "key": "courtRecord",
+      "label": "Court record",
+      "weight": 0.25
+    },
+    {
+      "key": "revenuePerLawyer",
+      "label": "Revenue per lawyer",
+      "weight": 0.15
+    },
+    {
+      "key": "submissions",
+      "label": "Verified submissions",
+      "weight": 0.18
+    },
+    {
+      "key": "peerReview",
+      "label": "Peer and client review",
+      "weight": 0.12
+    }
+  ],
+  "jurisdictionNotes": {
+    "south-korea": {
+      "signal": "revenuePerLawyer",
+      "why": "Korean firms publish revenue but not headcount, and raw revenue only measures size: Lee & Ko leads on turnover while Yulchon, Yoon & Yang and Bae Kim & Lee lead on revenue per lawyer. Dividing by professional count is what makes the figure comparable between a 1,200-lawyer firm and a 90-lawyer one.",
+      "underlyingSource": "Revenue originates in the VAT taxable-base declarations (부가가치세 과세표준 신고액) firms file with the National Tax Service (국세청). That filing is the authority; it is not the Ministry of Justice.",
+      "whatWeUse": "Only figures a firm has itself published, and official open data. The per-firm league table compiled by 법률신문 is not used: that publication already sits on our excluded source list, and its table is a compilation in the same way a Chambers band table is."
+    }
+  }
 }

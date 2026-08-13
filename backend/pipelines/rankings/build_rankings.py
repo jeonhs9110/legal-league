@@ -276,6 +276,11 @@ def build() -> int:
             # they cannot support a firm-level score and are counted as zero
             # rather than credited on the strength of existing.
             "courtRecord": 0,
+            # Revenue per lawyer. Live only where a jurisdiction has an
+            # official basis for the figure and the headcount to divide by;
+            # zero everywhere else rather than absent, so the missing weight
+            # shows up in the coverage number instead of quietly vanishing.
+            "revenuePerLawyer": 0,
             "submissions": 0,
             "peerReview": 0,
         }

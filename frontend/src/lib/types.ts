@@ -49,9 +49,11 @@ export type DirectoryFirm = {
 };
 
 /** Evidence held per methodology signal, by count of records. */
+/** Kept in step with ScoreBreakdown: every weighted signal is countable. */
 export type EvidenceCounts = {
   directoryConsensus: number;
   courtRecord: number;
+  revenuePerLawyer: number;
   submissions: number;
   peerReview: number;
 };
@@ -128,6 +130,13 @@ export type NewsSnapshot = {
 export type ScoreBreakdown = {
   directoryConsensus: number;
   courtRecord: number;
+  /**
+   * Revenue divided by professional headcount, never revenue alone. Live only
+   * where a jurisdiction has an official basis for the figure — Korea, where
+   * firms file VAT declarations with the National Tax Service — and zero
+   * elsewhere rather than absent, so the weight is visibly unearned.
+   */
+  revenuePerLawyer: number;
   submissions: number;
   peerReview: number;
 };
