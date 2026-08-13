@@ -275,3 +275,82 @@ export async function getAwardsMeta() {
     firmCount: FIRM_AWARDS.firms.length,
   };
 }
+
+/* ------------------------------------------------------------------ *
+ * Regional grouping
+ *
+ * 848 articles in one column is an archive, not a front page. A reader
+ * covering Indian courts should not scroll past four hundred English
+ * solicitor stories to reach them. Region comes from the article's
+ * jurisdiction, which the collector records from the source registry, so no
+ * article is placed by guesswork.
+ * ------------------------------------------------------------------ */
+
+export type NewsRegion = {
+  slug: string;
+  name: string;
+  /** Plain-language line for the region index and its metadata. */
+  blurb: string;
+};
+
+export const NEWS_REGIONS: NewsRegion[] = [
+  { slug: "asia-pacific", name: "Asia-Pacific",
+    blurb: "Courts, regulators and firms across Asia and the Pacific." },
+  { slug: "europe", name: "Europe",
+    blurb: "The English and European legal professions, their regulators and their courts." },
+  { slug: "americas", name: "Americas",
+    blurb: "North and South American practice, firms and litigation." },
+  { slug: "africa-middle-east", name: "Africa & Middle East",
+    blurb: "Legal markets across Africa and the Middle East." },
+  { slug: "international", name: "International",
+    blurb: "Coverage that belongs to no single jurisdiction." },
+];
+
+const REGION_SLUG: Record<string, string> = {
+  "Asia-Pacific": "asia-pacific",
+  Europe: "europe",
+  Americas: "americas",
+  "Africa & Middle East": "africa-middle-east",
+};
+
+// jurisdiction ISO numeric -> region slug, built from the directory so the two
+// can never drift apart.
+const REGION_BY_ISO = new Map<string, string>(
+  RANKINGS.jurisdictions.map((j) => [
+    j.isoNumeric,
+    REGION_SLUG[j.region] ?? "international",
+  ]),
+);
+
+export function regionOf(article: NewsArticle): string {
+  const iso = article.jurisdictionIso;
+  return (iso && REGION_BY_ISO.get(iso)) || "international";
+}
+
+export async function listNewsByRegion(
+  slug: string,
+  limit?: number,
+): Promise<NewsArticle[]> {
+  const all = await listNews();
+  const filtered = all.filter((a) => regionOf(a) === slug);
+  return limit ? filtered.slice(0, limit) : filtered;
+}
+
+export async function getRegionCounts(): Promise<
+  { region: NewsRegion; count: number }[]
+> {
+  const all = await listNews();
+  const counts = new Map<string, number>();
+  for (const article of all) {
+    const slug = regionOf(article);
+    counts.set(slug, (counts.get(slug) ?? 0) + 1);
+  }
+  return NEWS_REGIONS.map((region) => ({
+    region,
+    count: counts.get(region.slug) ?? 0,
+  })).filter((r) => r.count > 0);
+}
+
+export function getRegionBySlug(slug: string): NewsRegion | null {
+  return NEWS_REGIONS.find((r) => r.slug === slug) ?? null;
+}

@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
-import { getBriefsMeta, getNewsSnapshotMeta, listBriefs, listNews } from "@/lib/data";
+import { ArticleList } from "@/components/news/ArticleList";
+import {
+  getBriefsMeta,
+  getNewsSnapshotMeta,
+  getRegionCounts,
+  listBriefs,
+  listNews,
+} from "@/lib/data";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news" },
@@ -34,13 +41,17 @@ function formatStamp(iso: string): string {
 }
 
 export default async function NewsPage() {
-  const [articles, meta, briefs, briefsMeta] = await Promise.all([
+  const [articles, meta, briefs, briefsMeta, regions] = await Promise.all([
     listNews(),
     getNewsSnapshotMeta(),
     listBriefs(),
     getBriefsMeta(),
+    getRegionCounts(),
   ]);
+  // The front page carries the lead plus a readable slice; the full archive
+  // lives on the regional pages. 848 stories in one column is a database dump.
   const [lead, ...rest] = articles;
+  const recent = rest.slice(0, 39);
 
   return (
     <EditorialShell
@@ -201,51 +212,38 @@ export default async function NewsPage() {
         </article>
       ) : null}
 
-      <div className="grid gap-x-16 lg:grid-cols-2">
-        {rest.map((article) => (
-          <article key={article.id} className="border-b border-rule/70 py-8">
-            <p className="label text-ink-faint">
-              {article.sourceName} · {formatDate(article.publishedAt)}
-            </p>
+      <section className="border-b border-rule py-8">
+        <h2 className="label text-ink-faint">Coverage by region</h2>
+        <div className="mt-4 grid gap-x-10 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+          {regions.map(({ region, count }) => (
+            <Link
+              key={region.slug}
+              href={`/news/${region.slug}`}
+              className="group flex items-baseline justify-between gap-4 border-b border-rule/60 pb-2"
+            >
+              <span className="editorial text-lg text-ink transition-colors group-hover:text-oxblood">
+                {region.name}
+              </span>
+              <span className="rank-figure text-lg text-ink-faint">{count}</span>
+            </Link>
+          ))}
+        </div>
+      </section>
 
-            <h2 className="editorial mt-3 text-2xl leading-snug text-ink">
-              <a
-                href={article.canonicalUrl}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="link-underline"
-              >
-                {article.title}
-              </a>
-            </h2>
+      <ArticleList articles={recent} />
 
-            {article.summary ? (
-              <p className="editorial mt-3 text-base leading-relaxed text-ink-muted">
-                {article.summary}
-              </p>
-            ) : null}
-
-            {article.excerpt ? (
-              <p className="editorial mt-3 border-l-2 border-rule-strong pl-4 text-sm italic leading-relaxed text-ink-faint">
-                {article.excerpt}
-              </p>
-            ) : null}
-
-            <p className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
-              {article.entities.map((entity) => (
-                <Link
-                  key={entity.firmSlug}
-                  href={`/firms/${entity.firmSlug}`}
-                  className="label text-oxblood link-underline"
-                >
-                  {entity.firmName}
-                </Link>
-              ))}
-              {article.author ? (
-                <span className="label text-ink-faint">{article.author}</span>
-              ) : null}
-            </p>
-          </article>
+      <div className="mt-10 flex flex-wrap items-baseline gap-x-8 gap-y-2 border-t border-rule pt-6">
+        <span className="label text-ink-faint">
+          Showing {recent.length + 1} of {meta.total} stories
+        </span>
+        {regions.map(({ region, count }) => (
+          <Link
+            key={region.slug}
+            href={`/news/${region.slug}`}
+            className="label text-oxblood link-underline"
+          >
+            All {count} from {region.name}
+          </Link>
         ))}
       </div>
 
