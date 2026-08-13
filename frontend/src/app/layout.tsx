@@ -64,22 +64,42 @@ export default function RootLayout({
           data={[
             {
               "@context": "https://schema.org",
-              "@type": "Organization",
+              // NewsMediaOrganization, not the generic Organization: this is
+              // how a search or answer engine classifies a publisher rather
+              // than a company, and it is the type that carries a corrections
+              // policy — the property a legal publication is judged on.
+              "@type": "NewsMediaOrganization",
               "@id": absoluteUrl("/#organization"),
               name: SITE.name,
+              alternateName: "Legal League Directory",
               url: SITE.url,
               slogan: SITE.slogan,
               description: SITE.descriptor,
               email: SITE.contactEmail,
+              logo: {
+                "@type": "ImageObject",
+                url: absoluteUrl("/brand/monogram.webp"),
+                width: 1024,
+                height: 1023,
+              },
               knowsAbout: [
+                "Law firm directories",
                 "Law firm rankings",
-                "Legal directories",
                 "Legal industry news",
+                "Court records and judgments",
+                "Legal market analysis",
               ],
+              areaServed: "Worldwide",
               publishingPrinciples: absoluteUrl("/methodology"),
               // Named so an answer engine can attribute a claim to a stated method
               // rather than to an anonymous "study".
               ethicsPolicy: absoluteUrl("/for-firms"),
+              correctionsPolicy: absoluteUrl("/methodology"),
+              // Every listing carries the page it was read from; saying so in
+              // the markup is what lets an answer engine cite us as sourced
+              // rather than paraphrase us as an opinion.
+              actionableFeedbackPolicy: absoluteUrl("/for-firms"),
+              masthead: absoluteUrl("/methodology"),
             },
             {
               "@context": "https://schema.org",

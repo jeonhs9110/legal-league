@@ -17,9 +17,18 @@ export const SITE = {
    * independently — the slogan positions, this one commits.
    */
   promise: "Rankings you can check.",
-  /** Longer descriptor for meta descriptions and structured data. */
+  /**
+   * The meta description — what Google prints under the title, and the first
+   * thing a managing partner reads. It said this directory "ranks law firms"
+   * with "the evidence behind every placement"; no ranking and no placement is
+   * published. An overclaim survives longer here than anywhere else on a site,
+   * because nobody looks at it again after launch.
+   */
   descriptor:
-    "An open legal directory ranking law firms across the G20 and the major legal markets, with the methodology and the evidence behind every placement published in full.",
+    "A comprehensive legal media publication. A directory of law firms across 35 jurisdictions, with the source published for every listing.",
+  /** Short form for cards and structured data, under 120 characters. */
+  shortDescriptor:
+    "Law firm directory and legal industry coverage across 35 jurisdictions, with every source published.",
   url: "https://legalleague.org",
   locale: "en",
   /** Localisations planned; see docs/architecture.md. */

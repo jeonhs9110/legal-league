@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/news" },
   title: "Legal industry news",
   description:
-    "Headlines from across the legal industry, collected from permitted sources, deduplicated, and linked back to the publisher.",
+    "Legal industry news from across the G20 and Asia, collected from permitted sources and linked back to the publisher that reported it.",
 };
 
 // Rebuilt on a schedule rather than per request; the collector writes on a cron,

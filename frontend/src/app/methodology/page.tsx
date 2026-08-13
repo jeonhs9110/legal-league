@@ -6,9 +6,9 @@ import { BANDS } from "@/lib/bands";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/methodology" },
-  title: "Methodology",
+  title: "Ranking methodology",
   description:
-    "The weighted signals, exclusions, and evidence rules behind every Legal League placement, published in full.",
+    "How Legal League assesses law firms: the signals, their weights, and the evidence a jurisdiction must hold before any ranking is published.",
 };
 
 export default async function MethodologyPage() {

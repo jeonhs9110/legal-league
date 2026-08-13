@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/for-firms" },
   title: "For law firms",
   description:
-    "Claim your profile, submit evidence, or advertise. What each one does, what it costs, and the rules that keep commercial spend away from the rankings.",
+    "For law firms: claim your listing, correct the record, and submit evidence. Advertising is kept separate from editorial by published rules.",
 };
 
 export default async function ForFirmsPage() {
