@@ -20,8 +20,23 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/_next/"],
       },
+      // Named explicitly rather than left to the wildcard. Answer engines are
+      // becoming the way a lawyer finds a directory, and a publication whose
+      // whole claim is that its sources are checkable has every reason to be
+      // quotable by them. Being explicit also means a future tightening of the
+      // wildcard cannot silently lock them out.
+      {
+        userAgent: [
+          "GPTBot", "OAI-SearchBot", "ChatGPT-User",
+          "ClaudeBot", "Claude-User", "Claude-SearchBot", "anthropic-ai",
+          "PerplexityBot", "Perplexity-User",
+          "Google-Extended", "Applebot-Extended", "CCBot", "cohere-ai",
+        ],
+        allow: "/",
+        disallow: ["/api/", "/_next/"],
+      },
     ],
-    sitemap: absoluteUrl("/sitemap.xml"),
+    sitemap: [absoluteUrl("/sitemap.xml"), absoluteUrl("/news-sitemap.xml")],
     host: absoluteUrl("/"),
   };
 }

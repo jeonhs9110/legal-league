@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { absoluteUrl, SITE } from "@/lib/site";
 import { ArticleList } from "@/components/news/ArticleList";
 import {
   getBriefsMeta,
@@ -53,7 +55,37 @@ export default async function NewsPage() {
   const [lead, ...rest] = articles;
   const recent = rest.slice(0, 39);
 
+  // Each brief is original reporting written by this publication, and it is the
+  // only content here that is ours. Marking it as NewsArticle is what lets
+  // Google News index it and what lets an answer engine quote it with an
+  // attribution instead of paraphrasing it as an unsourced opinion. The
+  // aggregated headlines below are deliberately NOT marked: they belong to the
+  // publishers who wrote them and are linked, not claimed.
+  const articleSchema = briefs.slice(0, 40).map((brief) => ({
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "@id": absoluteUrl(`/news#${brief.id}`),
+    headline: brief.headline.slice(0, 110),
+    description: brief.standfirst ?? undefined,
+    datePublished: brief.generatedAt ?? meta.generatedAt,
+    dateModified: brief.generatedAt ?? meta.generatedAt,
+    inLanguage: "en",
+    isAccessibleForFree: true,
+    publisher: { "@id": absoluteUrl("/#organization") },
+    author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+    // Every source the brief was written from, so the claim is checkable and
+    // the outlets that did the reporting are credited in the markup itself.
+    citation: brief.sources.map((source) => ({
+      "@type": "CreativeWork",
+      name: source.name,
+      url: source.url,
+    })),
+    articleSection: "Legal industry",
+  }));
+
   return (
+    <>
+      <JsonLd data={articleSchema} />
     <EditorialShell
       kicker="Industry news"
       headline="What the legal press is reporting"
@@ -263,5 +295,6 @@ export default async function NewsPage() {
         </p>
       </div>
     </EditorialShell>
+    </>
   );
 }

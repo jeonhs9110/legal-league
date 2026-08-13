@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { absoluteUrl, SITE } from "@/lib/site";
 import { getRankingsMeta, listJurisdictionEntries } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -32,7 +34,39 @@ export default async function RankingsIndexPage() {
     entries: entries.filter((e) => e.region === region),
   })).filter((group) => group.entries.length > 0);
 
+  const dataset = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "@id": absoluteUrl("/rankings#dataset"),
+    name: "Legal League law firm directory",
+    description:
+      "Law firms across 35 jurisdictions, each listing recording the source it " +
+      "was read from. Rankings are a reconciliation of external directory " +
+      "recognitions and are published only where two independent publishers agree.",
+    url: absoluteUrl("/rankings"),
+    creator: { "@id": absoluteUrl("/#organization") },
+    publisher: { "@id": absoluteUrl("/#organization") },
+    isAccessibleForFree: true,
+    license: absoluteUrl("/methodology"),
+    // Named so a machine reading this can state the method and its limits
+    // rather than inferring either. That is the whole product.
+    measurementTechnique:
+      "Weighted reconciliation of tier vocabularies across Chambers, The Legal 500, " +
+      "IFLR1000, asialaw, Benchmark Litigation, Law.asia, Asian Legal Business, " +
+      "Managing IP, Lexology Index and Best Lawyers, taken from firms' own " +
+      "announcements. Minimum two independent publishers.",
+    variableMeasured: [
+      { "@type": "PropertyValue", name: "Directory consensus", description: "Weighted mean of the best tier each publisher gave" },
+      { "@type": "PropertyValue", name: "Publisher count", description: "Independent publishers recognising the firm" },
+      { "@type": "PropertyValue", name: "Verified", description: "Whether the record was confirmed against the firm's own website" },
+    ],
+    spatialCoverage: entries.map((e) => ({ "@type": "Country", name: e.name })),
+    dateModified: meta.generatedAt,
+  };
+
   return (
+    <>
+      <JsonLd data={dataset} />
     <EditorialShell
       kicker="Coverage"
       headline="Every jurisdiction, and what we hold on it"
@@ -141,5 +175,6 @@ export default async function RankingsIndexPage() {
         </div>
       </div>
     </EditorialShell>
+    </>
   );
 }

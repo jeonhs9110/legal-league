@@ -54,9 +54,15 @@ export default async function JurisdictionPage({ params }: Props) {
           // Unordered is the literal truth while rankings are withheld, and it
           // stops a rich result presenting position 1 as "the best firm".
           itemListOrder:
-            entry.status === "ranked"
+            entry.methodology.reconciledFirms > 0
               ? "https://schema.org/ItemListOrderDescending"
               : "https://schema.org/ItemListUnordered",
+          // The method, in the markup. An answer engine asked "how does Legal
+          // League rank Singapore firms" can then answer from the page rather
+          // than guess, and the answer carries the caveats with it.
+          isBasedOn: absoluteUrl("/methodology"),
+          creator: { "@id": absoluteUrl("/#organization") },
+          about: entry.methodology.basis,
           itemListElement: entry.firms.map((firm, index) => ({
             "@type": "ListItem",
             position: index + 1,
